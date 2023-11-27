@@ -15,30 +15,34 @@
 
 <body class="body">
   <header>
-    <dl>
-      <dt><b>Built on</b></dt><dd>{{siteBuildTimestamp}}</dd>
-      <dt><b>Cli version</b></dt><dd>{{cliVersion}}</dd>
-      <dt><b>Documentation URL</b></dt><dd>{{projectUrl}}</dd>
-    </dl>
+    <div class="site-info">
+      <h3 class="hdg">Site Infomation</h3>
+      <div class="contents">
+        <p>Built on: {{siteBuildTimestamp}}</p>
+        <p>Cli version: {{cliVersion}}</p>
+        <p>Documentation URL:<a href={{projectUrl}}>{{projectUrl}}</a></p>
+      </div>
+    </div>
   </header>
-
+  <div class="articles">
   {{#each articles}}
   <article>
-      <h1><a href={{link}}>{{title}}</a></h1>
-      <div>
-        <span>Source: <a href={{source.siteUrl}}>{{source.title}}</a></span> | 
-        <span>Date: <time>{{isoPublishDate}}</time></span> |
-        <span>Timestamp: <time>{{publishedOn}}</time></span> |
-        <span>Reading time: <time>{{readingTimeInMin}} min</time></span> |
-        <span>Word count: <time>{{wordCount}}</time></span>
-      </div>
-      {{#if imageUrl}}
-      <img src="{{imageUrl}}" width="100" />
-      {{/if}}
-      <p>{{description}}</p>
+    <h1><a href={{link}}>{{title}}</a></h1>
+    <div>
+      <span>Source: <a href={{source.siteUrl}}>{{source.title}}</a></span> |
+      <span>Date: <time>{{isoPublishDate}}</time></span> |
+      <span>Timestamp: <time>{{publishedOn}}</time></span> |
+      <span>Reading time: <time>{{readingTimeInMin}} min</time></span> |
+      <span>Word count: <time>{{wordCount}}</time></span>
+    </div>
+    {{#if imageUrl}}
+    <img src="{{imageUrl}}" width="100" />
+    {{/if}}
+    <p>{{description}}</p>
     </details>
   </article>
   {{/each}}
+  </div>
 </body>
 
 </html>
