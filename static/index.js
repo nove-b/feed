@@ -8,4 +8,13 @@ if (overviewTrigers.length > 0) {
       overview.classList.add('show')
     })
   })
+
+  overviewTrigers.forEach((overviewTriger) => {
+    overviewTriger.addEventListener('mouseleave ', (event) => {
+      console.log(event)
+      console.log(event.target.nextElementSibling)
+      const overview = event.target.nextElementSibling
+      overview.classList.remove('show')
+    })
+  })
 }
