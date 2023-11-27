@@ -3,8 +3,8 @@ if (overviewTrigers.length > 0) {
   overviewTrigers.forEach((overviewTriger) => {
     overviewTriger.addEventListener('mouseenter', (event) => {
       console.log(event)
-      console.log(event.nextElementSibling)
-      const overview = event.nextElementSibling
+      console.log(event.target.nextElementSibling)
+      const overview = event.target.nextElementSibling
       overview.classlist.classlist.add('show')
     })
   })
