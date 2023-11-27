@@ -39,13 +39,13 @@
           <span>Reading time: <time>{{readingTimeInMin}} min</time></span> |
           <span>Word count: <time>{{wordCount}}</time></span>
         </div>
+      </a>
         <div class="overview">
           {{#if imageUrl}}
           <img class="img" src="{{imageUrl}}" width="100" />
           {{/if}}
           <p class="description">{{description}}</p>
         </div>
-      </a>
     </article>
     {{/each}}
   </div>
