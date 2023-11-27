@@ -13,17 +13,22 @@
   <link href="index.css" rel="stylesheet" />
 </head>
 
-<body class="body">
+<body>
   <header>
+    <div class="header">
+     <p> <img src="../static/github.png" alt=""></p>
+    </div>
+  </header>
+  <main class="body">
+
     <div class="site-info">
       <h3 class="hdg">Site Infomation</h3>
       <div class="contents">
         <p>Built on: {{siteBuildTimestamp}}</p>
         <p>Cli version: {{cliVersion}}</p>
-        <p>Documentation URL:<a href={{projectUrl}}>{{projectUrl}}</a></p>
+        <p>Use: <a href="https://github.com/osmoscraft/osmosfeed">osmosfeed</a></p>
       </div>
     </div>
-  </header>
   <div class="articles">
   {{#each articles}}
   <article>
@@ -43,6 +48,7 @@
   </article>
   {{/each}}
   </div>
+  </main>
 </body>
 
 </html>
