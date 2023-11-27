@@ -31,7 +31,7 @@
   <div class="articles">
     {{#each articles}}
     <article class="article">
-      <a class="link" href={{link}}>
+      <a class="link" href={{link}} target="_blank">
         <h1 class="hdg">{{title}}</h1>
         <div class="info">
           <span> {{source.title}}</span> |
@@ -39,10 +39,12 @@
           <span>Reading time: <time>{{readingTimeInMin}} min</time></span> |
           <span>Word count: <time>{{wordCount}}</time></span>
         </div>
-        {{!-- {{#if imageUrl}}
-        <img src="{{imageUrl}}" width="100" />
-        {{/if}}
-        <p>{{description}}</p> --}}
+        <div class="overview">
+          {{#if imageUrl}}
+          <img class="img" src="{{imageUrl}}" width="100" />
+          {{/if}}
+          <p class="description">{{description}}</p>
+        </div>
       </a>
     </article>
     {{/each}}
