@@ -16,35 +16,34 @@
 <body class="body">
   <header>
     <div class="header">
-     <p><a href="https://github.com/nove-b/feed"> <img src="https://nove-b.github.io/feed/github.png" alt="Github" height="30px"></a></p>
+      <p><a href="https://github.com/nove-b/feed"> <img src="https://nove-b.github.io/feed/github.png" alt="Github"
+            height="30px"></a></p>
     </div>
   </header>
-    <div class="site-info">
-      <h3 class="hdg">Site Infomation</h3>
-      <div class="contents">
-        <p>Built on: {{siteBuildTimestamp}}</p>
-        <p>Cli version: {{cliVersion}}</p>
-        <p>Use: <a href="https://github.com/osmoscraft/osmosfeed">osmosfeed</a></p>
-      </div>
+  <div class="site-info">
+    <h3 class="hdg">Site Infomation</h3>
+    <div class="contents">
+      <p>Built on: {{siteBuildTimestamp}}</p>
+      <p>Cli version: {{cliVersion}}</p>
+      <p>Use: <a href="https://github.com/osmoscraft/osmosfeed">osmosfeed</a></p>
     </div>
+  </div>
   <div class="articles">
-  {{#each articles}}
-  <details class="article">
-    <summary>
-    <h1><a href={{link}}>{{title}}</a></h1>
-    </summary>
-    <div>
-      <span>Source: <a href={{source.siteUrl}}>{{source.title}}</a></span> |
-      <span>Date: <time>{{isoPublishDate}}</time></span> |
-      <span>Reading time: <time>{{readingTimeInMin}} min</time></span> |
-      <span>Word count: <time>{{wordCount}}</time></span>
-    </div>
-    {{#if imageUrl}}
-    <img src="{{imageUrl}}" width="100" />
-    {{/if}}
-    <p>{{description}}</p>
-  </details>
-  {{/each}}
+    {{#each articles}}
+    <article class="article">
+      <h1><a href={{link}}>{{title}}</a></h1>
+      <div>
+        <span>Source: <a href={{source.siteUrl}}>{{source.title}}</a></span> |
+        <span>Date: <time>{{isoPublishDate}}</time></span> |
+        <span>Reading time: <time>{{readingTimeInMin}} min</time></span> |
+        <span>Word count: <time>{{wordCount}}</time></span>
+      </div>
+      {{!-- {{#if imageUrl}}
+      <img src="{{imageUrl}}" width="100" />
+      {{/if}}
+      <p>{{description}}</p> --}}
+    </article>
+    {{/each}}
   </div>
 </body>
 
