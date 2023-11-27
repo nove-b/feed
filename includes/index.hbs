@@ -29,12 +29,13 @@
     </div>
   <div class="articles">
   {{#each articles}}
-  <article>
+  <details class="article">
+    <summary>
     <h1><a href={{link}}>{{title}}</a></h1>
+    </summary>
     <div>
       <span>Source: <a href={{source.siteUrl}}>{{source.title}}</a></span> |
       <span>Date: <time>{{isoPublishDate}}</time></span> |
-      <span>Timestamp: <time>{{publishedOn}}</time></span> |
       <span>Reading time: <time>{{readingTimeInMin}} min</time></span> |
       <span>Word count: <time>{{wordCount}}</time></span>
     </div>
@@ -42,8 +43,7 @@
     <img src="{{imageUrl}}" width="100" />
     {{/if}}
     <p>{{description}}</p>
-    </details>
-  </article>
+  </details>
   {{/each}}
   </div>
 </body>
