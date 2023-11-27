@@ -335,21 +335,6 @@
       "siteUrl": "https://zenn.dev/topics/typescript",
       "articles": [
         {
-          "id": "https://zenn.dev/collabostyle/articles/86477d39be3a2e",
-          "author": "あお",
-          "description": "BiomeというTypeScriptのフォーマッタ/リンターがあると聞いて触ってみました。\nVite Reactのプロジェクトで使ってみます。\n\n プロジェクトを生成する\nnpm create vite@latest\n\n インストール\nnpm install --save-dev --save-exact @biomejs/biome\n\n 設定ファイルを生成する\nnpx biome init\n\n vscodeの拡張機能を追加する\n\n.vscode/extensions.json\n{\n  \"recommendations\": [\n    \"biomejs.biome\"\n  ]\n}\n\n\n v...",
-          "link": "https://zenn.dev/collabostyle/articles/86477d39be3a2e",
-          "publishedOn": "2023-11-27T06:00:00.000Z",
-          "wordCount": 595,
-          "title": "新しいTypeScriptのリンター Biomeを触ってみる",
-          "enclosure": {
-            "url": "https://res.cloudinary.com/zenn/image/upload/s--xE4rPSfO--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2596%25B0%25E3%2581%2597%25E3%2581%2584TypeScript%25E3%2581%25AE%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25BF%25E3%2583%25BC%2520Biome%25E3%2582%2592%25E8%25A7%25A6%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2582%25B3%25E3%2583%25A9%25E3%2583%259C%25E3%2582%25B9%25E3%2582%25BF%25E3%2582%25A4%25E3%2583%25AB%2520Developers%2Cx_220%2Cy_160/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2581%2582%25E3%2581%258A%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2MxOTFmZDljMTIuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2IzODQzY2VmNmEuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png",
-            "length": "0",
-            "type": "image/png"
-          },
-          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--xE4rPSfO--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2596%25B0%25E3%2581%2597%25E3%2581%2584TypeScript%25E3%2581%25AE%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25BF%25E3%2583%25BC%2520Biome%25E3%2582%2592%25E8%25A7%25A6%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2582%25B3%25E3%2583%25A9%25E3%2583%259C%25E3%2582%25B9%25E3%2582%25BF%25E3%2582%25A4%25E3%2583%25AB%2520Developers%2Cx_220%2Cy_160/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2581%2582%25E3%2581%258A%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2MxOTFmZDljMTIuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2IzODQzY2VmNmEuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
-        },
-        {
           "id": "https://zenn.dev/sora_kumo/articles/firebase-storage",
           "author": "空雲",
           "description": "FirebaseStorage を操作する方法\n一般的な方法として、FirebaseStorage を操作する方法は以下のようになります。\n\nOAuth を使う場合\n@firebase/storage パッケージを使う\nPrivateKey を使う場合\nfirebase-admin パッケージを使う\n\n今回やりたいのは PrivateKey を使って、追加で認証を挟まずアクセス可能にする方法です。さらに Next.js の EdgeRuntime 対応です。普通は firebase-admin を使うことになるのですが、このライブラリは Node.js のフル機能を要求するため、Ed...",
@@ -633,6 +618,21 @@
             "type": "image/jpeg"
           },
           "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--5tZMQVBq--/g_center%2Ch_280%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYm9va19jb3Zlci9hOWM0ZmFiYmY3LmpwZWc=%2Cw_200/v1627283836/default/og-base-book_yz4z02.jpg"
+        },
+        {
+          "id": "https://zenn.dev/zudah228/articles/c57cc3c9a7c696",
+          "author": "づだ",
+          "description": "概要\n\n 背景\nWeb で、OpenAI の API の Speech-to-Text を叩きたかったのですが、file の渡し方が公式ドキュメントで python と curl しかなく、情報がどこにもなくて少し苦労したので、記事に残します。\nフロントのフレームワーク以外のパッケージは使いません。\n\n この記事のゴール\n\nブラウザのマイクから音声を抽出\n音声ファイルを Blob に変換\nform アクションで、Blob を Web サーバーに送信\n\n\n ソースコード\nSvelte 製です。\nデモアプリなので、console.log 周りが散りばめられてますが、気になさらず。\nhtt...",
+          "link": "https://zenn.dev/zudah228/articles/c57cc3c9a7c696",
+          "publishedOn": "2023-11-23T10:35:59.000Z",
+          "wordCount": 2173,
+          "title": "【Webフロント】マイクで録音した Blob データを、form アクション経由で Web サーバーに送信する",
+          "enclosure": {
+            "url": "https://res.cloudinary.com/zenn/image/upload/s--ghdA2FGo--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Web%25E3%2583%2595%25E3%2583%25AD%25E3%2583%25B3%25E3%2583%2588%25E3%2580%2591%25E3%2583%259E%25E3%2582%25A4%25E3%2582%25AF%25E3%2581%25A7%25E9%258C%25B2%25E9%259F%25B3%25E3%2581%2597%25E3%2581%259F%2520Blob%2520%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2582%2592%25E3%2580%2581form%2520%25E3%2582%25A2%25E3%2582%25AF%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E7%25B5%258C%25E7%2594%25B1%25E3%2581%25A7%2520Web%2520%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E3%2581%25AB%25E9%2580%2581%25E4%25BF%25A1%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25A5%25E3%2581%25A0%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2I0NGRiMjAxNjUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
+            "length": "0",
+            "type": "image/png"
+          },
+          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--ghdA2FGo--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Web%25E3%2583%2595%25E3%2583%25AD%25E3%2583%25B3%25E3%2583%2588%25E3%2580%2591%25E3%2583%259E%25E3%2582%25A4%25E3%2582%25AF%25E3%2581%25A7%25E9%258C%25B2%25E9%259F%25B3%25E3%2581%2597%25E3%2581%259F%2520Blob%2520%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2582%2592%25E3%2580%2581form%2520%25E3%2582%25A2%25E3%2582%25AF%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E7%25B5%258C%25E7%2594%25B1%25E3%2581%25A7%2520Web%2520%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2583%25BC%25E3%2581%25AB%25E9%2580%2581%25E4%25BF%25A1%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25A5%25E3%2581%25A0%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2I0NGRiMjAxNjUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
         }
       ]
     },
@@ -1127,13 +1127,13 @@
           "link": "https://zenn.dev/sonoman/articles/7a228c0e1fe40d",
           "publishedOn": "2023-11-16T12:00:01.000Z",
           "wordCount": 701,
-          "title": "開発経験ゼロからT3-Stackで爆速フルスタック開発してみた",
+          "title": "開発経験ゼロからT3-Stackで爆速フルスタック開発してみた(学習3ヶ月目)",
           "enclosure": {
-            "url": "https://res.cloudinary.com/zenn/image/upload/s--nJM5fPXe--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%2596%258B%25E7%2599%25BA%25E7%25B5%258C%25E9%25A8%2593%25E3%2582%25BC%25E3%2583%25AD%25E3%2581%258B%25E3%2582%2589T3-Stack%25E3%2581%25A7%25E7%2588%2586%25E9%2580%259F%25E3%2583%2595%25E3%2583%25AB%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%2583%25E3%2582%25AF%25E9%2596%258B%25E7%2599%25BA%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:sonoman%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2NkYmUxOTg1ODkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
+            "url": "https://res.cloudinary.com/zenn/image/upload/s--R-qYnPRA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%2596%258B%25E7%2599%25BA%25E7%25B5%258C%25E9%25A8%2593%25E3%2582%25BC%25E3%2583%25AD%25E3%2581%258B%25E3%2582%2589T3-Stack%25E3%2581%25A7%25E7%2588%2586%25E9%2580%259F%25E3%2583%2595%25E3%2583%25AB%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%2583%25E3%2582%25AF%25E9%2596%258B%25E7%2599%25BA%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2528%25E5%25AD%25A6%25E7%25BF%25923%25E3%2583%25B6%25E6%259C%2588%25E7%259B%25AE%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:sonoman%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2NkYmUxOTg1ODkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
             "length": "0",
             "type": "image/png"
           },
-          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--nJM5fPXe--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%2596%258B%25E7%2599%25BA%25E7%25B5%258C%25E9%25A8%2593%25E3%2582%25BC%25E3%2583%25AD%25E3%2581%258B%25E3%2582%2589T3-Stack%25E3%2581%25A7%25E7%2588%2586%25E9%2580%259F%25E3%2583%2595%25E3%2583%25AB%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%2583%25E3%2582%25AF%25E9%2596%258B%25E7%2599%25BA%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:sonoman%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2NkYmUxOTg1ODkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--R-qYnPRA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%2596%258B%25E7%2599%25BA%25E7%25B5%258C%25E9%25A8%2593%25E3%2582%25BC%25E3%2583%25AD%25E3%2581%258B%25E3%2582%2589T3-Stack%25E3%2581%25A7%25E7%2588%2586%25E9%2580%259F%25E3%2583%2595%25E3%2583%25AB%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%2583%25E3%2582%25AF%25E9%2596%258B%25E7%2599%25BA%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2528%25E5%25AD%25A6%25E7%25BF%25923%25E3%2583%25B6%25E6%259C%2588%25E7%259B%25AE%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:sonoman%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2NkYmUxOTg1ODkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
         },
         {
           "id": "https://zenn.dev/itome/articles/64a85304d294bd",
@@ -1472,7 +1472,7 @@
           "description": "日本企業のDXは本当に進んでいるのか。ITRによる最新の調査結果では「停滞の動き」も見られる。同調査結果から日本企業のDXの現在地を探る。",
           "link": "https://www.itmedia.co.jp/enterprise/articles/2311/27/news114.html",
           "publishedOn": "2023-11-27T06:00:00.000Z",
-          "wordCount": 2748,
+          "wordCount": 2746,
           "title": "[ITmedia エンタープライズ] 日本のDXは停滞している？――ITRの最新調査から「現在地」を探る",
           "imageUrl": "https://image.itmedia.co.jp/enterprise/articles/2311/27/cover_news114.jpg"
         },
@@ -1752,7 +1752,7 @@
           "description": "損害保険ジャパンがSAP Concurを導入した。選定理由と導入効果を紹介する。",
           "link": "https://www.itmedia.co.jp/enterprise/articles/2311/27/news039.html",
           "publishedOn": "2023-11-26T23:00:00.000Z",
-          "wordCount": 2730,
+          "wordCount": 2728,
           "title": "[ITmedia エンタープライズ] 損害保険ジャパンがSAP Concurを導入　選定理由と効果は",
           "imageUrl": "https://image.itmedia.co.jp/enterprise/articles/2311/27/cover_news039.jpg"
         },
