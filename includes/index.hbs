@@ -11,6 +11,9 @@
   <link rel="alternate" type="application/rss+xml" title="{{siteTitle}}" href="{{feedHref}}" />
   <link href="destyle.css" rel="stylesheet" />
   <link href="index.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body class="body">
@@ -40,12 +43,12 @@
           <span>Word count: <time>{{wordCount}}</time></span>
         </div>
       </a>
-        <div class="overview">
-          {{#if imageUrl}}
-          <img class="img" src="{{imageUrl}}" width="100" />
-          {{/if}}
-          <p class="description">{{description}}</p>
-        </div>
+      <div class="overview">
+        {{#if imageUrl}}
+        <img class="img" src="{{imageUrl}}" width="100" />
+        {{/if}}
+        <p class="description">{{description}}</p>
+      </div>
     </article>
     {{/each}}
   </div>
