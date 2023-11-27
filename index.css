@@ -1,8 +1,11 @@
 .body {
   background-color: #212121;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  font-family: ui-monospace, -sf-mono--regular, -menlo, -monaco, -consolas,
+    -liberation -mono, -courier -new, monospace;
   color: rgb(221, 221, 221);
+  word-break: break-word;
 }
+
 
 .header {
   display: flex;
@@ -11,6 +14,7 @@
   height: 50px;
   padding-right: 20px;
 }
+
 
 .site-info {
   display: flex;
@@ -22,14 +26,19 @@
     font-size: 22px;
   }
 
+
   .contents {
     margin-top: 1em;
+    text-align: end;
   }
+
 
   a {
     color: rgb(96, 165, 250);
   }
+
 }
+
 
 .articles {
   margin: 40px 20px 20px;
@@ -37,7 +46,7 @@
   .article {
     border-radius: 15px;
     background-color: #2b2b2b;
-    border: 1px solid rgba(236, 239, 241, .2);
+    border: 1px solid rgba(236, 239, 241, 0.2);
     color: #eceff1;
 
     .link {
@@ -45,27 +54,56 @@
       padding: 20px;
     }
 
+
     .hdg {
-      transition: .3s;
+      transition: 0.3s;
     }
+
 
     .info {
       margin-top: 10px;
     }
 
+
     .overview {
-      display: none
+      display: none;
+      width: 250px;
+      border-radius: 15px;
+      background-color: #6b6b6b;
+      border: 1px solid rgba(236, 239, 241, 0.2);
+      color: #eceff1;
+      padding: 10px;
+      position: fixed;
+      bottom: 20px;
+      box-shadow: 0px 0px 15px -5px #777777;
+      border-radius: 10px;
+
+      .img {
+        width: 100%;
+        border-radius: 15px;
+      }
+
+
+      .description {
+        margin-top: 20px;
+        font-size: 14px;
+      }
+
     }
 
   }
 
+
   .article:nth-of-type(n + 2) {
     margin-top: 20px;
   }
+
 }
 
-/* Hover */
+
+/* -hover */
 .article a:hover h1 {
   color: rgb(96, 165, 250);
-  transition: .3s;
+  transition: 0.3s;
 }
+
