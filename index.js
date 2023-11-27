@@ -5,7 +5,7 @@ if (overviewTrigers.length > 0) {
       console.log(event)
       console.log(event.target.nextElementSibling)
       const overview = event.target.nextElementSibling
-      overview.classlist.add('show')
+      overview.classList.add('show')
     })
   })
 }
