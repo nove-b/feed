@@ -47,11 +47,20 @@
         {{#if imageUrl}}
         <img class="img" src="{{imageUrl}}" width="100" />
         {{/if}}
-        <p class="description">{{description}}</p>
+        <p class="description">{{truncate description 200}}</p>
       </div>
     </article>
     {{/each}}
   </div>
+  <script>
+    // JavaScriptでHandlebarsヘルパーを定義
+    Handlebars.registerHelper('truncate', function (str, len) {
+      if (str.length > len) {
+        return str.substring(0, len) + '...';
+      }
+      return str;
+    });
+  </script>
   <script src="index.js"></script>
 </body>
 
