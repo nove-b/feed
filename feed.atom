@@ -1,10 +1,1691 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2023-11-27T02:27:51.103Z</id>
+    <id>urn:2023-11-27T02:48:42.129Z</id>
     <title>読みたい記事たち</title>
-    <updated>2023-11-27T02:27:51.103Z</updated>
+    <updated>2023-11-27T02:48:42.129Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="index.html"/>
+    <entry>
+        <title type="html"><![CDATA[FirebaseStorage(CloudStorage)をEdgeRuntimeで操作する]]></title>
+        <id>https://zenn.dev/sora_kumo/articles/firebase-storage</id>
+        <link href="https://zenn.dev/sora_kumo/articles/firebase-storage"/>
+        <updated>2023-11-27T01:01:14.000Z</updated>
+        <summary type="html"><![CDATA[FirebaseStorage を操作する方法
+一般的な方法として、FirebaseStorage を操作する方法は以下のようになります。
+
+OAuth を使う場合
+@firebase/storage パッケージを使う
+PrivateKey を使う場合
+firebase-admin パッケージを使う
+
+今回やりたいのは PrivateKey を使って、追加で認証を挟まずアクセス可能にする方法です。さらに Next.js の EdgeRuntime 対応です。普通は firebase-admin を使うことになるのですが、このライブラリは Node.js のフル機能を要求するため、Ed...]]></summary>
+        <author>
+            <name>空雲</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GraphQL Code Generatorのカスタムプラグインでauth directiveに設定した認証情報を元に関数を自動生成する]]></title>
+        <id>https://zenn.dev/route06/articles/463047465eac29</id>
+        <link href="https://zenn.dev/route06/articles/463047465eac29"/>
+        <updated>2023-11-27T01:00:00.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+関わっているプロダクトでauth directiveに設定した認証情報をもとにロールごとにUIを出しわけたいことがあり、Schemaから認証情報を持った関数を吐き出すカスタムプラグインを作りました。
+例えば下記のようなSchemaがあるとします。
+（The Guildのexampleの一部にカスタムディレクティブとMutationを追加したものです）
+directive @auth(role: [Role!]!) on FIELD_DEFINITION
+
+scalar Date
+
+schema {
+  query: Query
+}
+
+type Query {
+  me: U...]]></summary>
+        <author>
+            <name>ohteru</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Next.jsのAppRouterでlayout.tsxからServer/Clientコンポーネントにデータを配る]]></title>
+        <id>https://zenn.dev/sora_kumo/articles/approuter-context</id>
+        <link href="https://zenn.dev/sora_kumo/articles/approuter-context"/>
+        <updated>2023-11-27T00:51:39.000Z</updated>
+        <summary type="html"><![CDATA[シリーズ投稿
+
+
+https://zenn.dev/sora_kumo/articles/approuter-identification
+https://zenn.dev/sora_kumo/articles/approuter-cache
+https://zenn.dev/sora_kumo/articles/approuter-context
+
+
+ Context を利用できない Server コンポーネント
+Next.js の AppRouter の Server コンポーネントでは、createContextが使用できません。これに加え、Next.js ではcreateSer...]]></summary>
+        <author>
+            <name>空雲</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Next.jsのAppRouterでlayout.tsxからServer/Clientコンポーネントにデータを配る]]></title>
+        <id>https://zenn.dev/sora_kumo/articles/approuter-context</id>
+        <link href="https://zenn.dev/sora_kumo/articles/approuter-context"/>
+        <updated>2023-11-27T00:51:39.000Z</updated>
+        <summary type="html"><![CDATA[シリーズ投稿
+
+
+https://zenn.dev/sora_kumo/articles/approuter-identification
+https://zenn.dev/sora_kumo/articles/approuter-cache
+https://zenn.dev/sora_kumo/articles/approuter-context
+
+
+ Context を利用できない Server コンポーネント
+Next.js の AppRouter の Server コンポーネントでは、createContextが使用できません。これに加え、Next.js ではcreateSer...]]></summary>
+        <author>
+            <name>空雲</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Next.jsのAppRouterでReact.cacheを使う時の基本操作]]></title>
+        <id>https://zenn.dev/sora_kumo/articles/approuter-cache</id>
+        <link href="https://zenn.dev/sora_kumo/articles/approuter-cache"/>
+        <updated>2023-11-27T00:37:50.000Z</updated>
+        <summary type="html"><![CDATA[シリーズ投稿
+
+
+https://zenn.dev/sora_kumo/articles/approuter-identification
+https://zenn.dev/sora_kumo/articles/approuter-cache
+https://zenn.dev/sora_kumo/articles/approuter-context
+
+
+ AppRouter と React.cache
+AppRouter で State を持たない Server コンポーネント同士のデータ共有は、React.cache が基本となります。AppRouter の話題だと fetch のキ...]]></summary>
+        <author>
+            <name>空雲</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Next.jsのAppRouterでReact.cacheを使う時の基本操作]]></title>
+        <id>https://zenn.dev/sora_kumo/articles/approuter-cache</id>
+        <link href="https://zenn.dev/sora_kumo/articles/approuter-cache"/>
+        <updated>2023-11-27T00:37:50.000Z</updated>
+        <summary type="html"><![CDATA[シリーズ投稿
+
+
+https://zenn.dev/sora_kumo/articles/approuter-identification
+https://zenn.dev/sora_kumo/articles/approuter-cache
+https://zenn.dev/sora_kumo/articles/approuter-context
+
+
+ AppRouter と React.cache
+AppRouter で State を持たない Server コンポーネント同士のデータ共有は、React.cache が基本となります。AppRouter の話題だと fetch のキ...]]></summary>
+        <author>
+            <name>空雲</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Next.jsのAppRouter/PagesRouter実行中に、Server/Client/Pagesのどのモジュールなのかを識別する]]></title>
+        <id>https://zenn.dev/sora_kumo/articles/approuter-identification</id>
+        <link href="https://zenn.dev/sora_kumo/articles/approuter-identification"/>
+        <updated>2023-11-27T00:21:46.000Z</updated>
+        <summary type="html"><![CDATA[シリーズ投稿
+
+
+https://zenn.dev/sora_kumo/articles/approuter-identification
+https://zenn.dev/sora_kumo/articles/approuter-cache
+https://zenn.dev/sora_kumo/articles/approuter-context
+
+
+ 厄介なコンポーネントの状態
+Next.js の AppRouter ではデフォルトで ServerComponent の状態から始まり、"use client"を先頭につけることによって、ClientComponents として動作さ...]]></summary>
+        <author>
+            <name>空雲</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Next.jsのAppRouter/PagesRouter実行中に、Server/Client/Pagesのどのモジュールなのかを識別する]]></title>
+        <id>https://zenn.dev/sora_kumo/articles/approuter-identification</id>
+        <link href="https://zenn.dev/sora_kumo/articles/approuter-identification"/>
+        <updated>2023-11-27T00:21:46.000Z</updated>
+        <summary type="html"><![CDATA[シリーズ投稿
+
+
+https://zenn.dev/sora_kumo/articles/approuter-identification
+https://zenn.dev/sora_kumo/articles/approuter-cache
+https://zenn.dev/sora_kumo/articles/approuter-context
+
+
+ 厄介なコンポーネントの状態
+Next.js の AppRouter ではデフォルトで ServerComponent の状態から始まり、"use client"を先頭につけることによって、ClientComponents として動作さ...]]></summary>
+        <author>
+            <name>空雲</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Go×ReactでGCSに画像をアップロードする]]></title>
+        <id>https://zenn.dev/monta107/articles/622db37ca57aea</id>
+        <link href="https://zenn.dev/monta107/articles/622db37ca57aea"/>
+        <updated>2023-11-26T23:21:45.000Z</updated>
+        <summary type="html"><![CDATA[この記事ではGo×Reactを使って、GCSに画像データをアップロードする処理の実装方法をまとめています。
+背景としては、個人開発で『自分の描いた絵をアップロードし、保存共有ができるWebサイト』の開発を行っており、そこでGCSに画像をアップロードする処理が必要だったからです。
+いろいろ調べながら実装して学べることが多かったのでアウトプットとして記事を書こうと思いました！🐶
+
+ 使用技術について
+今回使用する技術は以下のものになります。
+
+Golang(v1.21.2)
+React(v18.2.15)
+TypeScript(v5.0.2)
+PostgreSQL(v14.9)
+GCS(Go...]]></summary>
+        <author>
+            <name>もんた。</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Go×ReactでGCSに画像をアップロードする]]></title>
+        <id>https://zenn.dev/monta107/articles/622db37ca57aea</id>
+        <link href="https://zenn.dev/monta107/articles/622db37ca57aea"/>
+        <updated>2023-11-26T23:21:45.000Z</updated>
+        <summary type="html"><![CDATA[この記事ではGo×Reactを使って、GCSに画像データをアップロードする処理の実装方法をまとめています。
+背景としては、個人開発で『自分の描いた絵をアップロードし、保存共有ができるWebサイト』の開発を行っており、そこでGCSに画像をアップロードする処理が必要だったからです。
+いろいろ調べながら実装して学べることが多かったのでアウトプットとして記事を書こうと思いました！🐶
+
+ 使用技術について
+今回使用する技術は以下のものになります。
+
+Golang(v1.21.2)
+React(v18.2.15)
+TypeScript(v5.0.2)
+PostgreSQL(v14.9)
+GCS(Go...]]></summary>
+        <author>
+            <name>もんた。</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【メモ】Go×Echo×CleanArchitecture + React×tailwindcssで開発する際の手順メモ]]></title>
+        <id>https://zenn.dev/yuji_momotani/articles/00f88bb861cbbf</id>
+        <link href="https://zenn.dev/yuji_momotani/articles/00f88bb861cbbf"/>
+        <updated>2023-11-26T21:20:07.000Z</updated>
+        <summary type="html"><![CDATA[概要
+タイトルのとおり、
+
+backend
+
+Go
+Echo
+CleanArchitecture
+(GORM)
+
+
+frontend
+
+React
+tailwindcss
+
+
+
+上記の技術スタックで、プライベートでは開発しているので、環境構築の流れを自分用のメモ書きとして残しておきます。
+
+ 参考教材
+Golang でのクリーンアーキテクチャの基礎を学んだ以下の教材を参考にしてます！（めちゃわかりやすいのでおすすめ）
+Udemy - 「Echo/Go + React で始めるモダン Web アプリケーション開発」
+
+ 環境構築手順
+
+ ベースの作成
+
+まず、ベースとなるプロジェクトの...]]></summary>
+        <author>
+            <name>Yuji-Momotani</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2023年11月26日の記事一覧]]></title>
+        <id>http://dailyfeed.jp/feed/103/2023-11-26</id>
+        <link href="http://dailyfeed.jp/feed/103/2023-11-26"/>
+        <updated>2023-11-26T20:00:00.000Z</updated>
+        <summary type="html"><![CDATA[(全 10 件)
+1. プレゼントにもいいかも。買い替えをおすすめするガジェット7選 
+2. まるで映画音楽。天体の観測データを音に変換したオーケストラ曲 
+3. 遺伝子のスイッチをオフにしてコレステロール値を下げる新しい治療 
+4. ギズモード編集部が選んだ、つよつよiPhoneケースまとめ 
+5. ラベルレスのコーラに気をつけて。「コレジャナイ…！」が発生しがち 
+6. かさばるコートも二つ折りハンガーですっきり収納 
+7. AIにデザインさせた軽くて強いテニスラケット。ウネウネした形状がややキモ 
+8. プロ級のドリップコーヒーが淹れられるHARIOの「不思議なカップ」 
+9. ギズ編集部員が、Amazonブラックフライデーで欲しいもの1万円分 
+10. 小さくて軽いのに大容量。いろいろ助かるポータブルSSD、見つけました]]></summary>
+        <author>
+            <name>Gizmodo Japan（ギズモード・ジャパン）のデイリーフィード - DailyFeed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AWS CDKのARN文字列に対するreplaceに失敗した話]]></title>
+        <id>https://zenn.dev/yo_yamada/articles/737ce63b8c16a0</id>
+        <link href="https://zenn.dev/yo_yamada/articles/737ce63b8c16a0"/>
+        <updated>2023-11-26T13:13:11.000Z</updated>
+        <summary type="html"><![CDATA[結論
+CDKのデプロイ時に確定するような値（ARNやリソース名）に対してreplaceは実行できない。
+CloudFormationテンプレートが合成されるまでは内部的に${TOKEN[XXXX]}という文字列形式で取り扱われている。
+公式ドキュメント：https://docs.aws.amazon.com/ja_jp/cdk/v2/guide/tokens.html
+
+ 失敗例
+
+ サンプルコード
+.
+├── bin
+│   └── cdk.ts
+├── lib
+│   ├── sampleStack.SampleFunction.ts
+│   └── sampleStack.ts...]]></summary>
+        <author>
+            <name>yohei_yamada</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[インスタンスと変数を不変にする]]></title>
+        <id>https://zenn.dev/sho7650/articles/f80fa37784101c</id>
+        <link href="https://zenn.dev/sho7650/articles/f80fa37784101c"/>
+        <updated>2023-11-26T11:57:33.000Z</updated>
+        <summary type="html"><![CDATA[レビュア陣が豪華な「良いコード/悪いコードで学ぶ設計入門」での学びがとても良いので、TypeScriptで試した内容を記録として残していきます。
+まず「不変」。
+変数とクラスも全て不変にすること。
+実際によく聞く話ではありますけれども、実際にどういったコードで不変にするのか。これを明確にコードで表現しています。分かりやすい。
+TypeScriptで、四則演算するクラスを試しに書いてみました。
+お勉強用なので、あとで何を学習したときのクラスだったか分かるようにImmutableClassとしています。
+methodの引数をImmutableClassにすることで、値の受け渡しの不正を減らせ...]]></summary>
+        <author>
+            <name>しょっさん</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Next.js 14で追加されたPartial Prerenderingを試してみた]]></title>
+        <id>https://zenn.dev/sinhalite/articles/aa343f6d52c8b4</id>
+        <link href="https://zenn.dev/sinhalite/articles/aa343f6d52c8b4"/>
+        <updated>2023-11-26T10:52:10.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+Next.js 14より、Partial Prerenderingが実験的な機能として追加されました。
+https://nextjs.org/blog/next-14
+こちらの機能について、全体像が理解できていなかったので、自分で触って試してみました。
+
+ 注意事項
+
+実験的な機能のため、現在のところ本番環境への利用は推奨されていません。
+クライアントナビゲーション（SPA遷移）には現在未対応で、将来的には対応予定のようです。
+
+
+ 概要
+まずはVercelが提供しているデモを見てみましょう。
+https://www.partialprerendering.com/
+動的な...]]></summary>
+        <author>
+            <name>シンハラ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[決済の達人： ECサイトのサブスク＆シングル購入 [Next.jsハンズオン]]]></title>
+        <id>https://zenn.dev/yuyan/books/9b1ee739615659</id>
+        <link href="https://zenn.dev/yuyan/books/9b1ee739615659"/>
+        <updated>2023-11-26T10:31:47.000Z</updated>
+        <summary type="html"><![CDATA[次の内容を扱います
+・サブスクリプションの登録、更新、削除
+・記事の個別購入
+
+※Stripeのアカウントが必要です]]></summary>
+        <author>
+            <name>yuyan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[個人開発の要件定義で役に立ったツール]]></title>
+        <id>https://zenn.dev/kazukazu3/articles/3f3488b98fa5f4</id>
+        <link href="https://zenn.dev/kazukazu3/articles/3f3488b98fa5f4"/>
+        <updated>2023-11-26T08:42:48.000Z</updated>
+        <summary type="html"><![CDATA[家計簿って続かないんですよね。
+高校からずっと10個くらいのアプリを使ってきましたが、どれも続きませんでした。
+しかし、いつの間にかお金が口座から消えている経験があるので、続けたい思いはあるんです。
+そのため、転職に向けたポートフォリオ作成を兼ねて、続けられる家計簿アプリを開発してみることにし、要件定義から始めました。
+この記事では、要件定義に初挑戦した筆者が役立ったと感じた参考資料を紹介します。
+
+
+バックエンドをドメイン駆動開発で開発することは要件定義前に決めてました。
+そのため要件定義中にバックエンドの設計手法を決めたい人は部分的に参考にしてください。
+アプリはベータ版から始まり多...]]></summary>
+        <author>
+            <name>みなもとり</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[即時実行関数式（IIFE）とは何か？JavaScript で書く基本と応用]]></title>
+        <id>https://zenn.dev/shogo_wada_pro/articles/037e11e7dcb3e9</id>
+        <link href="https://zenn.dev/shogo_wada_pro/articles/037e11e7dcb3e9"/>
+        <updated>2023-11-26T06:41:57.000Z</updated>
+        <summary type="html"><![CDATA[概要
+JavaScript には即時実行関数式（IIFE）[1]という関数式が存在します。
+定義されるとすぐに実行される特徴があり、即時実行関数式を使うと様々な応用ができます。
+今回の記事では JavaScript の即時実行関数式に焦点を当て、その応用例について考えていきたいと思います。
+この記事を読んでわかること
+
+JavaScript の即時実行関数式の使い方
+
+対象読者
+
+JavaScript 初心者
+JavaScript にある程度馴染みのある開発者
+
+前提知識・環境
+
+JavaScript の文法の基本的な知識
+
+
+
+ 即時実行関数式とは何か？
+まずは、即時実行関数式の...]]></summary>
+        <author>
+            <name>Shogo Wada</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【Next.js】バージョン13のAppRouterでサイト内ページ遷移をする方法]]></title>
+        <id>https://zenn.dev/shin_re/articles/c273a50ddf8933</id>
+        <link href="https://zenn.dev/shin_re/articles/c273a50ddf8933"/>
+        <updated>2023-11-26T05:04:39.000Z</updated>
+        <summary type="html"><![CDATA[Next.jsでポートフォリオサイトを作成している際に、AppRouterでサイト内ページ遷移を実装したので、そのやり方をまとめました。
+
+ 開発環境
+Next.jsバージョン：14.0.3
+エディター：Vs Code
+
+ Next.jsのアプリを作成する
+まずはNext.jsのアプリを作成します。オプションでApp Routerを選択してください。
+npx create-next-app@latest
+
+ Next.jsアプリを起動する
+作成したNext.jsのプロジェクトにcdで移動し、npm run devで起動します。
+cd 作成したアプリ名
+npm run dev
+ブラウザでh...]]></summary>
+        <author>
+            <name>シン</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[glep わかんないけど ISUCON に参加してみた]]></title>
+        <id>https://zenn.dev/sumire_sakamoto/articles/eab8dcf0751b2b</id>
+        <link href="https://zenn.dev/sumire_sakamoto/articles/eab8dcf0751b2b"/>
+        <updated>2023-11-26T01:53:04.000Z</updated>
+        <summary type="html"><![CDATA[glep( ^ω^)ﾜｶﾝﾅｲｵ
+
+ ようこそ、ISUCONへ
+ISUCON13に参加してみました。
+メンバーは以下の通り。
+
+インフラ強強エンジニア（新卒1年目 Go書ける）
+インフラ強強エンジニア（新卒1年目 Go書ける）
+ワイ（ボトルネック PHPしかわかんない）
+
+結果、がんばりました( ^ω^)
+
+ はじめに
+なにもしてない、むしろ何もできなかった( ^ω^)ﾋﾞｴｪｯ
+インフラ強強エンジニア2人が必要なツールをすべてセットアップしてくれた
+ワイは873ポート開けた（だけ）
+
+
+ 役割分担
+ワイはGo読めない( ^ω^)
+インフラもわかんない( ^ω^)
+なので、DB担当したン...]]></summary>
+        <author>
+            <name>株式会社スミレサカモト</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[React Native Expoでアプリを作ろう(1)]]></title>
+        <id>https://zenn.dev/tacar/articles/ed33054ba758a1</id>
+        <link href="https://zenn.dev/tacar/articles/ed33054ba758a1"/>
+        <updated>2023-11-26T01:45:57.000Z</updated>
+        <summary type="html"><![CDATA[その1:Expoをインストールして実機で確認
+!
+Expoの設定から実機上(iPhone)でアプリが表示されるところまでを簡潔に説明します。
+
+
+ Expoとは
+Expoは、React Nativeというツールを使って、スマートフォンのアプリを作る時に役立つツールキットです。React Nativeは、JavaScriptというプログラミング言語を使って、iPhoneやAndroidのアプリを作ることができる技術です。
+
+ Expoの特徴
+
+セットアップが簡単：Expoを使用すると、React Nativeの環境設定が簡単になります。多くの複雑な設定を自動的に処理し、開発をすぐに開始...]]></summary>
+        <author>
+            <name>Taka@開発者</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sqids🦑でYouTubeっぽいIDを生成する]]></title>
+        <id>https://zenn.dev/shibata/articles/f4f34f7f23ee7c</id>
+        <link href="https://zenn.dev/shibata/articles/f4f34f7f23ee7c"/>
+        <updated>2023-11-25T23:23:00.000Z</updated>
+        <summary type="html"><![CDATA[概要
+https://sqids.org/
+数字を与えるとYoutubeのような短い一意なランダムIDを生成してくれるOSSです。
+Hashidsというライブラリが生まれ変わりました👶
+https://www.youtube.com/watch?v=WJzSBLCaKc8のWJzSBLCaKc8のようなもの。
+https://www.youtube.com/watch?v=WJzSBLCaKc8
+※動画のチョイス自体には特に意味はありません。
+
+ 言語サポート
+主要なWeb系の言語はサポートされている x ライセンスはMITなので使いやすそうな印象です。
+ソース自体も中身は1~数ファ...]]></summary>
+        <author>
+            <name>Shibata</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2023年11月25日の記事一覧]]></title>
+        <id>http://dailyfeed.jp/feed/103/2023-11-25</id>
+        <link href="http://dailyfeed.jp/feed/103/2023-11-25"/>
+        <updated>2023-11-25T20:00:00.000Z</updated>
+        <summary type="html"><![CDATA[(全 14 件)
+1. ストレスフリーなのに音漏れしにくい「耳スピ」って知ってる？ 今ならAmazonブラックフライデーで最大30%オフだよ 
+2. 2.5万円から買えちゃう！ サクサクOSが最高なChromebookおすすめ5選 #Amazonブラックフライデー 
+3. ノイキャンって2種類ある!? いま買うべき機能別イヤホン5つ 
+4. 【工事不要】地獄のようなコンセントを「3口＋USB充電対応」へアップデートした話 
+5. フライパン、1つしかない方が逆に良い。洗いモノや収納の問題も解決 
+6. 1,990円のシャオミのワイヤレスイヤホン。安いだけかと思ったけど意外と嫌いじゃない 
+7. ぼくらがガチで買ったもの、まとめ記事 #Amazonブラックフライデー 
+8. 漫画風に塗装された『頭文字D』のミニカー。アドレナリンどっぱどぱだわ 
+9. ISSや人工衛星が撮影。「宇宙から見た」地上の絶景10選 
+10. マイボトルに“魔法のパウダー”を入れて放置したら、まるで新品になった 
+11. 冬のデスク仕事に。足先を温めつつEMSで筋トレもできるマット 
+12. 布団乾燥機15分のススメ。布団がポカポカで爆睡できます 
+13. 年賀状や書類スキャンも全部任せて！ランニングコストも大幅削減できるHPのプリンター3種【Amazonブラックフライデー】 
+14. ヘッドホンがついに登場？ Sonosが来年いろいろ新製品を出すみたい]]></summary>
+        <author>
+            <name>Gizmodo Japan（ギズモード・ジャパン）のデイリーフィード - DailyFeed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[nilとnullの違いとは??]]></title>
+        <id>https://zenn.dev/jboy_blog/articles/b47ccfa0629206</id>
+        <link href="https://zenn.dev/jboy_blog/articles/b47ccfa0629206"/>
+        <updated>2023-11-25T16:03:12.000Z</updated>
+        <summary type="html"><![CDATA[nilとは何か?
+Golangのnilという値は、いわゆるnull値のことです。nilは、以下のような値を表します。
+nilは、値が存在しないことを示す特別な値です。しかし、nullとは異なり、nilは型を持つことができます。例えば、*int32型のnilとinterface{}型のnilは、同じnilでも異なる型を持つため、等しくないと判断されます。これは、Go言語が静的型付け言語であるためです。
+例えば、以下のコードでは、*int32型のnilとinterface{}型のnilをキャストしています。
+package main
+
+import (
+    "fmt"
+    "re...]]></summary>
+        <author>
+            <name>Jboy</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PDFの内容を質問するアプリを作る OPENAI APIとLangChainを使って]]></title>
+        <id>https://zenn.dev/arafipro/books/pdf-question-yt</id>
+        <link href="https://zenn.dev/arafipro/books/pdf-question-yt"/>
+        <updated>2023-11-25T14:58:04.000Z</updated>
+        <summary type="html"><![CDATA[2023年11月26日　初版投稿]]></summary>
+        <author>
+            <name>arafipro · HIROKI CHIYODA</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PDFの内容を質問するアプリを作る OPENAI APIとLangChainを使って]]></title>
+        <id>https://zenn.dev/arafipro/books/pdf-question-yt</id>
+        <link href="https://zenn.dev/arafipro/books/pdf-question-yt"/>
+        <updated>2023-11-25T14:58:04.000Z</updated>
+        <summary type="html"><![CDATA[2023年11月26日　初版投稿]]></summary>
+        <author>
+            <name>arafipro · HIROKI CHIYODA</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PDFの内容を質問するアプリを作る OPENAI APIとLangChainを使って]]></title>
+        <id>https://zenn.dev/arafipro/books/pdf-question-yt</id>
+        <link href="https://zenn.dev/arafipro/books/pdf-question-yt"/>
+        <updated>2023-11-25T14:58:04.000Z</updated>
+        <summary type="html"><![CDATA[2023年11月26日　初版投稿]]></summary>
+        <author>
+            <name>arafipro · HIROKI CHIYODA</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Next.js 14 から<Image>の外部ドメイン画像読み込み設定でdomainsの使用が非推奨に]]></title>
+        <id>https://zenn.dev/axoloto210/articles/9dc94b3cdfeae8</id>
+        <link href="https://zenn.dev/axoloto210/articles/9dc94b3cdfeae8"/>
+        <updated>2023-11-25T14:12:57.000Z</updated>
+        <summary type="html"><![CDATA[状況
+NextAuth.jsを使用してGitHubアカウントとGoogleアカウントでログインできる機能を実装していました（AppRouter環境）。ログイン自体は機能するようになったが、<img>タグでログインユーザの画像を表示していたため、next build時に警告が発生。next/imageの<Image>を使って画像を最適化すべき旨のメッセージが表示されていました。
+Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using ...]]></summary>
+        <author>
+            <name>うぱ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Flutterで使えるグラデーション付きのボタンとプログレスサークル]]></title>
+        <id>https://zenn.dev/kou7273/articles/flutter-gradient-components</id>
+        <link href="https://zenn.dev/kou7273/articles/flutter-gradient-components"/>
+        <updated>2023-11-25T12:16:02.000Z</updated>
+        <summary type="html"><![CDATA[グラデーション付きのパーツで画面をリッチにしたい
+Flutterでアプリを開発してる中で、画面をリッチにするためにボタンやプログレスサークルにグラデーションを付けたくなりました。
+当時検索してもなかなか良いサンプルが見つからなかったので、コンポーネントにしたものを検索ワードと一緒に残しておきます。
+
+ フローティングアクションボタン
+フローティングアクションボタンにグラデーションを付けたものです。
+アイコンと文字を両方表示できるようにしています。
+
+ UI
+
+
+ コンポーネント
+
+lib/components/gradient_floating_action_button.dart
+...]]></summary>
+        <author>
+            <name>kou72</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ISUCON13 に初出場して撃沈しました🚣‍♀️]]></title>
+        <id>https://zenn.dev/kuno/articles/369a4754758791</id>
+        <link href="https://zenn.dev/kuno/articles/369a4754758791"/>
+        <updated>2023-11-25T11:00:08.000Z</updated>
+        <summary type="html"><![CDATA[2023/11/25(土) ISUCON13 に初出場した記録です✌️
+最終スコアは9409でした！言語は Go を使いました🐭
+苦悩の記録: https://github.com/kno3a87/isucon13
+
+ チーム紹介
+
+ チーム名
+『ジャワカレー中辛』です！🍛
+なぜならジャワカレー中辛が好きなので
+
+ チームメンバー
+euglena1215: 代表者．ひげ脱毛が苦手
+けの（私）: ISUCON 初出場！最近初めて cherry pick を CLI でやりました
+
+ 目標
+euglena1215: けのを置いてけぼりにしない
+けの: 3回スコアを上げて fail せずフィニ...]]></summary>
+        <author>
+            <name>kuno</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[法令APIハッカソンでLangChain×Next.js(NextUI/TailwindCSS)で高速開発した話]]></title>
+        <id>https://zenn.dev/yuucu/articles/legal-hack-legal-lens</id>
+        <link href="https://zenn.dev/yuucu/articles/legal-hack-legal-lens"/>
+        <updated>2023-11-25T09:32:47.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+デジタル庁主催の法令 API ハッカソンに参加し、
+我々のチームは「Legal Lens」という Web サービスを開発しました。
+https://twitter.com/y_uucu/status/1728278539500470562
+このサービスは、入力された文書に対して、
+AIを用いて法令遵守のスコア付けと関連法令の提示を行います。
+今回は、ハッカソンの話を少しとシステムのアーキテクチャと技術スタックについて紹介します。
+
+ハッカソンの概要などに関しては以下の記事がわかりやすいため、ぜひご覧ください。
+https://note.com/growsic/n/n8f91...]]></summary>
+        <author>
+            <name>yuucu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【Go】Hacker News API x DeepL API x LINE Messaging APIを使ったニュース通知プログラム]]></title>
+        <id>https://zenn.dev/shibata/articles/17512b0e7a1099</id>
+        <link href="https://zenn.dev/shibata/articles/17512b0e7a1099"/>
+        <updated>2023-11-25T08:01:47.000Z</updated>
+        <summary type="html"><![CDATA[背景
+祝日暇だったので作りました。
+良ければ見てやって下さい。
+https://github.com/subkaitaku/hackernews-bot/
+
+
+ 概要
+Hacker News APIは、一気に人気記事は取得できないので、人気順のIDs取得 -> IDsを繰り返しして詳細を取得する必要があります。
+取得したタイトルを翻訳したいので、DeepL API Freeを使ってます。
+1か月に50万文字までですが、個人利用のレベルでは問題ないです。
+上記で作成した元タイトル/翻訳タイトル/URLをLINEメッセージ用に整形して、LINEのMessaging APIのプッシュ...]]></summary>
+        <author>
+            <name>Shibata</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Goの競プロ環境構築【VSCode,devcontainer,acc,oj】]]></title>
+        <id>https://zenn.dev/dotto/articles/a0da43e4fcfb50</id>
+        <link href="https://zenn.dev/dotto/articles/a0da43e4fcfb50"/>
+        <updated>2023-11-25T06:47:25.000Z</updated>
+        <summary type="html"><![CDATA[やりたいこと
+
+競技プログラミング用のGoの環境をdevcontainerで構築したい
+
+atcoder-cliで問題とテストケースを取得したい
+
+online-judge-toolsを使ってテストをしたい
+
+
+ 記事を書こうと思った理由
+
+
+pip3 install online-judge-toolsがerror: externally-managed-environmentエラーでうまくいかなった
+バインドマウントでdevcontainerのフォルダが上書きされて詰まった
+せっかくいろんなサイトで調べて解決できたのでgo + devcontainer + acc + oj + ...]]></summary>
+        <author>
+            <name>dotto</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OpenTelemetryで分散トレーシングを実現する仕組み]]></title>
+        <id>https://zenn.dev/vaxila_labs/articles/12b738d45c104e</id>
+        <link href="https://zenn.dev/vaxila_labs/articles/12b738d45c104e"/>
+        <updated>2023-11-25T05:50:13.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+OpenTelemetryはトレースやメトリクス、ログを作成したり送信したりする仕組みです。
+送信時のプロトコルや各言語用のSDKなど多くの要素で出来ています。
+その中で、この記事ではOpenTelemetryが分散トレーシングを実現する仕組みについて解説します。
+https://opentelemetry.io/
+
+ 分散トレーシングとは
+まず、分散トレーシングについて。
+分散トレーシングは、マイクロサービスのように複数のサーバーにまたがるトレースを追跡・監視する仕組みです。
+分散トレーシングは主にTraceとSpanという要素で出来ています。
+Spanは時刻などの実行内...]]></summary>
+        <author>
+            <name>mrasu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[pdfjs-distで日本語の文字が表示されない問題の解決方法]]></title>
+        <id>https://zenn.dev/k3ntar0/articles/c00a3b5ac39103</id>
+        <link href="https://zenn.dev/k3ntar0/articles/c00a3b5ac39103"/>
+        <updated>2023-11-25T03:31:55.000Z</updated>
+        <summary type="html"><![CDATA[CDNを使う方法
+以下のようにCDNからcMapを読み込むことで表示されるようになります。
+
+pdf-utils.ts
+import * as pdfjs from "pdfjs-dist";
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  "pdfjs-dist/build/pdf.worker.min.js",
+  import.meta.url,
+).toString();
+
+export async function loadPDF(path: string): Promise<pdfjs.PDFPageProxy[]...]]></summary>
+        <author>
+            <name>k3ntar0</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2023年11月24日の記事一覧]]></title>
+        <id>http://dailyfeed.jp/feed/103/2023-11-24</id>
+        <link href="http://dailyfeed.jp/feed/103/2023-11-24"/>
+        <updated>2023-11-24T20:00:00.000Z</updated>
+        <summary type="html"><![CDATA[(全 17 件)
+1. わずか9ｇ。究極にスリムなMacBook Air専用ケース 
+2. 「私たちを信じていますか？」アポロ8号の写真と振り返る、故フランク・ボーマン宇宙飛行士 
+3. こう見えて使い勝手良し。レトロでフューチャーなマウス 
+4. 包丁を1本だけ買うなら｢牛刀｣か｢三徳包丁｣がおすすめです 
+5. シンプルさが魅力｡靴好き編集部員おすすめのミリタリースニーカー4つ 
+6. 汚れが溶けまくる謎の水（110円〜） 
+7. どう、買ってる？ 編集部がガチで買ったもの、お伝えしていきます #Amazonブラックフライデー 
+8. スタンディングワークで作業効率UP。FlexiSpotの電動昇降デスクのポチり時が来てしまった #Amazonブラックフライデー 
+9. オーディオグラスでビジネスと生活はこんなに変わる 
+10. 火星で撮影されたヤバイ画像10 
+11. 家中スマート化してくれるSwitchBot。今年の【Amazonブラックフライデー】で見逃せないアイテム3選 
+12. 無印良品のこの傘。究極にシンプルだからこそノーストレスです 
+13. クリスマスツリーの代わりにこれを置きたい。1台で3役の空気清浄機 
+14. いまさら聞けないルーターの基本と、買い替え時期やいま買うべきは？ 
+15. iPhoneに直接刺せるSSD、PC要らずで写真のバックアップできちゃいました 
+16. スマートホームデバイス導入体験談。家の面倒なアレコレぜんぶ任せてみた 
+17. 仕事にも…？ 飛び出すキーボード搭載Windowsゲーム機]]></summary>
+        <author>
+            <name>Gizmodo Japan（ギズモード・ジャパン）のデイリーフィード - DailyFeed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[パッケージの依存関係を検証するコマンドを自作した]]></title>
+        <id>https://zenn.dev/suzuito/articles/cc84a448a388a4</id>
+        <link href="https://zenn.dev/suzuito/articles/cc84a448a388a4"/>
+        <updated>2023-11-24T14:23:38.000Z</updated>
+        <summary type="html"><![CDATA[概要
+本記事は自作したコマンドの紹介です。
+https://github.com/suzuito/import-checker
+パッケージの依存関係を静的解析するコマンドを作りました。このコマンドの利用者は、あるパッケージが別のパッケージをimportすることを禁止することを意味するルールを定義します。コマンドは、モジュールがルールを満たしているかどうかを検証します。
+ルール定義はYAML形式で記述します。
+
+rules.yaml
+- name: domain層にあるソースコードが、usecase,infra層のパッケージをimportすることを禁止する。
+  srcImportPa...]]></summary>
+        <author>
+            <name>taito</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ジェネリクス型の理解を深めよう！]]></title>
+        <id>https://zenn.dev/jun0723/articles/25ffaabcb0531f</id>
+        <link href="https://zenn.dev/jun0723/articles/25ffaabcb0531f"/>
+        <updated>2023-11-24T13:00:13.000Z</updated>
+        <summary type="html"><![CDATA[typescript 初学者の最初の難関ともいえるジェネリクス型
+type を調べる際コードジャンプしたらTだのUだのKだか
+よくわからない大文字をよく見かけると思います！
+そんなよくわからない大文字達の意味と使い方を
+なるべくわかりやすく解説していきます！
+
+ ジェネリクス型とは
+ジェネリクス型とは型の決定を遅延できるものです。
+ジェネリクス型を用いることにより後から
+型を決定することができるので、
+いろんなケースで対応することができるようになります。
+
+ 実際にコードを書いてみよう
+実際にコードを書いて解説していきます！
+type Foo = {
+  data: string;
+};...]]></summary>
+        <author>
+            <name>じゅん</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ジェネリクス型の理解を深めよう！]]></title>
+        <id>https://zenn.dev/jun0723/articles/25ffaabcb0531f</id>
+        <link href="https://zenn.dev/jun0723/articles/25ffaabcb0531f"/>
+        <updated>2023-11-24T13:00:13.000Z</updated>
+        <summary type="html"><![CDATA[typescript 初学者の最初の難関ともいえるジェネリクス型
+type を調べる際コードジャンプしたらTだのUだのKだか
+よくわからない大文字をよく見かけると思います！
+そんなよくわからない大文字達の意味と使い方を
+なるべくわかりやすく解説していきます！
+
+ ジェネリクス型とは
+ジェネリクス型とは型の決定を遅延できるものです。
+ジェネリクス型を用いることにより後から
+型を決定することができるので、
+いろんなケースで対応することができるようになります。
+
+ 実際にコードを書いてみよう
+実際にコードを書いて解説していきます！
+type Foo = {
+  data: string;
+};...]]></summary>
+        <author>
+            <name>じゅん</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[個人開発アプリでdaisyUIを採用した話]]></title>
+        <id>https://zenn.dev/pe_be_o/articles/maeta-187-articles_203f9f7ca10eaf</id>
+        <link href="https://zenn.dev/pe_be_o/articles/maeta-187-articles_203f9f7ca10eaf"/>
+        <updated>2023-11-24T11:00:00.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+数ヶ月前から個人開発をしています。
+CSS フレームワークで Tailwind CSS, daisyUI を採用したことをまとめてみました！
+
+ 開発環境
+
+Next.js 13.4.19
+TailwindCSS 3.3.3
+daisyUI 3.7.7
+
+
+ フレームワークの調査基準
+今回フレームワークを選定するに辺り、基準として以下を軸にして考えました。
+
+App Router に対応しているか
+CSS を記述するコスト
+UI パーツが提供されているか
+ReactHookForm との相性
+
+以上の 4 点を軸に調査、選定を進めていきました。
+
+ App Router に...]]></summary>
+        <author>
+            <name>Maeta</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Nextjs✖️Tremorを使ったStripe風ダッシュボードの構築]]></title>
+        <id>https://zenn.dev/mino_n/articles/2fa46b6823613a</id>
+        <link href="https://zenn.dev/mino_n/articles/2fa46b6823613a"/>
+        <updated>2023-11-24T10:13:28.000Z</updated>
+        <summary type="html"><![CDATA[シンプルかつ簡単に実装可能なチャート系UIライブラリTremorについて学習したのでアウトプットとして記事にまとめました。
+今回は分析ツールのダッシュボードということで、有名なSaaSツールStripeとGoogle AnalyticsのUIを真似て作ったので、少しでもダッシュボードを実装する方の参考になれば幸いです。
+https://www.tremor.so/
+
+ 🏠 完成図
+
+
+実装工数もUI構築だけなら1~2日程度で実装できます！そこもTermorの強みです！
+※全てサンプルデータです。
+
+ 📝 要件定義
+簡易的に要件をまとめるとこんな感じです。
+
+週別の売上の数値化・視覚化
+売...]]></summary>
+        <author>
+            <name>mino_.</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA["You must enter full path with drive letter"と円マーク(￥)・バックスラッシュ(＼)問題]]></title>
+        <id>https://zenn.dev/yamap_web/articles/067503c470e7c3</id>
+        <link href="https://zenn.dev/yamap_web/articles/067503c470e7c3"/>
+        <updated>2023-11-24T08:51:49.000Z</updated>
+        <summary type="html"><![CDATA[まえがき
+Windowsで、インストーラー（nvm-setup.exeとか）を実行してる最中、パスを入力したらこんなエラーに出会ったあなたへこの記事を贈る。
+!
+You must enter full path with drive letter, for example C:\APP or a UNC path in the form: \server\share.
+
+​
+ちなみに、検索エンジン(Google)と生成系AI(ChatGPT)を使った問題解決の手引書にもなるから最後まで読んで欲しいな～
+
+↑ イラスト：DALL-E 3
+​
+
+ エラー "You must enter ...]]></summary>
+        <author>
+            <name>やまぴー / YAMAGUCHI Tomohisa</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【完全案件特化】JavaScriptをどこまで学ぶべきかの学習ロードマップ ＋ 頻出UIの作り方8選【改訂版】 - セカヤサBooks]]></title>
+        <id>https://zenn.dev/hideki_climax/books/0e124eb17a67b3</id>
+        <link href="https://zenn.dev/hideki_climax/books/0e124eb17a67b3"/>
+        <updated>2023-11-24T08:14:34.000Z</updated>
+        <summary type="html"><![CDATA[【2024年へ向けた最新版！】
+【ブラックフライデー！2023/11月末まで25%OFF！】
+
+・HTML/CSSの次は何を勉強すれば良いの？
+・案件が取れない
+・未経験だけど転職を考えている
+・フリーランスで実績を積みたい
+
+そんなあなたの悩み、全て解決します。
+JavaScriptをどこまで深めれば案件をこなせるのか。
+
+フリーランスで7年間エンジニアをしてきた僕が思う
+「Web制作領域においてJavaScriptで何ができれば良いか」
+をまとめました。
+
+そして、基本ロードマップで最も重要な「圧倒的に頻出のUIパーツ8つの作り方」を徹底解説しました。実際フリーランス7年の活動の中、紹介しているパーツで単価数百万円を超えるサイトの案件も問題なく対応してきました。
+
+初心者に分かりやすいよう世界一丁寧に書いたので、かなり挫折しにくいです。
+かつ余計なものを一切含めず、完全に案件に即した内容です。
+さらに学習のための経済的なコストも最小に収まるように設計しています。最短で案件をこなせるようになりたいなら絶対におすすめの一冊。
+
+さらに発展ロードマップではWeb制作領域を超えてWeb開発領域へ進む場合も徹底解説。最速での案件獲得から、実績を積んで転職やフリーランスになるまで長く使える一冊です。]]></summary>
+        <author>
+            <name>hideki_climax</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[Firebase v9] [Nuxt3] [LIFF]LINE アカウントでカスタム認証]]></title>
+        <id>https://zenn.dev/onigi/articles/f73e40f302de3e</id>
+        <link href="https://zenn.dev/onigi/articles/f73e40f302de3e"/>
+        <updated>2023-11-24T06:51:23.000Z</updated>
+        <summary type="html"><![CDATA[⓪ログインしているユーザーを取得する
+現在ログインしているユーザーの情報を取得する方法は２つある。
+
+ 前提
+まずは Firebase アプリを initializeApp() で初期化する。
+  const config = useRuntimeConfig()
+  const firebaseConfig = {
+    apiKey: config.public.apiKey,
+    authDomain: config.public.authDomain,
+    projectId: config.public.projectId,
+    appId: config.p...]]></summary>
+        <author>
+            <name>おにぎ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Amplify Gen2という新しい開発体験]]></title>
+        <id>https://zenn.dev/ototrip/articles/tech-nextjs-amplify-1</id>
+        <link href="https://zenn.dev/ototrip/articles/tech-nextjs-amplify-1"/>
+        <updated>2023-11-24T06:00:55.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+こんにちは！
+犬専用の音楽アプリ オトとりっぷでエンジニアしています、足立です！
+https://www.oto-trip.com/
+先週からの AWS Amplify launches ウィーク楽しいですね！
+さまざまな発表がありましたが、中でも注目度が高いのが Amplify Gen2 ではないでしょうか。
+この記事では、Amplify Gen2 という新しい開発体験を検証してみようと思います。
+従来の Amplify 開発体験と何が違うの？という疑問を解決したい方の参考になれば幸いです。
+
+ 目次
+
+Amplify Gen2 とは？
+サンプルを動かしてみる
+個人的 Q...]]></summary>
+        <author>
+            <name>【公式】オトとりっぷ - 犬専用の音楽アプリ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Amplify Gen2という新しい開発体験]]></title>
+        <id>https://zenn.dev/ototrip/articles/tech-nextjs-amplify-1</id>
+        <link href="https://zenn.dev/ototrip/articles/tech-nextjs-amplify-1"/>
+        <updated>2023-11-24T06:00:55.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+こんにちは！
+犬専用の音楽アプリ オトとりっぷでエンジニアしています、足立です！
+https://www.oto-trip.com/
+先週からの AWS Amplify launches ウィーク楽しいですね！
+さまざまな発表がありましたが、中でも注目度が高いのが Amplify Gen2 ではないでしょうか。
+この記事では、Amplify Gen2 という新しい開発体験を検証してみようと思います。
+従来の Amplify 開発体験と何が違うの？という疑問を解決したい方の参考になれば幸いです。
+
+ 目次
+
+Amplify Gen2 とは？
+サンプルを動かしてみる
+個人的 Q...]]></summary>
+        <author>
+            <name>【公式】オトとりっぷ - 犬専用の音楽アプリ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NextAuthのセッションをサーバーサイドで管理してみる]]></title>
+        <id>https://zenn.dev/msy/articles/08f79b0d817a90</id>
+        <link href="https://zenn.dev/msy/articles/08f79b0d817a90"/>
+        <updated>2023-11-24T05:35:15.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+かなり久しぶりに記事を書きます。
+自分は今とあるC向けのサービス開発に従事しており、そのサービスでは認証にNextAuthを使用しております。
+今回の開発では、 JWTトークンをcookieで保持してセッション管理を行っており、Next.jsのRSCも使用していることからサーバーサイドでセッションの管理(ログイン・ログアウト)を管理したいという要件があったため、このやり方を紹介したいと思います。
+!
+サーバーサイドとはいえ、今回のやり方ではcookieを直接操作するのでセキュリティ的には微妙かなと思ってます。もし良さそうな方法があればご享受いただけますと助かります。
+
+
+ ...]]></summary>
+        <author>
+            <name>msy.</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【Next.js】middlewareでリダイレクト処理を行いつつ、動的OGPを設定する際にハマった話]]></title>
+        <id>https://zenn.dev/devtech_united/articles/9ed469e6be715f</id>
+        <link href="https://zenn.dev/devtech_united/articles/9ed469e6be715f"/>
+        <updated>2023-11-24T05:27:55.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+現在エンジニアをしながらサービス開発をして起業した橋田です。
+現在同人誌のフリマサイトを開発中です。
+https://twitter.com/dall_develop
+みなさん、Next.jsを使っていますか？
+Next14がリリースされ、日々フレームワークの進化が早い時代になっていると感じます。
+App Routerではサーバーサイドとフロントエンドのコードを書けるので、この教会がなくなりつつあるように感じます。
+サーバーサイドの知見に詳しくない私ですが、動的OGPの設定に苦しんだのでここに記録を残しておきます。
+
+ metadataを設定したにもかかわらず設定が反映され...]]></summary>
+        <author>
+            <name>橋田至</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【Next.js】middlewareでリダイレクト処理を行いつつ、動的OGPを設定する際にハマった話]]></title>
+        <id>https://zenn.dev/devtech_united/articles/9ed469e6be715f</id>
+        <link href="https://zenn.dev/devtech_united/articles/9ed469e6be715f"/>
+        <updated>2023-11-24T05:27:55.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+現在エンジニアをしながらサービス開発をして起業した橋田です。
+現在同人誌のフリマサイトを開発中です。
+https://twitter.com/dall_develop
+みなさん、Next.jsを使っていますか？
+Next14がリリースされ、日々フレームワークの進化が早い時代になっていると感じます。
+App Routerではサーバーサイドとフロントエンドのコードを書けるので、この教会がなくなりつつあるように感じます。
+サーバーサイドの知見に詳しくない私ですが、動的OGPの設定に苦しんだのでここに記録を残しておきます。
+
+ metadataを設定したにもかかわらず設定が反映され...]]></summary>
+        <author>
+            <name>橋田至</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[データ整形の達人になりたい]]></title>
+        <id>https://zenn.dev/steelyard/articles/160d295b536c09</id>
+        <link href="https://zenn.dev/steelyard/articles/160d295b536c09"/>
+        <updated>2023-11-24T05:25:59.000Z</updated>
+        <summary type="html"><![CDATA[JavaScript/Typescriptを使用していると頻繁に必要になるデータの整形作業。
+配列やObjectに対するソートや抽出が代表的なものとして挙げられると思います。
+
+ 背景
+筆者はTypescript環境でReactを用いてフロントエンドを構築する作業を主な生業としていますが、おおよそ下記のようなアプローチをしています。
+
+Routerによってページコンポーネントを実行
+ページコンポーネントでデータをフェッチ
+フェッチしたデータをロジックをまとめたカスタムフックに投入
+カスタムフックは表示用コンポーネントが自然に扱えるように整理・整形された値を返す
+無理のないシンプルなpro...]]></summary>
+        <author>
+            <name>steelyard</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Reactのさまざまなデータフェッチ方法を比較して理解して正しく使用する - SSR + App Router Cache編]]></title>
+        <id>https://zenn.dev/cybozu_frontend/articles/21a924a294d869</id>
+        <link href="https://zenn.dev/cybozu_frontend/articles/21a924a294d869"/>
+        <updated>2023-11-24T04:34:41.000Z</updated>
+        <summary type="html"><![CDATA[「Reactのさまざまなデータフェッチ方法を比較して理解して正しく使用する」シリーズの3記事目、最終記事です🌟
+今回は「 Next.js Pages Router(SSR)でのデータフェッチとApp Routerでのデータフェッチ」について理解を深めていきます。
+また、最後の全体の結果で「Reactのさまざまなデータフェッチ」シリーズの総括をしていきます。
+
+イントロ+useEffectを用いたデータフェッチ
+SWR・TanStack Queryを用いたデータフェッチ
+Pages Router(SSR)でのデータフェッチ+App Routerでのデータフェッチ+まとめ ← 👀この記事
+
+...]]></summary>
+        <author>
+            <name>saku</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Reactのさまざまなデータフェッチ方法を比較して理解して正しく使用する - SSR + App Router Cache編]]></title>
+        <id>https://zenn.dev/cybozu_frontend/articles/21a924a294d869</id>
+        <link href="https://zenn.dev/cybozu_frontend/articles/21a924a294d869"/>
+        <updated>2023-11-24T04:34:41.000Z</updated>
+        <summary type="html"><![CDATA[「Reactのさまざまなデータフェッチ方法を比較して理解して正しく使用する」シリーズの3記事目、最終記事です🌟
+今回は「 Next.js Pages Router(SSR)でのデータフェッチとApp Routerでのデータフェッチ」について理解を深めていきます。
+また、最後の全体の結果で「Reactのさまざまなデータフェッチ」シリーズの総括をしていきます。
+
+イントロ+useEffectを用いたデータフェッチ
+SWR・TanStack Queryを用いたデータフェッチ
+Pages Router(SSR)でのデータフェッチ+App Routerでのデータフェッチ+まとめ ← 👀この記事
+
+...]]></summary>
+        <author>
+            <name>saku</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NextjsのAppRouterとNextAuthでSessionProviderを使うときのメモ]]></title>
+        <id>https://zenn.dev/shimotani/articles/21743d015fc5e6</id>
+        <link href="https://zenn.dev/shimotani/articles/21743d015fc5e6"/>
+        <updated>2023-11-24T04:15:05.000Z</updated>
+        <summary type="html"><![CDATA[環境:next "13.4.19", next-auth: "4.23.1", next-auth:seesion:strategu:"jwt", next-auth:providers:CredentialsProvider
+
+NextjsのApp RouterでNextAuth.jsを使っていて、useSessionを使いたいときには以下のようにSessionProviderでラップするみたいですが、
+
+layout.tsx
+import { NextAuthProvider } from "./lib/Providers";
+/// 省略///
+
+export default a...]]></summary>
+        <author>
+            <name>shimotani</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[リクエストパラメーターをzodでバリデーションするときのTips]]></title>
+        <id>https://zenn.dev/forcia_tech/articles/20231124_zod_coerce_hatano</id>
+        <link href="https://zenn.dev/forcia_tech/articles/20231124_zod_coerce_hatano"/>
+        <updated>2023-11-24T04:00:00.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは、エンジニアの籏野です。
+近年のフォルシアでの API 開発では Web フレームワークとしてExpressを利用することが多くあります。
+また、開発言語には TypeScript を採用しており、型に守られた安全な開発を目指しています。
+型安全な API 開発を進める上では、リクエストされたパラメーターをバリデーションし適切な型付けを担保することが必要になってきます。
+このために最近はzodを使う機会が増えてきたのですが、Express と zod を組み合わせて使う際に少々ハマった点があったので、その解決方法を紹介します。
+もしかしたら Express 以外の Web フレ...]]></summary>
+        <author>
+            <name>FORCIA Tech Blog 運営チーム</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[macOS：SonomaでGolangのデバッグツールdelveがうまく動作しなかった件について]]></title>
+        <id>https://zenn.dev/yuji_momotani/articles/c2fd40d3ec03fb</id>
+        <link href="https://zenn.dev/yuji_momotani/articles/c2fd40d3ec03fb"/>
+        <updated>2023-11-24T01:37:19.000Z</updated>
+        <summary type="html"><![CDATA[概要
+MacOS を Sonoma にアップデートしたら Golang のデバッグツール delve がうまく動作しなくなったのですが、解決できたので、記事に残しておきます！
+同じ問題にぶつかった方の少しでもお役に立てればと...🙏
+
+ エラー内容
+Unable to retrieve goroutines: write tcp 127.0.0.1:56960->127.0.0.1:56961: write: broken pipe
+Detaching and terminating target process
+
+ 結論
+delve の issue に同様の問題を抱えた方の投...]]></summary>
+        <author>
+            <name>Yuji-Momotani</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Auth.js(旧NextAuth.js)のJWTにアクセストークンを含めるのは安全か調べてみた]]></title>
+        <id>https://zenn.dev/yuto_m/articles/e451c47a5bd28e</id>
+        <link href="https://zenn.dev/yuto_m/articles/e451c47a5bd28e"/>
+        <updated>2023-11-24T00:30:00.000Z</updated>
+        <summary type="html"><![CDATA[気になったこと
+Auth.js(旧NextAuth.js)のOAuth tutorialをやってみた際に、githubのアクセストークンをフロントで扱えるようにすることができるのか気になったので調査してみました。
+その際のやり方と安全性のメモです。
+環境は下記です。
+
+next-auth: 4.24.5
+Next.js: 14.0.3(page router)
+
+
+ やりたかったこと
+sessionにアクセストークンを含めて、フロントからgithub apiを叩きにいこうとしてました。
+この時にアクセストークンをフロントで参照できるようにすると危険なんじゃないかと思って安全性を調べて...]]></summary>
+        <author>
+            <name>yuto-m</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2023年11月23日の記事一覧]]></title>
+        <id>http://dailyfeed.jp/feed/103/2023-11-23</id>
+        <link href="http://dailyfeed.jp/feed/103/2023-11-23"/>
+        <updated>2023-11-23T20:00:00.000Z</updated>
+        <summary type="html"><![CDATA[(全 10 件)
+1. マーナの「極 冷凍ごはん容器」を使ったら冷凍ごはんと思えないおいしさでした 
+2. 作業中のBGMに。骨伝導イヤホンは自分だけの“専用スピーカー”でした 
+3. Apple Watch SE/7/8を徹底比較。あなたが買うべきなのはコレだ 
+4. シャツが視界から消える。「ワンタッチワイシャツハンガー」驚きの進化を見てよ 
+5. 炭酸OKな水筒 vs クーラーバッグ。3時間後もシュワシュワ＆冷え冷えなのはどっちなんだい!? 
+6. 空港の荷物検査でスーツケースの中から「猫」 
+7. OpenAIの解任劇、スピード感 or 安全性どっちが優先かの対立が原因 
+8. ノートPC、デスクトップPCを長生きさせるためのメンテナンス方法 
+9. 秋冬シューズの名作SUBUは、「履くだけ」で冷えや運動不足から解放してくれるよ 
+10. Apple Vision Proのチュートリアル動画、未来感がすごい]]></summary>
+        <author>
+            <name>Gizmodo Japan（ギズモード・ジャパン）のデイリーフィード - DailyFeed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Let's Kotlin! Kotlin Koansを解いて学ぶ基礎知識:  (Introduction5問)]]></title>
+        <id>https://zenn.dev/airiswim/articles/afa4f010f5705b</id>
+        <link href="https://zenn.dev/airiswim/articles/afa4f010f5705b"/>
+        <updated>2023-11-23T15:59:58.000Z</updated>
+        <summary type="html"><![CDATA[Kotlin Koans
+
+kotlin公式の文法問題！ "Kolin Koans"を 解いて学ぼう！ということで
+今回はこれの問題解説と、参考リンクをともに書いていきます。
+自分の勉強のために自分で書いてましたが、
+載せることで誰かの勉強の助けにもなればと思います(^^)
+今回はIntroductionの5問を、解説とともに書いていきますが、
+割と長いので、以下の項目押すと飛べるのでそれで興味の範囲見てもいいかと思います！
+そして他問題はまた次の記事で書きます！
+
+
+問題1： Simple Functions
+問題2: Named arguments
+問題3: Default ar...]]></summary>
+        <author>
+            <name>Airichan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[🌟 Solana バリデーターマスターガイド: 設定、保守、移転から収益のモニタリングまでの完全手引き 🚀]]></title>
+        <id>https://zenn.dev/fumisouls/books/971a5ba1212303</id>
+        <link href="https://zenn.dev/fumisouls/books/971a5ba1212303"/>
+        <updated>2023-11-23T12:56:37.000Z</updated>
+        <summary type="html"><![CDATA[本書では、Solana ネットワークの重要な構成要素であるバリデーターの立ち上げ、管理、更新に必要な全てを網羅した実践的なハンズオンチュートリアルです。
+Solana バリデーターの設定から起動、更新に至るまでの詳細なステップを、初心者から上級者まで分かりやすく解説しています。
+
+特に、本書では「solv」という革新的なオープンソースツールの使用に注目しています。このツールは、従来の複雑な設定プロセスを大幅に簡素化し、効率的かつ迅速にSolana バリデーターの設定と運用を行うことを可能にします。シークレットキーの安全なバックアップ、交換、リスタート方法から、新規サーバーでのノードの再構築に至るまで、本書はあなたがSolana バリデーターとして成功するための確かな道しるべとなるでしょう。
+
+このガイドを手に、Solana ネットワークの一員として、ブロックチェーンの未来を形作る旅へと踏み出しましょう！]]></summary>
+        <author>
+            <name>FumiSOULs</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【Webフロント】マイクで録音した Blob データを、form アクション経由で Web サーバーに送信する]]></title>
+        <id>https://zenn.dev/zudah228/articles/c57cc3c9a7c696</id>
+        <link href="https://zenn.dev/zudah228/articles/c57cc3c9a7c696"/>
+        <updated>2023-11-23T10:35:59.000Z</updated>
+        <summary type="html"><![CDATA[概要
+
+ 背景
+Web で、OpenAI の API の Speech-to-Text を叩きたかったのですが、file の渡し方が公式ドキュメントで python と curl しかなく、情報がどこにもなくて少し苦労したので、記事に残します。
+フロントのフレームワーク以外のパッケージは使いません。
+
+ この記事のゴール
+
+ブラウザのマイクから音声を抽出
+音声ファイルを Blob に変換
+form アクションで、Blob を Web サーバーに送信
+
+
+ ソースコード
+Svelte 製です。
+デモアプリなので、console.log 周りが散りばめられてますが、気になさらず。
+htt...]]></summary>
+        <author>
+            <name>づだ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Goでゼロから始めるDeep Learning]]></title>
+        <id>https://zenn.dev/hamao/books/07c45bfaf0ccc3</id>
+        <link href="https://zenn.dev/hamao/books/07c45bfaf0ccc3"/>
+        <updated>2023-11-23T08:42:59.000Z</updated>
+        <summary type="html"><![CDATA[Goで"ゼロから作るDeep Leaning"を実装して, そのメモをまとめていきます
+
+学んだことや詰まった点, その解決法などを書いていこうと思います]]></summary>
+        <author>
+            <name>hamao</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2023年11月22日の記事一覧]]></title>
+        <id>http://dailyfeed.jp/feed/103/2023-11-22</id>
+        <link href="http://dailyfeed.jp/feed/103/2023-11-22"/>
+        <updated>2023-11-22T20:00:00.000Z</updated>
+        <summary type="html"><![CDATA[(全 21 件)
+1. アマゾンで「今いちばん安い炭酸水」はコレ【更新中】 
+2. 全体がグラデーションに光る｡エレコムのゲーミングヘッドセット 
+3. 最近Ankerの充電器とかで「ガリウム」を使っているのをよく見るけど、あれって何が違うの？ 
+4. アップル認証を受けたMagSafe車載充電器が、高速充電で最高でした 
+5. 渋谷駅から徒歩1分。JBLの音と光を浴びるイベントが開催中 #JBLMEGABOX 
+6. 【DJ4コマ・第26話】ワシの推し、紅白出場ならず...無念の巻っ！うじたなおき 
+7. アウトドアベンチに“ふわもこ”カバーをつけたら、おうちも外も快適に 
+8. マグネットでぴたり。iPhoneを買ったら一緒に手に入れたい周辺機器5選 
+9. ゲームもクリエイティブもコスパ良く。「Lenovo LOQシリーズ」なら最新世代CPU&GPUに手が届く 
+10. どう、買ってる？ 編集部がガチで買ったもの、お伝えしていきます #Amazonブラックフライデー 
+11. サム・アルトマン氏、OpenAIに電撃復帰。社員の多くは解任に反対だった 
+12. 省スペース・スタイリッシュ・高性能。ロジクールのミニサイズワイヤレスキーボードで仕事の効率がUPしそう 【Amazonブラックフライデー】 
+13. 日本の住環境を隅々まで掃除するために誕生。小型・高性能な「SwitchBotロボット掃除機K10+」 
+14. サム・アルトマンがOpenAIに復帰｡マイクロソフトへの入社はどうなる？ 
+15. 買い替えるより長く使いたい｡飽きてきたトートバッグが染色で生き返った 
+16. 3COINSの逸品は「置くだけ」で収納スペースが2倍に。家中どこでも使える 
+17. Anker史上最高傑作。完全ワイヤレスイヤホン「Soundcore Liberty 4」はAirPods Proキラーだ 
+18. 外も自宅もコレ1台で。iPhoneにピタリな薄型モバイルバッテリー 
+19. ギズモードとIGNどちらが勝つかを予想してプレゼントをゲット！ Lenovo Legion Rumble Xmas 
+20. 置いて繋ぐだけでニンテンドースイッチの録画・配信ができるドック 
+21. コスパ最強無印iPad、買い時がやってきました #ブラックフライデー]]></summary>
+        <author>
+            <name>Gizmodo Japan（ギズモード・ジャパン）のデイリーフィード - DailyFeed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[大企業のエンジニアにこそ、個人開発を経験してほしい。]]></title>
+        <id>https://zenn.dev/zozooizozzoizio/articles/a461e5951bb99a</id>
+        <link href="https://zenn.dev/zozooizozzoizio/articles/a461e5951bb99a"/>
+        <updated>2023-11-22T14:55:56.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+筆者は従業員数数万人の、いわゆる大企業でソフトウェアエンジニアとして働きながら、個人開発を行っています。筆者が大企業勤務と個人開発を通じて「大企業のエンジニアにこそ、個人開発を経験してほしい。」と思った話を投稿します。
+
+ 概要
+
+役割分担が進んだ大企業ではできない経験ができる
+大企業の安定した収入を得ながら、事業をはじめることができる
+個人開発のスピード感が、とにかく快適
+大企業も潰れる時代に、社外に誇れる実績を作ろう
+
+
+ 1. 役割分担が進んだ大企業ではできない経験ができる
+筆者が勤める会社では、企画は企画部署、デザインはデザイン部署、開発は開発部署が行い、販売は子会...]]></summary>
+        <author>
+            <name>ぞず子</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ebitengineを使ったコードをGitHub Actionsでテストする際の依存パッケージ]]></title>
+        <id>https://zenn.dev/aethiopicuschan/articles/b1bfe458d369d5</id>
+        <link href="https://zenn.dev/aethiopicuschan/articles/b1bfe458d369d5"/>
+        <updated>2023-11-22T03:45:19.000Z</updated>
+        <summary type="html"><![CDATA[Ebitengine、みなさま使っていますでしょうか？
+今回は私がEbitengineを使う中で遭遇したCIにおけるテストの問題について解決策を書いていこうと思います。
+さっそくですが、だいたいの人はubuntu-latestを用いて以下のような定義をすると思います。
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+     ...]]></summary>
+        <author>
+            <name>Chan Aethiopicus</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[人類が満足する WordPress はもう一度作れるのか]]></title>
+        <id>https://zenn.dev/collections/articles/7b281a696d52ab</id>
+        <link href="https://zenn.dev/collections/articles/7b281a696d52ab"/>
+        <updated>2023-11-22T00:42:04.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは zane です。
+この業界で知らない人はいない WordPress は、全ウェブサイトの40%で使われており、誕生して20年経つ今も、ブログやホームページを作る選択肢として依然トップに君臨しています。しかし、エンジニアの目線から見ると、システムとして多くの課題が挙げられます。
+僕は、今 Collections というオープンソースのヘッドレス CMS を提供しています。WordPress に感じた問題から、いまだ席巻する CMS 領域を再構築したい思いに駆られて、この1年間開発してきた経緯をまとめてみました。
+
+ 魔改造という闇
+WordPress は、管理画面からソフトウェ...]]></summary>
+        <author>
+            <name>zane</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2023年11月21日の記事一覧]]></title>
+        <id>http://dailyfeed.jp/feed/103/2023-11-21</id>
+        <link href="http://dailyfeed.jp/feed/103/2023-11-21"/>
+        <updated>2023-11-21T20:00:00.000Z</updated>
+        <summary type="html"><![CDATA[(全 15 件)
+1. Apple Watchとくらべても「イイ」。約1万円のNothing cmfウォッチ 
+2. 蒸気を抑え、倒しても湯漏れしない電気ケトル。お手入れも簡単 
+3. 生ドラムでもエレドラでもどっちもいける二刀流ドラムキット 
+4. Amazonで安心してお買い物するための攻略法【ブラックフライデーこのあと0:00から】 
+5. 壁コンセントにカバーが付くと、見た目がこんなにスマートに 
+6. Twitterよりいいじゃん。移行も自由なSNS、Blueskyに注目 
+7. iPhone 16 Proが大きくなるかもしれない。カメラが理由で 
+8. 使い方は無限大。かざすとスマホの機能を起動するNFCタグシール 
+9. ボタンひとつで淹れられる「UCCの新作コーヒーメーカー」が正解かも 
+10. 廉価版スマホ向けのSoC「Snapdragon 7 Gen 3」発表 
+11. Apple Watchのスワイプによる文字盤切り替え、まもなく復活するって 
+12. M3登場でもM2のMacを安心して選んでいい理由 
+13. FlexiSpotユーザーの僕にとって最新モデルの進化はまぶしすぎた 
+14. ちょっぴりうれしい。iPhone 16はバッテリー容量がほんのり増えそう 
+15. テスラのCybertruck、初回出荷は10台だけって少なすぎるでしょ]]></summary>
+        <author>
+            <name>Gizmodo Japan（ギズモード・ジャパン）のデイリーフィード - DailyFeed</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GORMv2で外部キーが生成されない]]></title>
+        <id>https://zenn.dev/rrraaa/articles/470e85524019ad</id>
+        <link href="https://zenn.dev/rrraaa/articles/470e85524019ad"/>
+        <updated>2023-11-21T09:27:54.000Z</updated>
+        <summary type="html"><![CDATA[原因は「所有側」で定義する必要があったこと。
+外部キーを作成するのは「所有される側」だがGoの構造体定義上は「所有側」で定義する。
+type User struct {
+	UserID string
+	// foreignKeyにはCreditCardで外部キーを作る列、referencesにはUserの参照列を指定する
+	CreditCards []CreditCard `gorm:"foreignKey:UserID;references:UserID"`
+}
+
+type CreditCard struct {
+	CreditCardID string
+	UserID       s...]]></summary>
+        <author>
+            <name>れあ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[初学者向け]Goに触れてみる]]></title>
+        <id>https://zenn.dev/takaha4k/articles/0937724bd678b5</id>
+        <link href="https://zenn.dev/takaha4k/articles/0937724bd678b5"/>
+        <updated>2023-11-21T08:05:45.000Z</updated>
+        <summary type="html"><![CDATA[想定読者
+
+Go言語を触ったこと無い方
+
+
+ はじめに
+Go言語をご存知でしょうか。
+公式のトップページから説明を拝借します。
+
+Build simple, secure, scalable systems with Go
+An open-source programming language supported by Google
+Easy to learn and great for teams
+Built-in concurrency and a robust standard library
+Large ecosystem of partners, communities, ...]]></summary>
+        <author>
+            <name>takaha4k</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Next.jsのApp Router & RSCでApollo Clientを使う]]></title>
+        <id>https://zenn.dev/hisamitsu/articles/01b0f0cbf5ab1d</id>
+        <link href="https://zenn.dev/hisamitsu/articles/01b0f0cbf5ab1d"/>
+        <updated>2023-11-21T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+これまでRESTのバックエンド＆インフラを主に担当していて、Next.jsもGraphQLも詳しくないのですが、GraphQLを学ぶついでに、最近よく聞くApp RouterとRSC（React Server Components）も学べたら一石二鳥じゃん！ということで触ってみたのでその記録を残します。
+
+ 前提
+GraphQLのバックエンドは構築済みとします。
+私はGoのgqlgenというライブラリを使って構築しました。
+リクエストとレスポンスは以下のような形式になっています（リクエストが左、レスポンスが右）。
+
+今回のフロントのコードも含めて、ソースコードは以下に置いて...]]></summary>
+        <author>
+            <name>ひさみつ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[WSL2でのGo言語環境構築：Ubuntu 22.04.1 LTSへのGoインストールガイド]]></title>
+        <id>https://zenn.dev/ts_soma/articles/eb064709e1c280</id>
+        <link href="https://zenn.dev/ts_soma/articles/eb064709e1c280"/>
+        <updated>2023-11-21T07:03:35.000Z</updated>
+        <summary type="html"><![CDATA[こんにちは、Somaです。今回は、WSL2を使用してUbuntu 22.04.1 LTSにGo言語をインストールする方法をご紹介します。
+
+ きっかけ
+Go言語の学習を始める際、公式のチュートリアルに従って進めようとしましたが、Windows上でZIPファイルをダウンロードし、Linuxに移す作業が面倒でした。そこで、もっと簡単な方法を探し、この手順にたどり着きました。
+
+ Goのインストール手順
+
+ ステップ1：ターミナル(Ubuntu)を開く
+ターミナルからUbuntuを直接開くか、コマンドプロンプトまたはPowerShell上でwslコマンドを入力してください。
+
+ ステップ2: ...]]></summary>
+        <author>
+            <name>Soma</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【Go】ポインタについて語るときに僕の語ること]]></title>
+        <id>https://zenn.dev/nekoninaritai/articles/1e1bed244a5728</id>
+        <link href="https://zenn.dev/nekoninaritai/articles/1e1bed244a5728"/>
+        <updated>2023-11-20T14:48:22.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+
+ポインタとは、メモリアドレスを指し示す特殊な変数のことです。
+多くの場合、この概念は初学者にとって抽象的で理解が難しいものです。
+この記事では、ポインタを使わないと困る具体的なケースとその解決法を通じて、ポインタの理解を深めていきます
+
+
+ なぜ彼は歳を取らないのか(ポインタを使用しない場合の例)
+
+まず、人間を定義します
+
+
+type Person struct {
+    Name string
+    Age  int
+}
+
+
+人間に名前と年齢を与えて、誕生日を迎えさせます
+
+// ポインタを使用しないバージョン
+func birthday(p Person) {
+...]]></summary>
+        <author>
+            <name>svun</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GoのwaitGroupとchannelについて整理する]]></title>
+        <id>https://zenn.dev/kyoheiu/articles/b716964924298b</id>
+        <link href="https://zenn.dev/kyoheiu/articles/b716964924298b"/>
+        <updated>2023-11-20T07:03:16.000Z</updated>
+        <summary type="html"><![CDATA[確実にgoroutineを終わらせるためにブロックする方法として、WaitGroupとchannelを整理する。
+
+ 何も使用しないパターン
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func do() {
+	time.Sleep(2 * time.Second)
+	fmt.Println("Woke up.")
+}
+
+func main() {
+	fmt.Println("Starting goroutine.")
+	go do()
+	fmt.Println("Finished.")
+}
+Starting goroutine.
+Finished....]]></summary>
+        <author>
+            <name>kyoheiu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DDDの輪読会したら開発がちょっぴり良くなった話]]></title>
+        <id>https://zenn.dev/castingone_dev/articles/a45f1fe14fc685</id>
+        <link href="https://zenn.dev/castingone_dev/articles/a45f1fe14fc685"/>
+        <updated>2023-11-20T04:51:22.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+こんにちは！株式会社CastingONEでHR領域のSaaS開発を行っている @hiroaki です。
+最近サウナ用のメガネを買いました。コンタクトだと目が乾いてしまうので、メガネをかけてサウナに入るというのが最近のマイブームです。
+今回は社内でドメイン駆動設計（DDD）に関する本の輪読会を行った時の話です。
+背景から輪読会の進め方、そして実開発への影響をサクッとまとめましたので、最後まで読んでいただけると嬉しいです！
+
+ 輪読会の背景
+私たちのチームでは、バックエンドのアーキテクチャの設計にクリーンアーキテクチャを採用しています。これにより、ビジネスロジックをドメインレイ...]]></summary>
+        <author>
+            <name>hiroaki</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[React Nativeが多くのクロスプラットフォームアプリの開発について適しているのではないか、と言う仮説]]></title>
+        <id>https://zenn.dev/kawabatalemon/articles/3de90490a743a1</id>
+        <link href="https://zenn.dev/kawabatalemon/articles/3de90490a743a1"/>
+        <updated>2023-11-19T14:25:20.000Z</updated>
+        <summary type="html"><![CDATA[React Nativeがなぜ多くのアプリ開発にとって最適になりうるか
+
+ エンジニアリングリソース
+
+FlutterではDartという独自言語を用いて実装します。独自の言語なので書ける人がまず少ないです。
+
+採用のコストとしては、独自言語、独自プラットフォーム（後述）のため、通常のネイティブエンジニアの採用と同じかそれ以上にコストがかかります
+
+
+React Nativeでは、既存のReactフレームワークに乗っかる形で、フレームワークが構成されており、Reactを書いたことがある人であれば開発にとりかかれることは可能です（もちろん、アーキテクチャーやいい設計についての知見は必要で...]]></summary>
+        <author>
+            <name>Kazuki Kawabata</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【Supabase】フロントエンドでDB操作する際に注意すべきことの自分ルールがまとまってきた]]></title>
+        <id>https://zenn.dev/masa5714/articles/be99d1b13a86b7</id>
+        <link href="https://zenn.dev/masa5714/articles/be99d1b13a86b7"/>
+        <updated>2023-11-18T03:18:22.000Z</updated>
+        <summary type="html"><![CDATA[Next.js + Supabase で個人開発しています。
+通常であれば、PHPやNode.js（API Routes）などを仲介してデータベースのCRUDを行うかと思いますが、サーバーコスト（主に金銭的）を削減するため、フロントエンドから直接DBを操作するようにしています。
+バックエンド言語っぽい処理がほとんど無いので、気軽に実装できて便利なのですが、フロントエンドから直接DBを操作するが故に気にしなければならないことがいくつかありました。
+その問題点と解決策が自分なりにルールがまとまってきたので記事化します。
+
+ SELECTは基本的に使わず、.rpc()を経由して取得する。
+ht...]]></summary>
+        <author>
+            <name>masa5714</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[開発経験ゼロからT3-Stackで爆速フルスタック開発してみた(学習3ヶ月目)]]></title>
+        <id>https://zenn.dev/sonoman/articles/7a228c0e1fe40d</id>
+        <link href="https://zenn.dev/sonoman/articles/7a228c0e1fe40d"/>
+        <updated>2023-11-16T12:00:01.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+初めまして、本記事を拝見いただきありがとうございます。本記事では開発未経験から3ヶ月ほど学習し、約1ヶ月で作成したアプリケーションの概要紹介から、そこで使用した技術(T3-Stack)についてまとめていきたいと思います。
+開発経験0から爆速でフルスタック開発したい方や、フロントエンドの基本的な学習を終えて、アウトプットしたい方に参考にしていただけると思います。
+※ここで述べる内容は個人的な意見であり間違いある発言の可能性があります。ご了承下さい。
+
+ 自己紹介
+2023年4月からJavaScriptの基礎からWebフロントエンドの勉強を開始した大学3年生です。総合系の学科で...]]></summary>
+        <author>
+            <name>sonoman</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[インクロフトを支える技術]]></title>
+        <id>https://zenn.dev/itome/articles/64a85304d294bd</id>
+        <link href="https://zenn.dev/itome/articles/64a85304d294bd"/>
+        <updated>2023-11-16T07:16:37.000Z</updated>
+        <summary type="html"><![CDATA[インクロフトというマンガ投稿サービスを作りました。読者と作者にとって使いやすく、投稿しやすいサービスにしていきます。
+https://zenn.dev/itome/articles/53f64e88956ca8
+先の投稿でインクロフトを作った理由や実現したかったことを書いたのですが、この投稿ではそれらを実現するために選んだ技術構成と工夫した点について紹介していきます。
+
+ Cloudflare
+インクロフトの各種機能は全てCloudflare上で動いています。様々なサービスを使っていますが、総じて他のクラウドに比べてコストが安く、また安い理由も腑に落ちるのがよかったです。
+
+ Cloud...]]></summary>
+        <author>
+            <name>Takeshi Tsukamoto</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[個人開発アプリで2ヶ月間で10万円を売り上げた話]]></title>
+        <id>https://zenn.dev/smak/books/43fff9bf49139c</id>
+        <link href="https://zenn.dev/smak/books/43fff9bf49139c"/>
+        <updated>2023-11-15T10:49:10.000Z</updated>
+        <summary type="html"><![CDATA[初めて作ったアプリが2ヶ月間で合計売上10万円となりました。
+何を考え、何をしたのかを全てお話します。
+ぜひ参考にしてみてください。
+
+▼こんな方におすすめです。
+- Webでうまく行かなくて、まだアプリを試したことがない方。
+- Webで集客できているけどなかなか収益が増えない方。
+- アプリをリリースしたけど全然ダウンロードされない方。]]></summary>
+        <author>
+            <name>smak.works</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Drift を Flutter Web で使う]]></title>
+        <id>https://zenn.dev/kou7273/articles/drift-flutter-on-web</id>
+        <link href="https://zenn.dev/kou7273/articles/drift-flutter-on-web"/>
+        <updated>2023-11-11T09:04:30.000Z</updated>
+        <summary type="html"><![CDATA[Flutter WebでローカルDBを使いたい
+Flutterでアプリ開発している中で、データの永続化にローカルDBを導入する必要が出てきました。
+Flutter用のローカルDBライブラリはかなりの数ありますが、今回はWebでも利用可能な Drift を使ってみることにしました。
+Flutter Web で Drift を利用しようとすると、ドキュメントだけでは実装が難解な部分があるのでこの記事で解説しようと思います。
+
+ Flutter Web の制限
+Flutter はモバイルアプリ開発のためのフレームワークですが、Webでも利用することができます。
+私はモバイルアプリとしてリリ...]]></summary>
+        <author>
+            <name>kou72</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【個人開発 #1-4】レコメンドシステムを作ってみた vol.4　〜画面の実装〜]]></title>
+        <id>https://zenn.dev/waka07/articles/development-diary_1-4</id>
+        <link href="https://zenn.dev/waka07/articles/development-diary_1-4"/>
+        <updated>2023-11-10T23:49:29.000Z</updated>
+        <summary type="html"><![CDATA[作りたいシステム
+忙しい人のためのギフト提案型AI「AiSAP!(エイサップ)」
+忙しい社会人のために、AIが可能な限り素早く（ASAP: As Soon As Possible）、最適なギフトを提案してくれるWebサービス。
+今回は画面の実装について説明していきます。
+
+ Streamlitのインストール
+まずはStreamlitをインストールしましょう。
+ターミナルやコマンドプロンプトで下記コマンドを入力してください。
+※pipのインストールは完了している前提で進めます。
+pip install streamlit
+
+ フォルダ構成
+任意のフォルダを作って、その中に必要なフォルダ...]]></summary>
+        <author>
+            <name>Waka</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft Storeで7ヵ月公開してみた結果をまとめてみた]]></title>
+        <id>https://zenn.dev/test_myname/articles/microsoft-store-m7</id>
+        <link href="https://zenn.dev/test_myname/articles/microsoft-store-m7"/>
+        <updated>2023-11-10T07:24:19.000Z</updated>
+        <summary type="html"><![CDATA[どうも、７カ月ほど前に、「AuText」をリリースした「ぷらむらいす」です。
+「AuText」を、お使い頂いている方々には、日頃よりご愛顧ありがとうございます。
+本日は、これまでお使いいただいた結果をまとめさせていただきました。
+具体的な数値は出せませんが、ご覧頂けたら嬉しくと思います。
+https://zenn.dev/test_myname/articles/5742cff0a18df5
+
+ 本日の話
+Microsoft Storeで、「AuText」というWindows10やWindows11向けのアプリをリリースしてから、７カ月経ったのですが、そのリリースしてからのダウンロードや...]]></summary>
+        <author>
+            <name>ぷらむらいす(PlumRice)</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GitHub Projects を利用したタスク管理]]></title>
         <id>hatenablog://entry/820878482973537217</id>
@@ -84,6 +1765,218 @@ Iteration
  …]]></summary>
         <author>
             <name>一休.com Developers Blog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Markdownでメモが取れるアプリ「ideaNote」を個人開発で作りました]]></title>
+        <id>https://zenn.dev/korange/articles/1f7f4a0c9f2e95</id>
+        <link href="https://zenn.dev/korange/articles/1f7f4a0c9f2e95"/>
+        <updated>2023-11-09T07:05:08.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+自分はObsidian, Typora, SimplenoteなどたくさんのPC向けメモアプリを使ってきたのですが、どれも自分の好みに合うものではなかったので、自分で作ってみることにしました。
+
+ 作ったもの
+https://ideanote.korange.work/
+※ 現時点ではWindowsのみ対応です。Macの方すみません、、、
+
+ どんなアプリ？
+現時点で、３種類+プレーンテキスト のメモが作れるソフトです✨
+フォルダを作ることもできます📂
+
+ メモの種類
+
+
+📄 Markdown
+皆さんご存知、Markdownのメモです。
+
+
+📜 Scrap
+順番に物事を積み...]]></summary>
+        <author>
+            <name>Korange</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Railsで定期処理を簡単にやりたい時はcloudflare workersでcron回すと楽]]></title>
+        <id>https://zenn.dev/sesere/articles/089dabf6c25e3c</id>
+        <link href="https://zenn.dev/sesere/articles/089dabf6c25e3c"/>
+        <updated>2023-11-08T21:40:34.000Z</updated>
+        <summary type="html"><![CDATA[小ネタ
+知ってる人にとっては当たり前だと思いますが、意外と当たり前すぎて逆に思い浮かばかった人に最近出会ったのでメモしておきます
+
+ 定期的に処理したい
+Railsで定期処理する場合はOS側のcronを回したり何らかのgemを使ったりすると思うのですが、
+別プロセスを建てるかAPPサーバーに同居するか、どちらの場合でも手間が増えるので個人が趣味でサクッとやるには重いですよね
+そこで自分がよくやるのがcloudflare workersで一定時間ごとにRailsの特定URLにPOSTを行う手法です
+ざっくりイメージはこんな感じ
+
+UUID（API KEYのようなもの）を持たせてPOSTする...]]></summary>
+        <author>
+            <name>sesere</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[エンジニアのための技術記事プラットフォーム「Chietta」を個人開発で作りました]]></title>
+        <id>https://zenn.dev/yasse/articles/a381284f38abb4</id>
+        <link href="https://zenn.dev/yasse/articles/a381284f38abb4"/>
+        <updated>2023-11-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+休憩中や電車とかの隙間時間にZennやQiitaのトレンド記事をよく読んだりするのですが、色んなサイトの技術記事をまとめたサービスがあれば便利だなと思い、Chiettaというサービスを個人で開発したので紹介します！
+※内容に間違いなどあれば教えていただけると幸いです
+
+ どんなサービス？
+https://www.chietta.app
+
+ Zenn、Qiita、企業ブログなどをまとめて見たり検索できるサービスです
+
+
+ 検索
+
+
+ 記事の共有
+
+良いと思った記事を共有できる場が欲しい という個人的な願望があって、Xで「この記事良かった」みたいなことをつぶやきを見るのが好きな...]]></summary>
+        <author>
+            <name>やせ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[髪型管理アプリのβができた]]></title>
+        <id>https://zenn.dev/shimad/articles/b3c6fa9644ea12</id>
+        <link href="https://zenn.dev/shimad/articles/b3c6fa9644ea12"/>
+        <updated>2023-11-06T06:53:09.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+個人開発のβ versionができたので記事にしたいと思います。
+気づいたら髪の毛がモサモサになっていて髪型を決めるのがめんどくさかったり、髪型を選ぶのに時間がかかっていてランダム機能が欲しかったのと、個人開発をしてみたかったのでアプリを作ってみました。
+とりあえず画像のCRD機能を開発して、フロントもシンプルに作ってみました。
+どんな感じかは下のURLで見てください。
+https://www.hairturn.tokyo/about
+hairturn ヘアを変えるみたいな意味です
+
+ 使用技術
+フロントエンド　Next.js
+Reactが触ったことがあったのと、Verce...]]></summary>
+        <author>
+            <name>shima</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RemixとCloudflare Workers+D1でマンガ投稿サイトを作った]]></title>
+        <id>https://zenn.dev/itome/articles/53f64e88956ca8</id>
+        <link href="https://zenn.dev/itome/articles/53f64e88956ca8"/>
+        <updated>2023-11-06T03:20:39.000Z</updated>
+        <summary type="html"><![CDATA[https://inkloft.io
+趣味のマンガ好きが高じてマンガ投稿プラットフォームを作りました。
+お試しということで、二次利用が自由に許可されている「ブラックジャックによろしく」が試し読みできるようになっているので、気になる方は読んでみてください！
+※「ブラックジャックによろしく」の利用規約により、書籍ストアに掲載する場合は1円以上の有償販売とする必要があるため、インクロフトの最低決済額の50円で投稿しています。
+https://inkloft.io/mangas/L625Pn9lSN0c
+
+ なぜ作ったか
+私はマンガが大好きでジャンル問わず暇さえあればマンガを読んでいるんですが、...]]></summary>
+        <author>
+            <name>Takeshi Tsukamoto</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[遊び・仕事・催し事の予定を画像にしてみんなで共有しやすくしよう！「Event Schedule Image Generator」]]></title>
+        <id>https://zenn.dev/syab_syab/articles/7395e4270266db</id>
+        <link href="https://zenn.dev/syab_syab/articles/7395e4270266db"/>
+        <updated>2023-11-05T05:33:38.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+前々回と前回に続いて、HTML + CSS + JavaScriptで作ったWebアプリをReact.jsで作り直し企画の第三弾です。
+今回で最後です。
+LINEやX(旧Twitter)などのSNSで遊びや催し事、行事などの予定を周知・共有する際に、
+スマホやパソコンで文字で打ち込むのが面倒だったり字数制限があったりして少し不便な思いをしたことが幾度かありました。
+そんな折、画像化して貼りつけることでタイプする量も減って字数制限もなくなるかもしれないと閃いて
+このアプリを作りました。
+タイトルはまんまです。
+Event Schedule Image Generator
+動画...]]></summary>
+        <author>
+            <name>しゃぶしゃぶ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[効果音ボタン集「オノまとめ」]]></title>
+        <id>https://zenn.dev/syab_syab/articles/846d3e13a70566</id>
+        <link href="https://zenn.dev/syab_syab/articles/846d3e13a70566"/>
+        <updated>2023-11-05T05:28:36.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+前回のDiatonic Cheatに続いて、HTML + CSS + JavaScriptで作ったWebアプリをReact.jsで作り直し企画の第二弾です。
+半分ネタで作ったアプリです。
+画面に表示されたボタンをクリック(タッチ)すると効果音が鳴るという極めてシンプルなアプリです。
+タイトルの由来は、オノマトペ(効果音)の鳴るボタンをまとめたサイトであるというノリで付けました。五秒くらいで考えつきました。ジョンレノンの奥さんではありません。
+オノまとめ
+動画
+
+ 使い方
+
+まず、鳴らしたい効果音のジャンルを選んで
+
+
+
+.
+
+
+ボタンをクリック(タッチ)してを出す
+
+
+
+
+...]]></summary>
+        <author>
+            <name>しゃぶしゃぶ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【RN Update 2023年10月】React Native Track Player v4がリリース 他]]></title>
+        <id>https://zenn.dev/ototrip/articles/tech-update-202310-rn</id>
+        <link href="https://zenn.dev/ototrip/articles/tech-update-202310-rn"/>
+        <updated>2023-10-31T01:18:15.000Z</updated>
+        <summary type="html"><![CDATA[はじめに
+こんにちは！
+犬専用の音楽アプリ オトとりっぷでエンジニアしています、足立です。
+https://www.oto-trip.com/
+この記事では、今月の React Native に関連するニュースを紹介します。
+
+ 目次
+
+ライブラリ情報
+
+【React Native Track Player】 v4 がリリース
+【React Native Screens】 useReanimatedHeaderHeight hooks が追加
+
+
+React Native 関連情報
+
+React Native Meetup #14 開催
+
+
+
+
+ ライブラリ情報
+
+ 【React N...]]></summary>
+        <author>
+            <name>【公式】オトとりっぷ - 犬専用の音楽アプリ</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Expo未対応のFirebaseパッケージをConfig Pluginで導入する]]></title>
+        <id>https://zenn.dev/johnnyman/articles/dcbe3ddac72fda</id>
+        <link href="https://zenn.dev/johnnyman/articles/dcbe3ddac72fda"/>
+        <updated>2023-10-29T13:52:43.000Z</updated>
+        <summary type="html"><![CDATA[要約
+
+Firebase　AnalyticsやRemoteConfigなどのサポートをExpoのManaged Flow (iOSのみ)に追加する方法を調査し、実装しました
+追加するためには、@react-native-firebase/analytics, @react-native-firebase/remote-configのConfig Pluginを作成する必要があります
+Config Pluginは、expo-module-scriptsを利用して以下の通りに実装します
+
+
+ index.ts
+import {ConfigPlugin, withPlugins} from...]]></summary>
+        <author>
+            <name>johnnyman</name>
         </author>
     </entry>
 </feed>
