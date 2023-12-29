@@ -178,6 +178,36 @@
       "siteUrl": "https://zenn.dev/topics/go",
       "articles": [
         {
+          "id": "https://zenn.dev/tellernovel_inc/articles/1bb51162cb2f48",
+          "author": "manika",
+          "description": "こんにちは、テラーノベルでサーバーサイドを担当している@manikaです。\nGAEスタンダード環境からCloud Runへ移行についての備忘録を記事にしました。\nGAEからCloud Runへ移行が完了すると、試算ですが現状の4分の1程度にインスタンス料金を抑えれる見込みの為それならばやるしかないな、という事で進めています。\n\n 概要\n基本的にはGAEに依存した機能やパッケージを削除又は変更していくという作業になりますが、Cloud Runへ移行するまでの間GAEでも動作させる必要があり、コードの２重管理は避けたかったのでGAEでもCloud Runでも同じコードで動くよう改修を行なって...",
+          "link": "https://zenn.dev/tellernovel_inc/articles/1bb51162cb2f48",
+          "publishedOn": "2023-12-28T02:28:59.000Z",
+          "wordCount": 874,
+          "title": "GAE スタンダード環境からCloud Runへの移行",
+          "enclosure": {
+            "url": "https://res.cloudinary.com/zenn/image/upload/s--P8GzMloR--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:GAE%2520%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25B3%25E3%2583%2580%25E3%2583%25BC%25E3%2583%2589%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%258B%25E3%2582%2589Cloud%2520Run%25E3%2581%25B8%25E3%2581%25AE%25E7%25A7%25BB%25E8%25A1%258C%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:manika%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2Y2ZDBjOWE0YTEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%2586%25E3%2583%25A9%25E3%2583%25BC%25E3%2583%258E%25E3%2583%2599%25E3%2583%25AB%2520%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzY3MDFlMmNmYmEuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png",
+            "length": "0",
+            "type": "image/png"
+          },
+          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--P8GzMloR--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:GAE%2520%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25B3%25E3%2583%2580%25E3%2583%25BC%25E3%2583%2589%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%258B%25E3%2582%2589Cloud%2520Run%25E3%2581%25B8%25E3%2581%25AE%25E7%25A7%25BB%25E8%25A1%258C%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:manika%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2Y2ZDBjOWE0YTEuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%2586%25E3%2583%25A9%25E3%2583%25BC%25E3%2583%258E%25E3%2583%2599%25E3%2583%25AB%2520%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzY3MDFlMmNmYmEuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
+        },
+        {
+          "id": "https://zenn.dev/ymd_h/articles/9b7251194b9707",
+          "author": "山田(ymd)",
+          "description": "0. TL;DR\nロック取得において context.Context を考慮する排他ロック・共有ロックをGoで実装して公開しました。(GitHubに公開するだけで、 pkg.go.dev にも表示されるの楽でいいですね。)\nhttps://github.com/ymd-h/go/tree/master/ctxlock\nhttps://pkg.go.dev/github.com/ymd-h/go/ctxlock\n\n 1. はじめに\n少し前からちょこちょこGoでプログラムを書く機会があり、goroutineやchannel、contextをベースとした並行プログラミングが、独特だけれども...",
+          "link": "https://zenn.dev/ymd_h/articles/9b7251194b9707",
+          "publishedOn": "2023-12-28T01:50:27.000Z",
+          "wordCount": 3812,
+          "title": "[Go] Context-awareなLockをつくってみた",
+          "enclosure": {
+            "url": "https://res.cloudinary.com/zenn/image/upload/s--ahak0fu8--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%255BGo%255D%2520Context-aware%25E3%2581%25AALock%25E3%2582%2592%25E3%2581%25A4%25E3%2581%258F%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E5%25B1%25B1%25E7%2594%25B0%2528ymd%2529%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzQyYzJhN2RkZDAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
+            "length": "0",
+            "type": "image/png"
+          },
+          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--ahak0fu8--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%255BGo%255D%2520Context-aware%25E3%2581%25AALock%25E3%2582%2592%25E3%2581%25A4%25E3%2581%258F%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E5%25B1%25B1%25E7%2594%25B0%2528ymd%2529%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzQyYzJhN2RkZDAuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+        },
+        {
           "id": "https://zenn.dev/nekoninaritai/articles/9f998cb2da9f95",
           "author": "svun",
           "description": "はじめに\nhttps://blog.tkzwtks.net/entry/2023/02/17/171905\nを元にメール送信機能を実装していたときに下記のエラーに遭遇したので、その対処法を共有します\ndial failed: STARTTLS mode set to: \"TLSMandatory\" but target host does not support STARTTLS\n\n使用しているのはmailhogです\n\nhttps://github.com/mailhog\n\n 対処法\n\nTLSOpportunisticをsetしてあげる(もしくはNoTLS)\n\nc, err := m...",
@@ -195,10 +225,10 @@
         {
           "id": "https://zenn.dev/aethiopicuschan/articles/2e2e6d07842596",
           "author": "Chan Aethiopicus",
-          "description": "EbitengineでLive2Dモデルを描画しようと試行錯誤していて、ある程度形になってきたので公開します。\n\nデモリポジトリを作成したので、詳しくはそちらのmain.goを見ていただければと思いますが、いくつかポイントを解説します。\n\n 座標\n各種の座標は左下が原点になっているので、Ebitengineに合わせるためにY座標を反転させる必要があります。\nこれはvertexPositionsでもvertexUVsでも同じです。\n\n 描画\n基本的には DrawTriangles に食わせるだけで描画できます。\nただし、マスク処理だけは若干面倒で、以下のようなKageシェーダを用いてアルフ...",
+          "description": "EbitengineでLive2Dモデルを描画しようと試行錯誤していて、ある程度形になってきたので公開します。\n\nデモリポジトリを作成したので、詳しくはそちらのmain.goを見ていただければと思いますが、いくつかポイントを解説します。\n\n 描画対象\nscreenに直接描くとスケール周りでしんどくなってしまうので、モデルに設定されているCanvasWidthとCanvasHeightに合わせたebiten.Imageを作ると良いです。\nsurface := ebiten.NewImage(int(getCanvasWidthPixel()), int(getCanvasHeightPix...",
           "link": "https://zenn.dev/aethiopicuschan/articles/2e2e6d07842596",
           "publishedOn": "2023-12-27T09:57:48.000Z",
-          "wordCount": 204,
+          "wordCount": 480,
           "title": "EbitengineでLive2Dを描画してみた",
           "enclosure": {
             "url": "https://res.cloudinary.com/zenn/image/upload/s--zCBNMHF7--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Ebitengine%25E3%2581%25A7Live2D%25E3%2582%2592%25E6%258F%258F%25E7%2594%25BB%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Chan%2520Aethiopicus%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSUxaVkF6aS1ZcFk5TGxyVmx0OHVEX0x6NHc5eUcycGJwYWkwamlrV3o0ZmJJPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
@@ -446,36 +476,6 @@
             "type": "image/png"
           },
           "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--UqJ24xFL--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%2596%258B%25E7%2599%25BA%25E5%258A%25B9%25E7%258E%2587%25E3%2582%2592%25E8%25BF%25BD%25E3%2581%2584%25E6%25B1%2582%25E3%2582%2581%25E3%2581%259F%25E5%25AE%259F%25E8%25A3%2585%25E3%2583%2597%25E3%2583%25A9%25E3%2582%25AF%25E3%2583%2586%25E3%2582%25A3%25E3%2582%25B9%25E9%259B%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:abekoh%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzRmZDEzMmY4YTMuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BEMICIN%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2UxNTU4ZDBjN2MuanBlZw==%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
-        },
-        {
-          "id": "https://zenn.dev/hajimehoshi/articles/205c04b5fad03d",
-          "author": "Hajime Hoshi",
-          "description": "この記事は Go 言語 Advent Calendar 兼 Pyspa Advent Calendar 24 日目の記事です。\n\n tl;dr\ngithub.com/go-text/typesetting を使ってください。グリフのライスタライズには golang.org/x/image/vector を使ってください。\n\n 描画アルゴリズムが複雑な言語\n皆さんは Go でアラビア語やヒンディー語などを描画したいと思ったことは一度はあるかと思います。少なくとも自分はあります。これらの言語は、英語や日本語と違い、様々なチャレンジングな要素があります。\n\n同じコードポイントでも隣接するコード...",
-          "link": "https://zenn.dev/hajimehoshi/articles/205c04b5fad03d",
-          "publishedOn": "2023-12-23T15:00:01.000Z",
-          "wordCount": 3799,
-          "title": "Go でアラビア語、ヒンディー語、タイ語を描画する",
-          "enclosure": {
-            "url": "https://res.cloudinary.com/zenn/image/upload/s--TEc4g7l2--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Go%2520%25E3%2581%25A7%25E3%2582%25A2%25E3%2583%25A9%25E3%2583%2593%25E3%2582%25A2%25E8%25AA%259E%25E3%2580%2581%25E3%2583%2592%25E3%2583%25B3%25E3%2583%2587%25E3%2582%25A3%25E3%2583%25BC%25E8%25AA%259E%25E3%2580%2581%25E3%2582%25BF%25E3%2582%25A4%25E8%25AA%259E%25E3%2582%2592%25E6%258F%258F%25E7%2594%25BB%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Hajime%2520Hoshi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2lVMVlyX3VralFFcHF1Uzc5b3BMVF8zYkRsNE5tOHdiWXcwdUNRUkE9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
-            "length": "0",
-            "type": "image/png"
-          },
-          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--TEc4g7l2--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Go%2520%25E3%2581%25A7%25E3%2582%25A2%25E3%2583%25A9%25E3%2583%2593%25E3%2582%25A2%25E8%25AA%259E%25E3%2580%2581%25E3%2583%2592%25E3%2583%25B3%25E3%2583%2587%25E3%2582%25A3%25E3%2583%25BC%25E8%25AA%259E%25E3%2580%2581%25E3%2582%25BF%25E3%2582%25A4%25E8%25AA%259E%25E3%2582%2592%25E6%258F%258F%25E7%2594%25BB%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Hajime%2520Hoshi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2lVMVlyX3VralFFcHF1Uzc5b3BMVF8zYkRsNE5tOHdiWXcwdUNRUkE9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-        },
-        {
-          "id": "https://zenn.dev/putcho/articles/d31fc4dcad32a0",
-          "author": "putcho01",
-          "description": "はじめに\nこの記事は「Qiita Advent Calendar 2023 Go言語」の23日目の記事です。\n\n ゴール\nGo言語で署名に利用する鍵を生成したいケースがあったので、その方法をまとめます。\n\n Goの乱数生成\nGoの乱数生成に関する標準パッケージには次の2つがあります\n\n math/rand\n\n擬似乱数生成器。\nmath/rand は、初期化のためのSeedによって、生成される乱数が決まります。(https://golang.org/src/math/rand/rng.go)\nSeed値に対応した値を返すため、乱数を再現することが可能です。そのため、生成されるランダム値...",
-          "link": "https://zenn.dev/putcho/articles/d31fc4dcad32a0",
-          "publishedOn": "2023-12-23T10:38:28.000Z",
-          "wordCount": 339,
-          "title": "Goで暗号論的擬似乱数を生成する",
-          "enclosure": {
-            "url": "https://res.cloudinary.com/zenn/image/upload/s--LyRTO4Tc--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Go%25E3%2581%25A7%25E6%259A%2597%25E5%258F%25B7%25E8%25AB%2596%25E7%259A%2584%25E6%2593%25AC%25E4%25BC%25BC%25E4%25B9%25B1%25E6%2595%25B0%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:putcho01%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzM3ZjMwOGVhZGIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
-            "length": "0",
-            "type": "image/png"
-          },
-          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--LyRTO4Tc--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Go%25E3%2581%25A7%25E6%259A%2597%25E5%258F%25B7%25E8%25AB%2596%25E7%259A%2584%25E6%2593%25AC%25E4%25BC%25BC%25E4%25B9%25B1%25E6%2595%25B0%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:putcho01%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzM3ZjMwOGVhZGIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
         }
       ]
     },
@@ -484,6 +484,21 @@
       "feedUrl": "https://zenn.dev/topics/typescript/feed",
       "siteUrl": "https://zenn.dev/topics/typescript",
       "articles": [
+        {
+          "id": "https://zenn.dev/nao50/articles/angular17-interceptor",
+          "author": "nao",
+          "description": "はじめに\nAngularのinterceptorを使ったClient Requestのキャッシュを実装します。\nAngular17を前提とし、最近の変更点含めまとめます。\n\n Fetch API\nHTTP Clientを使う場合（特にSSR時）標準のFetch APIを使うことが強く推奨されています。\napp.config.ts にFetch APIを使うための設定 withFetch() を追加します。\n\n app.config.ts\nimport { ApplicationConfig } from '@angular/core';\nimport { provideRouter ...",
+          "link": "https://zenn.dev/nao50/articles/angular17-interceptor",
+          "publishedOn": "2023-12-28T23:31:57.000Z",
+          "wordCount": 1649,
+          "title": "AngularのInterceptorでキャッシュを実装する",
+          "enclosure": {
+            "url": "https://res.cloudinary.com/zenn/image/upload/s--NJPwRJeU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Angular%25E3%2581%25AEInterceptor%25E3%2581%25A7%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A5%25E3%2582%2592%25E5%25AE%259F%25E8%25A3%2585%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:nao%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzRiY2YzZDIyYTkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
+            "length": "0",
+            "type": "image/png"
+          },
+          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--NJPwRJeU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Angular%25E3%2581%25AEInterceptor%25E3%2581%25A7%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%2583%25E3%2582%25B7%25E3%2583%25A5%25E3%2582%2592%25E5%25AE%259F%25E8%25A3%2585%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:nao%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzRiY2YzZDIyYTkuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+        },
         {
           "id": "https://zenn.dev/dai_shi/articles/37f0f615cec6ed",
           "author": "daishi",
@@ -517,10 +532,10 @@
         {
           "id": "https://zenn.dev/rg687076/articles/a782c15655d502",
           "author": "aaaa1597",
-          "description": "Abstract\nやっと、ここまできた。3Dの勉強するなら3Dモデルを表示したいよね。\nってことで、トトロを表示させたった。\n今回の参考はここ(GLTFloader)。\nGLTF形式のモデルを表示する。FBXとかobjとかmqoとかだったら馴染みがあるけど、GLTF形式って知らんかった。OpenGL企画した団体と同じところが企画したみたいやけん、すたれる心配はなさそう。\n\n 結論\n今回のソースコードはココ↓\nhttps://github.com/aaaa1597/react-r3f-tutorial016\n\n GLTFloader使い方\nとはいっても、GLTFloaderを直接使う...",
+          "description": "https://aaaa1597.github.io/react-r3f-tutorial016/\n\n Abstract\nやっと、ここまできた。3Dの勉強するなら3Dモデルを表示したいよね。\nってことで、ここのトトロを表示させてみた。\n今回の参考はここ(GLTFloader)。\nGLTF形式のモデルを表示する。FBXとかobjとかmqoとかだったら馴染みがあるけど、GLTF形式って知らんかった。OpenGL企画した団体と同じところが企画したみたいやけん、すたれる心配はなさそう。\n\n 結論\n今回のソースコードはココ↓\nhttps://github.com/aaaa1597/react-r...",
           "link": "https://zenn.dev/rg687076/articles/a782c15655d502",
           "publishedOn": "2023-12-27T12:00:16.000Z",
-          "wordCount": 2485,
+          "wordCount": 2502,
           "title": "React+TypeScriptなWebアプリで、R3Fのtutorial16。(GLTFloaderで3Dモデル表示)",
           "enclosure": {
             "url": "https://res.cloudinary.com/zenn/image/upload/s--Bk2NLHaW--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:React%252BTypeScript%25E3%2581%25AAWeb%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25A7%25E3%2580%2581R3F%25E3%2581%25AEtutorial16%25E3%2580%2582%2528GLTFloader%25E3%2581%25A73D%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E8%25A1%25A8%25E7%25A4%25BA%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:aaaa1597%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzVlYmE2MTczYWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
@@ -622,7 +637,7 @@
         {
           "id": "https://zenn.dev/honbinliu/articles/23b24d9bdd0f75",
           "author": "りゅう",
-          "description": "初めに\nReactについて学習したので、学習した内容を数回に分けて書いていきたいと思います。\n今回はReactがどんなものなのか・環境構築・実行手順について書いていきます！\nこの記事はNext.js学習記録と同時期に執筆しています。\n筆者は半年ほど前にReact公式ドキュメントの五目並べを模写したことがあります。\nこの記事は、htmlについてのある程度の知識を持った初心者に向けた内容となります\n参考にしたサイトは以下の通りです\nhttps://ja.react.dev/learn/installation\nhttps://prograshi.com/framework/nodejs/...",
+          "description": "初めに\nReactについて学習したので、学習した内容を数回に分けて書いていきたいと思います。\n今回はReactがどんなものなのか・環境構築・実行手順について書いていきます！(私自身もかなり苦戦しました)\nこの記事はNext.js学習記録と同時期に書いています。(書き終わった時点で公開します)\n筆者は半年ほど前にReact公式ドキュメントの五目並べを模写したことがあります。\nこの記事は、html(webページ)についてのある程度の知識を持った初心者に向けた内容となります\n参考にしたサイトは以下の通りです\nhttps://ja.react.dev/learn/installation\nh...",
           "link": "https://zenn.dev/honbinliu/articles/23b24d9bdd0f75",
           "publishedOn": "2023-12-26T14:05:40.000Z",
           "wordCount": 303,
@@ -641,13 +656,13 @@
           "link": "https://zenn.dev/rg687076/articles/4b4c0029410242",
           "publishedOn": "2023-12-26T13:41:17.000Z",
           "wordCount": 3257,
-          "title": "React+TypeScriptなWebアプリで、R3Fのtutorial15。(useLoader)",
+          "title": "React+TypeScriptなWebアプリで、R3Fのtutorial15。(useLoaderでテクスチャ読込み)",
           "enclosure": {
-            "url": "https://res.cloudinary.com/zenn/image/upload/s--JxetaHCc--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:React%252BTypeScript%25E3%2581%25AAWeb%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25A7%25E3%2580%2581R3F%25E3%2581%25AEtutorial15%25E3%2580%2582%2528useLoader%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:aaaa1597%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzVlYmE2MTczYWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
+            "url": "https://res.cloudinary.com/zenn/image/upload/s---G588UVe--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:React%252BTypeScript%25E3%2581%25AAWeb%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25A7%25E3%2580%2581R3F%25E3%2581%25AEtutorial15%25E3%2580%2582%2528useLoader%25E3%2581%25A7%25E3%2583%2586%25E3%2582%25AF%25E3%2582%25B9%25E3%2583%2581%25E3%2583%25A3%25E8%25AA%25AD%25E8%25BE%25BC%25E3%2581%25BF%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:aaaa1597%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzVlYmE2MTczYWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
             "length": "0",
             "type": "image/png"
           },
-          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--JxetaHCc--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:React%252BTypeScript%25E3%2581%25AAWeb%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25A7%25E3%2580%2581R3F%25E3%2581%25AEtutorial15%25E3%2580%2582%2528useLoader%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:aaaa1597%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzVlYmE2MTczYWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s---G588UVe--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:React%252BTypeScript%25E3%2581%25AAWeb%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25A7%25E3%2580%2581R3F%25E3%2581%25AEtutorial15%25E3%2580%2582%2528useLoader%25E3%2581%25A7%25E3%2583%2586%25E3%2582%25AF%25E3%2582%25B9%25E3%2583%2581%25E3%2583%25A3%25E8%25AA%25AD%25E8%25BE%25BC%25E3%2581%25BF%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:aaaa1597%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzVlYmE2MTczYWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
         },
         {
           "id": "https://zenn.dev/cloud_ace/articles/b020c9969effa3",
@@ -731,13 +746,13 @@
           "link": "https://zenn.dev/rg687076/articles/3d337be7c168b2",
           "publishedOn": "2023-12-25T13:54:04.000Z",
           "wordCount": 2705,
-          "title": "React+TypeScriptなWebアプリで、R3Fのtutorial14。(影(Shadow))",
+          "title": "React+TypeScriptなWebアプリで、R3Fのtutorial14。(影(Shadow)を設定する)",
           "enclosure": {
-            "url": "https://res.cloudinary.com/zenn/image/upload/s--75T_3V7W--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:React%252BTypeScript%25E3%2581%25AAWeb%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25A7%25E3%2580%2581R3F%25E3%2581%25AEtutorial14%25E3%2580%2582%2528%25E5%25BD%25B1%2528Shadow%2529%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:aaaa1597%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzVlYmE2MTczYWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
+            "url": "https://res.cloudinary.com/zenn/image/upload/s--ks185OHX--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:React%252BTypeScript%25E3%2581%25AAWeb%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25A7%25E3%2580%2581R3F%25E3%2581%25AEtutorial14%25E3%2580%2582%2528%25E5%25BD%25B1%2528Shadow%2529%25E3%2582%2592%25E8%25A8%25AD%25E5%25AE%259A%25E3%2581%2599%25E3%2582%258B%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:aaaa1597%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzVlYmE2MTczYWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
             "length": "0",
             "type": "image/png"
           },
-          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--75T_3V7W--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:React%252BTypeScript%25E3%2581%25AAWeb%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25A7%25E3%2580%2581R3F%25E3%2581%25AEtutorial14%25E3%2580%2582%2528%25E5%25BD%25B1%2528Shadow%2529%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:aaaa1597%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzVlYmE2MTczYWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--ks185OHX--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:React%252BTypeScript%25E3%2581%25AAWeb%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25A7%25E3%2580%2581R3F%25E3%2581%25AEtutorial14%25E3%2580%2582%2528%25E5%25BD%25B1%2528Shadow%2529%25E3%2582%2592%25E8%25A8%25AD%25E5%25AE%259A%25E3%2581%2599%25E3%2582%258B%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:aaaa1597%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzVlYmE2MTczYWEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
         },
         {
           "id": "https://zenn.dev/raku/articles/dc3ff5bfef1232",
@@ -768,21 +783,6 @@
             "type": "image/png"
           },
           "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--kyoLwUR2--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:infer%25E3%2581%25A8%25E3%2581%25AF%25E3%2581%25AA%25E3%2581%25AB%25E3%2582%2582%25E3%2581%25AE%25E3%2581%258B%25EF%25BC%259FZod%25E3%2582%2592%25E6%25B7%25BB%25E3%2581%2588%25E3%2581%25A6%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2586%25E3%2581%25B1%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzc4NTg2ZDZjYmYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-        },
-        {
-          "id": "https://zenn.dev/json_hardcoder/articles/1e8628dab0f31c",
-          "author": "jhcoder",
-          "description": "!\nこれはno plan inc.の Advent Calendar 2023の23日目の記事です。\n\nフロントエンドにおいてAtomic DesignにおけるComponent作成やfeatures作成を行う方は多いと思います。例えばComponent作成であればただ単一のjsxやtsxのみ存在することはあまりないと思います。storybookやtestやcssファイル、hooksのファイルを置く場合もあるでしょう。そうなった際に一つのComponentを作成する為に複数のファイルをその都度作るのは億劫になりますし、めんどくさいですよね。\n例えば以下のようなComponentがあったと...",
-          "link": "https://zenn.dev/json_hardcoder/articles/1e8628dab0f31c",
-          "publishedOn": "2023-12-25T10:53:59.000Z",
-          "wordCount": 1488,
-          "title": "turbo/gen で対話式雛形コード生成",
-          "enclosure": {
-            "url": "https://res.cloudinary.com/zenn/image/upload/s--iN7A2_A4--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:turbo%252Fgen%2520%25E3%2581%25A7%25E5%25AF%25BE%25E8%25A9%25B1%25E5%25BC%258F%25E9%259B%259B%25E5%25BD%25A2%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E7%2594%259F%25E6%2588%2590%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:jhcoder%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzVlODYyMzUyMzEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
-            "length": "0",
-            "type": "image/png"
-          },
-          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--iN7A2_A4--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:turbo%252Fgen%2520%25E3%2581%25A7%25E5%25AF%25BE%25E8%25A9%25B1%25E5%25BC%258F%25E9%259B%259B%25E5%25BD%25A2%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E7%2594%259F%25E6%2588%2590%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:jhcoder%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzVlODYyMzUyMzEuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
         }
       ]
     },
@@ -1099,6 +1099,51 @@
       "siteUrl": "https://zenn.dev/topics/nextjs",
       "articles": [
         {
+          "id": "https://zenn.dev/web_life_ch/articles/c370ccbc85d3ba",
+          "author": "Web Life CH",
+          "description": "【#１４Zod ReactHookForm 】\nYouTube: https://youtu.be/__XQkWnTHlU\nhttps://youtu.be/__XQkWnTHlU\n今回はshadcnのformの実装について２回に分けて解説します。\nまずは「Zod」と「react-hook-form」の設定をして行きます。\nhttps://zod.dev/\nhttps://react-hook-form.com/\n必要なライブラリは以下になります。\nnpx shadcn-ui@latest add form\nnpx shadcn-ui@latest add input\nnpm i z...",
+          "link": "https://zenn.dev/web_life_ch/articles/c370ccbc85d3ba",
+          "publishedOn": "2023-12-28T05:41:02.000Z",
+          "wordCount": 1154,
+          "title": "【NextJs14】NextJs14 と 便利なライブラリ【#１４Zod & ReactHookForm 】",
+          "enclosure": {
+            "url": "https://res.cloudinary.com/zenn/image/upload/s---XXRq1Jq--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590NextJs14%25E3%2580%2591NextJs14%2520%25E3%2581%25A8%2520%25E4%25BE%25BF%25E5%2588%25A9%25E3%2581%25AA%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25AA%25E3%2580%2590%2523%25EF%25BC%2591%25EF%25BC%2594Zod%2520%2526%2520ReactHookForm%2520%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Web%2520Life%2520CH%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUl0YnZtbWNjTWFMM3dyd2x3VE5sVVZjTlhmZHEzZzF2QnJfMUJMSkJrN049czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
+            "length": "0",
+            "type": "image/png"
+          },
+          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s---XXRq1Jq--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590NextJs14%25E3%2580%2591NextJs14%2520%25E3%2581%25A8%2520%25E4%25BE%25BF%25E5%2588%25A9%25E3%2581%25AA%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25AA%25E3%2580%2590%2523%25EF%25BC%2591%25EF%25BC%2594Zod%2520%2526%2520ReactHookForm%2520%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Web%2520Life%2520CH%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUl0YnZtbWNjTWFMM3dyd2x3VE5sVVZjTlhmZHEzZzF2QnJfMUJMSkJrN049czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+        },
+        {
+          "id": "https://zenn.dev/hid3/articles/8cf5ed69ba75ee",
+          "author": "Hid3",
+          "description": "はじめに\nDIDKitを使って、Verifiable Credentialsをブラウザで検証してみます。\ndidkit-wasmを使います。\nhttps://www.spruceid.dev/didkit/didkit-packages/javascript\n\n バージョン\nnextjs: 14.0.4\n@spruceid/didkit-wasm: 0.2.1\n\n Next.jsプロジェクトを用意する\n以下のように用意したNext.jsを使います。\nhide@hidenoMacBook-Pro didkit-examples % npx create-next-app@latest\n...",
+          "link": "https://zenn.dev/hid3/articles/8cf5ed69ba75ee",
+          "publishedOn": "2023-12-28T04:56:55.000Z",
+          "wordCount": 1932,
+          "title": "didkit-wasm, Next.jsでVerifiable Credentialsを検証してみる",
+          "enclosure": {
+            "url": "https://res.cloudinary.com/zenn/image/upload/s--HI9Xhtda--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:didkit-wasm%252C%2520Next.js%25E3%2581%25A7Verifiable%2520Credentials%25E3%2582%2592%25E6%25A4%259C%25E8%25A8%25BC%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Hid3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzQxN2I4ZjdmZmYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
+            "length": "0",
+            "type": "image/png"
+          },
+          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--HI9Xhtda--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:didkit-wasm%252C%2520Next.js%25E3%2581%25A7Verifiable%2520Credentials%25E3%2582%2592%25E6%25A4%259C%25E8%25A8%25BC%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Hid3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzQxN2I4ZjdmZmYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+        },
+        {
+          "id": "https://zenn.dev/tk_c/articles/be0d703a17ebf0",
+          "author": "C",
+          "description": "pnpmでNext.jsを立ち上げるまでの環境構築になります。\nhttps://pnpm.io/ja/\n\n pnpmをインストール\nまずはpnpmをインストールします。\nHomebrew経由でインストールする場合は下記のコマンドで可能です。\nbrew install pnpm\n\n pnpmでNext.jsをインストール\n続いて、pnpmでNext.jsをインストールします。\npnpm dlx create-next-app@latest\nNext.jsの初期設定を質問されるので設定します。\n✔ Would you like to use TypeScript with this proj...",
+          "link": "https://zenn.dev/tk_c/articles/be0d703a17ebf0",
+          "publishedOn": "2023-12-28T01:55:19.000Z",
+          "wordCount": 243,
+          "title": "pnpmでNext.jsを立ち上げるまでの環境構築",
+          "enclosure": {
+            "url": "https://res.cloudinary.com/zenn/image/upload/s--wALbNEpP--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:pnpm%25E3%2581%25A7Next.js%25E3%2582%2592%25E7%25AB%258B%25E3%2581%25A1%25E4%25B8%258A%25E3%2581%2592%25E3%2582%258B%25E3%2581%25BE%25E3%2581%25A7%25E3%2581%25AE%25E7%2592%25B0%25E5%25A2%2583%25E6%25A7%258B%25E7%25AF%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:C%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JkYjhjMGI1NDcuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
+            "length": "0",
+            "type": "image/png"
+          },
+          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--wALbNEpP--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:pnpm%25E3%2581%25A7Next.js%25E3%2582%2592%25E7%25AB%258B%25E3%2581%25A1%25E4%25B8%258A%25E3%2581%2592%25E3%2582%258B%25E3%2581%25BE%25E3%2581%25A7%25E3%2581%25AE%25E7%2592%25B0%25E5%25A2%2583%25E6%25A7%258B%25E7%25AF%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:C%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JkYjhjMGI1NDcuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+        },
+        {
           "id": "https://zenn.dev/yumemi_inc/articles/nextjs-rest-api",
           "author": "Yusuke Sakai - ore88ore",
           "description": "はじめに\nNext.js はフロントエンドの開発で利用されることが多いフレームワークだと思いますが、Route Handlers を使うことで、API の実装もできますので、実際に簡単な REST API を実装して試してみました。\n実装したソース一式は、以下にて確認することができます。\nhttps://github.com/ore88ore/next-rest-api-sample\n\n 開発環境の設定\n\n 実行環境\n今回の実装では、以下のバージョンを利用しています。\n\nNode.js: v20.10.0\n\nTypeScript: 5.3.3\n\nNext.js: 14.0.4\n\n\n\n...",
@@ -1176,7 +1221,7 @@
         {
           "id": "https://zenn.dev/honbinliu/articles/23b24d9bdd0f75",
           "author": "りゅう",
-          "description": "初めに\nReactについて学習したので、学習した内容を数回に分けて書いていきたいと思います。\n今回はReactがどんなものなのか・環境構築・実行手順について書いていきます！\nこの記事はNext.js学習記録と同時期に執筆しています。\n筆者は半年ほど前にReact公式ドキュメントの五目並べを模写したことがあります。\nこの記事は、htmlについてのある程度の知識を持った初心者に向けた内容となります\n参考にしたサイトは以下の通りです\nhttps://ja.react.dev/learn/installation\nhttps://prograshi.com/framework/nodejs/...",
+          "description": "初めに\nReactについて学習したので、学習した内容を数回に分けて書いていきたいと思います。\n今回はReactがどんなものなのか・環境構築・実行手順について書いていきます！(私自身もかなり苦戦しました)\nこの記事はNext.js学習記録と同時期に書いています。(書き終わった時点で公開します)\n筆者は半年ほど前にReact公式ドキュメントの五目並べを模写したことがあります。\nこの記事は、html(webページ)についてのある程度の知識を持った初心者に向けた内容となります\n参考にしたサイトは以下の通りです\nhttps://ja.react.dev/learn/installation\nh...",
           "link": "https://zenn.dev/honbinliu/articles/23b24d9bdd0f75",
           "publishedOn": "2023-12-26T14:05:40.000Z",
           "wordCount": 303,
@@ -1224,7 +1269,7 @@
           "description": "自己最速が遅すぎる\nつい先日リリースしたBranew という最新の技術書に出会えるサイト。\nこんなもの作ろうかな、と思ってから2週間でリリースしました。\nhttps://branew.dev\n2週間でオンライン会議ツールのようなもの* をつくってしまう方がいるくらいなので\nぶっちゃけこんなただの１枚もののサイトを2週間なんて遅すぎるわけですが、\nがっつりフルタイムで働きつつ、土日も全部は突っ込めない状況で\n我ながらよくやったなと思ったので、どう  頑張ったか 実現したかをまとめたいと思います。\n以下、僕が密かに憧れている freeriderこと山田俊輔さんの note より。\n\nそし...",
           "link": "https://zenn.dev/marty_ojiya/articles/f277137f91061f",
           "publishedOn": "2023-12-25T23:39:42.000Z",
-          "wordCount": 450,
+          "wordCount": 516,
           "title": "最新の技術書に出会えるサイトを自己最速でリリースした",
           "enclosure": {
             "url": "https://res.cloudinary.com/zenn/image/upload/s--xh1LhBNG--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%259C%2580%25E6%2596%25B0%25E3%2581%25AE%25E6%258A%2580%25E8%25A1%2593%25E6%259B%25B8%25E3%2581%25AB%25E5%2587%25BA%25E4%25BC%259A%25E3%2581%2588%25E3%2582%258B%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E3%2582%2592%25E8%2587%25AA%25E5%25B7%25B1%25E6%259C%2580%25E9%2580%259F%25E3%2581%25A7%25E3%2583%25AA%25E3%2583%25AA%25E3%2583%25BC%25E3%2582%25B9%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%259E%25E3%2583%25BC%25E3%2583%2586%25E3%2582%25A3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2RiN2ZkMjRmZmIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
@@ -1352,51 +1397,6 @@
             "type": "image/png"
           },
           "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--v3VtkTYQ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E8%2587%25AA%25E5%2588%2586%25E3%2581%25AE%25E3%2582%25A2%25E3%2582%25A6%25E3%2583%2588%25E3%2583%2597%25E3%2583%2583%25E3%2583%2588%25E3%2582%2592%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25E3%2582%258B%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:mob%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTG52TGlHR19CazdidjBEc25rVUszMXFBYzlrQ0g0cnJYaW5KVzI5emJYMFE9czk2LWM=%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-        },
-        {
-          "id": "https://zenn.dev/liverpool/articles/46fb111326d7b4",
-          "author": "あお",
-          "description": "はじめに\nジョブカンアドベントカレンダー25日目の記事になります。\n22卒でバックエンドエンジニアしてます。\nなので今回の記事で扱うNext.jsの内容は完全に個人開発的で試したやつの共有です。\n\n Next.js + App Routerの実装\n今回の記事に関してはApp Routerだったりその他周辺知識の話はそんなにしないのでご了承を。\nApp Routerに関しては↓を\nhttps://nextjs.org/docs/app\n公式が出しているスターターキットみたいなのがあるんですがここではスクラッチから作っていきます\nhttps://vercel.com/guides/nex...",
-          "link": "https://zenn.dev/liverpool/articles/46fb111326d7b4",
-          "publishedOn": "2023-12-24T15:00:00.000Z",
-          "wordCount": 2542,
-          "title": "Next.js + App Router + Vercel でマルチテナントアプリを作成",
-          "enclosure": {
-            "url": "https://res.cloudinary.com/zenn/image/upload/s--8VVlyMH1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Next.js%2520%252B%2520App%2520Router%2520%252B%2520Vercel%2520%25E3%2581%25A7%25E3%2583%259E%25E3%2583%25AB%25E3%2583%2581%25E3%2583%2586%25E3%2583%258A%25E3%2583%25B3%25E3%2583%2588%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%25E4%25BD%259C%25E6%2588%2590%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2582%25E3%2581%258A%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2RmZDEyM2Q2OTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
-            "length": "0",
-            "type": "image/png"
-          },
-          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--8VVlyMH1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Next.js%2520%252B%2520App%2520Router%2520%252B%2520Vercel%2520%25E3%2581%25A7%25E3%2583%259E%25E3%2583%25AB%25E3%2583%2581%25E3%2583%2586%25E3%2583%258A%25E3%2583%25B3%25E3%2583%2588%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%25E4%25BD%259C%25E6%2588%2590%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2582%25E3%2581%258A%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2RmZDEyM2Q2OTYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-        },
-        {
-          "id": "https://zenn.dev/ryota_09/articles/06ec306f0ef9ee",
-          "author": "りょた",
-          "description": "📌 はじめに\nこんにちは！@Ryo54388667です!☺️\n普段は都内でフロントエンドエンジニアとして業務をしてます！\n主にTypeScriptやNext.jsといった技術を触っています。\nNext.jsのApp Router構成でAPI経由のデータを利用して動的にメタ情報（titleやdescriptionなど）を設定する方法について紹介していきます。\n\n 📌 行いたいこと\n/articles/xxxxx この末尾の情報を元にメタ情報を設定するケースがあります。Webメディアでは要件として組み込まれることが多いのではないでしょうか。従来のPages RouterではNext.js...",
-          "link": "https://zenn.dev/ryota_09/articles/06ec306f0ef9ee",
-          "publishedOn": "2023-12-24T08:47:00.000Z",
-          "wordCount": 3364,
-          "title": "APIで取得したデータをもとに、動的にメタ情報を設定する方法(Next.js App Router)",
-          "enclosure": {
-            "url": "https://res.cloudinary.com/zenn/image/upload/s--OrRG0gZx--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:API%25E3%2581%25A7%25E5%258F%2596%25E5%25BE%2597%25E3%2581%2597%25E3%2581%259F%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2582%2592%25E3%2582%2582%25E3%2581%25A8%25E3%2581%25AB%25E3%2580%2581%25E5%258B%2595%25E7%259A%2584%25E3%2581%25AB%25E3%2583%25A1%25E3%2582%25BF%25E6%2583%2585%25E5%25A0%25B1%25E3%2582%2592%25E8%25A8%25AD%25E5%25AE%259A%25E3%2581%2599%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%2528Next.js%2520App%2520Router%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%258A%25E3%2582%2587%25E3%2581%259F%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2RkNmQyMTZhMWYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
-            "length": "0",
-            "type": "image/png"
-          },
-          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--OrRG0gZx--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:API%25E3%2581%25A7%25E5%258F%2596%25E5%25BE%2597%25E3%2581%2597%25E3%2581%259F%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2582%2592%25E3%2582%2582%25E3%2581%25A8%25E3%2581%25AB%25E3%2580%2581%25E5%258B%2595%25E7%259A%2584%25E3%2581%25AB%25E3%2583%25A1%25E3%2582%25BF%25E6%2583%2585%25E5%25A0%25B1%25E3%2582%2592%25E8%25A8%25AD%25E5%25AE%259A%25E3%2581%2599%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%2528Next.js%2520App%2520Router%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%258A%25E3%2582%2587%25E3%2581%259F%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2RkNmQyMTZhMWYuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-        },
-        {
-          "id": "https://zenn.dev/nu_______ll/articles/1759cd0162ab74",
-          "author": "null",
-          "description": "GAOGAO アドベントカレンダー2023 12/20の記事です。\nhttps://qiita.com/advent-calendar/2023/gaogao\nReact のレンダリング最適化においてメモ化を使わなくても十分最適化できる、と聞きつけたので、その他レンダリング最適化の手法について調べてみました。\n!\n本記事は個人的な React の学習メモです。間違いがあればぜひご指摘いただけると幸いです！\n\n\n サンプルコード\n問題点：count が更新されるごとに <HeavyList> の再レンダリングが発生する\nimport { useState } from 'rea...",
-          "link": "https://zenn.dev/nu_______ll/articles/1759cd0162ab74",
-          "publishedOn": "2023-12-24T07:37:17.000Z",
-          "wordCount": 1211,
-          "title": "個人的 React “メモ”",
-          "enclosure": {
-            "url": "https://res.cloudinary.com/zenn/image/upload/s--RR62vrYE--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2580%258B%25E4%25BA%25BA%25E7%259A%2584%2520React%2520%25E2%2580%259C%25E3%2583%25A1%25E3%2583%25A2%25E2%2580%259D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:null%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2VkZmI5MDY3OWIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
-            "length": "0",
-            "type": "image/png"
-          },
-          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--RR62vrYE--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2580%258B%25E4%25BA%25BA%25E7%259A%2584%2520React%2520%25E2%2580%259C%25E3%2583%25A1%25E3%2583%25A2%25E2%2580%259D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:null%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2VkZmI5MDY3OWIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
         }
       ]
     },
@@ -1406,12 +1406,42 @@
       "siteUrl": "https://zenn.dev/topics/個人開発",
       "articles": [
         {
+          "id": "https://zenn.dev/milkcocoa0902/articles/develop-kotlin-logtool2",
+          "author": "ここあ",
+          "description": "この記事はなに？\n前回紹介したKotlin製ログツールの、もう一歩踏み込んだ使い方紹介みたいな感じのなにかです。\nhttps://zenn.dev/milkcocoa0902/articles/develop-kotlin-logtool\n\n Slackにログを吐いてみる\nSlackではIncomming Webhookを使って、HTTP経由で投稿をすることができます。\n今回は、ログツールをカスタムしてSlackに同時にログを流し込んでみます。\n\n 環境\n\nJava 11\nKotlin 1.9.21\ncolotok 0.1.6\n\n\n 導入する\nさて、まずは必要な依存関係を解決していき...",
+          "link": "https://zenn.dev/milkcocoa0902/articles/develop-kotlin-logtool2",
+          "publishedOn": "2023-12-28T06:39:01.000Z",
+          "wordCount": 1831,
+          "title": "Kotlinでログツールを作っている話2",
+          "enclosure": {
+            "url": "https://res.cloudinary.com/zenn/image/upload/s--cqdMUvPV--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Kotlin%25E3%2581%25A7%25E3%2583%25AD%25E3%2582%25B0%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E8%25A9%25B12%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2593%25E3%2581%2593%25E3%2581%2582%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2ktS3RuTWhSdVd1VXpMYVRhNFlEU3l4aE9HenlNY0QxVVZ5bUNaZWxRPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
+            "length": "0",
+            "type": "image/png"
+          },
+          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--cqdMUvPV--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Kotlin%25E3%2581%25A7%25E3%2583%25AD%25E3%2582%25B0%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E8%25A9%25B12%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2593%25E3%2581%2593%25E3%2581%2582%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2ktS3RuTWhSdVd1VXpMYVRhNFlEU3l4aE9HenlNY0QxVVZ5bUNaZWxRPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+        },
+        {
+          "id": "https://zenn.dev/keiichiro/articles/b67aff46d7af3a",
+          "author": "devdev",
+          "description": "アイデアが出ない...\nエンジニアの皆さんの中には、ポートフォリオを作成や個人開発をしてみたいけれど作りたいものがないという悩みを持っている人も多いと思います。\n自分もよく新しいサービスのアイデアを考えることがあり、この悩みに共感できます。面白いサービスを企画する時にはとにかく多くのアイデアを出すことです。\nそこでこの記事では個人開発のアイデアを大量に出す方法を紹介していきます。\n\n 孫正義さんの方法\nSoftBankの創業者、孫正義氏は16歳の時に単身アメリカに留学し、1日24時間のうち睡眠にあてる6時間以外のすべての時間、食事中や移動中も教科書を開き勉強したそうです。\nしかしそん...",
+          "link": "https://zenn.dev/keiichiro/articles/b67aff46d7af3a",
+          "publishedOn": "2023-12-28T04:52:10.000Z",
+          "wordCount": 158,
+          "title": "個人開発のアイデアを大量に出す方法（アイデア生成ツールを開発しました）",
+          "enclosure": {
+            "url": "https://res.cloudinary.com/zenn/image/upload/s--10QEpwJW--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2581%25AE%25E3%2582%25A2%25E3%2582%25A4%25E3%2583%2587%25E3%2582%25A2%25E3%2582%2592%25E5%25A4%25A7%25E9%2587%258F%25E3%2581%25AB%25E5%2587%25BA%25E3%2581%2599%25E6%2596%25B9%25E6%25B3%2595%25EF%25BC%2588%25E3%2582%25A2%25E3%2582%25A4%25E3%2583%2587%25E3%2582%25A2%25E7%2594%259F%25E6%2588%2590%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592%25E9%2596%258B%25E7%2599%25BA%25E3%2581%2597%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:devdev%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzI4OWIxYzJmMWUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
+            "length": "0",
+            "type": "image/png"
+          },
+          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--10QEpwJW--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2581%25AE%25E3%2582%25A2%25E3%2582%25A4%25E3%2583%2587%25E3%2582%25A2%25E3%2582%2592%25E5%25A4%25A7%25E9%2587%258F%25E3%2581%25AB%25E5%2587%25BA%25E3%2581%2599%25E6%2596%25B9%25E6%25B3%2595%25EF%25BC%2588%25E3%2582%25A2%25E3%2582%25A4%25E3%2583%2587%25E3%2582%25A2%25E7%2594%259F%25E6%2588%2590%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592%25E9%2596%258B%25E7%2599%25BA%25E3%2581%2597%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%25EF%25BC%2589%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:devdev%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzI4OWIxYzJmMWUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
+        },
+        {
           "id": "https://zenn.dev/marty_ojiya/articles/f277137f91061f",
           "author": "マーティ",
           "description": "自己最速が遅すぎる\nつい先日リリースしたBranew という最新の技術書に出会えるサイト。\nこんなもの作ろうかな、と思ってから2週間でリリースしました。\nhttps://branew.dev\n2週間でオンライン会議ツールのようなもの* をつくってしまう方がいるくらいなので\nぶっちゃけこんなただの１枚もののサイトを2週間なんて遅すぎるわけですが、\nがっつりフルタイムで働きつつ、土日も全部は突っ込めない状況で\n我ながらよくやったなと思ったので、どう  頑張ったか 実現したかをまとめたいと思います。\n以下、僕が密かに憧れている freeriderこと山田俊輔さんの note より。\n\nそし...",
           "link": "https://zenn.dev/marty_ojiya/articles/f277137f91061f",
           "publishedOn": "2023-12-25T23:39:42.000Z",
-          "wordCount": 450,
+          "wordCount": 516,
           "title": "最新の技術書に出会えるサイトを自己最速でリリースした",
           "enclosure": {
             "url": "https://res.cloudinary.com/zenn/image/upload/s--xh1LhBNG--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%259C%2580%25E6%2596%25B0%25E3%2581%25AE%25E6%258A%2580%25E8%25A1%2593%25E6%259B%25B8%25E3%2581%25AB%25E5%2587%25BA%25E4%25BC%259A%25E3%2581%2588%25E3%2582%258B%25E3%2582%25B5%25E3%2582%25A4%25E3%2583%2588%25E3%2582%2592%25E8%2587%25AA%25E5%25B7%25B1%25E6%259C%2580%25E9%2580%259F%25E3%2581%25A7%25E3%2583%25AA%25E3%2583%25AA%25E3%2583%25BC%25E3%2582%25B9%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%259E%25E3%2583%25BC%25E3%2583%2586%25E3%2582%25A3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2RiN2ZkMjRmZmIuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
@@ -1674,36 +1704,6 @@
             "type": "image/png"
           },
           "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--L9Hy0hEf--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%259B%25BB%25E5%25AD%2590%25E3%2583%259A%25E3%2583%25BC%25E3%2583%2591%25E3%2583%25BC%25E3%2581%25A7%25E3%2583%2587%25E3%2582%25B8%25E3%2582%25BF%25E3%2583%25AB%25E3%2582%25A2%25E3%2583%25BC%25E3%2583%2588%25E3%2583%2595%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%25A0%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Takeshi%2520Yamaguchi%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzNiMTdhMTRjMmUuanBlZw==%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Luup%2520Developers%2520Blog%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FDTlBFdTlrd2lxazU4Z0NMXzZHeVdzOXZwUllmSEtONUZ4VFlNdTVsTmdPPXM5Ni1j%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png"
-        },
-        {
-          "id": "https://zenn.dev/masa5714/articles/cb8d0348e67267",
-          "author": "masa5714",
-          "description": "!\nこの記事は 個人開発 Advent Calendar 2023 15日目のエントリーです。\n\nDonzuba（ドンズバ）という大喜利サービスを個人開発しました。\nhttps://twitter.com/b95oss/status/1735675620896489583\nNext.js（App Router）と Supabase を使って開発しています。\nこの記事では、技術的なお話もしていくので最後までご覧ください！\n!\n※ 回遊の仕組み（使われ方を見て考えたい）や投稿の削除（退会機能だけは付けました）などが未実装 ですが、サービスの中心となる部分は実装できてるので「Done is b...",
-          "link": "https://zenn.dev/masa5714/articles/cb8d0348e67267",
-          "publishedOn": "2023-12-15T14:59:58.000Z",
-          "wordCount": 687,
-          "title": "\"この現象に名前をつけたい！\" という気持ちを満たせる大喜利サービス「Donzuba」を個人開発しました",
-          "enclosure": {
-            "url": "https://res.cloudinary.com/zenn/image/upload/s--_WRjct8_--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%2522%25E3%2581%2593%25E3%2581%25AE%25E7%258F%25BE%25E8%25B1%25A1%25E3%2581%25AB%25E5%2590%258D%25E5%2589%258D%25E3%2582%2592%25E3%2581%25A4%25E3%2581%2591%25E3%2581%259F%25E3%2581%2584%25EF%25BC%2581%2522%2520%25E3%2581%25A8%25E3%2581%2584%25E3%2581%2586%25E6%25B0%2597%25E6%258C%2581%25E3%2581%25A1%25E3%2582%2592%25E6%25BA%2580%25E3%2581%259F%25E3%2581%259B%25E3%2582%258B%25E5%25A4%25A7%25E5%2596%259C%25E5%2588%25A9%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2593%25E3%2582%25B9%25E3%2580%258CDonzuba%25E3%2580%258D%25E3%2582%2592%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2581%2597%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:masa5714%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzNlMzBjZjA3NzguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
-            "length": "0",
-            "type": "image/png"
-          },
-          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--_WRjct8_--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%2522%25E3%2581%2593%25E3%2581%25AE%25E7%258F%25BE%25E8%25B1%25A1%25E3%2581%25AB%25E5%2590%258D%25E5%2589%258D%25E3%2582%2592%25E3%2581%25A4%25E3%2581%2591%25E3%2581%259F%25E3%2581%2584%25EF%25BC%2581%2522%2520%25E3%2581%25A8%25E3%2581%2584%25E3%2581%2586%25E6%25B0%2597%25E6%258C%2581%25E3%2581%25A1%25E3%2582%2592%25E6%25BA%2580%25E3%2581%259F%25E3%2581%259B%25E3%2582%258B%25E5%25A4%25A7%25E5%2596%259C%25E5%2588%25A9%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2593%25E3%2582%25B9%25E3%2580%258CDonzuba%25E3%2580%258D%25E3%2582%2592%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2581%2597%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:masa5714%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzNlMzBjZjA3NzguanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
-        },
-        {
-          "id": "https://zenn.dev/keiichiro/articles/cb4d75f76ac257",
-          "author": "devdev",
-          "description": "私は個人開発のプロダクトを投稿できるサービス「DevHaunt」を開発・運営しています。\nDevHauntは、個人開発者が企画段階から開発、リリース、さらにはマーケティングまで、プロジェクトの各ステージでサポートすることを目標としています。\n今回のアップデートでは、個人開発者の企画段階をサポートするツールとしてAIによる\n\nマインドマップ作成機能\nサービスのアイデア生成機能\n\nを追加しました！\n\n マインドマップとは？\nマインドマップはアイデアを視覚的に整理し、関連するコンセプトを結びつけるのに適したツールです。中心のテーマから放射状に広がる枝分かれするノードに連想したことを書き込んでい...",
-          "link": "https://zenn.dev/keiichiro/articles/cb4d75f76ac257",
-          "publishedOn": "2023-12-15T08:15:17.000Z",
-          "wordCount": 217,
-          "title": "AIでマインドマップを自動生成するサービスを開発しました",
-          "enclosure": {
-            "url": "https://res.cloudinary.com/zenn/image/upload/s--wT4sskb---/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25A7%25E3%2583%259E%25E3%2582%25A4%25E3%2583%25B3%25E3%2583%2589%25E3%2583%259E%25E3%2583%2583%25E3%2583%2597%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2593%25E3%2582%25B9%25E3%2582%2592%25E9%2596%258B%25E7%2599%25BA%25E3%2581%2597%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:devdev%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzI4OWIxYzJmMWUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
-            "length": "0",
-            "type": "image/png"
-          },
-          "imageUrl": "https://res.cloudinary.com/zenn/image/upload/s--wT4sskb---/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%25E3%2581%25A7%25E3%2583%259E%25E3%2582%25A4%25E3%2583%25B3%25E3%2583%2589%25E3%2583%259E%25E3%2583%2583%25E3%2583%2597%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2593%25E3%2582%25B9%25E3%2582%2592%25E9%2596%258B%25E7%2599%25BA%25E3%2581%2597%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:devdev%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzI4OWIxYzJmMWUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png"
         }
       ]
     },
@@ -1712,6 +1712,16 @@
       "feedUrl": "http://dailyfeed.jp/feed/103.rss",
       "siteUrl": "http://dailyfeed.jp/feed/103",
       "articles": [
+        {
+          "id": "http://dailyfeed.jp/feed/103/2023-12-28",
+          "author": null,
+          "description": "(全 24 件)\n1. 2023年イチオシのヘッドホン4選 #ギズライターまとめ2023 \n2. 【90分で見れる】年末にサクッと見たいサスペンス映画、『ミッション: 8ミニッツ』はいかが？ \n3. 指先が出ているといろんな動作がスムーズに。防寒も心配無用 \n4. JBLに純正マイクがつけばカラオケ最強。そして新年に相応しいギミックが！ \n5. 最新Apple Watchでなくても「ほぼダブルタップ」できるよ \n6. うなれサイクロン｡武器みたいなマキタのコードレス掃除機 \n7. 【90分で見れる】サクッと映画を楽しみたいならアニメ映画が断然オススメなんだ \n8. コンビニでニンテンドープリペイドを約1万円分買うと、1,000円分返ってくる！ \n9. 冬のテレワークに最適。足の周りに巻いて立てるポータブルなこたつ \n10. 「元Appleのデザイナー」が“とある事務所”に集結しまくり \n11. PCは創作の相棒。ゲームと音楽を作る市松人形VTuberに見る「新・創作論」 \n12. センサー付LEDで我が家が平和に。電気消し忘れがゼロになりました \n13. ロマンは不滅｡今年気になったオカルト＆古代ニュース4つ #ギズライターまとめ2023 \n14. 2023年に見つかった恐竜の秘密11選 \n15. 山崎実業の技ありホルダーで「かさばる靴の収納問題」を解決 \n16. Apple Vision Pro、来週から出荷開始。2月には店頭へ \n17. 【サクッと見れる】年末年始にオススメなNetflixのダークでシュールなコメディ映画『ザ・キラー』 \n18. 今年も進化の年でした。XR業界で盛り上がったニュース・ベスト5 #ギズライターまとめ2023 \n19. ワイヤレスイヤホンはもうやめた。有線イヤホンにする！ \n20. 2023年のベスト折りたたみスマホ。意外に縦折りデザインが豊作だった \n21. 文章も画像も作れる無料AI「Microsoft Copilot」が、Androidでも使えるぞ！ \n22. 使える技術をすべて使った。Netflixシリーズ『幽☆遊☆白書』のVFXスーパーバイザーが語る舞台裏 \n23. iPhoneをレトロガジェットにするならゲームボーイの壁紙なんてどう？ \n24. 年末年始に遊んでみる？ iOS/iPadOS版『バイオハザード ヴィレッジ』が60％オフ",
+          "link": "http://dailyfeed.jp/feed/103/2023-12-28",
+          "publishedOn": "2023-12-28T20:00:00.000Z",
+          "wordCount": 160,
+          "title": "2023年12月28日の記事一覧",
+          "imageUrl": null
+        },
         {
           "id": "http://dailyfeed.jp/feed/103/2023-12-27",
           "author": null,
@@ -1761,16 +1771,6 @@
           "wordCount": 155,
           "title": "2023年12月23日の記事一覧",
           "imageUrl": null
-        },
-        {
-          "id": "http://dailyfeed.jp/feed/103/2023-12-22",
-          "author": null,
-          "description": "(全 18 件)\n1. テスラが「ワイヤレス充電機」を開発中。“停めておくだけ充電”は強い… \n2. 発掘された2400年前の革、人間の皮膚でした \n3. クイズ：社員に最も愛されているCEOは？ 年俸1億円超え社員がゴロゴロいるあの企業 \n4. コントローラーもヘッドホンも。ゲーム周りの整理は「掛ける」で解決 \n5. 令和の農業はスマホでトラクターをシェア \n6. サムスンの「Galaxy AI」、Geminiのロゴに似すぎでは？ \n7. iPhone 16 Pro、Maxと同じすっげー望遠カメラでやってくるかも \n8. ヘビ、ワラビー丸呑み。そしてフレンドリーな馬（閲覧注意） \n9. 小さくても300インチ。ごろ寝のお供にいい感じのプロジェクター \n10. 「ケーブル下出し」でQOL爆上がり。ベルキンのUSB-C充電器 \n11. 「ふるさと納税」は12月末まで。なんと、旅行にも使える \n12. 2025年に原付免許で125ccバイクが乗れる。最高速度は変わらず \n13. 脳波を読み取り分析＆カウンセリング。これが21世紀のヘッドホン \n14. Apple Watch、右腕につけてもいいよね \n15. iPhone 15 Pro、ケースなしチャレンジに敗北した者の末路 \n16. ゲーミングPC「Legion」配信でギズモード vs. IGNの勝負。決着は『ストリートファイター6』で \n17. クルマの操作、結局タッチスクリーンよりも物理ボタンが使いやすい？ \n18. TSMCに続きサムスンまで日本へ。研究開発拠点を横浜に新設",
-          "link": "http://dailyfeed.jp/feed/103/2023-12-22",
-          "publishedOn": "2023-12-22T20:00:00.000Z",
-          "wordCount": 158,
-          "title": "2023年12月22日の記事一覧",
-          "imageUrl": null
         }
       ]
     },
@@ -1779,6 +1779,16 @@
       "feedUrl": "https://feeds.dailyfeed.jp/feed/105.rss",
       "siteUrl": "http://dailyfeed.jp/feed/105",
       "articles": [
+        {
+          "id": "http://dailyfeed.jp/feed/105/2023-12-28",
+          "author": null,
+          "description": "(全 18 件)\n1. ハンディ・作業灯・ランタンを1台で完結。マルチに使えてデザインもスマートな「HOTO DUO」 \n2. 遮音カーテン・イヤーパッドを上回る遮音性に脱帽！静寂をもたらすVictorのイヤープラグ【これ買ってよかった】 \n3. 目の休息を効率的に。ながらケアできるアイウォーマーを試してみた \n4. パンツはユニクロ！だった編集部員が、話題の「パンツの定期便」を試してみたら…世界が変わった \n5. 1年の終わりにPCをリセットすべき3つの理由。動作サクサクで新年を迎えよう \n6. 抜群のフィット感で落下防止、「ワイヤレスイヤホンのためだけに作られたイヤーピース」 \n7.  呼吸を鍛えて健康を一歩前進！ スキマ時間に使える「BULO」で心肺機能を鍛えてみた \n8. 防水本革＆止水ファスナー付きのマルチユース・ミニバッグ \n9. 寒すぎる寝室の救世主。簡単取付で冷気も紫外線もカットできる断熱カーテンライナー【Amazonセール】 \n10. 2023年もっとも売れたライフハックツールTOP10【文具編】 \n11. 長年抱えていた「コンタクトケースどこに置くか問題」が110円で解決できた \n12. 今年分は31日まで！ 多めにストックしておきたい飲料・日用品のおすすめ返礼品【楽天ふるさと納税】 \n13. 「幸せ＝夢の最大化」のために手放す。四角大輔さんが提唱する人生の戦略的ミニマル化 \n14. キャンプの寝袋はこれ1つでOK！ -15度まで使えるオールシーズン対応マミー型シェルフ【Amazonセール】 \n15. 飲み物を冷やす魔法のコースター。「The Chill Series」でビールを最後まで美味しく \n16. 長期休暇を無駄にする人がやりがちな「5つの過ち」とは？｜ライフハッカー2023年人気記事TOP30 \n17. 「メンタルヘルスを整える」年末年始の過ごし方8選 \n18. ライフハッカー・ジャパンの書評家が選ぶ、2023年の名著10選",
+          "link": "http://dailyfeed.jp/feed/105/2023-12-28",
+          "publishedOn": "2023-12-28T20:00:00.000Z",
+          "wordCount": 151,
+          "title": "2023年12月28日の記事一覧",
+          "imageUrl": null
+        },
         {
           "id": "http://dailyfeed.jp/feed/105/2023-12-27",
           "author": null,
@@ -1828,16 +1838,6 @@
           "wordCount": 153,
           "title": "2023年12月23日の記事一覧",
           "imageUrl": null
-        },
-        {
-          "id": "http://dailyfeed.jp/feed/105/2023-12-22",
-          "author": null,
-          "description": "(全 24 件)\n1. 仕事しながら目を癒す。温かさとフィット感が改良されたアイウォーマーが快適 \n2. 暖かいだけじゃダメ。本当に使える防寒ジャケットをここまで薄くできた理由 \n3. Androidメモ帳アプリ「Google Keep」を上手に使う方法は？基本操作・機能・おすすめメモ帳アプリ \n4. 設定温度23度でも暖かくて快適！10年ぶりにエアコンを買い替えて驚きの変化が【これ買ってよかった】 \n5. マイナス40度までOK！ 宇宙服由来の激ツヨ断熱材で軽くて薄いのに暖かい「ORION City Coat」 \n6. スウェーデン産のガチ隕石を時計に！メテオライトを使ったトゥールビヨン腕時計 \n7. Appleのセキュリティが進化！新しい「盗難デバイス保護」機能とは \n8. 続かない、すぐやらない人が実践すべき「はじめるハードル」をグッと下げる方法 \n9. 【今年のベストバイ】気に入りすぎてすぐ2足目をゲット。話題の「まるでこたつソックス」が暖かすぎてもう手放せない \n10. -196℃の冷気にも対応。宇宙服素材でできた薄型ジャケット \n11. 極小サイズで水にも強いLEDライト。1000ルーメンの高輝度で暗闇でも安心 \n12. 冬の運動不足に。履いているだけで姿勢や運動効率に効く足裏サポーター \n13. 5台の機器を同時充電できる。持ち運びも楽々なAnkerの「511 USB Power Strip」が30%オフ【Amazonセール】 \n14. GPT-4の対抗馬、Google発の最新AIモデル「Gemini」とは？ \n15. 窓掃除をめちゃくちゃラクにしてくれる便利アイテム \n16. 強力マグネットでスタンドにもなるAnkerのiPhone用万能リング【楽天大感謝祭】 \n17. バッグやパンツにポケットをアドオン！ 手ブラお出かけに便利な「ポケプラス2」を使ってみた \n18. ゼンハイザーのオープン型ヘッドホン｢HD 599 SE｣がほぼ半額。長時間使っても耳が疲れにくいからデスクワークのお供におすすめだよ【Amazonセール】 \n19. AIライティングアシスタント「Catchy」を開発。デジタルレシピ代表 伊藤新之介インタビュー \n20. ワイルドさがたまらない！ 個性派電動アシスト自転車「AWB03」 \n21. Windows 11の効率化の秘訣。「スナップレイアウト」で画面分割がさらに簡単に【今日のワークハック】 \n22.  MagSafeアクセサリーとも相性抜群！ 両面マグネットポートを備えるモバイルバッテリーが便利だったよ \n23. 「天気予報」はなぜ外れるのか？その理由から見えてきた気象学のおもしろさ \n24. 断熱を極めた素材「エアロゲル」を使ったジャケットがさらに進化して登場",
-          "link": "http://dailyfeed.jp/feed/105/2023-12-22",
-          "publishedOn": "2023-12-22T20:00:00.000Z",
-          "wordCount": 156,
-          "title": "2023年12月22日の記事一覧",
-          "imageUrl": null
         }
       ]
     },
@@ -1847,504 +1847,504 @@
       "siteUrl": "https://www.itmedia.co.jp/",
       "articles": [
         {
-          "id": "https://www.itmedia.co.jp/business/articles/2312/28/news017.html",
+          "id": "https://www.itmedia.co.jp/business/articles/2312/29/news023.html",
           "author": null,
-          "description": "1990年代後半に一大ブームとなった「ルーズソックス」だが、2021年頃に到来した「平成レトロブーム」を機に再び注目されている。20数年を経てルーズソックスは、どのように変化したのか。",
-          "link": "https://www.itmedia.co.jp/business/articles/2312/28/news017.html",
-          "publishedOn": "2023-12-27T23:30:00.000Z",
-          "wordCount": 2903,
-          "title": "[ITmedia ビジネスオンライン] 女子高生に流行った「ルーズソックス」が戻ってきた！　再ブームの背景は？",
-          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/28/cover_news017.jpg"
+          "description": "小中学生が2023年にもらったお年玉の平均金額や、使い道は何か。学研ホールディングスが調査結果を発表した。",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/29/news023.html",
+          "publishedOn": "2023-12-28T23:30:00.000Z",
+          "wordCount": 2894,
+          "title": "[ITmedia ビジネスオンライン] 2023年のお年玉総額　小学生は「2万1064円」、中学生は？",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/29/cover_news023.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/enterprise/articles/2312/28/news023.html",
+          "id": "https://www.itmedia.co.jp/business/articles/2312/29/news009.html",
           "author": null,
-          "description": "予算が多くない中小企業にとって、高度なセキュリティ対策は困難だと思われがちだ。しかし、そんな企業こそクラウド活用によって享受できるメリットは大きい。本稿では、AWSが提供するサービスによっていかに高いレジリエンスを実現できるのかについて解説する。",
-          "link": "https://www.itmedia.co.jp/enterprise/articles/2312/28/news023.html",
-          "publishedOn": "2023-12-27T23:00:00.000Z",
-          "wordCount": 2790,
-          "title": "[ITmedia エンタープライズ] 中小企業が「高いレジリエンス」を実現する為に取り組むべきこととは",
-          "imageUrl": "https://image.itmedia.co.jp/enterprise/articles/2312/28/cover_news023.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/enterprise/articles/2312/28/news065.html",
-          "author": null,
-          "description": "ASECはLinuxのSSHサーバに対する攻撃キャンペーンの分析結果を発表した。攻撃者が管理不十分なサーバに侵入してマルウェアをインストールし、DDoS botや仮想通貨マイナーとして悪用するという。",
-          "link": "https://www.itmedia.co.jp/enterprise/articles/2312/28/news065.html",
-          "publishedOn": "2023-12-27T23:00:00.000Z",
-          "wordCount": 2771,
-          "title": "[ITmedia エンタープライズ] Linux SSHサーバを狙う攻撃キャンペーンを発見　DDoS botや仮想通貨マイナーに悪用",
-          "imageUrl": "https://image.itmedia.co.jp/enterprise/articles/2312/28/cover_news065.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/news/articles/2312/28/news064.html",
-          "author": null,
-          "description": "北海道大学のヒューマンコンピュータインタラクション研究室に所属する研究者らは、VRヘッドマウントディスプレイ（HMD）を置くと置き台ごと動くコンパニオンロボットになるシステムを提案した研究報告を発表した。",
-          "link": "https://www.itmedia.co.jp/news/articles/2312/28/news064.html",
-          "publishedOn": "2023-12-27T23:00:00.000Z",
-          "wordCount": 2774,
-          "title": "[ITmedia News] 装着していないVRヘッドセットが\"動く対話ロボット”に　置き台ごと変形　北海道大「OMEME」開発",
-          "imageUrl": "https://image.itmedia.co.jp/news/articles/2312/28/cover_news064.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/business/articles/2312/28/news060.html",
-          "author": null,
-          "description": "転職時、求人票上で平均年収が高かったプログラミング言語は何か。paizaの調査によると「Go言語」の平均年収が710.5万円と最も高いことが分かった。",
-          "link": "https://www.itmedia.co.jp/business/articles/2312/28/news060.html",
-          "publishedOn": "2023-12-27T23:00:00.000Z",
+          "description": "スノボやスキーに行く際、乗りたいクルマは何か。日本トレンドリサーチ・グーネット中古車が共同で調査した結果を発表した。",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/29/news009.html",
+          "publishedOn": "2023-12-28T23:10:00.000Z",
           "wordCount": 2895,
-          "title": "[ITmedia ビジネスオンライン] 平均年収の高い「プログラミング言語」　3位「Scala」、2位「TypeScript」、1位は？",
-          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/28/cover_news060.jpg"
+          "title": "[ITmedia ビジネスオンライン] スノボ・スキーで人気の国産車　3位「アルファード」、2位「ハイエース」、1位は？",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/29/cover_news009.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/business/articles/2312/28/news009.html",
+          "id": "https://marketing.itmedia.co.jp/mm/articles/2312/29/news078.html",
           "author": null,
-          "description": "23年にITmedia ビジネスオンラインで反響の大きかった企業や自治体の生成AI活用をめぐる動向を取材した記事を5本紹介します。",
-          "link": "https://www.itmedia.co.jp/business/articles/2312/28/news009.html",
-          "publishedOn": "2023-12-27T23:00:00.000Z",
-          "wordCount": 2908,
-          "title": "[ITmedia ビジネスオンライン] パナ、村田製作所、東京都……生成AI活用で得た効果は？",
-          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/28/ak_matome_003_w190.jpg"
+          "description": "市場関係者の間では、デジタルサイネージ広告市場はコロナ禍の落ち込みから脱却して再び成長期に入ったとの共通認識が生まれつつあるようです。",
+          "link": "https://marketing.itmedia.co.jp/mm/articles/2312/29/news078.html",
+          "publishedOn": "2023-12-28T23:00:00.000Z",
+          "wordCount": 1490,
+          "title": "[ITmedia マーケティング] 2023年のデジタルサイネージ広告は市場規模801億円　OOH、リテールメディア、タクシー広告の現状は？",
+          "imageUrl": "https://image.itmedia.co.jp/mm/articles/2312/29/cover_news078.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/news/articles/2312/21/news068.html",
+          "id": "https://www.itmedia.co.jp/business/articles/2312/29/news054.html",
           "author": null,
-          "description": "東京工業大学と青山学院大学に所属する研究者らは、動いている人が見るとモザイクがかかったように認識され、止まっている人が見ると通常の画像として認識される視線誘導手法を提案した研究報告を発表した。",
-          "link": "https://www.itmedia.co.jp/news/articles/2312/21/news068.html",
-          "publishedOn": "2023-12-27T23:00:00.000Z",
-          "wordCount": 2767,
-          "title": "[ITmedia News] 動いている人が見ると“モザイク”、止まると“モザイクが取れる”技術　東工大と青学が開発",
-          "imageUrl": "https://image.itmedia.co.jp/news/articles/2312/21/cover_news068.jpg"
+          "description": "大手飲食チェーン各社が、2024年に向けて福袋の詳細を次々に発表。ドミノ・ピザやピザハット、銀だこなど大手飲食チェーン4社の福袋をまとめた。",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/29/news054.html",
+          "publishedOn": "2023-12-28T23:00:00.000Z",
+          "wordCount": 2903,
+          "title": "[ITmedia ビジネスオンライン] 宅配ピザや銀だこなど飲食チェーンが2024年「福袋」を発表　共通点は価格以上のお得感",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/29/cover_news054.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/business/articles/2312/27/news057.html",
+          "id": "https://www.itmedia.co.jp/business/articles/2312/29/news058.html",
           "author": null,
-          "description": "日本の半導体が凋落してからおよそ30年、官民が2022年に立ち上げたラピダスに、業界の栄枯盛衰を目の当たりにした技術者が集結した。彼らはムーアの法則に陰りが出てきた今こそ復興のラストチャンスと見て「敗者復活戦」に挑む。",
-          "link": "https://www.itmedia.co.jp/business/articles/2312/27/news057.html",
-          "publishedOn": "2023-12-27T23:00:00.000Z",
-          "wordCount": 2743,
-          "title": "[ITmedia ビジネスオンライン] ラピダスで「敗者復活戦」　日本の半導体は再興するのか",
-          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/27/cover_news057.jpg"
+          "description": "スノーピークの北米での事業展開を推進する子会社「スノーピークUSA」は、米国初となる直営キャンプフィールド「Snow Peak Long Beach Campfield」を2024年2月に開業する。",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/29/news058.html",
+          "publishedOn": "2023-12-28T23:00:00.000Z",
+          "wordCount": 2919,
+          "title": "[ITmedia ビジネスオンライン] スノーピーク直営の「キャンプフィールド」米国で誕生、特徴は？",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/29/cover_news058.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/business/articles/2312/28/news059.html",
+          "id": "https://www.itmedia.co.jp/business/articles/2312/29/news063.html",
           "author": null,
-          "description": "みずほ銀行は投資に関する調査を実施。NISAでお金を貯めてやりたいことの1位は「老後資金に充てる」（56.8%）で、2位は「投資」（22.1%）、3位は「家族・友達旅行」（21.6%）と続いた。",
-          "link": "https://www.itmedia.co.jp/business/articles/2312/28/news059.html",
-          "publishedOn": "2023-12-27T23:00:00.000Z",
-          "wordCount": 2898,
-          "title": "[ITmedia ビジネスオンライン] NISAで貯めたお金の使い道　3位「家族・友達旅行」、2位「投資」、1位は？",
-          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/28/cover_news059.jpg"
+          "description": "デジタル音楽配信サービス「Spotify」が5月にローンチしたプレイリスト「Gacha Pop（ガチャポップ）」が海外で人気だ。日本の音楽をごちゃ混ぜにしたプレイリストがなぜ人気なのか。",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/29/news063.html",
+          "publishedOn": "2023-12-28T23:00:00.000Z",
+          "wordCount": 2943,
+          "title": "[ITmedia ビジネスオンライン] Spotifyで人気爆発、日本発「ガチャポップ」とは？",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/29/cover_news063.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/enterprise/articles/2312/28/news054.html",
+          "id": "https://www.itmedia.co.jp/business/articles/2312/29/news045.html",
           "author": null,
-          "description": "2023年近年でもっともIT環境が変化した1年だったのではないでしょうか。今年読まれた記事を振り返りながら変化を振り返ってみます。",
-          "link": "https://www.itmedia.co.jp/enterprise/articles/2312/28/news054.html",
-          "publishedOn": "2023-12-27T23:00:00.000Z",
-          "wordCount": 2701,
-          "title": "[ITmedia エンタープライズ] AI熱、変わるITベンダー、コンサルの立ち位置、マシンリーダブルなデータの価値――2023年を振り返る",
-          "imageUrl": "https://image.itmedia.co.jp/enterprise/articles/2312/28/cover_news054.png"
+          "description": "2023年、やり残したことは何か。WeCapital（東京都港区）の調査によると、2023年やり残したこと1位は「貯金」（30.5％）だった。2位以下は？",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/29/news045.html",
+          "publishedOn": "2023-12-28T23:00:00.000Z",
+          "wordCount": 2920,
+          "title": "[ITmedia ビジネスオンライン] 今年やり残したこと「貯金」1位　2位以下は？",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/29/cover_news045.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/business/articles/2312/28/news007.html",
+          "id": "https://www.itmedia.co.jp/business/articles/2312/29/news024.html",
+          "author": null,
+          "description": "利用者が多いベーカリー専門店は、どのような立地にあるのか。マイボイスコムが調査結果を発表した。",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/29/news024.html",
+          "publishedOn": "2023-12-28T22:45:00.000Z",
+          "wordCount": 2895,
+          "title": "[ITmedia ビジネスオンライン] 利用者が多いベーカリー専門店の立地　3位「駅構内」、2位「路面」、1位は？",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/29/cover_news024.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/business/articles/2312/29/news060.html",
+          "author": null,
+          "description": "駅やテレビといった権威性のあるメディアや有名人を起用することで女性の若年層をターゲットにする脱毛サロン業界。足元では、SNSを中心に、お試し施術で高額なギフト券をプレゼントするという趣旨の広告展開も流行している。しかし、その内実は「美容版ポンジスキーム」とよんでもいいほどの、ずさんな内容であると言わざるを得ない。",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/29/news060.html",
+          "publishedOn": "2023-12-28T22:00:00.000Z",
+          "wordCount": 2926,
+          "title": "[ITmedia ビジネスオンライン] 「無料で通い放題」のカラクリは？　相次ぐ脱毛サロン倒産、その“詐欺的”なカネの流れ",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/29/cover_news060.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/business/articles/2312/29/news066.html",
+          "author": null,
+          "description": "人工知能の新興企業である米Anthropic（アンソロピック）は、2024年末までに年間売上高が8億5000万ドルを超えると予測している。12月26日、米The Information（ザ・インフォメーション）が同社の財務状況に詳しい2人の関係者の話として報じた。GoogleとAmazonが巨額を投資した同社は、どれほど期待されているのか。",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/29/news066.html",
+          "publishedOn": "2023-12-28T22:00:00.000Z",
+          "wordCount": 2731,
+          "title": "[ITmedia ビジネスオンライン] Google・Amazonが巨額を出資──生成AIの新星「アンソロピック」大躍進",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/29/cover_news066.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/business/articles/2312/28/news174.html",
+          "author": null,
+          "description": "ビジネスパーソン個々人が自身のキャリアや働き方を見つめ、選び取ることの重要性が増しています。自身のキャリアに迷いを抱えるビジネスパーソンにこそ読んでほしい2023年のヒット記事を、ITmedia ビジネスオンライン編集部が厳選してお届けします。",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/28/news174.html",
+          "publishedOn": "2023-12-28T22:00:00.000Z",
+          "wordCount": 2897,
+          "title": "[ITmedia ビジネスオンライン] 「45歳以上の転職」成功者を襲う苦難──50代は早期退職すべき？【キャリア迷子に贈る2023年ヒット記事】",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/28/cover_news174.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/business/articles/2312/29/news050.html",
+          "author": null,
+          "description": "ダイハツ工業で、自動車の安全性確認試験での不正行為があったことが明らかになった。「第三者委員会による調査報告書」には、同社の組織風土や職場環境における問題点が生々しく記されている。本件から、日本企業にはびこる病理を読み解く。",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/29/news050.html",
+          "publishedOn": "2023-12-28T22:00:00.000Z",
+          "wordCount": 2939,
+          "title": "[ITmedia ビジネスオンライン] あまりに「日本企業あるある」だ──ダイハツ不正の背景にある病理を読み解く",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/29/cover_news050.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/business/articles/2312/27/news037.html",
+          "author": null,
+          "description": "ChatGPTの登場を発端に生成AIが一大トレンドとなったこの1年。ビジネスパーソンの仕事の仕方、仕事に対する考え方にも大きな影響をおよぼした。2023年生成AIを「ビジネス活用」の視点で振り返り、24年にはどう進化していくのかを予測した。",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/27/news037.html",
+          "publishedOn": "2023-12-28T22:00:00.000Z",
+          "wordCount": 2922,
+          "title": "[ITmedia ビジネスオンライン] 2024年、生成AIはどう進化する？　「カスタマイズ」「マルチモーダル化」から考える",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/27/cover_news037.png"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/enterprise/articles/2312/29/news061.html",
+          "author": null,
+          "description": "「産業革命」ともいえるような急激な変化に対応するために持つべきマインドセットとは。ガートナーによる提言を紹介する。",
+          "link": "https://www.itmedia.co.jp/enterprise/articles/2312/29/news061.html",
+          "publishedOn": "2023-12-28T22:00:00.000Z",
+          "wordCount": 2760,
+          "title": "[ITmedia エンタープライズ] 2024年に向けて獲得すべき「17のマインドセット」　ガートナーが提言",
+          "imageUrl": "https://image.itmedia.co.jp/enterprise/articles/2312/29/cover_news061.jpg"
+        },
+        {
+          "id": "https://marketing.itmedia.co.jp/mm/articles/2312/29/news070.html",
+          "author": null,
+          "description": "Metaのアプリ全体で幅広いリーチを獲得している「リール」。ブランドコンテンツの見られ方で比較すると、そのポテンシャルは相当高いものになっているようだ。",
+          "link": "https://marketing.itmedia.co.jp/mm/articles/2312/29/news070.html",
+          "publishedOn": "2023-12-28T22:00:00.000Z",
+          "wordCount": 1525,
+          "title": "[ITmedia マーケティング] 「TikTok」 vs 「リール」　ブランド投稿の視聴数を比較してみた結果",
+          "imageUrl": "https://image.itmedia.co.jp/mm/articles/2312/29/cover_news070.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/enterprise/articles/2312/29/news052.html",
+          "author": null,
+          "description": "読者の皆さんは2023年、サイバー攻撃の被害に遭わず無事に過ごせたでしょうか。年の瀬ということで「ITmedia エンタープライズ」編集部が印象的だったセキュリティトピックを振り返ります。",
+          "link": "https://www.itmedia.co.jp/enterprise/articles/2312/29/news052.html",
+          "publishedOn": "2023-12-28T22:00:00.000Z",
+          "wordCount": 2784,
+          "title": "[ITmedia エンタープライズ] 2023年はランサムウェアの1年だった　編集部が選ぶ主要セキュリティトピック",
+          "imageUrl": "https://image.itmedia.co.jp/enterprise/articles/2312/29/cover_news052.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/business/articles/2312/23/news048.html",
           "author": null,
           "description": "",
-          "link": "https://www.itmedia.co.jp/business/articles/2312/28/news007.html",
-          "publishedOn": "2023-12-27T22:30:00.000Z",
-          "wordCount": 2956,
-          "title": "[ITmedia ビジネスオンライン] 「俺、今日12時間ここにいるよ」　エスコンが破壊した野球場の既成概念",
-          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/28/cover_news007.jpg"
+          "link": "https://www.itmedia.co.jp/business/articles/2312/23/news048.html",
+          "publishedOn": "2023-12-28T21:30:00.000Z",
+          "wordCount": 2919,
+          "title": "[ITmedia ビジネスオンライン] サッカー、ゴルフ、F1……　「アラブの盟主」サウジが進める巨額投資の狙いとは",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/23/cover_news048.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/business/articles/2312/28/news037.html",
+          "id": "https://www.itmedia.co.jp/mobile/articles/2312/29/news071.html",
           "author": null,
-          "description": "「高学歴」の学生から就職先として人気の企業はどこか。リーディングマークが2025年卒を対象に実施した調査結果を発表した。",
-          "link": "https://www.itmedia.co.jp/business/articles/2312/28/news037.html",
-          "publishedOn": "2023-12-27T22:15:00.000Z",
-          "wordCount": 2895,
-          "title": "[ITmedia ビジネスオンライン] 旧帝大・早慶に人気の就職先　3位「伊藤忠商事」、2位「三井物産」、1位は？",
-          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/28/cover_news037.jpg"
+          "description": "1年間でよく読まれた記事を月単位で振り返る「Mobile Monthly Top10」。10月は、シャープのミドルレンジスマートフォン「AQUOS sense8」を紹介する記事が一番よく読まれました。",
+          "link": "https://www.itmedia.co.jp/mobile/articles/2312/29/news071.html",
+          "publishedOn": "2023-12-28T21:00:00.000Z",
+          "wordCount": 2957,
+          "title": "[ITmedia Mobile] AQUOS senseも気付けば「8」に　手頃な価格のスマホへの熱視線は高まるばかり【2023年を振り返る（10月編）】",
+          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/29/cover_news071.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/enterprise/articles/2312/28/news083.html",
+          "id": "https://www.itmedia.co.jp/mobile/articles/2312/29/news043.html",
           "author": null,
-          "description": "RPAは業務の自動化に取り組む企業が多く導入しているツールだが、「ブームは去った」ともいわれている。中堅・中小企業におけるRPA導入後の課題をノークリサーチが調査した。",
-          "link": "https://www.itmedia.co.jp/enterprise/articles/2312/28/news083.html",
-          "publishedOn": "2023-12-27T22:00:00.000Z",
-          "wordCount": 2736,
-          "title": "[ITmedia エンタープライズ] いったい何が中小企業のRPA活用を阻んでいるのか？　ノークリサーチが調査",
-          "imageUrl": "https://image.itmedia.co.jp/enterprise/articles/2312/28/cover_news083.jpg"
+          "description": "年末年始にモバイル決済各社が実施しているキャンペーンをまとめた。年末年始は「お年玉」がもらえるキャンペーンや、抽選で高額ポイントを付与するキャンペーンなども開催している。",
+          "link": "https://www.itmedia.co.jp/mobile/articles/2312/29/news043.html",
+          "publishedOn": "2023-12-28T21:00:00.000Z",
+          "wordCount": 2960,
+          "title": "[ITmedia Mobile] 年末年始のPayPay、d払い、au PAY、楽天ペイのキャンペーンまとめ【12月29日最新版】　お年玉や抽選キャンペーンで高額還元を狙おう",
+          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/29/cover_news043.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/enterprise/articles/2312/28/news058.html",
+          "id": "https://www.itmedia.co.jp/business/articles/2312/29/news014.html",
           "author": null,
-          "description": "Resecurityは2024年のサイバー脅威予測を発表した。米国証券取引委員会の新規制に伴い、上場企業へのランサムウェア攻撃が増加する可能性などが予測されている。",
-          "link": "https://www.itmedia.co.jp/enterprise/articles/2312/28/news058.html",
-          "publishedOn": "2023-12-27T22:00:00.000Z",
-          "wordCount": 2737,
-          "title": "[ITmedia エンタープライズ] 上場企業へのランサムウェア攻撃が増加？　Resecurityが2024年の脅威予測を発表",
-          "imageUrl": "https://image.itmedia.co.jp/enterprise/articles/2312/28/cover_news058.jpg"
+          "description": "テクノロジーの浸透が進む小売業界で、2024年に目を向けるべき課題、取るべき施策は何か。ECや出店、グローバル展開などのテーマに絞って、小売業界に精通する筆者がポイントを解説していく。",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/29/news014.html",
+          "publishedOn": "2023-12-28T20:00:00.000Z",
+          "wordCount": 2927,
+          "title": "[ITmedia ビジネスオンライン] 小売のECやグローバル展開で考えるべきテーマとは？　2024年の重点課題総ざらい",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/29/cover_news014.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/pcuser/articles/2312/28/news081.html",
+          "id": "https://www.itmedia.co.jp/business/articles/2312/29/news048.html",
           "author": null,
-          "description": "2023年は、AppleやGoogleなどのアプリストアに関する「サイドローディング」問題の動きが継続的に話題に上った。その最新の動向を林信行氏がまとめた。",
-          "link": "https://www.itmedia.co.jp/pcuser/articles/2312/28/news081.html",
-          "publishedOn": "2023-12-27T22:00:00.000Z",
-          "wordCount": 2882,
-          "title": "[ITmedia PC USER] Appleのサイドローディング問題、独占制限の新法は誰のための法案か",
-          "imageUrl": "https://image.itmedia.co.jp/pcuser/articles/2312/28/cover_news081.jpg"
+          "description": "ローソンで「くじ」の存在感が増している。2019年と比べると、くじの売り上げは3倍近くにまで増えているという。加盟店も、客単価増が見込めることから積極的に導入している。どうしてなのか。",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/29/news048.html",
+          "publishedOn": "2023-12-28T20:00:00.000Z",
+          "wordCount": 2919,
+          "title": "[ITmedia ビジネスオンライン] ローソンで「くじ」の売上が急増　お店の一等地に陳列されるようになった理由とは？",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/29/cover_news048.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/news/articles/2312/28/news035.html",
+          "id": "https://www.itmedia.co.jp/mobile/articles/2312/28/news181.html",
           "author": null,
-          "description": "家電製品の値上げが続いている。きっかけは2020年頃から発生した半導体不足と、22年初頭から始まった大幅な円安だ。そこで各社の決算発表などを元に23年の家電製品の売り上げ動向と、各社の対策を取材した。",
-          "link": "https://www.itmedia.co.jp/news/articles/2312/28/news035.html",
-          "publishedOn": "2023-12-27T22:00:00.000Z",
-          "wordCount": 2734,
-          "title": "[ITmedia News] 家電メーカー、円安のダメージは？　現状と対策を聞いた",
-          "imageUrl": "https://image.itmedia.co.jp/news/articles/2312/28/cover_news035.jpg"
+          "description": "11月21日付でMVNOサービスを含む契約回線数が600万件を突破した楽天モバイル。まもなく2024年というタイミングで、今度は自社回線（MNOサービス）単独の契約数が600万件を突破した。",
+          "link": "https://www.itmedia.co.jp/mobile/articles/2312/28/news181.html",
+          "publishedOn": "2023-12-28T10:50:00.000Z",
+          "wordCount": 2886,
+          "title": "[ITmedia Mobile] 楽天モバイルのMNO回線の契約数が600万件を突破　12月26日付",
+          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/28/cover_news181.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/news/articles/2312/28/news098.html",
+          "id": "https://www.itmedia.co.jp/business/articles/2312/28/news177.html",
           "author": null,
-          "description": "「Apple Watch Series 9」と「Apple Watch Ultra 2」の米国での輸入販売を禁止する米国際貿易委員会の決定に対し、控訴裁が一時差し止める決定を下した。",
-          "link": "https://www.itmedia.co.jp/news/articles/2312/28/news098.html",
-          "publishedOn": "2023-12-27T21:57:00.000Z",
-          "wordCount": 2752,
-          "title": "[ITmedia News] ハイエンド「Apple Watch」の米国での販売禁止措置、控訴裁が一時差し止めの決定",
-          "imageUrl": "https://image.itmedia.co.jp/news/articles/2312/28/cover_news098.jpg"
+          "description": "ドミノ・ピザ ジャパンは、12月29日から発売を予定していた2024年の「ドミノの福袋」の発売を延期すると発表した。",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/28/news177.html",
+          "publishedOn": "2023-12-28T10:09:00.000Z",
+          "wordCount": 2898,
+          "title": "[ITmedia ビジネスオンライン] ドミノ・ピザ、発売前日に「福袋」延期を発表　問題が判明",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/28/cover_news177.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/business/articles/2312/28/news084.html",
+          "id": "https://www.itmedia.co.jp/mobile/articles/2312/28/news175.html",
           "author": null,
-          "description": "トヨタ自動車が12月27日に発表した11月の世界販売・世界生産（いずれもトヨタ車とレクサス車のみ）は11月として過去最高だった。世界生産は単月ベースでも過去最高となった。",
-          "link": "https://www.itmedia.co.jp/business/articles/2312/28/news084.html",
-          "publishedOn": "2023-12-27T21:00:00.000Z",
-          "wordCount": 2723,
-          "title": "[ITmedia ビジネスオンライン] トヨタ、11月世界販売・生産は過去最高　中国販売は3カ月連続増",
-          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/28/cover_news084.jpg"
+          "description": "NTTドコモは、2024年1月1日から3月31日まで「親子まとめてキャンペーン」を開催。同一ファミリー割引グループ内で22歳以下の新規契約と機種変更に伴う購入を2台行うと、それぞれにdポイントを5000ポイントプレゼントする。",
+          "link": "https://www.itmedia.co.jp/mobile/articles/2312/28/news175.html",
+          "publishedOn": "2023-12-28T09:33:00.000Z",
+          "wordCount": 2914,
+          "title": "[ITmedia Mobile] ドコモ、22歳以下の新規契約＋家族の機種変更で計1万ポイント還元キャンペーン",
+          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/28/l_asa_doyakomatomete_01.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/mobile/articles/2312/28/news091.html",
+          "id": "https://marketing.itmedia.co.jp/mm/articles/2312/28/news170.html",
           "author": null,
-          "description": "1年間でよく読まれた記事を月単位で振り返る「Mobile Monthly Top10」。ある意味で毎年恒例ですが、9月は新型の「iPhone 15シリーズ」に関する記事がよく読まれました。",
-          "link": "https://www.itmedia.co.jp/mobile/articles/2312/28/news091.html",
-          "publishedOn": "2023-12-27T21:00:00.000Z",
-          "wordCount": 2993,
-          "title": "[ITmedia Mobile] iPhoneに“変わり映え”を求めるのは酷なのか？【2023年を振り返る（9月編）】",
-          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/28/cover_news091.jpg"
+          "description": "auが生成AIによる「三太郎シリーズ」コンテンツを2点公開。",
+          "link": "https://marketing.itmedia.co.jp/mm/articles/2312/28/news170.html",
+          "publishedOn": "2023-12-28T09:00:00.000Z",
+          "wordCount": 1476,
+          "title": "[ITmedia マーケティング] auが生成AI「Stable Diffusion」でリメイクしたお正月CMを放映",
+          "imageUrl": "https://image.itmedia.co.jp/mm/articles/2312/28/cover_news170.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/business/articles/2312/28/news061.html",
+          "id": "https://www.itmedia.co.jp/mobile/articles/2312/28/news166.html",
           "author": null,
-          "description": "ローソンが、チルド弁当の「これがロースかつ丼」をリニューアルして11月下旬に発売した。開発プレゼンでは約10回のダメ出しがされたという。開発の背景を担当者に聞いた。",
-          "link": "https://www.itmedia.co.jp/business/articles/2312/28/news061.html",
-          "publishedOn": "2023-12-27T20:00:00.000Z",
-          "wordCount": 2901,
-          "title": "[ITmedia ビジネスオンライン] なぜ、年末に弁当を買う人が増えるのか　約10回の「やり直し」を乗り越えたローソン「かつ丼」開発の背景",
-          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/28/cover_news061.jpg"
+          "description": "ムスビーは、2023年の中古スマホ／タブレット年間取引数ランキングを発表。1位はiPhone SE（第2世代）の9.4％で、iPhoneが大半を占める中でXperia Ace IIIやAQUOS wish2もランクインした。",
+          "link": "https://www.itmedia.co.jp/mobile/articles/2312/28/news166.html",
+          "publishedOn": "2023-12-28T08:35:00.000Z",
+          "wordCount": 2919,
+          "title": "[ITmedia Mobile] 中古スマホ年間ランキングで「iPhone SE（第2世代）」が大差で1位　ムスビーが発表",
+          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/28/l_asa_musubi2023torihiki_01.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/business/articles/2312/28/news022.html",
+          "id": "https://www.itmedia.co.jp/business/articles/2312/28/news076.html",
           "author": null,
-          "description": "小売にもテクノロジーの浸透が進む。一方で、デジタルを活用した画期的と目されるサービスや企業が頭打ちになるニュースも多い。そうならないために、目を向けるべき課題と取るべき施策とは何か。小売業界に精通する筆者が解説していく。",
-          "link": "https://www.itmedia.co.jp/business/articles/2312/28/news022.html",
-          "publishedOn": "2023-12-27T20:00:00.000Z",
-          "wordCount": 2928,
-          "title": "[ITmedia ビジネスオンライン] 「2024年問題」だけじゃない！　小売業界が直面するいくつもの重要課題",
-          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/28/cover_news022.jpg"
+          "description": "インテージは年末年始の予算や予定について、男女5000人を対象とした調査を実施した。",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/28/news076.html",
+          "publishedOn": "2023-12-28T08:00:00.000Z",
+          "wordCount": 2896,
+          "title": "[ITmedia ビジネスオンライン] 年末年始の帰省や旅行などの予算　昨年「3万5400円」、今年は？",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/28/cover_news076.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/news/articles/2312/27/news192.html",
+          "id": "https://www.itmedia.co.jp/business/articles/2312/28/news165.html",
           "author": null,
-          "description": "毎年恒例、年末年始のApple Gift Cardキャンペーンが12月25日からスタートしている。セブン-イレブン、ローソン、ファミリーマートに加え、TSUTAYA、LINE Payでも同様の施策を展開。各社ともキャンペーンは1月7日まで。",
-          "link": "https://www.itmedia.co.jp/news/articles/2312/27/news192.html",
-          "publishedOn": "2023-12-27T14:00:00.000Z",
-          "wordCount": 2746,
-          "title": "[ITmedia News] Appleギフトカード購入で「最大10％還元」　各コンビニやLINEが対象　iPhone購入にも使える",
-          "imageUrl": "https://image.itmedia.co.jp/news/articles/2312/27/cover_news192.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/news/articles/2312/27/news189.html",
-          "author": null,
-          "description": "日本マクドナルドは27日、公式アプリ上で発表した「マクドナルドの福袋2024」の抽選結果について、システム障害により「落選」結果を表示できない状態になっていると明らかにした。",
-          "link": "https://www.itmedia.co.jp/news/articles/2312/27/news189.html",
-          "publishedOn": "2023-12-27T11:11:00.000Z",
-          "wordCount": 2442,
-          "title": "[ITmedia News] マクドナルド、「福袋」の“落選”表示できず　システム障害で　「ポテト加湿器」など封入",
-          "imageUrl": "https://image.itmedia.co.jp/news/articles/2312/27/cover_news189.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/news/articles/2312/27/news161.html",
-          "author": null,
-          "description": "Appleが2024年1月2日から、公式サイトとApple Storeにおいて初売りを開始する。対象製品を購入すると、最高3万円分のAppleギフトカードをプレゼントする。また、付与対象のiPhoneの購入で、先着5万人に辰年をあしらった限定デザインのAirTagをプレゼントする。",
-          "link": "https://www.itmedia.co.jp/news/articles/2312/27/news161.html",
-          "publishedOn": "2023-12-27T10:30:00.000Z",
-          "wordCount": 2853,
-          "title": "[ITmedia News] 「Apple初売り」1月2日から　最大3万円分のギフトカード付与　対象商品ともらえるギフトカード額まとめ",
-          "imageUrl": "https://image.itmedia.co.jp/news/articles/2312/27/cover_news161.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/mobile/articles/2312/27/news184.html",
-          "author": null,
-          "description": "12月27日から、auの一部スマートフォンの価格や実質負担額を改定した。「スマホトクするプログラム」適用時の実質負担額を、一部機種で上げている。Pixel 8（128GB）、Redmi 12 5G、Galaxy A54については一括価格を下げている。",
-          "link": "https://www.itmedia.co.jp/mobile/articles/2312/27/news184.html",
-          "publishedOn": "2023-12-27T10:15:00.000Z",
-          "wordCount": 2996,
-          "title": "[ITmedia Mobile] auの一部スマートフォンで実質負担額を値上げ　Pixel 8（128GB）やRedmi 12 5Gは一括値下げ",
-          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/27/cover_news184.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/mobile/articles/2312/27/news182.html",
-          "author": null,
-          "description": "ディ・ポップスは、スマホ相談窓口「TOP1」で中古SIMフリーiPhoneを「TOP1 Certified iPhone」として取り扱い開始。指定のSIMカードとセット購入で最大2万1999円（税込み）割引するキャンペーンも行う。",
-          "link": "https://www.itmedia.co.jp/mobile/articles/2312/27/news182.html",
-          "publishedOn": "2023-12-27T10:04:00.000Z",
-          "wordCount": 2904,
-          "title": "[ITmedia Mobile] 中古iPhone SE（第2世代）がSIMセットで1円キャンペーンも　スマホ相談窓口「TOP1」が中古iPhoneを販売開始",
-          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/27/l_asa_TOP1CertifiediPhone_01.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/news/articles/2312/27/news180.html",
-          "author": null,
-          "description": "東京大学松尾研究室は、大規模言語モデル（LLM）の講義資料を無償公開した。同研究室が9～10月に実施した「東京大学サマースクール　大規模言語モデル講座」で使用したもの。",
-          "link": "https://www.itmedia.co.jp/news/articles/2312/27/news180.html",
-          "publishedOn": "2023-12-27T09:57:00.000Z",
-          "wordCount": 2748,
-          "title": "[ITmedia News] 年末年始にLLMの勉強はいかが？　東大松尾研、大規模言語モデルの講座資料を無料公開",
-          "imageUrl": "https://image.itmedia.co.jp/news/articles/2312/27/cover_news180.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/mobile/articles/2312/27/news176.html",
-          "author": null,
-          "description": "小林薬品は、容量5000mAhのモバイルバッテリー「miniモバイルバッテリ KO361」を発売。口紅と変わらないコンパクトサイズで、内蔵のLightning端子とUSB Type-C端子で2台同時充電も行える。",
-          "link": "https://www.itmedia.co.jp/mobile/articles/2312/27/news176.html",
-          "publishedOn": "2023-12-27T09:26:00.000Z",
-          "wordCount": 2907,
-          "title": "[ITmedia Mobile] 小林薬品、口紅サイズのモバイルバッテリー発売　Lightning＋USB Type-C端子内蔵で2台同時充電",
-          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/27/l_asa_KO361_01.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/news/articles/2312/27/news173.html",
-          "author": null,
-          "description": "東大発のAIスタートアップ企業であるELYZAは、商用利用可能な日本語の大規模言語モデル（LLM）「ELYZA-japanese-Llama-2-13b」を公開した。日本語性能の評価では「GPT-3.5（text-davinci-003）」を上回るという。",
-          "link": "https://www.itmedia.co.jp/news/articles/2312/27/news173.html",
-          "publishedOn": "2023-12-27T09:07:00.000Z",
-          "wordCount": 2716,
-          "title": "[ITmedia News] ELYZA、新たな日本語言語モデルを一般公開　同社「日本語ならGPT-3.5を上回る性能」　商用利用も可",
-          "imageUrl": "https://image.itmedia.co.jp/news/articles/2312/27/cover_news173.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/news/articles/2312/27/news172.html",
-          "author": null,
-          "description": "全国の公立小中学校の9割超が業務にファクスを使っていることが、文部科学省が実施した校務のデジタル化に関する調査で分かった。",
-          "link": "https://www.itmedia.co.jp/news/articles/2312/27/news172.html",
-          "publishedOn": "2023-12-27T09:03:00.000Z",
-          "wordCount": 2437,
-          "title": "[ITmedia News] ファクス使用9割超、押印や署名書類も9割　学校のデジタル化に課題　文科省調査",
-          "imageUrl": "https://image.itmedia.co.jp/news/articles/2312/27/cover_news172.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/news/articles/2312/27/news168.html",
-          "author": null,
-          "description": "ソフトバンクは27日、固定電話サービスの「おとくライン」などで11月18日と20日に発生した通信障害で、総務省から書面による指導を受けたと発表した。",
-          "link": "https://www.itmedia.co.jp/news/articles/2312/27/news168.html",
-          "publishedOn": "2023-12-27T08:48:00.000Z",
-          "wordCount": 2708,
-          "title": "[ITmedia News] ソフトバンクに行政指導、11月の固定電話通信障害で　2度目の障害は1度目の対応が原因だった",
-          "imageUrl": "https://image.itmedia.co.jp/news/articles/2312/27/cover_news168.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/mobile/articles/2312/27/news169.html",
-          "author": null,
-          "description": "高性能カメラを搭載するスマートフォンを次々と送り出しているHONORは、本体を革張り仕上げにした高級モデルも投入しています。「Magic5 Ultimate」は重厚感あふれる渋い仕上げのラグジュアリーモデル。中国では富裕層にも人気です。",
-          "link": "https://www.itmedia.co.jp/mobile/articles/2312/27/news169.html",
-          "publishedOn": "2023-12-27T08:48:00.000Z",
-          "wordCount": 2965,
-          "title": "[ITmedia Mobile] HONORの超高級スマホ「Magic5 Ultimate」に見えるHuaweiの面影　革張り仕上げの重厚感がスゴい",
-          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/27/cover_news169.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/mobile/articles/2312/27/news167.html",
-          "author": null,
-          "description": "ソフトバンクは、11月18日と20日に発生した「おとくライン」「おとく光電話」の障害について総務省から書面による指導を受けたと発表。影響数や原因、再発防止策についてまとめている。",
-          "link": "https://www.itmedia.co.jp/mobile/articles/2312/27/news167.html",
-          "publishedOn": "2023-12-27T08:32:00.000Z",
-          "wordCount": 2887,
-          "title": "[ITmedia Mobile] ソフトバンク、固定電話サービス障害で行政指導　加入者情報データベースの故障が原因",
-          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/27/l_asa_SB111820syougai_01.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/pcuser/articles/2312/27/news159.html",
-          "author": null,
-          "description": "富士通が、子会社であるエフサステクノロジーズ（現富士通エフサス）との間で相互に事業を譲渡／譲受する形で事業再編を行うことになった。サーバ／ストレージ／ネットワーク製品に関わる事業と法人向けPCの直接販売事業はエフサステクノロジーズに、メインフレーム／UNIXサーバに関わる事業や一部を除くサービス関連事業は富士通にそれぞれ移管される。",
-          "link": "https://www.itmedia.co.jp/pcuser/articles/2312/27/news159.html",
-          "publishedOn": "2023-12-27T08:15:00.000Z",
-          "wordCount": 2859,
-          "title": "[ITmedia PC USER] 富士通がサーバ／ストレージ／ネットワーク製品事業（一部を除く）と法人PC販売をエフサステクノロジーズ（現富士通エフサス）に統合　2024年4月1日付",
-          "imageUrl": "https://image.itmedia.co.jp/pcuser/articles/2312/27/cover_news159.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/pcuser/articles/2312/27/news156.html",
-          "author": null,
-          "description": "Amazon恒例の年始セール「Amazon 初売り」が、2024年1月3日午前9時～1月7日午後11時59分まで開催される。",
-          "link": "https://www.itmedia.co.jp/pcuser/articles/2312/27/news156.html",
-          "publishedOn": "2023-12-27T08:00:00.000Z",
-          "wordCount": 2837,
-          "title": "[ITmedia PC USER] Amazon恒例の年始セール「Amazon 初売り」が2024年1月3日午前9時からスタート",
-          "imageUrl": "https://image.itmedia.co.jp/pcuser/articles/2312/27/cover_news156.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/news/articles/2312/27/news155.html",
-          "author": null,
-          "description": "はてなが、ソーシャルブックマークサービス「はてなブックマーク」で、2023年に「あとで読む」タグが付けられたコンテンツのランキングを公開した。",
-          "link": "https://www.itmedia.co.jp/news/articles/2312/27/news155.html",
-          "publishedOn": "2023-12-27T07:37:00.000Z",
-          "wordCount": 2707,
-          "title": "[ITmedia News] 年末年始に読むよね？　2023年のはてなブックマーク「あとで読む」ランキング",
-          "imageUrl": "https://image.itmedia.co.jp/news/articles/2312/27/cover_news155.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/mobile/articles/2312/27/news152.html",
-          "author": null,
-          "description": "KDDIは、2024年1月9日までau／UQ mobileの「歳末＆初売りセール」を開催。対象3機種のスマートフォンへ機種変更した際に機種代金を最大2万2000円割引し、対象スマートウォッチを5500円割引する。",
-          "link": "https://www.itmedia.co.jp/mobile/articles/2312/27/news152.html",
-          "publishedOn": "2023-12-27T06:51:00.000Z",
-          "wordCount": 2955,
-          "title": "[ITmedia Mobile] au／UQ mobileの「歳末＆初売りセール」　機種変更で最大2万2000円引き",
-          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/27/l_asa_auUQhatuuri_01.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/news/articles/2312/27/news149.html",
-          "author": null,
-          "description": "企業の情報システム部門が抱える業務課題は──IIJの調査によれば、1位は「属人化している業務がある」だった。2位は「人材（業務ができる人）が足りない」、3位は「人員（人数）が足りない」と続いた。",
-          "link": "https://www.itmedia.co.jp/news/articles/2312/27/news149.html",
-          "publishedOn": "2023-12-27T06:25:00.000Z",
-          "wordCount": 2702,
-          "title": "[ITmedia News] 情シス359人に聞く業務課題、2位は「人材が足りない」　1位は　IIJ調査",
-          "imageUrl": "https://image.itmedia.co.jp/news/articles/2312/27/cover_news149.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/pcuser/articles/2312/27/news131.html",
-          "author": null,
-          "description": "企業や組織のIT部門を支援してきた石黒直樹氏が、実際に使っていて仕事に役立つと思ったものや、これから登場する新製品、新サービスをいち早く試してレビューする連載。",
-          "link": "https://www.itmedia.co.jp/pcuser/articles/2312/27/news131.html",
-          "publishedOn": "2023-12-27T06:14:00.000Z",
-          "wordCount": 2874,
-          "title": "[ITmedia PC USER] 眼精疲労対策、集中力UPには激オススメ！　電子ペーパーディスプレイ「DASUNG253U-F」レビュー",
-          "imageUrl": "https://image.itmedia.co.jp/pcuser/articles/2312/27/cover_news131.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/business/articles/2312/27/news142.html",
-          "author": null,
-          "description": "高島屋は27日、オンライン販売したクリスマスケーキの一部が破損して届いた問題で、製造や配送委託先の調査を進めた結果、原因を特定できなかったことを明らかにした。",
-          "link": "https://www.itmedia.co.jp/business/articles/2312/27/news142.html",
-          "publishedOn": "2023-12-27T05:44:00.000Z",
-          "wordCount": 2706,
-          "title": "[ITmedia ビジネスオンライン] 「高島屋のクリスマスケーキ」破損問題　　原因は？　責任は？",
-          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/27/cover_news142.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/mobile/articles/2312/27/news141.html",
-          "author": null,
-          "description": "KDDIは、12月27日にUQ mobileから5Gスマートフォン「Google Pixel 7a」を発売。MNPでコミコミプラン／トクトクプランへ契約かつ増量オプションIIに加入した場合の一括価格は2万5500円（税込み）となる。",
-          "link": "https://www.itmedia.co.jp/mobile/articles/2312/27/news141.html",
-          "publishedOn": "2023-12-27T05:41:00.000Z",
-          "wordCount": 2955,
-          "title": "[ITmedia Mobile] UQ mobileで「Pixel 7a」発売　MNPで2万5500円から",
-          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/27/l_asa_UQPixel7a_01.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/business/articles/2312/27/news140.html",
-          "author": null,
-          "description": "オンラインで販売したクリスマスケーキの一部が崩れて購入客に届いた問題を受け、27日記者会見を開いた高島屋の横山和久専務は、問題のケーキを監修した横浜市のフランス料理店「レ・サンス」が製造する「おせち」について、年末年始に予定通りに配送すると説明した。",
-          "link": "https://www.itmedia.co.jp/business/articles/2312/27/news140.html",
-          "publishedOn": "2023-12-27T05:39:00.000Z",
-          "wordCount": 2707,
-          "title": "[ITmedia ビジネスオンライン] ケーキの次「おせち」は大丈夫？　高島屋ケーキ問題会見",
-          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/27/cover_news140.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/enterprise/articles/2312/27/news116.html",
-          "author": null,
-          "description": "富士通はサーバやストレージなどを中心としたハードウェア事業の基盤強化に向けたハードウェア専業会社「エフサステクノロジーズ」を2024年4月1日付で発足する。事業の詳細とは。",
-          "link": "https://www.itmedia.co.jp/enterprise/articles/2312/27/news116.html",
-          "publishedOn": "2023-12-27T05:12:00.000Z",
+          "description": "",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/28/news165.html",
+          "publishedOn": "2023-12-28T07:51:00.000Z",
           "wordCount": 2727,
-          "title": "[ITmedia エンタープライズ] 富士通、ハードウェア専業会社「エフサステクノロジーズ」を発足　事業の詳細は？",
-          "imageUrl": "https://image.itmedia.co.jp/enterprise/articles/2312/27/cover_news116.jpg"
+          "title": "[ITmedia ビジネスオンライン] Twitter、数百万ドルのボーナス未払いで契約違反か　判決は？",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/28/l_ko_x_00_w600_.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/mobile/articles/2312/27/news137.html",
+          "id": "https://www.itmedia.co.jp/mobile/articles/2312/28/news144.html",
           "author": null,
-          "description": "ソフトバンクが12月27日に、新たな端末購入プログラム「新トクするサポート（バリュー）」を開始した。このプログラムを活用すると、機種によっては1年間、実質12円で運用できる。27日から適用される新たなガイドラインには違反しないのか？",
-          "link": "https://www.itmedia.co.jp/mobile/articles/2312/27/news137.html",
-          "publishedOn": "2023-12-27T05:11:00.000Z",
-          "wordCount": 2984,
-          "title": "[ITmedia Mobile] ソフトバンク、スマホ値引き規制後も「実質12円」で運用できるワケ　新プログラムのカラクリを解説",
-          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/27/cover_news137.jpg"
+          "description": "ソフトバンクが参加した「2023年世界無線通信会議（WRC-23）」で、700～900MHz帯、1.7／2.5GHz帯の追加が正式に決定。これにより各国／地域でHAPSの導入がより柔軟になり、制度の整備が進むことが期待できるという。",
+          "link": "https://www.itmedia.co.jp/mobile/articles/2312/28/news144.html",
+          "publishedOn": "2023-12-28T07:42:00.000Z",
+          "wordCount": 2893,
+          "title": "[ITmedia Mobile] 成層圏通信HAPS向けに周波数帯を追加　スマートフォンでの直接通信も可能に",
+          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/28/l_asa_SBHAPS_01.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/mobile/articles/2312/26/news053.html",
+          "id": "https://www.itmedia.co.jp/mobile/articles/2312/28/news158.html",
           "author": null,
-          "description": "旅心を刺激するUNiCASEのZERO HALLIBURTONコラボケースをレビュー。ジャケットタイプと手帳タイプ、それぞれ質感の異なる3色展開。便利な機能や特徴、注意点を紹介します。",
-          "link": "https://www.itmedia.co.jp/mobile/articles/2312/26/news053.html",
-          "publishedOn": "2023-12-27T04:40:00.000Z",
-          "wordCount": 2977,
-          "title": "[ITmedia Mobile] 「ZERO HALLIBURTON」コラボのiPhone 15 Proケースを試す　まるで本物のアタッシェケース？",
-          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/26/cover_news053.jpg"
+          "description": "PayPayは、地方自治体と共同で行うキャンペーン「あなたのまちを応援プロジェクト」へ2024年2月以降に参加する15自治体を発表。埼玉県久喜市や熊本県八代市などで10～30％のPayPayポイントを還元する。",
+          "link": "https://www.itmedia.co.jp/mobile/articles/2312/28/news158.html",
+          "publishedOn": "2023-12-28T07:19:00.000Z",
+          "wordCount": 2904,
+          "title": "[ITmedia Mobile] PayPayの「あなたのまちを応援プロジェクト」、2024年2月以降に15自治体が参加　最大30％ポイント還元",
+          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/28/l_asa_PayPayouen240215_01.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/pcuser/articles/2312/27/news133.html",
+          "id": "https://www.itmedia.co.jp/mobile/articles/2312/28/news159.html",
           "author": null,
-          "description": "日本エイサーが、2024年1月9日午前11時59分まで、同社公式オンラインストアでセールを開催している。",
-          "link": "https://www.itmedia.co.jp/pcuser/articles/2312/27/news133.html",
-          "publishedOn": "2023-12-27T04:30:00.000Z",
+          "description": "進化を続けるスマートフォンのカメラ性能だが、2023年にハードウェア面で目立ったトレンドを振り返りたい。単純に大型のイメージセンサーを積むだけではなく、高画質の写真を撮るための新たなアプローチが見られた。可変絞りと望遠マクロも画質を追求するなら欠かせないだろう。",
+          "link": "https://www.itmedia.co.jp/mobile/articles/2312/28/news159.html",
+          "publishedOn": "2023-12-28T07:19:00.000Z",
+          "wordCount": 2981,
+          "title": "[ITmedia Mobile] スマホカメラの“ハード的進化”を振り返る　1型センサーに代わる新技術／可変絞りや望遠トレンドにも注目",
+          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/28/cover_news159.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/business/articles/2312/28/news069.html",
+          "author": null,
+          "description": "物流はよく「宝の山」だといわれる。まだまだ改善が進んでおらず「改善という宝」が埋もれているからだ。その見つけ方とは。",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/28/news069.html",
+          "publishedOn": "2023-12-28T07:17:00.000Z",
+          "wordCount": 2950,
+          "title": "[ITmedia ビジネスオンライン] 物流初心者でもできる、現場で改善すべき「宝の山」の見つけ方",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/28/cover_news069.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/business/articles/2312/28/news157.html",
+          "author": null,
+          "description": "",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/28/news157.html",
+          "publishedOn": "2023-12-28T07:16:00.000Z",
+          "wordCount": 2725,
+          "title": "[ITmedia ビジネスオンライン] ダイハツ不正問題、仕入先への補償はどうする？　トヨタの対応は",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/28/cover_news157.jpg"
+        },
+        {
+          "id": "https://marketing.itmedia.co.jp/mm/articles/2312/28/news139.html",
+          "author": null,
+          "description": "キリンビールがマーケティングに生成AIを活用する実証実験を始めた。「AIペルソナ」を構築することで商品開発の高速化を目指す。",
+          "link": "https://marketing.itmedia.co.jp/mm/articles/2312/28/news139.html",
+          "publishedOn": "2023-12-28T06:00:00.000Z",
+          "wordCount": 1493,
+          "title": "[ITmedia マーケティング] キリンビールが生成AIをマーケティングに実装へ　商品開発の高速化に向けた具体的な活用方法とは？",
+          "imageUrl": "https://image.itmedia.co.jp/mm/articles/2312/28/cover_news139.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/business/articles/2312/28/news099.html",
+          "author": null,
+          "description": "福岡県下で、幸福度が高い街や住み続けたい街との人気が高いのはどこか。自治体・駅別のランキングが明らかになった。",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/28/news099.html",
+          "publishedOn": "2023-12-28T06:00:00.000Z",
+          "wordCount": 2895,
+          "title": "[ITmedia ビジネスオンライン] 県民が選ぶ、福岡の「幸福度が高い街」　3位「岡垣町」、2位「福岡市中央区」、1位は？",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/28/cover_news099.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/pcuser/articles/2312/28/news148.html",
+          "author": null,
+          "description": "サンワサプライは、クランプ式ディスプレイアーム「100-LAC002」を発売した。価格は4380円（税込み）。",
+          "link": "https://www.itmedia.co.jp/pcuser/articles/2312/28/news148.html",
+          "publishedOn": "2023-12-28T05:13:00.000Z",
+          "wordCount": 2818,
+          "title": "[ITmedia PC USER] サンワ、クランプで使えるディスプレイアーム",
+          "imageUrl": "https://image.itmedia.co.jp/pcuser/articles/2312/28/cover_news148.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/pcuser/articles/2312/28/news143.html",
+          "author": null,
+          "description": "Ankerのグループ会社、ルーナ・ジャパンが発売したペットロボット「Loona Blue」のファーストインプレッションをお届けする。",
+          "link": "https://www.itmedia.co.jp/pcuser/articles/2312/28/news143.html",
+          "publishedOn": "2023-12-28T04:30:00.000Z",
+          "wordCount": 2879,
+          "title": "[ITmedia PC USER] GPT対話モードも搭載した「Loona Blue」をお迎えしてみた　感情表現がとても豊かなペットロボット",
+          "imageUrl": "https://image.itmedia.co.jp/pcuser/articles/2312/28/cover_news143.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/mobile/articles/2312/28/news141.html",
+          "author": null,
+          "description": "トリニティは約200製品を対象とした「2024年初売り」を2024年1月1日～8日に開始する。期間中はAirPods、Apple Watchのアクセサリーなどが最大80％オフで販売される。20230年12月27日には対象製品の一部が発表された。",
+          "link": "https://www.itmedia.co.jp/mobile/articles/2312/28/news141.html",
+          "publishedOn": "2023-12-28T04:15:00.000Z",
+          "wordCount": 2932,
+          "title": "[ITmedia Mobile] AirPods Pro完全防水ケースが80％オフに　トリニティが約200製品対象の「2024年初売り」を1月1日～8に開催",
+          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/28/cover_news141.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/business/articles/2312/28/news131.html",
+          "author": null,
+          "description": "複合型書店ヴィレッジヴァンガードを運営するヴィレッジヴァンガードコーポレーションは、文豪グッズを詰め込んだ3種類の福袋をオンラインストアにて販売開始した。",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/28/news131.html",
+          "publishedOn": "2023-12-28T04:11:00.000Z",
+          "wordCount": 2901,
+          "title": "[ITmedia ビジネスオンライン] ヴィレバンの福袋は？　文豪グッズが詰まっている",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/28/cover_news131.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/business/articles/2312/28/news127.html",
+          "author": null,
+          "description": "ブッキングリゾートが運営するリゾートグランピングドットコムは、静岡県伊豆市にオープンするグランピング施設「～中伊豆フィッシングリゾート～Gran In」の予約受付を開始した。",
+          "link": "https://www.itmedia.co.jp/business/articles/2312/28/news127.html",
+          "publishedOn": "2023-12-28T04:10:00.000Z",
+          "wordCount": 2907,
+          "title": "[ITmedia ビジネスオンライン] 静岡県伊豆市に「グランピング施設」が登場、特徴は？",
+          "imageUrl": "https://image.itmedia.co.jp/business/articles/2312/28/cover_news127.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/news/articles/2312/28/news138.html",
+          "author": null,
+          "description": "JEITAによると日本の電子情報産業は、2020年から始まった世界的パンデミックにより、ここ数年はその影響による需要変動が大きかったが、2023年はそれよりも2つの戦争や世界的インフレ傾向、AIの登場が大きなインパクトを与えたようだ。今回はJEITA公開の資料をベースに、23年の振り返りと今後起こるであろう社会変革の様相を予測してみたい。",
+          "link": "https://www.itmedia.co.jp/news/articles/2312/28/news138.html",
+          "publishedOn": "2023-12-28T04:00:00.000Z",
+          "wordCount": 2738,
+          "title": "[ITmedia News] 世界から取り残される日本の「電子・IT産業」　打開策は生成AIか　JEITA資料で見る日本の“今と未来”",
+          "imageUrl": "https://image.itmedia.co.jp/news/articles/2312/28/cover_news138.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/mobile/articles/2312/28/news134.html",
+          "author": null,
+          "description": "KDDIは、2024年1月1日から山形県、愛知県、京都府、福岡県、鹿児島県の5自治体と連携したキャンペーンを開催。「au PAY（コード支払い）」を利用すると、最大30％のau PAY 残高を還元する。",
+          "link": "https://www.itmedia.co.jp/mobile/articles/2312/28/news134.html",
+          "publishedOn": "2023-12-28T03:49:00.000Z",
+          "wordCount": 2933,
+          "title": "[ITmedia Mobile] au PAY、5府県の5自治体で最大30％残高還元キャンペーン　1月1日から",
+          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/28/l_asa_auPAY20240101_01.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/mobile/articles/2312/28/news136.html",
+          "author": null,
+          "description": "ベルキンはAmazon.co.jpで2024年1月3日～1月7日に開催される「Amazonニューイヤーセール」にて大幅な値引きを行う。本セールでは158製品が最大67%オフで販売される。具体的な対象製品もアナウンスされている。",
+          "link": "https://www.itmedia.co.jp/mobile/articles/2312/28/news136.html",
+          "publishedOn": "2023-12-28T03:45:00.000Z",
+          "wordCount": 2944,
+          "title": "[ITmedia Mobile] ベルキン、ワイヤレス充電器など158製品を最大67%オフで販売　Amazonニューイヤーセールで",
+          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/28/cover_news136.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/pcuser/articles/2312/28/news133.html",
+          "author": null,
+          "description": "サンワサプライは、壁掛け式ディスプレイアーム「100-LAWD010」を発売した。価格は7480円（税込み）",
+          "link": "https://www.itmedia.co.jp/pcuser/articles/2312/28/news133.html",
+          "publishedOn": "2023-12-28T03:40:00.000Z",
+          "wordCount": 2818,
+          "title": "[ITmedia PC USER] サンワ、壁掛け3関節ディスプレイアームを発売",
+          "imageUrl": "https://image.itmedia.co.jp/pcuser/articles/2312/28/cover_news133.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/pcuser/articles/2312/28/news130.html",
+          "author": null,
+          "description": "GIGABYTE Technologyは、2024年1月3日午前9時～1月7日午後11時59分までの期間、ゲーミングノートPCを最大15％引きで販売するAmazonプライム会員限定「初売りタイムセール」を開催する",
+          "link": "https://www.itmedia.co.jp/pcuser/articles/2312/28/news130.html",
+          "publishedOn": "2023-12-28T03:28:00.000Z",
+          "wordCount": 2861,
+          "title": "[ITmedia PC USER] GIGABYTE、ゲーミングノートPCを最大15％引きで販売するAmazonプライム会員限定の「初売りタイムセール」を開催",
+          "imageUrl": "https://image.itmedia.co.jp/pcuser/articles/2312/28/cover_news130.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/pcuser/articles/2312/28/news126.html",
+          "author": null,
+          "description": "リンクスインターナショナルは、4コア/4スレッドのCeleron Processor J6412を搭載した極薄デスクトップPC「Maxtang VHEHL-30」を発売した。価格は5万1500円から（税込み）",
+          "link": "https://www.itmedia.co.jp/pcuser/articles/2312/28/news126.html",
+          "publishedOn": "2023-12-28T03:18:00.000Z",
+          "wordCount": 2848,
+          "title": "[ITmedia PC USER] リンクス、デジタルサイネージ・組み込み向け超小型デスクトップPCを発売",
+          "imageUrl": "https://image.itmedia.co.jp/pcuser/articles/2312/28/cover_news126.jpg"
+        },
+        {
+          "id": "https://www.itmedia.co.jp/pcuser/articles/2312/28/news125.html",
+          "author": null,
+          "description": "エレコムは、マウス・キーボード・ディスプレイ1台で複数のPCを切り替えて操作できるPC切替器を発売する。",
+          "link": "https://www.itmedia.co.jp/pcuser/articles/2312/28/news125.html",
+          "publishedOn": "2023-12-28T03:01:00.000Z",
           "wordCount": 2829,
-          "title": "[ITmedia PC USER] 日本エイサーがPCから空気清浄機までセール開催中　最大55％オフ",
-          "imageUrl": "https://image.itmedia.co.jp/pcuser/articles/2312/27/cover_news133.jpg"
+          "title": "[ITmedia PC USER] エレコム、1台のマウス・キーボード・ディスプレイで複数のPCを利用できる切替機を発売",
+          "imageUrl": "https://image.itmedia.co.jp/pcuser/articles/2312/28/cover_news125.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/news/articles/2312/27/news134.html",
+          "id": "https://marketing.itmedia.co.jp/mm/articles/2312/28/news129.html",
           "author": null,
-          "description": "講談社の公式漫画アプリ「コミックDAYS」は27日、「クッキングパパ」1300話の無料公開を始めた。",
-          "link": "https://www.itmedia.co.jp/news/articles/2312/27/news134.html",
-          "publishedOn": "2023-12-27T04:30:00.000Z",
-          "wordCount": 2447,
-          "title": "[ITmedia News] 「クッキングパパ」1300話無料公開　ただし108時間限定、「1話5分で4日徹夜すれば」",
-          "imageUrl": "https://image.itmedia.co.jp/news/articles/2312/27/cover_news134.jpg"
+          "description": "2023年は広告のCPA高騰や生成AI活用の一般化の兆しが見られました。2024年のB2Bマーケターはどう動くべきなのでしょうか。",
+          "link": "https://marketing.itmedia.co.jp/mm/articles/2312/28/news129.html",
+          "publishedOn": "2023-12-28T03:00:00.000Z",
+          "wordCount": 1483,
+          "title": "[ITmedia マーケティング] B2Bのコンテンツマーケティングに関する2023年総括と2024年展望レポート",
+          "imageUrl": "https://image.itmedia.co.jp/mm/articles/2312/28/cover_news129.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/mobile/articles/2312/27/news132.html",
+          "id": "https://www.itmedia.co.jp/mobile/articles/2312/28/news121.html",
           "author": null,
-          "description": "KDDIは、2024年1月1～8日に「ポイント超超祭 新春キャンペーン」を開催。auスマートパスプレミアム会員は「au PAY マーケット」で「三太郎の日」に最大40％還元を受けられる。",
-          "link": "https://www.itmedia.co.jp/mobile/articles/2312/27/news132.html",
-          "publishedOn": "2023-12-27T04:07:00.000Z",
-          "wordCount": 2952,
-          "title": "[ITmedia Mobile] au PAYで最大40％還元、au PAY マーケット＋三太郎の日に　1月1日～8日",
-          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/27/l_asa_kddi2024sinsyun_01.jpg"
+          "description": "au Online Shopでの機種変更で対象機種を購入し、指定プランに加入するとau PAY 残高を還元する「auスペシャルセール」の条件を変更。期間限定でiPhone15シリーズを追加し、対象プランが「auマネ活プラン」になる。",
+          "link": "https://www.itmedia.co.jp/mobile/articles/2312/28/news121.html",
+          "publishedOn": "2023-12-28T02:43:00.000Z",
+          "wordCount": 2968,
+          "title": "[ITmedia Mobile] au Online Shopの「auスペシャルセール」に変更、期間限定でiPhone15シリーズを追加",
+          "imageUrl": "https://image.itmedia.co.jp/mobile/articles/2312/28/l_asa_auspecial1227_01.jpg"
         },
         {
-          "id": "https://www.itmedia.co.jp/enterprise/articles/2312/27/news092.html",
+          "id": "https://marketing.itmedia.co.jp/mm/articles/2312/28/news086.html",
           "author": null,
-          "description": "「意思決定が遅い」「既存部門が非協力的」――。新規事業を立ち上げる大企業にはスタートアップ企業とはまた違う課題がある。課題を回避しつつ、新規事業を成功させるための人材育成の在り方とは。",
-          "link": "https://www.itmedia.co.jp/enterprise/articles/2312/27/news092.html",
-          "publishedOn": "2023-12-27T03:55:00.000Z",
-          "wordCount": 2684,
-          "title": "[ITmedia エンタープライズ] 大企業の人材育成、どうしてる？　新規事業立ち上げの“裏側”をのぞく",
-          "imageUrl": "https://image.itmedia.co.jp/enterprise/articles/2312/27/cover_news092.jpg"
-        },
-        {
-          "id": "https://www.itmedia.co.jp/news/articles/2312/27/news128.html",
-          "author": null,
-          "description": "NBCユニバーサル・エンターテイメントは、テレビアニメ「川越ボーイズ・シング」のBlu-ray DiscとDVDシリーズの発売を中止すると発表した。予約していた人には返金と共に、希望する人には予約に対する「返礼品」として全話入りBlu-ray Discを配布するという。",
-          "link": "https://www.itmedia.co.jp/news/articles/2312/27/news128.html",
-          "publishedOn": "2023-12-27T03:39:00.000Z",
-          "wordCount": 2461,
-          "title": "[ITmedia News] 神対応？　アニメのブルーレイ発売中止→予約した人に全話入りブルーレイ無償配布",
-          "imageUrl": "https://image.itmedia.co.jp/news/articles/2312/27/cover_news128.jpg"
+          "description": "より良いユーザー体験を生み出すためには、さまざまなタッチポイントで適切なコミュニケーションを図る必要があります。それをどう探し、どう活用していくのか、考えてみましょう。",
+          "link": "https://marketing.itmedia.co.jp/mm/articles/2312/28/news086.html",
+          "publishedOn": "2023-12-28T02:00:00.000Z",
+          "wordCount": 1540,
+          "title": "[ITmedia マーケティング] 顧客との出会いを生むタッチポイントの見つけ方、増やし方",
+          "imageUrl": "https://image.itmedia.co.jp/mm/articles/2312/28/cover_news086.png"
         }
       ]
     },
@@ -2354,12 +2354,22 @@
       "siteUrl": "https://codezine.jp/",
       "articles": [
         {
+          "id": "http://codezine.jp/article/detail/18814",
+          "author": null,
+          "description": "企業システムの多くがオンプレミスからクラウドに移行するにつれ、その安全性をいかに担保するかが重要な課題となっています。特に、AWSなどクラウドサービスの高いアップデート頻度やビジネスにアジリティ（俊敏性）がもたらされたことで、堅牢性だけでなく費用対効果を考慮したセキュリティが必要になりました。そこで役立つのが継続的セキュリティです。今回は『AWS継続的セキュリティ実践ガイド』から、なぜ継続的セキュリティが必要なのか、どのようなアプローチがあるのかを解説します。",
+          "link": "http://codezine.jp/article/detail/18814",
+          "publishedOn": "2023-12-28T22:00:00.000Z",
+          "wordCount": 4290,
+          "title": "AWSによるシステムの安全性を高めるために、なぜ「継続的セキュリティ」が必要なのか",
+          "imageUrl": "https://codezine.jp/static/images/article/18814/18814_share.png"
+        },
+        {
           "id": "http://codezine.jp/article/detail/18851",
           "author": null,
           "description": "プログラミング言語「Rust」の開発チームは、近日中に公開予定の「Rust 1.75」で、「impl Trait」構文が安定化すると12月22日（現地時間）に明らかにした。この構文は2018年5月公開のRust 1.26から試験的に導入していたもの。",
           "link": "http://codezine.jp/article/detail/18851",
           "publishedOn": "2023-12-27T07:05:00.000Z",
-          "wordCount": 4067,
+          "wordCount": 4040,
           "title": "近日中に公開予定のRust 1.75で、「impl Trait」が安定化",
           "imageUrl": "https://codezine.jp/static/images/article/18851/12504_og.jpg"
         },
@@ -2369,7 +2379,7 @@
           "description": "「開発生産性」がホットな話題となっています。Four KeysやSPACEといったスタンダードと言える指標もできあがりつつあり、エンジニアリングの成果が直接ビジネスの成功に結びついている例も少なくありません。しかし、開発生産性の評価を行う際にはエンジニア側の視点だけでなくビジネス側の要求と、期待をもとに逆算することが不可欠になっていますが、エンジニア側の視点に閉じてしまう例がしばしば見受けられます。本連載では、開発生産性を起点にビジネスとエンジニアリングの課題に切り込み、ビジネス側からの逆算の意義や可視化の方法、エンジニアと事業側が抱く開発生産性に対する異なる視点とそのギャップの埋め方に焦点を当てていきます。",
           "link": "http://codezine.jp/article/detail/18829",
           "publishedOn": "2023-12-27T02:00:00.000Z",
-          "wordCount": 4259,
+          "wordCount": 4232,
           "title": "「開発生産性」はエンジニア\"だけ\"のモノではなくなった？──開発組織から経営層までが開発生産性を考える時代へ",
           "imageUrl": "https://codezine.jp/static/images/article/18829/og.png"
         },
@@ -2379,7 +2389,7 @@
           "description": "オブジェクト指向のスクリプト言語であるRubyの開発チームは、最新バージョンとなる「Ruby 3.3.0」を12月25日にリリースした。",
           "link": "http://codezine.jp/article/detail/18847",
           "publishedOn": "2023-12-27T01:00:00.000Z",
-          "wordCount": 4062,
+          "wordCount": 4035,
           "title": "オブジェクト指向スクリプト言語「Ruby 3.3.0」がリリース",
           "imageUrl": "https://codezine.jp/static/images/article/18847/12504_og.jpg"
         },
@@ -2389,7 +2399,7 @@
           "description": "米Microsoftは、クラウドネイティブなアプリケーションの開発と運用を容易にする「.NET Aspire Preview 2」を、12月20日（現地時間）に公開している。",
           "link": "http://codezine.jp/article/detail/18848",
           "publishedOn": "2023-12-27T00:00:00.000Z",
-          "wordCount": 4090,
+          "wordCount": 4053,
           "title": "Microsoft、クラウドネイティブなアプリケーションの開発と運用を容易にする「.NET Aspire Preview 2」を公開",
           "imageUrl": "https://codezine.jp/static/images/article/18848/13165_og.jpg"
         },
@@ -2399,7 +2409,7 @@
           "description": "JavaScript／TypeScript向け静的解析ツール「Oxlint」の開発チームは、Oxlintのバージョン0.0.20を公開した。このバージョンで正式公開になるとしている。OxlintはMITライセンスで公開しているオープンソース・ソフトウェア。",
           "link": "http://codezine.jp/article/detail/18849",
           "publishedOn": "2023-12-26T09:00:00.000Z",
-          "wordCount": 4068,
+          "wordCount": 4031,
           "title": "JavaScript／TypeScript向け静的解析ツール「Oxlint」が正式に公開、Rustの採用で大幅に高速化",
           "imageUrl": "https://codezine.jp/static/images/article/18849/16568_ogp.png"
         },
@@ -2409,7 +2419,7 @@
           "description": "第3回では、PHP 8.3におけるクラスや変数の定義、エラー／例外に関連する強化ポイントを主に紹介します。まずはオーバライドメソッドの明示、クラス定数への型の指定、readonlyプロパティの再初期化、動的なクラス定数の取得といったクラス定義の強化点に加えて、静的変数の初期化方法の拡張という変数定義の強化点を紹介します。そして、SQLiteにおける例外発生のデフォルト化、Date/Timeにおけるエラー/例外のハンドリング強化について紹介します。",
           "link": "http://codezine.jp/article/detail/18818",
           "publishedOn": "2023-12-26T02:00:00.000Z",
-          "wordCount": 4304,
+          "wordCount": 4328,
           "title": "より使いやすくなったPHP 8.3の新機能──クラスや変数定義、エラーと例外の強化ポイントを解説",
           "imageUrl": "https://codezine.jp/static/images/article/18818/og.png"
         },
@@ -2419,7 +2429,7 @@
           "description": "Linux Foundationが主催するOpen Source Security Foundation（OpenSSF）は、CおよびC++アプリケーションを安全に構築するための専門知識とリソースを開発者に提供する「CおよびC++のためのコンパイラー・オプション強化ガイド」を、12月12日に発表した。",
           "link": "http://codezine.jp/article/detail/18846",
           "publishedOn": "2023-12-26T00:00:00.000Z",
-          "wordCount": 4075,
+          "wordCount": 4038,
           "title": "OpenSSF、CおよびC++のセキュリティを強化する「コンパイラ・オプション強化ガイド」を発表",
           "imageUrl": "https://codezine.jp/static/images/article/18846/18846_ogp.png"
         },
@@ -2429,7 +2439,7 @@
           "description": "米Metaは、オープンソースのモバイルアプリフレームワークであるReact Nativeの最新バージョンとなる「React Native 0.73」を、12月6日（現地時間）にリリースした。同リリースでは、Hermesによるデバッグの改善、安定したシンボリックリンクのサポート、Android 14のサポート、新たな実験的機能の追加などが行われている。",
           "link": "http://codezine.jp/article/detail/18840",
           "publishedOn": "2023-12-25T03:00:00.000Z",
-          "wordCount": 4092,
+          "wordCount": 4070,
           "title": "Meta、モバイルアプリフレームワーク「React Native 0.73」をリリース",
           "imageUrl": "https://codezine.jp/static/images/article/18840/16614_ogp.png"
         },
@@ -2439,7 +2449,7 @@
           "description": "Ms.Engineerのエンジニア育成講座「コーディングブートキャンプ」は、経済産業省の「リスキリングを通じたキャリアアップ支援事業」に採択されたことが12月20日に発表された。これにより、条件を満たす人が同講座を受講する場合、受講費の最大70％が補助され、受講できる。",
           "link": "http://codezine.jp/article/detail/18842",
           "publishedOn": "2023-12-25T01:00:00.000Z",
-          "wordCount": 4073,
+          "wordCount": 4036,
           "title": "女性エンジニア育成Ms.Engineerが「リスキリングを通じたキャリアアップ支援事業」に、受講料の補助が開始",
           "imageUrl": "https://codezine.jp/static/images/article/18842/18842_ogp.png"
         },
@@ -2449,7 +2459,7 @@
           "description": "Datadogは、2023年9月までに同社の顧客により実行された24億以上のコンテナのデータを調査し、レポートにまとめた「コンテナ利用に関する10 のインサイト」を、12月21日に発表した。",
           "link": "http://codezine.jp/article/detail/18841",
           "publishedOn": "2023-12-25T00:00:00.000Z",
-          "wordCount": 4076,
+          "wordCount": 4039,
           "title": "45％以上の企業がサーバーレスコンテナを使用、Datadogが「コンテナ利用に関する10 のインサイト」を発表",
           "imageUrl": "https://codezine.jp/static/images/article/18841/18841_ogp.png"
         },
@@ -2459,7 +2469,7 @@
           "description": "Web開発は分業が当たり前になっていますが、フルスタックで開発できる知識を持っておいて損はありません。フロントエンドとバックエンド、どちらも理解していることでどんな状況にも対応でき、チーム内の連携もスムーズになります。今回はWebシステムをフルスタックで開発するためのノウハウを解説した『実装で学ぶフルスタックWeb開発』（翔泳社）から、Djangoを用いたマスタデータ（DML）の管理手法を紹介します。",
           "link": "http://codezine.jp/article/detail/18796",
           "publishedOn": "2023-12-24T22:00:00.000Z",
-          "wordCount": 5060,
+          "wordCount": 5023,
           "title": "フルスタックでWeb開発するとき、マスタデータ（DML）の管理はどうすべきか",
           "imageUrl": "https://codezine.jp/static/images/article/18796/18796_share.png"
         },
@@ -2469,7 +2479,7 @@
           "description": "Cloud Native Computing Foundation（CNCF）の技術監視委員会（TOC）は、さまざまな機能フラグ管理ツールとの互換性を備えた、ベンダに依存しないコミュニティ主導による機能フラグ用APIを提供するオープン仕様であるOpenFeatureを、CNCFのインキュベーティングプロジェクトとして受け入れたことを、12月19日（現地時間）に発表した。",
           "link": "http://codezine.jp/article/detail/18835",
           "publishedOn": "2023-12-22T03:00:00.000Z",
-          "wordCount": 4065,
+          "wordCount": 4038,
           "title": "コミュニティ主導による機能フラグ標準化を実現するOpenFeature、CNCFのインキュベーティングプロジェクトに",
           "imageUrl": "https://codezine.jp/static/images/article/18835/17612_ogp.png"
         },
@@ -2479,7 +2489,7 @@
           "description": "JavaScriptの代替言語、つまり、altJSの筆頭言語としての地位を確立したTypeScriptは、ReactやVueをはじめとして、さまざまなフロントエンドフレームワークの開発言語として、積極的に利用されてきています。そのTypeScript本体も、順当にアップデートを重ね、現段階（原稿執筆時点）ではバージョン5.2が最新です。この連載では、バージョン3以降、5.2までに施されたアップデートに関して、バージョン横断でテーマ別に紹介していきます。その初回である今回は、連載の内容を概観するとともに、細かいテーマを複数紹介します。",
           "link": "http://codezine.jp/article/detail/18805",
           "publishedOn": "2023-12-22T02:00:00.000Z",
-          "wordCount": 4389,
+          "wordCount": 4362,
           "title": "TypeScriptの変更点まとめ ──新しい演算子・トップレベルawait・usingについて",
           "imageUrl": "https://codezine.jp/static/images/article/18805/18805_ogp.png"
         },
@@ -2489,7 +2499,7 @@
           "description": "メシウス（旧・グレープシティ）は、業務アプリケーション開発に便利なデスクトップ／Web／モバイル用の.NETコンポーネントを収録したスイート製品ComponentOneの最新バージョンとなる「ComponentOne 2023J v3」を、2024年1月17日にリリースする。1年定額制のサブスクリプション方式で、初回の1開発ライセンスは税込165000円、更新ライセンスは税込82500円。",
           "link": "http://codezine.jp/article/detail/18832",
           "publishedOn": "2023-12-22T01:00:00.000Z",
-          "wordCount": 4086,
+          "wordCount": 4049,
           "title": "メシウス（旧・グレープシティ）、.NET開発コンポーネントセット「ComponentOne 2023J v3」を2024年1月17日にリリース",
           "imageUrl": "https://codezine.jp/static/images/article/18832/18832_og.png"
         },
@@ -2499,7 +2509,7 @@
           "description": "日本CTO協会は、経験豊富な事業会社や金融機関がDigital Transformationの道を進む際の羅針盤として「大手事業会社向け DX Criteria」を12月19日に公開した。",
           "link": "http://codezine.jp/article/detail/18837",
           "publishedOn": "2023-12-22T01:00:00.000Z",
-          "wordCount": 4072,
+          "wordCount": 4045,
           "title": "組織の健全な成長のために、日本CTO協会が「大手事業会社向け DX Criteria」を公開",
           "imageUrl": "https://codezine.jp/static/images/article/18837/18837_ogp.png"
         },
@@ -2509,7 +2519,7 @@
           "description": "Teammate Pte.は、11月29日からパブリックプレビューとして公開していた生成AIアプリ開発・運用ツール「Teammate Lang」の正式リリースを12月20日に発表した。",
           "link": "http://codezine.jp/article/detail/18838",
           "publishedOn": "2023-12-22T01:00:00.000Z",
-          "wordCount": 4069,
+          "wordCount": 4042,
           "title": "生成AIアプリの開発・運用を効率化する「Teammate Lang」、新機能を追加し正式リリース",
           "imageUrl": "https://codezine.jp/static/images/article/18838/18838_ogp.png"
         },
@@ -2519,7 +2529,7 @@
           "description": "翔泳社は、ITエンジニア向けカンファレンス「Developers Summit 2024」を、2024年2月15日〜2月16日にベルサール羽田空港で開催する。同イベントは、タイムテーブルを公開し、参加申し込みを開始している。参加費は無料。",
           "link": "http://codezine.jp/article/detail/18839",
           "publishedOn": "2023-12-22T01:00:00.000Z",
-          "wordCount": 4085,
+          "wordCount": 4058,
           "title": "4年ぶりのリアル開催！ ITエンジニアの祭典「Developers Summit 2024」参加申し込みを開始",
           "imageUrl": "https://codezine.jp/static/images/article/18839/18839_ogp.png"
         },
@@ -2529,7 +2539,7 @@
           "description": "オープンソースのCSSフレームワークであるTailwind CSSの開発チームは、最新バージョンとなる「Tailwind CSS 3.4」を12月20日（現地時間）にリリースした。",
           "link": "http://codezine.jp/article/detail/18831",
           "publishedOn": "2023-12-22T00:00:00.000Z",
-          "wordCount": 4071,
+          "wordCount": 4044,
           "title": "オープンソースのCSSフレームワーク「Tailwind CSS 3.4」がリリース",
           "imageUrl": "https://codezine.jp/static/images/article/18831/13529_og.jpg"
         },
@@ -2539,19 +2549,9 @@
           "description": "米OpenAIは、公式のOpenAI Deno SDK（APIライブラリ）を米Deno LandのWebサイトにてリリースしている。",
           "link": "http://codezine.jp/article/detail/18834",
           "publishedOn": "2023-12-21T23:00:00.000Z",
-          "wordCount": 4080,
+          "wordCount": 4043,
           "title": "OpenAI、JavaScript/TypeScriptランタイム「Deno」の公式SDKをリリース",
           "imageUrl": "https://codezine.jp/static/images/article/18834/13178_og.jpg"
-        },
-        {
-          "id": "http://codezine.jp/article/detail/18717",
-          "author": null,
-          "description": "CodeZineを運営する翔泳社では、1月9日（火）まで、通販サイト「SEshop」でPDF版の本を購入すると本体価格の40％がポイント還元となるセール「年末年始ポイント還元感謝祭」を実施中です。",
-          "link": "http://codezine.jp/article/detail/18717",
-          "publishedOn": "2023-12-21T22:00:00.000Z",
-          "wordCount": 4125,
-          "title": "1/9まで40％ポイント還元、エンジニア向け技術書などPDF版の本が翔泳社の通販サイトでお得",
-          "imageUrl": "https://codezine.jp/static/images/article/18717/18717_share.png"
         }
       ]
     },
