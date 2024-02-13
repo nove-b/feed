@@ -26,80 +26,1345 @@
   <div class="site-info">
     <h3 class="hdg">Site Infomation</h3>
     <div class="contents">
-      <p>Built on: 2024-02-12T00:25:58.506Z</p>
+      <p>Built on: 2024-02-13T00:25:53.242Z</p>
       <p>Cli version: 1.15.1</p>
       <p>Use: <a href="https://github.com/osmoscraft/osmosfeed">osmosfeed</a></p>
     </div>
   </div>
   <div class="articles">
     <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/tsuchiyakaita/articles/a107520099d8be target="_blank">
-        <h1 class="hdg">JSオブジェクトに対しTypeScriptのOmitとPickみたいなことがやりたい</h1>
+      <a class="link js-open-overview" href=https://zenn.dev/k_ichirof/articles/b1a763743926e7 target="_blank">
+        <h1 class="hdg">[読書メモ]オブジェクト設計スタイルガイド 4章1節 with TypeScript</h1>
         <div class="info">
           <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-02-12</time></span> |
-          <span>Reading time: <time>3 min</time></span> |
-          <span>Word count: <time>842</time></span>
+          <span>Date: <time>2024-02-13</time></span> |
+          <span>Reading time: <time>2 min</time></span> |
+          <span>Word count: <time>628</time></span>
         </div>
       </a>
       <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--x-P3s6Ej--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:JS%25E3%2582%25AA%25E3%2583%2596%25E3%2582%25B8%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E3%2581%25AB%25E5%25AF%25BE%25E3%2581%2597TypeScript%25E3%2581%25AEOmit%25E3%2581%25A8Pick%25E3%2581%25BF%25E3%2581%259F%25E3%2581%2584%25E3%2581%25AA%25E3%2581%2593%25E3%2581%25A8%25E3%2581%258C%25E3%2582%2584%25E3%2582%258A%25E3%2581%259F%25E3%2581%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%2584%25E3%2583%2581%25E3%2583%25A4%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzZiMTYxNDgxNjYuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">はじめに
-TypeScriptが提供するUtilityTypesとは、コード内での型変換を容易にする為の(便利な関数のような)型達です。
-その中でもOmitとPickは、型レベルでオブジェクトのプロパティを選択したり除外したりする非常に便利な存在です。
-今回は、このOmitとPickのような挙動を実際のオブジェクト（JSオブジェクト）に対し再現する便利関数の実装を紹介します。
-
- Omit関数の実装
-こちらのomit関数は、指定したキーを除外した新しいオブジェクトを作成します。
-export const omit &#x3D; &lt;
-  T extends Record&lt;string...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/n0r1/articles/f3a2f3cb33f176 target="_blank">
-        <h1 class="hdg">JS/TS marathon interview</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-02-12</time></span> |
-          <span>Reading time: <time>0 min</time></span> |
-          <span>Word count: <time>79</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--cfuq7IiS--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_76:JS%252FTS%2520marathon%2520interview%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Nori%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzMyOTVhN2RkYmMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">見出し1
-
- 小見出し
-
- 小見出し
-
- 見出し２</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/k_ichirof/articles/453f60636ee0ed target="_blank">
-        <h1 class="hdg">[読書メモ]オブジェクト設計スタイルガイド 3章11~13節 with TypeScript</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-02-12</time></span> |
-          <span>Reading time: <time>1 min</time></span> |
-          <span>Word count: <time>394</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--KTeBfwrA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%255B%25E8%25AA%25AD%25E6%259B%25B8%25E3%2583%25A1%25E3%2583%25A2%255D%25E3%2582%25AA%25E3%2583%2595%25E3%2582%2599%25E3%2582%25B7%25E3%2582%2599%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E8%25A8%25AD%25E8%25A8%2588%25E3%2582%25B9%25E3%2582%25BF%25E3%2582%25A4%25E3%2583%25AB%25E3%2582%25AB%25E3%2582%2599%25E3%2582%25A4%25E3%2583%2588%25E3%2582%2599%25203%25E7%25AB%25A011%7E13%25E7%25AF%2580%2520with%2520TypeScript%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:k_ichirof%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2ZiYTI0YjgyZDMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--7yEj42sU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%255B%25E8%25AA%25AD%25E6%259B%25B8%25E3%2583%25A1%25E3%2583%25A2%255D%25E3%2582%25AA%25E3%2583%2595%25E3%2582%2599%25E3%2582%25B7%25E3%2582%2599%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E8%25A8%25AD%25E8%25A8%2588%25E3%2582%25B9%25E3%2582%25BF%25E3%2582%25A4%25E3%2583%25AB%25E3%2582%25AB%25E3%2582%2599%25E3%2582%25A4%25E3%2583%2588%25E3%2582%2599%25204%25E7%25AB%25A01%25E7%25AF%2580%2520with%2520TypeScript%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:k_ichirof%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2ZiYTI0YjgyZDMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
         <p class="description">オブジェクト設計スタイルガイドを読みながら、TypeScriptでやるならどうやるかを考えながら書きました。
 要約的に読める内容になっていると思うので、サクッと3分ぐらいで読める記事となっています。
 https://www.oreilly.co.jp/books/9784814400331/
 
- 3.11 オブジェクトに不要なものは持たさない
-オブジェクトに何をm持たせるかという視点で設計すると必要以上の振る舞いを実装しがち。
-まずは、TDDで何が必要かを考えてから実装しよう。
+ 4.1 エンティティ:変更を追跡し、イベントを記録する識別可能なオブジェクト
+例：SalesInvoice エンティティ
+type Line &#x3D; {
+  name: string;
+  pay: number;
+};
 
- 3.12 コンストラクタをテストしない
-テストしない、というよりも
+type SalesInvoiceId &#x3D; number;
 
-失敗知るケースのみテストを書...</p>
+cla...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=http://codezine.jp/article/detail/19038 target="_blank">
+        <h1 class="hdg">Cloudflare、Workers AIにおいて8つの新たなモデルをリリース</h1>
+        <div class="info">
+          <span> CodeZine:新着一覧</span> |
+          <span>Date: <time>2024-02-13</time></span> |
+          <span>Reading time: <time>13 min</time></span> |
+          <span>Word count: <time>4000</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://codezine.jp/static/images/article/19038/12790_og.jpg" width="100" />
+        <p class="description">米Cloudflareは、Cloudflareのグローバルネットワーク上で、サーバレスGPUによる推論を実現する「Workers AI」において、8つの新たなモデルを2月7日（現地時間）にリリースした。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/enterprise/articles/2402/13/news058.html target="_blank">
+        <h1 class="hdg">[ITmedia エンタープライズ] Cisco ExpresswayにCVSS9.6の脆弱性　回避策はないため急ぎアップデートを</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2756</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/enterprise/articles/2402/13/cover_news058.jpg" width="100" />
+        <p class="description">CiscoはCisco Expresswayにクロスサイトリクエストフォージェリーの脆弱性が存在すると発表した。この脆弱性はCVSSスコアで9.6、深刻度「緊急」（Critital）と評価されている。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2402/13/news010.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] 「家庭の事情で営業活動に集中できず成果も上がらない」　社内で気まずくならない2つの方法</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>3072</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2402/13/cover_news010.jpg" width="100" />
+        <p class="description">育児や介護など、家庭の事情で思うように営業活動に邁進できないこともあるでしょう。社内で気まずくなりにくくするための日頃の振る舞いやコミュニケーションについて考えてみましょう。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/aishift/articles/ad1744836509dd target="_blank">
+        <h1 class="hdg">TanStack Router（&amp; Query）はSPA開発で求めていたものだった✨【Reactのルーティングとデータ取得】</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>15 min</time></span> |
+          <span>Word count: <time>4573</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--12h28Pxe--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:TanStack%2520Router%25EF%25BC%2588%2526%2520Query%25EF%25BC%2589%25E3%2581%25AFSPA%25E9%2596%258B%25E7%2599%25BA%25E3%2581%25A7%25E6%25B1%2582%25E3%2582%2581%25E3%2581%25A6%25E3%2581%2584%25E3%2581%259F%25E3%2582%2582%25E3%2581%25AE%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%2520%25E3%2580%2590React%25E3%2581%25AE%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%2586%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%25E3%2581%25A8%25E3%2583%2587...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:ytaisei%25EF%25BC%2588%25E3%2581%259F%25E3%2581%2584%25E3%2581%259B%25E3%2583%25BC%25EF%25BC%2589%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzhhNDQwNmNlMGUuanBlZw&#x3D;&#x3D;%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:AI%2520Shift%2520Tech%2520Blog%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzZmNTZlNDI3NWQuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">Reactの技術選定においてルーティングとデータ取得は特に重要な役割を担っています。
+もちろんNext.jsやRemixのようなフレームワークを採用すれば、個別のライブラリを追加することなくルーティングからデータ取得までフレームワークが提供するAPIを使って実装することができます。
+しかし、AI ShiftのようなBtoBのサービスにおいてはSPAで十分なことがほとんどで、Next.jsなどのフレームワークの採用がtoo muchになりかねません。
+!
+私たちが求めているのは型安全でFile Basedなルーティングと効率的なデータ取得です。
+
+この記事は2024年2月時点の技術選定にお...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2402/13/news001.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] 駅のリニューアルが進んでいるが、注目はどこ？</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>3053</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2402/13/cover_news001.jpg" width="100" />
+        <p class="description">大手私鉄はふだんの運行を毎日続ける一方で、駅のリニューアルも進めている。どの鉄道でも駅のリニューアルが進んでいるが、近年注目されているのは……。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/kouji0705/articles/6598a7d3d5504c target="_blank">
+        <h1 class="hdg">Zodを活用する</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>3 min</time></span> |
+          <span>Word count: <time>779</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--4kdrHS7v--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_66:Zod%25E3%2582%2592%25E6%25B4%25BB%25E7%2594%25A8%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kouji0705%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2lyQVdJeEpndHlqaGVBcmxLaVBsdHh4Mml1VnBNbjdWTEp0S2RxdWc9czk2LWM&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">はじめに
+普段、React(TypeScript)で開発を実施しています。
+Validationや型定義はZodがいいと聞いたので、今回開発を実施していこうと思います。
+
+ Zodとは
+
+https://zod.dev/
+ZodはTypeScriptで使用するためのスキーマ定義とバリデーションライブラリです。これを利用することで、実行時(runtime)にデータの型安全性を保証し、APIのリクエストやレスポンスなど、外部からの入力データの検証を簡単に行うことができます。
+
+ 主な特徴
+Zod は TypeScript で使用するための強力なスキーマ定義とバリデーションライブラリで、以...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/enterprise/articles/2402/13/news053.html target="_blank">
+        <h1 class="hdg">[ITmedia エンタープライズ] データサイエンティストより年収が上がりやすいIT職種とは？　dodaが平均年収レポートを公開</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2716</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/enterprise/articles/2402/13/cover_news053.jpg" width="100" />
+        <p class="description">パーソルキャリアの転職サービス「doda」は「IT職種の転職前後の平均年収レポート」を発表した。調査によると、転職前後の平均年収増加幅ではデータサイエンティストを抜いてあるIT職種が1位となった。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://marketing.itmedia.co.jp/mm/articles/2402/13/news048.html target="_blank">
+        <h1 class="hdg">[ITmedia マーケティング] 「パーソナライゼーション」＆「A／Bテスト」ツール売れ筋TOP5（2024年2月）</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>5 min</time></span> |
+          <span>Word count: <time>1463</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/mm/articles/2402/13/cover_news048.png" width="100" />
+        <p class="description">今週は、パーソナライゼーション製品と「A／Bテスト」ツールの国内売れ筋各TOP5を紹介します。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2402/13/news044.html target="_blank">
+        <h1 class="hdg">[ITmedia News] AIを使った“利益を出す馬券”の買い方とは？　はこだて未来大の准教授がAIによる競馬予想法を指南</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>2901</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/news/articles/2402/13/cover_news044.jpg" width="100" />
+        <p class="description">情報処理学会の学会誌「情報処理」の2019年1月発行分で「情報学者が競馬予想に踏み出すときに知っておくべきこと」と題した解説記事が掲載された。AIを活用して利益が出る馬券を買うために考慮しなければならない競馬予想に関することが記されている。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2402/13/news045.html target="_blank">
+        <h1 class="hdg">[ITmedia News] 鍵の“挿入音”をスマホで録音→スペアキーを作る攻撃　シンガポール国立大「SpiKey」発表</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>2941</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/news/articles/2402/13/cover_news045.jpg" width="100" />
+        <p class="description">シンガポール国立大学に所属する研究者らは、開錠時に鍵穴に鍵を挿入した際の音をスマートフォンのマイクで捉え、その音響信号だけで鍵の形状を推測する攻撃を提案した研究報告を発表した。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2402/13/news081.html target="_blank">
+        <h1 class="hdg">[ITmedia News] ウクライナ軍部、ロシア占領軍によるStarlink使用を報告　マスクCEOは否定</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>2856</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/news/articles/2402/13/cover_news081.jpg" width="100" />
+        <p class="description">ウクライナの国防情報局は、ロシアの占領軍がSpaceXのStarlink端末を使っていると発表した。イーロン・マスクCEOはこれを「誤報」とし、「われわれの知る限り、Starlinkが直接あるいは間接的にロシアに販売されたことはない」とポストした。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://mag.executive.itmedia.co.jp/executive/articles/2402/13/news037.html target="_blank">
+        <h1 class="hdg">[ITmedia エグゼクティブ] イギリス最古のサウナが「指定建造物」に</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>7 min</time></span> |
+          <span>Word count: <time>1950</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/executive/articles/2402/13/l_yf_240213timeout01.jpg" width="100" />
+        <p class="description">東京の街の“ローカルエキスパート”が、仕事の合間に一息つけるスポットやイベントを紹介します。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/cloudbase/articles/65b9f6e4f9ae05 target="_blank">
+        <h1 class="hdg">Prisma ORMを使いこなす ~歴史と対RDB運用の知見を添えて~</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>12 min</time></span> |
+          <span>Word count: <time>3474</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--jL2WXLB9--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Prisma%2520ORM%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%2584%25E3%2581%2593%25E3%2581%25AA%25E3%2581%2599%2520%7E%25E6%25AD%25B4%25E5%258F%25B2%25E3%2581%25A8%25E5%25AF%25BERDB%25E9%2581%258B%25E7%2594%25A8%25E3%2581%25AE%25E7%259F%25A5%25E8%25A6%258B%25E3%2582%2592%25E6%25B7%25BB%25E3%2581%2588%25E3%2581%25A6%7E%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:tockn%2520%257C%2520Cloudbase%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzA5YzRlYWNmYjkuanBlZw&#x3D;&#x3D;%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Cloudbase%2520%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzcwMzc2NjgwYTkuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">CloudbaseはPostgreSQLのORMとしてPrismaを使用しています
+CloudbaseはAWS, Azure, Google Cloud等のパブリッククラウドを対象にしたセキュリティリスクの検出・管理SaaSです。
+個人情報の入ったS3バケットを公開してしまうなどの設定ミスや、近年騒がれたLog4Shellなどの脆弱性をエージェントを使用せず検出し、その修正をサポートするプロダクトです。
+
+https://cloudbase.ink/
+CloudbaseではAPIサーバとしてNode.js、DBとしてPostgreSQLを使用し、そのORMとしてPrismaを使用して...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/enterprise/articles/2402/13/news029.html target="_blank">
+        <h1 class="hdg">[ITmedia エンタープライズ] 企業のSNSアカウントはなぜ乗っ取られるのか？　“運用の欠陥”を筆者が指摘</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2738</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/enterprise/articles/2402/13/cover_news029.jpg" width="100" />
+        <p class="description">最近、企業組織が運営する「X」をはじめとしたSNSアカウントの乗っ取り被害をよく聞きます。なぜこれを防げないのでしょうか。そこには運用面での“欠陥”が存在するようです。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2402/13/news075.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] 「投資家が求める開示」は変化　“期待の集まる人的資本開示”2つのポイント</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>3090</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2402/13/cover_news075.jpg" width="100" />
+        <p class="description">人的資本開示に注目が集まっている。ガイドラインが整備されつつあるが「とりあえず、型通りに開示しておこう」という姿勢では投資家からの期待は得られない。2つのポイントを押さえる必要がある。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2402/13/news052.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] 「DXした！」と満足する総務が見落とす、本当にやるべきこと</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>3086</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2402/13/cover_news052.jpg" width="100" />
+        <p class="description">DXで目指すべきは、データマネジメントを通じた「データ駆動経営」だ。DXと密接に関連する「データマネジメント」を、総務はどう進めるべきか。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2402/13/news080.html target="_blank">
+        <h1 class="hdg">[ITmedia News] MetaのThreads、Twitterの「トレンド」的な「topics」テスト開始</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2848</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/news/articles/2402/13/cover_news080.jpg" width="100" />
+        <p class="description">Metaは、Twitter（現X）の「トレンド」のような機能のテストをまずは米国で開始した。検索ページと「For You」フィードにAIが選んだトピックが表示される。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=http://dailyfeed.jp/feed/103/2024-02-12 target="_blank">
+        <h1 class="hdg">2024年02月12日の記事一覧</h1>
+        <div class="info">
+          <span> Gizmodo Japan（ギズモード・ジャパン）のデイリーフィード - DailyFeed</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>1 min</time></span> |
+          <span>Word count: <time>155</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <p class="description">(全 10 件)
+1. 大爆発した宇宙船に歓声が上がった理由とは？ 
+2. 連絡5000人、デート100回。ChatGPTでマッチングアプリを最適化した男が見つけた運命の人 
+3. 探査機ジュノー、衛星「イオ」の表面から噴き上がる2つの煙を観測 
+4. 「危ないモバイルバッテリー」の見分け方 
+5. こんなに小さなCD。スマホにかざせばちゃんと聴ける 
+6. 見た目はエコバッグ？ ペッタンコにたためる薄型足元ヒーター 
+7. 着るだけでアカデミックさUP。ギズ編集部員が発案した“特異点”なロンT 
+8. ハンドルとポケットつきパソコン、家で使うのに便利すぎた 
+9. まるでアート。ブライアン・イーノ制作の妖しく光るレコードプレーヤー 
+10. Apple Vision Proつけて大炎上したパイロットの苦しい言いわけ</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=http://dailyfeed.jp/feed/105/2024-02-12 target="_blank">
+        <h1 class="hdg">2024年02月12日の記事一覧</h1>
+        <div class="info">
+          <span> ライフハッカー［日本版］のデイリーフィード - DailyFeed</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>0 min</time></span> |
+          <span>Word count: <time>138</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <p class="description">(全 8 件)
+1. ノーコードでブラウザ上の作業を自動化！スプシの読み書きもお任せできるChrome拡張機能【今日のライフハックツール】 
+2. Google Chromeの拡張機能4選！AI、音声入力を使いこなせ 
+3. 入った瞬間あったかい！モフモフボリューミーなこの人口羽毛布団は、お値段以上に幸せになれそう 
+4. クルリと反転して雨や汚れに対応。ツインフェイス仕様が新しい本革バッグ 
+5. 「引っ越しメソッド」で不要な物を片付ける方法 
+6. 感動するほどの手間なし設計！1人分の紅茶に特化したティーストレーナー 
+7. 5分もかからずに作れる自家製ホットチョコレート 
+8. ブラウザのパスワード管理機能を使わない5つの理由</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/enterprise/articles/2402/13/news078.html target="_blank">
+        <h1 class="hdg">[ITmedia エンタープライズ] ゲーム開発が変わったのは“あれ”が理由だった？</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2629</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/enterprise/articles/2402/13/cover_news078.jpg" width="100" />
+        <p class="description">新しい仕組みや技術を積極的に取り入れることで、ゲーマーの期待に応え続けてきたゲーム業界。さまざまな壁を突破するために、開発者たちはどのように取り組んでいるのか。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/karlovic/articles/c7f8d71c88388a target="_blank">
+        <h1 class="hdg">[Next.js / React] 小中規模プロジェクトの、保守可能なクリーンなアーキテクチャを考える</h1>
+        <div class="info">
+          <span> Zennの「Next.js」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>2 min</time></span> |
+          <span>Word count: <time>493</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--hZk9NBhM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%255BNext.js%2520%252F%2520React%255D%2520%25E5%25B0%258F%25E4%25B8%25AD%25E8%25A6%258F%25E6%25A8%25A1%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B8%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E3%2581%25AE%25E3%2580%2581%25E4%25BF%259D%25E5%25AE%2588%25E5%258F%25AF%25E8%2583%25BD%25E3%2581%25AA%25E3%2582%25AF%25E3%2583%25AA%25E3%2583%25BC%25E3%2583%25B3%25E3%2581%25AA%25E3%2582%25A2%25E3%2583%25BC%25E3%2582%25AD%25E3%2583%2586%25E3%2582%25AF%25E3%2583%2581%25E3%2583%25A3%25E3%2582%2592%25E8%2580%2583%25E3%2581%2588%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25A4%25E3%2583%259C%25E3%2582%25AB%25E3%2583%25AB%25E3%2583%25AD%25E3%2583%2593%25E3%2583%2583%25E3%2583%2581%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTFBDcTJZNHdYOGllNUdSY21YMTNVV3QwbWlTTUl0dGxVSEF3LWE0QlFwbEE9czk2LWM&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">前提
+
+今までVue.jsで作っていたCMSをNext.tsに置き換えることにしました。
+筆者はReactを初めて触ったのですが、世の中のドキュメントが小規模単純系複雑大規模系に二分化していたように見受けました。
+クリーンアーキテクチャなどを取り入れるほど重厚にはしたくないのですが、いわゆるサンプルプロジェクトやテックスクールが出している記事を参考に作るとコードが肥大化してしまいそうな要件。
+頑張りすぎない、小中規模アーキテクチャを調べて考えてみたことの備忘録。
+これからNext(React)を触る多言語経験者にとって有益な情報になると良いなと思って公開しますが、拙...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/hsato_workman/books/5f41b770d9221b target="_blank">
+        <h1 class="hdg">Orval v6.24.0 ドキュメント日本語訳</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>0 min</time></span> |
+          <span>Word count: <time>117</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--EbkCHqoA--/g_center%2Ch_280%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYm9va19jb3Zlci8zMzE3MTZmNzQ5LmpwZWc&#x3D;%2Cw_200/v1627283836/default/og-base-book_yz4z02.jpg" width="100" />
+        <p class="description">orval 公式ドキュメントの日本語訳です。
+とりあえず読みたかったので使いそうなページだけ翻訳しました。
+
+メモ
+- Chat GPT 4 による機械翻訳です
+- 各種リンクはOrval公式になっています</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/tkow/articles/1d2a7de1a2fe6d target="_blank">
+        <h1 class="hdg">Typescriptでもデリゲートがしたい！</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>2 min</time></span> |
+          <span>Word count: <time>468</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--K8kOAuVy--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Typescript%25E3%2581%25A7%25E3%2582%2582%25E3%2583%2587%25E3%2583%25AA%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%2588%25E3%2581%258C%25E3%2581%2597%25E3%2581%259F%25E3%2581%2584%25EF%25BC%2581%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:tkow%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzYyZmViZjFiZTIuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">というわけで、ライブラリを作りました。
+https://github.com/tkow/ts-delegate
+import { delegate, delegateProxy } from &#x27;@tkow/ts-delegate&#x27;
+
+interface IChild {
+  hello: (name: string) &#x3D;&gt; string
+  goodbye: () &#x3D;&gt; string
+}
+
+class Child implements IChild {
+  hello(name: string) {
+    return &#x60;Hello, ${name}&#x60;
+  }
+  go...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/hamao/articles/97968d347e4696 target="_blank">
+        <h1 class="hdg">GoCVを使って自動でナンプレを解いてみた</h1>
+        <div class="info">
+          <span> Zennの「Golang」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>2 min</time></span> |
+          <span>Word count: <time>496</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--NBzFc4-U--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:GoCV%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E8%2587%25AA%25E5%258B%2595%25E3%2581%25A7%25E3%2583%258A%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AC%25E3%2582%2592%25E8%25A7%25A3%25E3%2581%2584%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:hamao%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzQ1MGMyYzE1MmIuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">したこと
+タイトルの通り、GoCVを使って、ナンプレの自動読み取りをしてみました。
+n+1番煎じですが、昔からの夢だったので作ってみることにしました。Pythonの記事はいくつかあったのですが、そのまま写すだけだと少しつまらないので、せっかくなのでGoで書くことにしました。
+
+ 完成品
+
+
+ 環境
+M1 Mac
+OS: macOS Sonoma version 14.2.1
+$ brew --version                    
+Homebrew 4.2.7-140-g352f57d
+Homebrew/homebrew-core (git revision 2615...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/jay_es/articles/2024-02-13-typescript-variance target="_blank">
+        <h1 class="hdg">TypeScript の変性（共変・反変）を 5 分で理解する</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>4 min</time></span> |
+          <span>Word count: <time>1242</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--f_WaGTdc--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:TypeScript%2520%25E3%2581%25AE%25E5%25A4%2589%25E6%2580%25A7%25EF%25BC%2588%25E5%2585%25B1%25E5%25A4%2589%25E3%2583%25BB%25E5%258F%258D%25E5%25A4%2589%25EF%25BC%2589%25E3%2582%2592%25205%2520%25E5%2588%2586%25E3%2581%25A7%25E7%2590%2586%25E8%25A7%25A3%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:jay-es%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2hTT1NsdjJlWERneXVQbVRNR2xEa2ZZb2pKNnNGcmVjVmFpOWRWTUE9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">TypeScript の記事などを読んでいると、共変・反変という聞き慣れない言葉に出くわすことがあります。一体何者なのでしょうか。この記事では、そんな共変・反変について、5 分で理解できるよう超ざっくりと解説します。
+!
+この記事は TypeScript v5.3.3 時点での内容となります。
+実際のコードは TypeScript Playground にて確認できます。
+
+この後の記事内で使用する型と変数は以下のとおりです。
+type User &#x3D; {
+  name: string
+}
+
+type Admin &#x3D; User &amp; {
+  permissions: string[]...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/zksytmkn/articles/5e24cde1888ae3 target="_blank">
+        <h1 class="hdg">Unpic：unpic-imgによって画像最適化する</h1>
+        <div class="info">
+          <span> Zennの「Next.js」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>1 min</time></span> |
+          <span>Word count: <time>330</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--n2zKyvk---/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Unpic%25EF%25BC%259Aunpic-img%25E3%2581%25AB%25E3%2582%2588%25E3%2581%25A3%25E3%2581%25A6%25E7%2594%25BB%25E5%2583%258F%25E6%259C%2580%25E9%2581%25A9%25E5%258C%2596%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:nakamoto%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzJlMTVhZGJjOTQuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">Unpicとは
+
+
+Unpicとはウェブ上で画像を扱うためのツールの集まりです。
+
+unpic-img unpic lib unpic placeholder unpic pixelsといったツールがあります。
+
+https://unpic.pics/
+
+ unpic-imgとは
+
+
+Unpicのコアとなるのがunpic-imgで、さまざまなフロントエンドライブラリ、フレームワーク用の画像コンポーネントです。例えばNext.jsを使ってたらnext/imageによって画像を最適化することができますが、そのような画像コンポーネントがないライブラリ、フレームワークを使ってる場合にunpi...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/yatsumi823/articles/github-zenn-shorten-link-story-yatsumi target="_blank">
+        <h1 class="hdg">短縮リンク作成サービスを開発した話</h1>
+        <div class="info">
+          <span> Zennの「Next.js」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>0 min</time></span> |
+          <span>Word count: <time>137</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--xjEjdrpB--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%259F%25AD%25E7%25B8%25AE%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25AF%25E4%25BD%259C%25E6%2588%2590%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2593%25E3%2582%25B9%25E3%2582%2592%25E9%2596%258B%25E7%2599%25BA%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:YATSUM%2521%2528%25E3%2582%2584%25E3%2581%25A4%25E3%2581%25BF%2529%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzk3ZmM3ZTAwODQuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">概要
+2023年末頃に、短縮リンク作成サービスを開発・リリースしました。きっかけとしては、大手の短縮リンクサービス「bit.ly」をはじめ、類似のサービスにて改悪が立て続けに起きていたことです。もっと便利で簡潔なものが作れるのではと思い、開発してみました。
+開発したサービスは以下のものになります。
+
+
+ 技術選定
+開発するにあたり、どのような技術(ここでは言語など)を使用して開発するかの選定を行いました。N-LIA開発開始時点での、私の開発経験は以下のような感じです。
+
+PHP: 3年 (Laravelなどのフレームワークは未経験)
+React: 半年
+MySQL/MariaDB: ...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.its-kenpo.or.jp/NEWS/hoken/20240213.html target="_blank">
+        <h1 class="hdg">【事業主様　事務担当者様】給付金送金のお知らせ等について</h1>
+        <div class="info">
+          <span> ニュース</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>0 min</time></span> |
+          <span>Word count: <time>105</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <p class="description">Tel. 03-5925-5304受付時間/ 月曜～金曜(祝日・年末年始を除く) 9:00〜17:00</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/mfujimoto/articles/setting_sqlbuilder_insert target="_blank">
+        <h1 class="hdg">SQLBuilderの仕様を考える　INSERT仕様検討編</h1>
+        <div class="info">
+          <span> Zennの「Golang」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>1 min</time></span> |
+          <span>Word count: <time>439</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--dqCR4zx0--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:SQLBuilder%25E3%2581%25AE%25E4%25BB%2595%25E6%25A7%2598%25E3%2582%2592%25E8%2580%2583%25E3%2581%2588%25E3%2582%258B%25E3%2580%2580INSERT%25E4%25BB%2595%25E6%25A7%2598%25E6%25A4%259C%25E8%25A8%258E%25E7%25B7%25A8%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:mfujimoto%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzNhYmJiMjYxNjEuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">目的
+GolangのSQLBuilerを作ってみたくて、仕様を考える。
+今回はINSERT文の仕様を考えるが、SELECT+INSERTまで考えると複雑になるので
+一旦保留にする
+
+ 目指す形
+ここではusersというTableに対応したUserというTableモデル構造体がある場合とする。
+宣言としては、
+CREATE TABLE users (
+  id int,
+  name varchar(10)
+)
+
+CREATE TABLE tokens (
+  id int,
+  user_id int REFERENCES users.id,
+  token varchar(10)
+...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/yuutakkuma/articles/de5f4ded784171 target="_blank">
+        <h1 class="hdg">[Android]OAuthのRedirectURIで戻って来た時にアプリが再起動したりする[React-Native]</h1>
+        <div class="info">
+          <span> Zennの「React Native」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>1 min</time></span> |
+          <span>Word count: <time>154</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--G59YNrTC--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%255BAndroid%255DOAuth%25E3%2581%25AERedirectURI%25E3%2581%25A7%25E6%2588%25BB%25E3%2581%25A3%25E3%2581%25A6%25E6%259D%25A5%25E3%2581%259F%25E6%2599%2582%25E3%2581%25AB%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%258C%25E5%2586%258D%25E8%25B5%25B7%25E5%258B%2595%25E3%2581%2597%25E3%2581%259F%25E3%2582%258A%25E3%2581%2599%25E3%2582%258B%255BReact-Native%255D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Yuta%2520Watanabe%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2I3ODYyYWZhNGMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">環境
+
+React-Native
+Expo
+React-Navigation V6
+
+
+ 結論
+リダイレクトで戻って来た時にuseRouteから取得しているparamsの値がundefinedになるので、paramsの値を参照出来なくなりバグる。
+
+ 対策方法
+paramsの値をuseStateでキャッシュすると解決します。
+極論キャッシュさえ出来ればよいので、useStateでなくても良いです。
+// 一例
+const route &#x3D; useRoute()
+const [cache] &#x3D; useState(route.params)
+
+ 余談
+これに気付くのにめっちゃ時間が掛かった...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/aiq_dev/articles/89bc61e8bd7d34 target="_blank">
+        <h1 class="hdg">現在位置とUserの好みから、おすすめの遊び場・スポットを提案してくれるAIコンシェルジュをハッカソンで作った話</h1>
+        <div class="info">
+          <span> Zennの「Next.js」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>2 min</time></span> |
+          <span>Word count: <time>568</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--UtbkISlC--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%258F%25BE%25E5%259C%25A8%25E4%25BD%258D%25E7%25BD%25AE%25E3%2581%25A8User%25E3%2581%25AE%25E5%25A5%25BD%25E3%2581%25BF%25E3%2581%258B%25E3%2582%2589%25E3%2580%2581%25E3%2581%258A%25E3%2581%2599%25E3%2581%2599%25E3%2582%2581%25E3%2581%25AE%25E9%2581%258A%25E3%2581%25B3%25E5%25A0%25B4%25E3%2583%25BB%25E3%2582%25B9%25E3%2583%259D%25E3%2583%2583%25E3%2583%2588%25E3%2582%2592%25E6%258F%2590%25E6%25A1%2588%25E3%2581%2597%25E3%2581%25A6%25E3%2581%258F%25E3%2582%258C%25E3%2582%258BAI%25E3%2582%25B3%25E3%2583%25B3%25E3%2582%25B7%25E3%2582%25A7%25E3%2583%25AB%25E3%2582%25B8%25E3%2583%25A5%25E3%2582%2592%25E3%2583%258F%25E3%2583%2583%25E3%2582%25AB%25E3%2582%25BD%25E3%2583%25B3%25E3%2581%25A7%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2581%25BE%25E3%2581%2595%25E3%2581%25B4%25E3%2582%2587%25E3%2582%2593%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2Q5MzZmYTU3YzAuanBlZw&#x3D;&#x3D;%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:AIQ%2520Tech%2520Blog%2520%2528%25E6%259C%2589%25E5%25BF%2597%2529%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2hZWDhyNWVCOGNkZmExeVRBNmhEMWF4bkFpYnJRUXpCd01EbXhIdVFRPXM5Ni1j%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">こんにちは、AIQ株式会社のフロントエンドエンジニアのまさぴょんです！
+今回は、現在位置とUserの好みから、おすすめの遊び場・スポットを提案してくれるAIコンシェルジュをハッカソンで作ったので、ご紹介します🐱
+
+ 『あなたと地域のつながりを🌟』 AI コンシェルジュ ロボ玉🐹
+ハッカソンの詳細や、テーマ、発表スライドなどについて話す前に、まず実際に開発したアプリの画面や機能などについて、ご紹介します。
+【アプリ概要】
+AI コンシェルジュが、あなたの現在位置(GPS)情報と、好みの場所のタイプから、距離的に近いおすすめの遊び場・スポットを5つ提案してくれるというWebアプリです。
+!
+...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/fushihara/articles/01d09e1d630413 target="_blank">
+        <h1 class="hdg">zodでtwitterのgraphqlの戻り値をパースしたい</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>1 min</time></span> |
+          <span>Word count: <time>306</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--JzRfwEEJ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:zod%25E3%2581%25A7twitter%25E3%2581%25AEgraphql%25E3%2581%25AE%25E6%2588%25BB%25E3%2582%258A%25E5%2580%25A4%25E3%2582%2592%25E3%2583%2591%25E3%2583%25BC%25E3%2582%25B9%25E3%2581%2597%25E3%2581%259F%25E3%2581%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%2595%25E3%2582%25B7%25E3%2583%258F%25E3%2583%25A9%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2hQMWpXZ1IxTER5c0FxS1F0X1ZEUjFYcGUyTHlyOWhsNjhkdDhQSlE9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">twitterのPC web版で使われているhome timelineのapiのレスポンスをnodeのzodという型ライブラリで定義したい。
+
+ 正規化1
+通常のツイートのjsonオブジェクトは以下のような内容
+{
+  &quot;__typename&quot;:&quot;Tweet&quot;,
+  &quot;rest_id&quot;:&quot;123456789&quot;,
+  // 他プロパティ沢山
+}
+結構頻繁に以下のようなオブジェクトが紛れている
+{
+  &quot;__typename&quot;:&quot;TweetWithVisibilityResults&quot;,
+  &quot;tweet&quot;:{
+    &quot;rest_id&quot;:&quot;123456789&quot;,
+    // 他プロパティ沢...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/jy8752/books/33743f8091c39d target="_blank">
+        <h1 class="hdg">BufとProtobufで始めるモダンgRPC開発</h1>
+        <div class="info">
+          <span> Zennの「Golang」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>0 min</time></span> |
+          <span>Word count: <time>99</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--2GIrqCkh--/g_center%2Ch_280%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYm9va19jb3Zlci80YjIxYTk2YjE0LnBuZw&#x3D;&#x3D;%2Cw_200/v1627283836/default/og-base-book_yz4z02.jpg" width="100" />
+        <p class="description">Protocol Buffers(Protobuf)を用いた開発(主にgRPC)にはprotocのようなコンパイラが長い間使われてきました。 コード生成やドキュメントの作成、REST APIとしてのゲートウェイの実装など便利で柔軟なprotocプラグインが利用できる一方、そのためのコード生成コマンドは複雑になりがちです。 こういったProtobufを用いた開発に関わるさまざまな問題をBufは解決するためにBuf CLIやBuf Schema Registry、Connectプロトコルなどさまざまなツールやプロトコルを開発しました。 本書ではBufが開発したさまざまなツールやプロトコルを使用し、現代的でモダンなProtobuf開発について紹介します。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/auagcu/articles/650e2b187747ef target="_blank">
+        <h1 class="hdg">JestでOptionalな値をテストする</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>6 min</time></span> |
+          <span>Word count: <time>1713</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--TUQlK2zU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Jest%25E3%2581%25A7Optional%25E3%2581%25AA%25E5%2580%25A4%25E3%2582%2592%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:AuAgCu%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2FkMWRkMzNkNjkuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">経緯
+e2eテストのコードを書いているときに、以下のようなオブジェクトの型が正しいかテストしたい場面がありました。
+{
+    name: string,
+    email: string,
+    birthday?: string,
+}
+birthdayが存在する場合、以下のようにテストを作成することができます。
+const test &#x3D; {
+  name: &#x27;test&#x27;,
+  email: &#x27;example@example.com&#x27;,
+  birthday: &#x27;2024-02-12&#x27;,
+}
+
+expect(test).toEqual({
+  name: expect.any(...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/rg687076/articles/3bedeccdaaf955 target="_blank">
+        <h1 class="hdg">第6回 React+TypeScriptなWebアプリで、QRコードをARしてみた。(リリース編)</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>2 min</time></span> |
+          <span>Word count: <time>544</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--HXxxb4TG--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25AC%25AC6%25E5%259B%259E%2520React%252BTypeScript%25E3%2581%25AAWeb%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25A7%25E3%2580%2581QR%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592AR%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E3%2580%2582%2528%25E3%2583%25AA%25E3%2583%25AA%25E3%2583%25BC%25E3%2582%25B9%25E7%25B7%25A8%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:aaaa1597%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzVlYmE2MTczYWEuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">Abstract
+React+TypescriptのWebアプリで、ARを実装してみた。第6回。
+端が切れるとか、トラッキングが弱すぎとかいろいろあるだろうけど、ひとまず完成した前回のWebアプリを公開する手順。
+Github Pagesを使うんだけど、Githubって無償で公開ページを提供してくれてるのでそれを使う。便利な世の中になったもんだ。
+
+ ...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/rg687076/articles/541c12172d686a target="_blank">
+        <h1 class="hdg">第5回 React+TypeScriptなWebアプリで、QRコードをARしてみた。(完成編)</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>49 min</time></span> |
+          <span>Word count: <time>14674</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--S8f10hJx--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25AC%25AC5%25E5%259B%259E%2520React%252BTypeScript%25E3%2581%25AAWeb%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25A7%25E3%2580%2581QR%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592AR%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E3%2580%2582%2528%25E5%25AE%258C%25E6%2588%2590%25E7%25B7%25A8%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:aaaa1597%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzVlYmE2MTczYWEuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">Abstract
+React+TypescriptのWebアプリで、ARを実装してみた。第5回。
+前回で検出QRコードの中心がとれたのでその位置に3Dモデルを移動させる。
+あんまり、検出の精度がよくなくって、トラッキングがカクカクするけど、それは次の課題に。(たぶん、その日はこない。。。)
+
+ 結論
+今回の成果物はココ↓
+https://gith...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/rg687076/articles/94ae26cb9dd1c7 target="_blank">
+        <h1 class="hdg">第4回 React+TypeScriptなWebアプリで、QRコードをARしてみた。(検出補助線を引く編)</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>31 min</time></span> |
+          <span>Word count: <time>9431</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--EE0IKwy9--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25AC%25AC4%25E5%259B%259E%2520React%252BTypeScript%25E3%2581%25AAWeb%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25A7%25E3%2580%2581QR%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592AR%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E3%2580%2582%2528%25E6%25A4%259C%25E5%2587%25BA%25E8%25A3%259C%25E5%258A%25A9%25E7%25B7%259A%25E3%2582%2592%25E5%25BC%2595%25E3%2581%258F%25E7%25B7%25A8%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:aaaa1597%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzVlYmE2MTczYWEuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">Abstract
+React+TypescriptのWebアプリで、ARを実装してみた。完結編。
+今回は、カメラ映像から、QRコードを検出させてその上で3Dモデルを表示させる。
+QRコードはトラッキングして3Dモデルを表示させるようにする。
+
+ 結論
+今回の成果物はココ↓
+https://github.com/aaaa1597/ReactTs-QrAr004
+...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/rg687076/articles/2a4fda0d25f99b target="_blank">
+        <h1 class="hdg">第3回 React+TypeScriptなWebアプリで、QRコードをARしてみた。(カメラ編)</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>16 min</time></span> |
+          <span>Word count: <time>4761</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--_pbscqad--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25AC%25AC3%25E5%259B%259E%2520React%252BTypeScript%25E3%2581%25AAWeb%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25A7%25E3%2580%2581QR%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592AR%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E3%2580%2582%2528%25E3%2582%25AB%25E3%2583%25A1%25E3%2583%25A9%25E7%25B7%25A8%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:aaaa1597%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzVlYmE2MTczYWEuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">Abstract
+React+TypescriptのWebアプリで、ARを実装してみた。第3回。
+今回は、3Dキャラクタの背景にカメラ映像を表示させる。
+3Dキャラクタは前回使ったモデルを使用する。
+
+ 結論
+今回の成果物はココ↓
+https://github.com/aaaa1597/ReactTs-QrAr003
+
+ 前提
+
+Rea...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/rg687076/articles/8c2c5f207a597d target="_blank">
+        <h1 class="hdg">第2回 React+TypeScriptなWebアプリで、QRコードをARしてみた。(3Dキャラクタ表示編)</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>7 min</time></span> |
+          <span>Word count: <time>2238</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--FKQ_G-vy--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25AC%25AC2%25E5%259B%259E%2520React%252BTypeScript%25E3%2581%25AAWeb%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25A7%25E3%2580%2581QR%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592AR%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E3%2580%2582%25283D%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%25A9%25E3%2582%25AF%25E3%2582%25BF%25E8%25A1%25A8%25E7%25A4%25BA%25E7%25B7%25A8%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:aaaa1597%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzVlYmE2MTczYWEuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">↓出来上がり。
+https://aaaa1597.github.io/react-r3f-advanced007
+
+ Abstract
+React+TypescriptのWebアプリで、ARを実装してみた。第2回。
+今回は、FBXのキャラクタをダウンロードして表示とアニメーションを実装する。
+使ったモデルはMixiamoってサイトのモデルをありがたく...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/rg687076/articles/2283484dc1992e target="_blank">
+        <h1 class="hdg">第1回 React+TypeScriptなWebアプリで、QRコードをARしてみた。(QRコード読み込み編)</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>2 min</time></span> |
+          <span>Word count: <time>625</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--DRXHk49R--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E7%25AC%25AC1%25E5%259B%259E%2520React%252BTypeScript%25E3%2581%25AAWeb%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25A7%25E3%2580%2581QR%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592AR%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E3%2580%2582%2528QR%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E8%25AA%25AD%25E3%2581%25BF%25E8%25BE%25BC%25E3%2581%25BF%25E7%25B7%25A8%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:aaaa1597%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzVlYmE2MTczYWEuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">[第2回]React+TypeScriptなWebアプリで、QRコードをARしてみた。(3Dキャラクタ表示編) -&gt;
+
+
+
+ Abstract
+React+TypescriptのWebアプリで、ARを実装してみた。
+第1回の今回は、マーカをQRコードにすることで、既存のQRコードライブラリ(zxing)を使うことができるので実装が楽になりそう。
+
+ 結論
+今回の成果物はココ↓
+https://github.com/aaaa1597/ReactTs-QrAr001
+
+ 前提
+
+React+Typescriptの開発環境は構築済 [環境構築]WindowsにVSCode+Reac...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/kumabiko/articles/6363cc31c69f73 target="_blank">
+        <h1 class="hdg">【Next.js】Github ActionsでCIを構築する</h1>
+        <div class="info">
+          <span> Zennの「Next.js」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>3 min</time></span> |
+          <span>Word count: <time>960</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--oHA0VhmD--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Next.js%25E3%2580%2591Github%2520Actions%25E3%2581%25A7CI%25E3%2582%2592%25E6%25A7%258B%25E7%25AF%2589%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%258F%25E3%2581%25BE%25E3%2581%25B3%25E3%2581%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzQxZDUwM2M3ZjQuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">概要
+
+最初の環境構築時にGithub ActionsでCIを構築する際のメモになります。
+最低限の動作を担保できるようにシンプルな方法を採用しています。
+
+
+ 前提条件
+
+2024/01時点の情報になります。
+
+
+ やりたいこと
+
+PR作成時に、lintやbuildコマンドを実行して正常にできるか検証させたい
+
+
+ Github Actionsとは
+
+以下の記事が非常に分かりやすかったです。
+
+【初心者向け】【入門】GitHub Actionsの書き方についてデバッグ設定、runs-onやcheckoutなどの仕組みや構造も含めて徹底解説 - Qiita
+
+ 結論
+
+
+.githu...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/youta_t/articles/e73b78733cbbec target="_blank">
+        <h1 class="hdg">Go でも python みたいなデコレータを書きたい！</h1>
+        <div class="info">
+          <span> Zennの「Golang」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>2 min</time></span> |
+          <span>Word count: <time>636</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--qp56MEXJ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Go%2520%25E3%2581%25A7%25E3%2582%2582%2520python%2520%25E3%2581%25BF%25E3%2581%259F%25E3%2581%2584%25E3%2581%25AA%25E3%2583%2587%25E3%2582%25B3%25E3%2583%25AC%25E3%2583%25BC%25E3%2582%25BF%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258D%25E3%2581%259F%25E3%2581%2584%25EF%25BC%2581%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:youta-t%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSzRDbldGYWV5SjFDOXVBLWJ3ZjE4UnJZdWtaUEVjSURIWTRQc0pLSWZLPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">どうも、youta-t です。
+最近は https://github.com/youta-t/its をつくってます。
+さて、今日も今日とて go のコードを捏ねながら遊んでいたわけですが、go でも python のデコレータみたいなやつがかけるな、ってことに気が付きました。
+しかも、「どんな関数でも包めるやつ」がつくれます！
+
+ あの言語のアレ: python のデコレータ
+突然ですが python の話をします！
+python には「デコレータ」という機能があって、まあ要するに「関数を引数に取って関数を返す関数」のことですね。
+@deco
+def func1():
+    ...
+...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/watakumi/articles/f0cefe658d84f0 target="_blank">
+        <h1 class="hdg">Storybook で Module not found: Error: Can&#x27;t resolve に遭遇した時の対処法</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>1 min</time></span> |
+          <span>Word count: <time>351</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--I5fYzKZg--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Storybook%2520%25E3%2581%25A7%2520Module%2520not%2520found%253A%2520Error%253A%2520Can%2527t%2520resolve%2520%25E3%2581%25AB%25E9%2581%25AD%25E9%2581%2587%25E3%2581%2597%25E3%2581%259F%25E6%2599%2582...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Watakumi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzkwOTA5Zjg3YmMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">はじめに
+StorybookとTypeScriptを組み合わせて開発をしている際に、「Module not found: Error: Can&#x27;t resolve」のエラーに遭遇することがあります。このエラーは、StorybookのWebpackがTypeScriptのモジュールを適切に解決できない場合に発生します。今回はこの問題の対処法を紹介します。
+
+ 対処法
+結論としては、Storybookの公式ドキュメントにあるTypeScript modules are not resolved within Storybookのセクションを参照してください。
+
+ 実際の対処の流れ
+以下の...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/amay077/articles/f7b8daab431e16 target="_blank">
+        <h1 class="hdg">時間のかかる処理が終わるまで待ってから結果を返す、終わってたらすぐに返す</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>1 min</time></span> |
+          <span>Word count: <time>439</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--0aC59nHO--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E6%2599%2582%25E9%2596%2593%25E3%2581%25AE%25E3%2581%258B%25E3%2581%258B%25E3%2582%258B%25E5%2587%25A6%25E7%2590%2586%25E3%2581%258C%25E7%25B5%2582%25E3%2582%258F%25E3%2582%258B%25E3%2581%25BE%25E3%2581%25A7%25E5%25BE%2585%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%258B%25E3%2582%2589%25E7%25B5%2590%25E6%259E%259C%25E3%2582%2592%25E8%25BF%2594%25E3%2581%2599%25E3%2580%2581%25E7%25B5%2582%25E3%2582%258F%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%259F%25E3%2582%2589%25E3%2581%2599%25E3%2581%2590%25E3%2581%25AB%25E8%25BF%2594%25E3%2581%2599%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:amay077%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2Y3NWRjYThjOTYuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">ユースケース
+
+画面A の開始時に、時間のかかるデータ読み込みを開始する
+画面A でなんやかんや操作した後、画面B へ移動
+画面B では Aで読み込んだデータが必要なので、読み込みが完了するまで待つ
+
+
+ 実現方法
+readonly data$ &#x3D; new BehaviorSubject(undefined);
+
+// 画面Aで時間のかかるデータ読み込み
+setTimeout(() &#x3D;&gt; {
+  this.data$.next([&#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;])
+}, 1000);
+
+// すぐに画面Bへ移動した場合、読み込み完了まで待つ
+firs...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/k_komoto/articles/685733eb1b360f target="_blank">
+        <h1 class="hdg">CSSのprefers-color-schemeってなに？</h1>
+        <div class="info">
+          <span> Zennの「Next.js」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>2 min</time></span> |
+          <span>Word count: <time>494</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--6vr6SUGH--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:CSS%25E3%2581%25AEprefers-color-scheme%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25AA%25E3%2581%25AB%25EF%25BC%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:k_kom%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2VmZDJjNmI5NTAuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">1. はじめに
+next.jsで少しSSRやApp Routerについて試してみたいなと思い、next.jsのプロジェクトを作成すると、下記のCSSファイルが作成された。
+※cssの内容は、プロジェクト作成時にtailwind.cssを利用するを選択した場合のものです。
+その中で、見慣れない記述（prefers-color-scheme）があったので調べてみました。
+
+globals.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/nori/articles/d641f0e19d9b02 target="_blank">
+        <h1 class="hdg">【React Native】コピペでスマホアプリ(3)【ChatGPT】</h1>
+        <div class="info">
+          <span> Zennの「React Native」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>1 min</time></span> |
+          <span>Word count: <time>165</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--CkMk63Lv--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590React%2520Native%25E3%2580%2591%25E3%2582%25B3%25E3%2583%2594%25E3%2583%259A%25E3%2581%25A7%25E3%2582%25B9%25E3%2583%259E%25E3%2583%259B%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25283%2529%25E3%2580%2590ChatGPT%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Nori%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2NjMDFmZTQzYzYuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">ようやくコーディング？に復帰
+自分がコードを書くわけではないのにコーディングというのかはさておき、デバッグとビルドのトラブルが解決できたので（いやしてない）引き続きインプリメントを行っていきたいところです。ちなみにググってみたところ、呪文を唱えて画像を生成する人にはプロンプト・エンジニアなる称号があるらしいのですが、コードを生成する場合もこれでよいのではと思ったり。
+
+ 板一覧
+中二日も空いたらすっかり忘れてましたが、次はカテゴリ一名をタップして板一覧への移動のインプリメント。このとき右からのスライドインと板一覧画面での左から右へのフリックでのカテゴリ一覧画面への復帰が目標。
+呪文を...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/pcuser/articles/2402/12/news053.html target="_blank">
+        <h1 class="hdg">[ITmedia PC USER] 好調なGeForce RTX 4070 Ti SUPER搭載カードでも目立つ“白人気”</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>2950</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/pcuser/articles/2402/12/cover_news053.jpg" width="100" />
+        <p class="description">NVIDIA GeForceの新しいGPUを搭載したグラフィックスカードが出そろい、おおよその反響が見えてきた。中でもRTX 4070 Ti SUPERが好調だが、とりわけ白モデルの売れ行きが目立っている。その傾向は、マザーボードでも同様らしい。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/no4_dev/articles/8233e47fa8326c target="_blank">
+        <h1 class="hdg">openapi-ts で生成する 型定義と OpenAPI Client</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>7 min</time></span> |
+          <span>Word count: <time>2170</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--6ny_V1Ea--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:openapi-ts%2520%25E3%2581%25A7%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%2520%25E5%259E%258B%25E5%25AE%259A%25E7%25BE%25A9%25E3%2581%25A8%2520OpenAPI%2520Client%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2582%2589%25E3%2582%2593%25E3%2581%2599%2520%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzg0NjVjYzI5M2QuanBlZw&#x3D;&#x3D;%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%25E3%2583%258A%25E3%2583%25B3%25E3%2583%2590%25E3%2583%25BC%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25BC%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzY0NjNjYzBiNDMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">はじめに
+OpenAPI の定義から OpenAPI Client を生成するツールといえば、openapi-generatorがメジャーですが、動作させるために Java または Docker が必要となるため扱いづらいと感じていました。
+また、Client/Server で様々な言語/FW に対応しているため必要な情報が調べにくく、またオプションや構文の対応状況に差異があり別ターゲットのナレッジが使いまわしにくい印象でした。
+代替として、openapi-typescript と openapi-fetch が良さそうなので、使い方を見ていこうと思います。
+https://open...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/comm_vue_nuxt/articles/ways-of-vuejs-setup-app target="_blank">
+        <h1 class="hdg">ゼロから始める Vue.js 環境構築 (Vue プロジェクト編)</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>5 min</time></span> |
+          <span>Word count: <time>1375</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--RRQ0u35N--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25BC%25E3%2583%25AD%25E3%2581%258B%25E3%2582%2589%25E5%25A7%258B%25E3%2582%2581%25E3%2582%258B%2520Vue.js%2520%25E7%2592%25B0%25E5%25A2%2583%25E6%25A7%258B%25E7%25AF%2589%2520%2528Vue%2520%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B8%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E7%25B7%25A8%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Vue%2520Beginners%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzU5MTZlOWFlNjguanBlZw&#x3D;&#x3D;%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Vue%25E3%2583%25BBNuxt%2520%25E6%2583%2585%25E5%25A0%25B1%25E3%2581%258C%25E9%259B%2586%25E3%2581%25BE%25E3%2582%258B%25E5%25BA%2583%25E5%25A0%25B4%2520%252F%2520P...%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JjNzI5NGQ3YWQuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">Vue.js の環境構築方法について、目的別におすすめの方法をいくつか紹介します。
+!
+この記事は ゼロから始める Vue.js 環境構築 (共通項目編) の続編です。
+こちらが済んでない方は先にそちらご覧ください。
+
+前回の記事でも説明した通り、Vue.js のプロジェクトを作成する方法はいくつかあります。
+公式ドキュメントを参照してみるといくつか載っています。
+https://ja.vuejs.org/guide/quick-start.html
+今回はこのここに載っているものも、載っていないものも含めて、いくつかの方法を紹介します。
+
+ 分類
+具体的な方向を見ていく前に、ざっくりと...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/kou_kawa/articles/26-nextjs-laravel-bookapi target="_blank">
+        <h1 class="hdg">Google Books APIを使ってみる ～Next.js + Laravel～</h1>
+        <div class="info">
+          <span> Zennの「Next.js」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>23 min</time></span> |
+          <span>Word count: <time>6816</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--YLoOFpN2--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Google%2520Books%2520API%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%2520%25EF%25BD%259ENext.js%2520%252B%2520Laravel%25EF%25BD%259E%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Kou%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzEyNTU3ZTY0NDIuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">始めに
+暫くAWSとTerraformを触っていたので、ふとAPIを叩きたくなりました。その為、Google Books APIのドキュメントを参考に、簡単なアプリケーションを開発することにしました。この記事では、そのプロセスと学んだことを共有します。
+
+ Google Books APIの仕様
+Google Books APIは、Google Booksの膨大な書籍データベースにプログラムからアクセスできるようにするWebサービスです。現時点のBooks API v1は試験運用版となっております。今回は書籍の検索、書籍のIDによる検索の機能に焦点を当てます。
+
+ キーワードによる検...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/pikum/articles/pikum-personal-development-mistake target="_blank">
+        <h1 class="hdg">個人開発の失敗から学んだことのメモ</h1>
+        <div class="info">
+          <span> Zennの「個人開発」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>1 min</time></span> |
+          <span>Word count: <time>286</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--8WxuyTyC--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2581%25AE%25E5%25A4%25B1%25E6%2595%2597%25E3%2581%258B%25E3%2582%2589%25E5%25AD%25A6%25E3%2582%2593%25E3%2581%25A0%25E3%2581%2593%25E3%2581%25A8%25E3%2581%25AE%25E3%2583%25A1%25E3%2583%25A2%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%2595%25E3%2582%25AF%25E3%2583%25A4%25E3%2583%259E%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzU5Y2E0NWNjNjIuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">個人開発の失敗から学んだことのメモ
+個人開発を2年半やってますが、その中で色々学んだので、それをメモします。
+
+ 1. 要件をちゃんとする
+これが原点にして頂点で大事なことです。要件がちゃんと定まってないものをいくら作ってもしょうがないです。もちろん思いがけない成功というものはあるかもしれませんが、最初の要件が固まらないまま作ってしまうと、人に説明する時に終わります(実体験)。
+
+ 対策
+以下の項目をしっかりまとめる。なるべく丁寧にまとめる。解像度が荒いことを書くのはNG(例: 〇〇する人は困っているので、サイトを使って解決するなど)
+
+
+ 自分の立場の明確化
+
+
+背景・課題・目的の...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/web_life_ch/articles/55271f8eb6814a target="_blank">
+        <h1 class="hdg">【NextJs14】NextJs14 と 便利なライブラリ【#３０Create Todo Form】</h1>
+        <div class="info">
+          <span> Zennの「Next.js」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>7 min</time></span> |
+          <span>Word count: <time>2217</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--y9LNzMps--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590NextJs14%25E3%2580%2591NextJs14%2520%25E3%2581%25A8%2520%25E4%25BE%25BF%25E5%2588%25A9%25E3%2581%25AA%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25AA%25E3%2580%2590%2523%25EF%25BC%2593%25EF%25BC%2590Create%2520Todo%2520Form%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Web%2520Life%2520CH%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUl0YnZtbWNjTWFMM3dyd2x3VE5sVVZjTlhmZHEzZzF2QnJfMUJMSkJrN049czk2LWM&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">【#３０Create Todo Form】
+YouTube: https://youtu.be/5SH2X-o-iPQ
+https://youtu.be/5SH2X-o-iPQ
+今回はTodoを作成するフォームを実装します。
+
+app/(main)/account/page.tsx
+import { CheckCircle, Trash2 } from &quot;lucide-react&quot;;
+import { formatDistanceToNow } from &quot;date-fns&quot;;
+
+import { db } from &quot;@/lib/db&quot;;
+
+import { Button } fr...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/kagan/articles/typescript-practice target="_blank">
+        <h1 class="hdg">【初学者向け】具体例で学ぶTypeScript練習問題集</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>39 min</time></span> |
+          <span>Word count: <time>11736</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--qVP_43kv--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E5%2588%259D%25E5%25AD%25A6%25E8%2580%2585%25E5%2590%2591%25E3%2581%2591%25E3%2580%2591%25E5%2585%25B7%25E4%25BD%2593%25E4%25BE%258B%25E3%2581%25A7%25E5%25AD%25A6%25E3%2581%25B6TypeScript%25E7%25B7%25B4%25E7%25BF%2592%25E5%2595%258F%25E9%25A1%258C%25E9%259B%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%258B%25E3%2581%258C%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2pxRzhkLXVXenp5SlJteDF3NU9tcE9KZjdkNHFHUXo5ZFowNy0wNmc9czk2LWM&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">TypeScript を学習中の方に勧められる練習問題集として手頃なものがないなと思い、作ってみました。
+TS の問題集としてはtype-challenges がよく話題に上がりますが、実用上あそこまでの型パズルを使うことはあまりないため、最初に取り組むにはハードルが高いです（もちろん知っていたら便利ではありますが、初学者向けではない）。
+
+ 想定読者
+
+JavaScript を書くことには慣れている
+TypeScript はこれから・まだ慣れていない
+TypeScript の基本的な型についてはすでに知っている
+
+
+ はじめに
+
+JavaScript の機能に関する問題は扱いません。T...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/mesi/articles/763bdb090541ae target="_blank">
+        <h1 class="hdg">Go言語におけるIsとAsの使い方とその違いについて</h1>
+        <div class="info">
+          <span> Zennの「Golang」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>2 min</time></span> |
+          <span>Word count: <time>605</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--4YehCWO6--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Go%25E8%25A8%2580%25E8%25AA%259E%25E3%2581%25AB%25E3%2581%258A%25E3%2581%2591%25E3%2582%258BIs%25E3%2581%25A8As%25E3%2581%25AE%25E4%25BD%25BF%25E3%2581%2584%25E6%2596%25B9%25E3%2581%25A8%25E3%2581%259D%25E3%2581%25AE%25E9%2581%2595%25E3%2581%2584%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:MESI%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUdObXl4WU9Qa2tIeEJCcWlvWjFvSzNwOG96LUZleXZvMGhfT2RpM0tsalNwMG89czk2LWM&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">どうもお疲れ様です。MESIです。
+Goのエラーハンドリングについて勉強していて、IsとAsの使い方がいまいち理解できなかったので、まとめることにしました。
+本記事では、IsとAsの違い、それぞれがなぜ必要なのか、そして具体的な使用例について解説します。
+
+ なぜerrors.Isが必要なのか？
+「エラーのチェックは&#x3D;&#x3D;演算子で比較すればよくない？」
+そう思っていましたが、そうは行かないケースもあることを学びました。
+Go言語では、エラーはerrorインターフェースを実装する任意の型で表現されます。
+type error interface {
+    Error() string
+}
+...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/takuoki/articles/64e5702f0134f0 target="_blank">
+        <h1 class="hdg">いつの間にかにpanic(nil)の挙動が変わってた</h1>
+        <div class="info">
+          <span> Zennの「Golang」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>2 min</time></span> |
+          <span>Word count: <time>548</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--fse1AA0G--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%2584%25E3%2581%25A4%25E3%2581%25AE%25E9%2596%2593%25E3%2581%25AB%25E3%2581%258B%25E3%2581%25ABpanic%2528nil%2529%25E3%2581%25AE%25E6%258C%2599%25E5%258B%2595%25E3%2581%258C%25E5%25A4%2589%25E3%2582%258F%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:takuoki%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzMxYjI0Yjk5ZDAuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">最近、Goでプログラムを書く機会が減っていたのだが、久々にGoを触って、個人用のアプリケーション開発に使うライブラリのバージョンを上げようとしたらテストで怒られてしまった。
+何で怒られたんだろうと確認してみたら、どうやらGoのv1.21から panic(nil) の挙動が変わっていることが原因の様子。後方互換性が基本的に保たれるGoで、バージョンを上げただけでテストが落ちたのが面白いので、備忘としてブログを書いてみる。
+
+ 元々のライブラリの実装
+元々（v1.20まで）は、panicの引数にnilを指定すると、recoverではnilが取得されていた。
+
+main.go
+package ...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2402/12/news034.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] マツダ・ロードスターの大改変　減速で作動するアシンメトリックLSDの狙い</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>3058</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2402/12/cover_news034.jpg" width="100" />
+        <p class="description">マツダのいうアシンメトリックLSDは、これまでのセオリーに反し、減速時の方をより強く拘束するというこれまでになかった発想のLSDである。なぜこのようなLSDを搭載したのか。歴代ロードスターが抱えてきたセッティング苦悩の背景から解説する。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://marketing.itmedia.co.jp/mm/articles/2402/12/news043.html target="_blank">
+        <h1 class="hdg">[ITmedia マーケティング] 「Daytona Park」「BASEMENT online」「シロク」他　2023年に国内で最もWebサイトが成長した100ドメイン</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>5 min</time></span> |
+          <span>Word count: <time>1477</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/mm/articles/2402/12/cover_news043.jpg" width="100" />
+        <p class="description">SimilarwebがWebサイトのパフォーマンスという観点で最も急速に成長しているデジタル企業をランキング化した「Digital 100」の2024年版を発表しました。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2402/12/news042.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] 日本企業の“米国買い”が活発化　縮む日本から成長市場に布石</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>2856</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2402/12/cover_news042.jpg" width="100" />
+        <p class="description">日本製鉄や積水ハウスが米国企業の巨額買収に動くなど、日本企業の対米投資が拡大している。M＆A（企業の合併・買収）助言会社のレコフ（東京）によると、2023年に発表された日本企業による米企業のM＆Aの件数は前年比で約2割増、金額は約3倍に膨らんだ。人口増加や株高などで堅調な消費が続く成長市場に活路を求める。国内に投資を呼び込む米国の政策に対応する必要性にも迫られている。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2402/12/news041.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] ダイハツ　1カ月半ぶり生産再開　従業員「やっと始まった」「悪いところは正す」</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>2857</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2402/12/cover_news041.jpg" width="100" />
+        <p class="description">ダイハツ工業は12日午前、認証不正発覚を受けて停止していた京都工場（京都府大山崎町）での自動車生産を約1カ月半ぶりに再開した。安全性が確認されたとして国土交通省が出荷停止指示を解除した2車種が対象で、昨年12月に国内の全工場の稼働を停止して以来、初の生産再開となる。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/doshirote/articles/fc9b675eb066b3 target="_blank">
+        <h1 class="hdg">【react-native】スマホアプリの画面実装時に画面が見切れてしまう</h1>
+        <div class="info">
+          <span> Zennの「React Native」のフィード</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>0 min</time></span> |
+          <span>Word count: <time>118</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--oLmy_jNZ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590react-native%25E3%2580%2591%25E3%2582%25B9%25E3%2583%259E%25E3%2583%259B%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2581%25AE%25E7%2594%25BB%25E9%259D%25A2%25E5%25AE%259F%25E8%25A3%2585%25E6%2599%2582%25E3%2581%25AB%25E7%2594%25BB%25E9%259D%25A2%25E3%2581%258C%25E8%25A6%258B%25E5%2588%2587%25E3%2582%258C%25E3%2581%25A6%25E3%2581%2597%25E3%2581%25BE%25E3%2581%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%258A%2595%25E8%25B3%2587%25E3%2583%25AD%25E3%2582%25A6%25E3%2583%2588%25E3%2581%25AE%25E6%258A%2580%25E8%25A1%2593%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzM3ODY0NWMwOGQuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">背景
+react-nativeで画面を実装時、Androidは問題なく表示されているが、iOSだけ画面が見切れてしまうという事象が発生している
+
+ 解決方法
+以下のようにコンポーネントをラップすると、iOSでの見切れる事象が解決した。
+セーフエリアを設けていなかったのが要因でした。
+import { SafeAreaView } from &#x27;react-native&#x27;;
+
+const xxx &#x3D; () &#x3D;&gt; {
+  return (
+   // ラップする
+　　　　　　　
+　　　　　　　　{表示したいコンポーネント}
+    &lt;/S...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2402/12/news022.html target="_blank">
+        <h1 class="hdg">[ITmedia Mobile] IIJmio、mineo、NUROモバイル、イオンモバイルのキャンペーンまとめ【2月12日最新版】　スマホ大特価や基本料金大幅割引を見逃すな</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-02-12</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>2905</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2402/12/cover_news022.jpg" width="100" />
+        <p class="description">2月となり、MVNO各ブランドも多数のキャンペーンを実施しているが、特に多いのがオプションの無料提供だ。今回はIIJmio、mineo、NUROモバイル、イオンモバイルで実施しているキャンペーンをまとめた。</p>
       </div>
     </article>
     <article class="article">
@@ -124,7 +1389,7 @@ https://www.oreilly.co.jp/books/9784814400331/
           <span> ITmedia 総合記事一覧</span> |
           <span>Date: <time>2024-02-11</time></span> |
           <span>Reading time: <time>5 min</time></span> |
-          <span>Word count: <time>1489</time></span>
+          <span>Word count: <time>1491</time></span>
         </div>
       </a>
       <div class="overview">
@@ -139,7 +1404,7 @@ https://www.oreilly.co.jp/books/9784814400331/
           <span> ITmedia 総合記事一覧</span> |
           <span>Date: <time>2024-02-11</time></span> |
           <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2865</time></span>
+          <span>Word count: <time>2864</time></span>
         </div>
       </a>
       <div class="overview">
@@ -154,7 +1419,7 @@ https://www.oreilly.co.jp/books/9784814400331/
           <span> Gizmodo Japan（ギズモード・ジャパン）のデイリーフィード - DailyFeed</span> |
           <span>Date: <time>2024-02-11</time></span> |
           <span>Reading time: <time>1 min</time></span> |
-          <span>Word count: <time>152</time></span>
+          <span>Word count: <time>153</time></span>
         </div>
       </a>
       <div class="overview">
@@ -179,7 +1444,7 @@ https://www.oreilly.co.jp/books/9784814400331/
           <span> ライフハッカー［日本版］のデイリーフィード - DailyFeed</span> |
           <span>Date: <time>2024-02-11</time></span> |
           <span>Reading time: <time>0 min</time></span> |
-          <span>Word count: <time>146</time></span>
+          <span>Word count: <time>147</time></span>
         </div>
       </a>
       <div class="overview">
@@ -193,28 +1458,6 @@ https://www.oreilly.co.jp/books/9784814400331/
 7. iPhoneからWindows PCに写真を転送する5つの方法 
 8. タンブラーの正解、ついに見つけた。1日ずっと、変わらない味と温度でいてくれる 
 9. 紅茶・緑茶のベストな「お湯の量」自動計測。さらに計量カップ不要で淹れられるHARIOの神アイテム</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/comm_vue_nuxt/articles/start-to-learn-vue-2024 target="_blank">
-        <h1 class="hdg">【Vue.js】今、ゼロから Vue を学び始めるならこうやるといいんじゃないか (2024) 【初学者向け】</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-02-11</time></span> |
-          <span>Reading time: <time>4 min</time></span> |
-          <span>Word count: <time>1138</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--xkNfT35X--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Vue.js%25E3%2580%2591%25E4%25BB%258A%25E3%2580%2581%25E3%2582%25BC%25E3%2583%25AD%25E3%2581%258B%25E3%2582%2589%2520Vue%2520%25E3%2582%2592%25E5%25AD%25A6%25E3%2581%25B3%25E5%25A7%258B%25E3%2582%2581%25E3%2582%258B%25E3%2581%25AA%25E3%2582%2589%25E3%2581%2593%25E3%2581%2586%25E3%2582%2584%25E3%2582%258B%25E3%2581%25A8%25E3%2581%2584%25E3%2581%2584%25E3%2582%2593%25E3%2581%2598%25E3%2582%2583%25E3%2581%25AA%25E3%2581%2584%25E3%2581%258B%2520%25282024%2529%2520%25E3%2580%2590%25E5%2588%259D%25E5%25AD%25A6%25E8%2580%2585%25E5%2590%2591%25E3%2581%2591%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Vue%2520Beginners%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzU5MTZlOWFlNjguanBlZw&#x3D;&#x3D;%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Vue%25E3%2583%25BBNuxt%2520%25E6%2583%2585%25E5%25A0%25B1%25E3%2581%258C%25E9%259B%2586%25E3%2581%25BE%25E3%2582%258B%25E5%25BA%2583%25E5%25A0%25B4%2520%252F%2520P...%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JjNzI5NGQ3YWQuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">🤔 Vue.js って何から勉強すれば良いですか？
-この疑問は Vue.js に限らず、多くの初学者の中でホットなトピックです。
-すごく端的にこの問いに答えてみると、「好きにすればいい、正解はない！自分で考えなさい！」です。
-これは確かにとても正しい意見[1]だと思いますが、そうは言っても初学者にとっては何から手をつけたらいいのかわからない状況が多いです。
-と言うことで、上記のような前提は持ちつつ「まぁ、とりあえずこんな感じで良いんじゃないですかね(安牌)」と言う私(筆者)なりのアイデアを書いてみたいと思います。
-ご参考までに 😙 それではスタート 💨
-
- Vue.js の公式ドキュ...</p>
       </div>
     </article>
     <article class="article">
@@ -279,7 +1522,7 @@ CREATE TABLE tokens (
           <span> Zennの「React Native」のフィード</span> |
           <span>Date: <time>2024-02-11</time></span> |
           <span>Reading time: <time>1 min</time></span> |
-          <span>Word count: <time>265</time></span>
+          <span>Word count: <time>289</time></span>
         </div>
       </a>
       <div class="overview">
@@ -288,54 +1531,6 @@ CREATE TABLE tokens (
 連休ということで深夜に映画を見た後、続きの作業を行おうとしたところでトラブルに見舞われました。ことの発端は bbsmenu.jsonから追加のデータを取得しようとし、上手く取れているか確認するためにブレークポイントを設定してデバッグボタンを押したことでした。
 それまではコピペ実行コピペ実行を繰り返すだけで特に変数の内容を確認しようと思ったりはしなかったのですが、JSONから取り込んだデータを見ようとしたところChromeの新たなインスタンスが起動して
 Remote JavaScript debugging (this workflow) is deprecated in R...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/jinkutoriu/articles/ef7f4dd9b61367 target="_blank">
-        <h1 class="hdg">一日一処: TypeScriptのinterface vs type論争の個人的解釈と記述ルール(ESLint)について</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-02-11</time></span> |
-          <span>Reading time: <time>4 min</time></span> |
-          <span>Word count: <time>1303</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--P15OfryC--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E4%25B8%2580%25E6%2597%25A5%25E4%25B8%2580%25E5%2587%25A6%253A%2520TypeScript%25E3%2581%25AEinterface%2520vs%2520type%25E8%25AB%2596%25E4%25BA%2589%25E3%2581%25AE%25E5%2580%258B%25E4%25BA%25BA%25E7%259A%2584%25E8%25A7%25A3%25E9%2587%2588%25E3%2581%25A8%25E8%25A8%2598%25E8%25BF%25B0%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%25AB%2528ESLint%2529%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E9%25B3%25A5%25E7%2594%259F%2520%25E7%2594%259A%25E5%258F%25A5%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2IyZTA4MTQ0MTEuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">interface vs type
-これに関しては様々な解釈もあり、私が投稿する以前にも多くの記事が存在する。個人的には、沢山ある記事の技術的な考察も触れつつ、決定してほしい。公式ドキュメントにおいても判断に至る明確な基準はない。
-
- 個人的な使い方
-まずは、根源たるJavaScriptへ原点回帰しよう。JavaScriptでは、classを宣言することが、元々できなかった。バージョンの変化によって、現在はこれを用いる事が可能だが、JavaScript自体は、プロトタイプベースのオブジェクト指向スクリプト言語とされており、JavaやC#などのクラス定義とは若干異なる。全てはオブジェク...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/comm_vue_nuxt/articles/about-this-account target="_blank">
-        <h1 class="hdg">Vue Beginners について</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-02-11</time></span> |
-          <span>Reading time: <time>1 min</time></span> |
-          <span>Word count: <time>416</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--K65tyTGu--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Vue%2520Beginners%2520%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Vue%2520Beginners%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzU5MTZlOWFlNjguanBlZw&#x3D;&#x3D;%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Vue%25E3%2583%25BBNuxt%2520%25E6%2583%2585%25E5%25A0%25B1%25E3%2581%258C%25E9%259B%2586%25E3%2581%25BE%25E3%2582%258B%25E5%25BA%2583%25E5%25A0%25B4%2520%252F%2520P...%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JjNzI5NGQ3YWQuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">🔰 Vue Beginners について
-
-みなさん初めまして！ Vue Beginners です！
-この記事では、私たち Vue Beginners について紹介します。
-
- 🔰 Vue Beginners とは
-Vue Beginners は、Vue.js 初学者向けの情報を発信する Zenn アカウントです。
-Vue.js の学び方や、Vue.js を使いこなすためのヒントなどを発信します。
-主に、以下のような人に向けて情報を発信しています:
-
-
- 🎯 ターゲット
-
-これから Vue.js を学びながらエンジニアを目指す人 (業務経験なし)
-Vue.js をすでに使っているが、...</p>
       </div>
     </article>
     <article class="article">
@@ -475,54 +1670,9 @@ Beautifully designed components that you can copy and paste into your apps. Acce
         <p class="description">経緯
 現在製作中のmicroCMSを用いたNext.js製ブログサイトでは、microCMSのリッチエディタで編集した記事データを生のHTMLとして取得し、html-react-parserというライブラリを使用してHTMLにパース、表示しています。
 ところが、このページにTailwind CSSを適用すると見出しやテキストなどのスタイルがリセットされてしまいます。
-これはTailwindCSSの仕様上、ブラウザ間の不一致を滑らかにし、デザイン システムの制約内での作業を容易にするためのPreflightというベースCSSがあらかじめ読み込まれていることが原因のようです。
+これはTailwindCSSの仕様上、ブラウザ間の不一致を滑らかにし、デザイン システムの制約内での作業を容易にするためのPreflightというベースCSSが、初期状態で読み込まれていることが原因のようです。
 
- 解決策...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/no4_dev/articles/bab11e3825a5a3 target="_blank">
-        <h1 class="hdg">Input要素のmaxlength属性は信用してはいけない</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-02-11</time></span> |
-          <span>Reading time: <time>7 min</time></span> |
-          <span>Word count: <time>1991</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--bAmGCARz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Input%25E8%25A6%2581%25E7%25B4%25A0%25E3%2581%25AEmaxlength%25E5%25B1%259E%25E6%2580%25A7%25E3%2581%25AF%25E4%25BF%25A1%25E7%2594%25A8%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25AF%25E3%2581%2584%25E3%2581%2591%25E3%2581%25AA%25E3%2581%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2582%2589%25E3%2582%2593%25E3%2581%2599%2520%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzg0NjVjYzI5M2QuanBlZw&#x3D;&#x3D;%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%25E3%2583%258A%25E3%2583%25B3%25E3%2583%2590%25E3%2583%25BC%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25BC%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzY0NjNjYzBiNDMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">はじめに
-input 要素の maxlength 属性は比較的よく利用される属性です。
-https://developer.mozilla.org/ja/docs/Web/HTML/Attributes/maxlength
-しかし、maxlength 属性信用して、バリデーションを省略すると、特殊な方法（ブラウザの開発者ツールで maxlength 属性を削除するなど)により、
-不正なデータが送信されてしまうリスクがあることは周知の事実です。
-このような操作は一般のユーザには難しく、また意図的に操作をしないと発生しないためエッジケースだと考えていましたが、
-一般ユーザでも容易に ma...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/ryota_09/articles/c2d9cdadf17ae2 target="_blank">
-        <h1 class="hdg">【TailwindCSS】lg:などのモディファイアとともに動的な任意の値を利用する方法</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-02-11</time></span> |
-          <span>Reading time: <time>2 min</time></span> |
-          <span>Word count: <time>656</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--6whYw4dO--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590TailwindCSS%25E3%2580%2591lg%253A%25E3%2581%25AA%25E3%2581%25A9%25E3%2581%25AE%25E3%2583%25A2%25E3%2583%2587%25E3%2582%25A3%25E3%2583%2595%25E3%2582%25A1%25E3%2582%25A4%25E3%2582%25A2%25E3%2581%25A8%25E3%2581%25A8%25E3%2582%2582%25E3%2581%25AB%25E5%258B%2595%25E7%259A%2584%25E3%2581%25AA%25E4%25BB%25BB%25E6%2584%258F%25E3%2581%25AE%25E5%2580%25A4%25E3%2582%2592%25E5%2588%25A9%25E7%2594%25A8%25E3%2581%2599%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%258A%25E3%2582%2587%25E3%2581%259F%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2RkNmQyMTZhMWYuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">📌 はじめに
-こんにちは！@Ryo54388667です!☺️
-普段は都内でフロントエンドエンジニアとして業務をしてます！
-主にTypeScriptやNext.jsといった技術を触っています。
-今回はTailwindCSSで任意の値を利用するについて紹介したいと思います。
-本記事は、こちらの書籍からの引用に追記したものです。大感謝です！🙏
-https://www.amazon.co.jp/gp/product/B0CQWSQZHG/ref&#x3D;ppx_yo_dt_b_d_asin_title_351_o00?ie&#x3D;UTF8&amp;psc&#x3D;1
-
- 📌 課題
-まず、解決したい課題を確認します...</p>
+ 解決...</p>
       </div>
     </article>
     <article class="article">
@@ -556,7 +1706,7 @@ https://www.amazon.co.jp/gp/product/B0CQWSQZHG/ref&#x3D;ppx_yo_dt_b_d_asin_title
           <span> ITmedia 総合記事一覧</span> |
           <span>Date: <time>2024-02-11</time></span> |
           <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>3011</time></span>
+          <span>Word count: <time>3010</time></span>
         </div>
       </a>
       <div class="overview">
@@ -571,7 +1721,7 @@ https://www.amazon.co.jp/gp/product/B0CQWSQZHG/ref&#x3D;ppx_yo_dt_b_d_asin_title
           <span> ITmedia 総合記事一覧</span> |
           <span>Date: <time>2024-02-11</time></span> |
           <span>Reading time: <time>5 min</time></span> |
-          <span>Word count: <time>1472</time></span>
+          <span>Word count: <time>1475</time></span>
         </div>
       </a>
       <div class="overview">
@@ -586,7 +1736,7 @@ https://www.amazon.co.jp/gp/product/B0CQWSQZHG/ref&#x3D;ppx_yo_dt_b_d_asin_title
           <span> ITmedia 総合記事一覧</span> |
           <span>Date: <time>2024-02-11</time></span> |
           <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2855</time></span>
+          <span>Word count: <time>2854</time></span>
         </div>
       </a>
       <div class="overview">
@@ -601,32 +1751,12 @@ https://www.amazon.co.jp/gp/product/B0CQWSQZHG/ref&#x3D;ppx_yo_dt_b_d_asin_title
           <span> ITmedia 総合記事一覧</span> |
           <span>Date: <time>2024-02-11</time></span> |
           <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2891</time></span>
+          <span>Word count: <time>2890</time></span>
         </div>
       </a>
       <div class="overview">
         <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2402/11/cover_news021.jpg" width="100" />
         <p class="description">ドコモのサブブランドirumo、ソフトバンクのサブブランドY!mobileと、auのサブブランドUQ mobileでは、メインブランドに劣らないキャンペーンを実施している。大手MNOのブランドでもあるため、PayPayポイントやau PAY残高でのポイント還元特典が多い。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/koyabluetech/articles/a2fbe4f8d65968 target="_blank">
-        <h1 class="hdg">いつも使っているReact-Toastify用のヘルパー関数</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-02-11</time></span> |
-          <span>Reading time: <time>2 min</time></span> |
-          <span>Word count: <time>687</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--GIiCZ9bZ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%2584%25E3%2581%25A4%25E3%2582%2582%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258BReact-Toastify%25E7%2594%25A8%25E3%2581%25AE%25E3%2583%2598%25E3%2583%25AB%25E3%2583%2591%25E3%2583%25BC%25E9%2596%25A2%25E6%2595%25B0%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:koyablue%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzBlM2E5YmJmY2YuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">ちょっとしたことですが結構毎回使うので。
-
-React-Toastifyでトーストを出す方法は2通りあり、それぞれ公式ドキュメントのこのページで紹介されています。
-設定値を渡して、表示内容をToastContainerの場合は子コンポーネントとして、Toast Emitterの場合は第1引数に渡します。
-アプリケーション内でトースト仕様が各使用箇所ごとに大きく変わることはあまりないので、いつも以下のようなトースト表示用関数を作成しています。
-import { toast, ToastContent, ToastOptions, Slide, Id } from &quot;react-toasti...</p>
       </div>
     </article>
     <article class="article">
@@ -694,32 +1824,6 @@ NEXT_PUBLIC_API_BASE_URL&#x3D;https://(略)/api
 APIエンドポイントのベースURLです。
 これを以下のように使用していました(実際のコードを簡易化したものですが、やっていることは同じです)。
 // In src/utils/env...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/k_ichirof/articles/17f09dda5a3883 target="_blank">
-        <h1 class="hdg">[読書メモ]オブジェクト設計スタイルガイド 3章9~10節 with TypeScript</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-02-11</time></span> |
-          <span>Reading time: <time>3 min</time></span> |
-          <span>Word count: <time>768</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--EuJnoIgS--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%255B%25E8%25AA%25AD%25E6%259B%25B8%25E3%2583%25A1%25E3%2583%25A2%255D%25E3%2582%25AA%25E3%2583%2595%25E3%2582%2599%25E3%2582%25B7%25E3%2582%2599%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E8%25A8%25AD%25E8%25A8%2588%25E3%2582%25B9%25E3%2582%25BF%25E3%2582%25A4%25E3%2583%25AB%25E3%2582%25AB%25E3%2582%2599%25E3%2582%25A4%25E3%2583%2588%25E3%2582%2599%25203%25E7%25AB%25A09%7E10%25E7%25AF%2580%2520with%2520TypeScript%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:k_ichirof%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2ZiYTI0YjgyZDMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">オブジェクト設計スタイルガイドを読みながら、TypeScriptでやるならどうやるかを考えながら書きました。
-要約的に読める内容になっていると思うので、サクッと3分ぐらいで読める記事となっています。
-https://www.oreilly.co.jp/books/9784814400331/
-
- 3.9 名前月コンストラクタを使う
-オブジェクト生成のための手段を複数用意できる。
-class ID {
-  private _value: string
-
-  private constructor(v: string){
-    if (!v) {
-      throw new E...</p>
       </div>
     </article>
     <article class="article">
@@ -819,7 +1923,7 @@ class ID {
           <span> ITmedia 総合記事一覧</span> |
           <span>Date: <time>2024-02-10</time></span> |
           <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2876</time></span>
+          <span>Word count: <time>2879</time></span>
         </div>
       </a>
       <div class="overview">
@@ -928,61 +2032,18 @@ Kotlin&#x27;s type system is aimed at eliminating the danger of null references,
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/yusu29/articles/azure_callautomation target="_blank">
-        <h1 class="hdg">OpenAIが自動応答するコールセンターを作ってみよう📲</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-02-10</time></span> |
-          <span>Reading time: <time>3 min</time></span> |
-          <span>Word count: <time>788</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--otUhTogd--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:OpenAI%25E3%2581%258C%25E8%2587%25AA%25E5%258B%2595%25E5%25BF%259C%25E7%25AD%2594%25E3%2581%2599%25E3%2582%258B%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%25BB%25E3%2583%25B3%25E3%2582%25BF%25E3%2583%25BC%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%2588%25E3%2581%2586%2520%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Yujiro%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzczMjQwNDhhMDkuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">概要
-今回はAzure Communication ServiceとAzure OpenAI Serviceを使って、コールセンターを作ってみたいと思います。
-全体アーキテクチャは以下のようになります。
-
-全体の流れは以下の通りです。
-
-ユーザーが Azure Communication Service に登録された電話番号に架電する。
-Azure Communication Servicce の Incoming Call をトリガーとしてサーバーサイドアプリケーションの API に Webhook を実行する。
-Webhook 要求にサーバーサイドアプリケーションが応答する。
-ユ...</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2402/10/news091.html target="_blank">
         <h1 class="hdg">[ITmedia Mobile] Apple、iOS 17.3.1配信　入力関連のバグ修正で</h1>
         <div class="info">
           <span> ITmedia 総合記事一覧</span> |
           <span>Date: <time>2024-02-10</time></span> |
           <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2880</time></span>
+          <span>Word count: <time>2879</time></span>
         </div>
       </a>
       <div class="overview">
         <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2402/10/cover_news091.jpg" width="100" />
         <p class="description">Appleは、「iOS 17.3.1」「iPadOS 17.3.1」「watchOS 10.3.1」「macOS Sonoma 14.3.1」「Safari 17.3.1」を配信した。iOSでは、入力関連のバグを修正するとしている。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/jinkutoriu/articles/3994dec631ebfa target="_blank">
-        <h1 class="hdg">一日一処: VueやNuxtのscriptタグでTypeScriptを必須にしたい</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-02-10</time></span> |
-          <span>Reading time: <time>1 min</time></span> |
-          <span>Word count: <time>179</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--9F8dTsRE--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E4%25B8%2580%25E6%2597%25A5%25E4%25B8%2580%25E5%2587%25A6%253A%2520Vue%25E3%2582%2584Nuxt%25E3%2581%25AEscript%25E3%2582%25BF%25E3%2582%25B0%25E3%2581%25A7TypeScript%25E3%2582%2592%25E5%25BF%2585%25E9%25A0%2588%25E3%2581%25AB%25E3%2581%2597%25E3%2581%259F%25E3%2581%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E9%25B3%25A5%25E7%2594%259F%2520%25E7%2594%259A%25E5%258F%25A5%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2IyZTA4MTQ0MTEuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">Vue
-VueはReactと異なり、HTML部分(template)、CSS部分(style)、そしてJavaScript部分(script)で構成されている。このようにそれぞれが分離することで、記述が容易で初心者にも優しくわかりやすいと言われている側面もある。そして、VueでもTypeScriptによるプログラミングが可能だ。
-
- TypeScriptの有効化
-Vueにしろ、Nuxtにしろ、TypeScriptによるプログラミングが可能だ。ただし、それぞれの設定において、言語設定(scriptタグのlang属性)を必須とする仕組みとする方法はない。できれば、設定ファイルにて、その有...</p>
       </div>
     </article>
     <article class="article">
@@ -1015,7 +2076,7 @@ app.jsonのplugi...</p>
           <span> Zennの「React Native」のフィード</span> |
           <span>Date: <time>2024-02-10</time></span> |
           <span>Reading time: <time>4 min</time></span> |
-          <span>Word count: <time>1191</time></span>
+          <span>Word count: <time>1188</time></span>
         </div>
       </a>
       <div class="overview">
@@ -1024,7 +2085,8 @@ app.jsonのplugi...</p>
 こんな記事を書いているのですが、
 https://zenn.dev/nori/articles/5444433481f549
 後からChatGPTやgitのログを見て思い出しながら書くのはしんどいなということで、こちらは作業しながら更新していこうかと思います。
-実はFlutterで始める前に一度React Nativeで軽くトライしてみたのですが、カテゴリ一覧と板一覧まで表示させたところで、このまま突き進むとぐちゃぐちゃな構造になってしまうとお蔵入りにしていました。Flutterでの開発を行ったことで、ChatGPTでのそれなりの構造のプログラムの書かせ方がわかってきたので...</p>
+実はFlutterで始める前に一度React Nativeで軽くトライしてみたのですが、カテゴリ一覧と板一覧まで表示させたところで、このまま突き進むとぐちゃぐちゃな構造になってしまうとお蔵入りにしていました。
+Flutterでの開発を行ったことで、ChatGPTでのそれなりの構造のプログラムの書かせ方がわかってきたの...</p>
       </div>
     </article>
     <article class="article">
@@ -1034,72 +2096,12 @@ https://zenn.dev/nori/articles/5444433481f549
           <span> ITmedia 総合記事一覧</span> |
           <span>Date: <time>2024-02-10</time></span> |
           <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>3054</time></span>
+          <span>Word count: <time>3053</time></span>
         </div>
       </a>
       <div class="overview">
         <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2402/10/cover_news010.jpg" width="100" />
         <p class="description">NTTドコモ、au、ソフトバンク、楽天モバイルの4キャリアに加え、MVNOやメーカーがオープンマーケット向けにもスマートフォンを投入している。2022年1月以降に発売されたAndroidスマートフォンの価格をまとめる。記事内の価格は全て税込み。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/macchan/articles/c304ecec7630de target="_blank">
-        <h1 class="hdg">keyofとtypeofを活用したチェックボックスのデータ管理</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-02-10</time></span> |
-          <span>Reading time: <time>3 min</time></span> |
-          <span>Word count: <time>1001</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--aasmc3X8--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:keyof%25E3%2581%25A8typeof%25E3%2582%2592%25E6%25B4%25BB%25E7%2594%25A8%25E3%2581%2597%25E3%2581%259F%25E3%2583%2581%25E3%2582%25A7%25E3%2583%2583%25E3%2582%25AF%25E3%2583%259C%25E3%2583%2583%25E3%2582%25AF%25E3%2582%25B9%25E3%2581%25AE%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E7%25AE%25A1%25E7%2590%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25BE%25E3%2581%25A3%25E3%2581%25A1%25E3%2582%2583%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzYxN2U4NzliY2EuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">下記のようにkeyofとtypeofを組み合わせて、UserInfoValueのような型を用意する場面があると思います。
-今回は個人的に良いなと思ったUserInfoValue型の使い所を紹介してみたいと思います。
-const userInfo &#x3D; {
-    name: &quot;John&quot;,
-    age: 23,
-} as const;
-
-type UserInfoValue &#x3D; typeof userInfo[keyof typeof userInfo];
-簡単なチェックボックスを例にしてまとめていきたいと思います。
-!
-keyofとtypeofについての挙動をある程度把握している想定...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/no4_dev/articles/d19205e1596948 target="_blank">
-        <h1 class="hdg">ExpressのRequest型を拡張する</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-02-10</time></span> |
-          <span>Reading time: <time>3 min</time></span> |
-          <span>Word count: <time>898</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--eDq-gMuM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Express%25E3%2581%25AERequest%25E5%259E%258B%25E3%2582%2592%25E6%258B%25A1%25E5%25BC%25B5%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2582%2589%25E3%2582%2593%25E3%2581%2599%2520%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzg0NjVjYzI5M2QuanBlZw&#x3D;&#x3D;%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%25E3%2583%258A%25E3%2583%25B3%25E3%2583%2590%25E3%2583%25BC%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25BC%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzY0NjNjYzBiNDMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">Express の Request 型を拡張しようとしました、
-別ファイルから読み込んでくるパターンの情報が見つからなかったため、
-備忘録として残しておきます。
-
- 環境
-$ node -v
-v18.19.0
-$ npm -v
-10.2.3
-
-package.json (一部抜粋)
-{
-  // ....
-  &quot;dependencies&quot;: {
-    // ....
-    &quot;express&quot;: &quot;^4.18.2&quot;,
-    // ....
-  },
-  &quot;devDependencies&quot;: {
-    // ....
-    &quot;@types/express&quot;: &quot;^4.17.21&quot;,...</p>
       </div>
     </article>
     <article class="article">
@@ -1123,53 +2125,6 @@ https://github.com/golang/vscode-go/blob/5b0d6db961e2b0a346d2984b0d10d8137cc5aba
 
  設定を上書きできないとき
 例えば...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/krntmm/articles/5c927391d86075 target="_blank">
-        <h1 class="hdg">「foo?: string」と「bar: string | undefined」の違い</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-02-10</time></span> |
-          <span>Reading time: <time>2 min</time></span> |
-          <span>Word count: <time>473</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--Y-7wOmAC--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%258Cfoo%253F%253A%2520string%25E3%2580%258D%25E3%2581%25A8%25E3%2580%258Cbar%253A%2520string%2520%257C%2520undefined%25E3%2580%258D%25E3%2581%25AE%25E9%2581%2595%25E3%2581%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:pou%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzIxOTJhYTU3NzMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">type Hoge &#x3D; {
-  foo?: string;
-  bar: string;
-}
-上記のfooとbar２つのプロパティの書き方ですが、
-どちらもOptionalな値で同じ意味になるかと思っていましたが、
-どうやら違ったよう。勘違いしていた・・🙄
-違いは下記の通り。
-Objectの初期作成時に省略できるかどうかが違うよう。
-
-
-
-
-省略
-undefinedの代入
-
-
-
-
-foo?: string
-○
-○[1]
-
-
-
-bar: string | undefined
-❌
-○
-
-
-
-bar: string | undefinedは省略できないので、
-「プロパティ &#x27;bar&#x27; は型 &#x27;...</p>
       </div>
     </article>
     <article class="article">
@@ -1203,41 +2158,13 @@ bar: string | undefinedは省略できないので、
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/nappa/articles/cd1d11fe7a5ab0 target="_blank">
-        <h1 class="hdg">React でプレゼンボードができちゃう React Speaker board で PDF ダウンロード機能追加しました 🎉</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-02-10</time></span> |
-          <span>Reading time: <time>3 min</time></span> |
-          <span>Word count: <time>937</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--AU1kbxY1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:React%2520%25E3%2581%25A7%25E3%2583%2597%25E3%2583%25AC%25E3%2582%25BC%25E3%2583%25B3%25E3%2583%259C%25E3%2583%25BC%25E3%2583%2589%25E3%2581%258C%25E3%2581%25A7%25E3%2581%258D%25E3%2581%25A1%25E3%2582%2583%25E3%2581%2586%2520React%2520Speaker%2520board%2520%25E3%2581%25A7%2520PDF%2520%25E3%2583%2580%25E3%2582%25A6%25E3%2583%25B3%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%2589%25E6%25A9%259F%25E8%2583%25BD%25E8%25BF%25BD%25E5%258A%25A0...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:nappa%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzE4M2Y0NTY3MGMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">はじめに
-自作 OSS の React Speaker board v0.3.2 リリースしました!
-React Speaker board とはなんぞや?という人は、以下の記事参照してください!
-https://zenn.dev/nappa/articles/4ef17f44a51461
-ダウンロードはこちらから!
-
- npm
-https://www.npmjs.com/package/react-speaker-board
-
- 公式サイト
-https://react-speaker-board-website.vercel.app/
-
- PDF ダウンロード機能追加した話
-今回、...</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=https://marketing.itmedia.co.jp/mm/articles/2402/10/news074.html target="_blank">
         <h1 class="hdg">[ITmedia マーケティング] Cookieレスと生成AIでマーケターの未来は明るい？　真っ暗？――「Marketing Dive」の8つの予言【7】【8】</h1>
         <div class="info">
           <span> ITmedia 総合記事一覧</span> |
           <span>Date: <time>2024-02-10</time></span> |
           <span>Reading time: <time>5 min</time></span> |
-          <span>Word count: <time>1526</time></span>
+          <span>Word count: <time>1528</time></span>
         </div>
       </a>
       <div class="overview">
@@ -1252,7 +2179,7 @@ https://react-speaker-board-website.vercel.app/
           <span> ITmedia 総合記事一覧</span> |
           <span>Date: <time>2024-02-10</time></span> |
           <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2899</time></span>
+          <span>Word count: <time>2898</time></span>
         </div>
       </a>
       <div class="overview">
@@ -1309,7 +2236,7 @@ func SampleTest(t *testing.T) {
           <span> ITmedia 総合記事一覧</span> |
           <span>Date: <time>2024-02-10</time></span> |
           <span>Reading time: <time>5 min</time></span> |
-          <span>Word count: <time>1463</time></span>
+          <span>Word count: <time>1466</time></span>
         </div>
       </a>
       <div class="overview">
@@ -1324,7 +2251,7 @@ func SampleTest(t *testing.T) {
           <span> ITmedia 総合記事一覧</span> |
           <span>Date: <time>2024-02-10</time></span> |
           <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2955</time></span>
+          <span>Word count: <time>2954</time></span>
         </div>
       </a>
       <div class="overview">
@@ -1339,7 +2266,7 @@ func SampleTest(t *testing.T) {
           <span> ITmedia 総合記事一覧</span> |
           <span>Date: <time>2024-02-10</time></span> |
           <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2892</time></span>
+          <span>Word count: <time>2891</time></span>
         </div>
       </a>
       <div class="overview">
@@ -1371,39 +2298,13 @@ https://github.com/derekparker/delve
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/k_ichirof/articles/a3d36b0655a373 target="_blank">
-        <h1 class="hdg">[読書メモ]オブジェクト設計スタイルガイド 3章6~8節 with TypeScript</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-02-10</time></span> |
-          <span>Reading time: <time>2 min</time></span> |
-          <span>Word count: <time>693</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--NPfDFcbc--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%255B%25E8%25AA%25AD%25E6%259B%25B8%25E3%2583%25A1%25E3%2583%25A2%255D%25E3%2582%25AA%25E3%2583%2595%25E3%2582%2599%25E3%2582%25B7%25E3%2582%2599%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E8%25A8%25AD%25E8%25A8%2588%25E3%2582%25B9%25E3%2582%25BF%25E3%2582%25A4%25E3%2583%25AB%25E3%2582%25AB%25E3%2582%2599%25E3%2582%25A4%25E3%2583%2588%25E3%2582%2599%25203%25E7%25AB%25A06%7E8%25E7%25AF%2580%2520with%2520TypeScript%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:k_ichirof%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2ZiYTI0YjgyZDMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">オブジェクト設計スタイルガイドを読みながら、TypeScriptでやるならどうやるかを考えながら書きました。
-要約的に読める内容になっていると思うので、サクッと3分ぐらいで読める記事となっています。
-https://www.oreilly.co.jp/books/9784814400331/
-
- 3.6 複合値を表現する新しいオブジェクトを抽出する
-例: Amount と　Currency
-class Amount {
-  get val() {
-    return this._val
-  }
-  constructor(private _val: number) {
-    ...</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2402/10/news067.html target="_blank">
         <h1 class="hdg">[ITmedia Mobile] ソフトバンクが“1年で実質12円”の購入プログラムを作った背景　約1年前から入念に準備も、厳密な運用は困難</h1>
         <div class="info">
           <span> ITmedia 総合記事一覧</span> |
           <span>Date: <time>2024-02-10</time></span> |
           <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2891</time></span>
+          <span>Word count: <time>2890</time></span>
         </div>
       </a>
       <div class="overview">
@@ -1487,111 +2388,6 @@ class Amount {
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2402/09/news104.html target="_blank">
-        <h1 class="hdg">[ITmedia ビジネスオンライン] プチ贅沢、コスパ……朝食市場が伸長、ニーズはどこに？</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>3063</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/business/articles/2402/09/cover_news104.jpg" width="100" />
-        <p class="description">仕事がある平日に朝食を外食すること（以下、朝外食）について、「する」とした人は15.0％に上ったことがリクルート（東京都千代田区）の外食市場に関する調査・研究機関「ホットペッパーグルメ外食総研」による調査で明らかとなった。ビジネスパーソンが朝外食に求めていることとは。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/enterprise/articles/2402/10/news043.html target="_blank">
-        <h1 class="hdg">[ITmedia エンタープライズ] 対策のヒントは「排出熱」　AIでデータセンターのCO2排出量を削減可能に</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2745</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/enterprise/articles/2402/10/cover_news043.jpg" width="100" />
-        <p class="description">IT資産においてもCO2削減の圧力は高まりつつある。稼働状況の監視だけでは対応できないこの問題に、パフォーマンスを維持しながらいかに効率よく電力消費を抑制するかはIT部門にとっても大きな関心事項だ。大手2社がAIを使ったデータセンターのCO2削減で協業する。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/enterprise/articles/2402/10/news020.html target="_blank">
-        <h1 class="hdg">[ITmedia エンタープライズ] Citrixの新たな頭痛の種　2つのゼロデイ脆弱性が見つかる</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2793</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/enterprise/articles/2402/10/cover_news020.jpg" width="100" />
-        <p class="description">Citrixは2つのゼロデイ脆弱性を公開した。これらはCitrixBleedとは無関係であるとされているが、同社はシステムを保護するために直ちに修正プログラムを適用するよう呼び掛けている。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2402/10/news045.html target="_blank">
-        <h1 class="hdg">[ITmedia ビジネスオンライン] 地下鉄延伸が完了した「博多」周辺　　不動産への影響は？</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>3055</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/business/articles/2402/10/cover_news045.jpg" width="100" />
-        <p class="description">LIFULLは、「2024年 LIFULL HOME&#x27;S みんなが探した！住みたい街ランキング（九州圏版）」を発表。借りて住みたい街のトップ3には「博多」「西鉄平尾」「高宮」が、買って住みたい街のトップ3には「博多」「西新」「大橋」が選ばれた。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/enterprise/articles/2402/10/news009.html target="_blank">
-        <h1 class="hdg">[ITmedia エンタープライズ] やはり“セキュリティ＝資金力”なのか？　189カ国630万の組織を調査した結果は</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2736</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/enterprise/articles/2402/10/cover_news009.jpg" width="100" />
-        <p class="description">SecurityScorecardは同社の調査で「国の経済的繁栄は防衛力の強化に直結しており、サイバーセキュリティには貧富の差が生じている」という見立てを公開した。果たして本当か。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2402/10/news060.html target="_blank">
-        <h1 class="hdg">[ITmedia Mobile] 法令改正で「Pixel 8」の価格はどれだけ変わった？　ドコモ、au、ソフトバンクの最安値【2月10日最新版】</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2947</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2402/10/cover_news060.jpg" width="100" />
-        <p class="description">「電気通信事業法第27条の3」の省令が改正されて、Pixel 8の価格はどう変わったか。ドコモは実質負担額をやや値上げ。auとソフトバンクは一括価格を値下げし、実質負担額もMNPなら100円を切っておりお得だ。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/pcuser/articles/2402/10/news064.html target="_blank">
-        <h1 class="hdg">[ITmedia PC USER] リンゴの次はイチゴ！　人気グリスに新フレーバー登場</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2881</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/pcuser/articles/2402/10/cover_news064.jpg" width="100" />
-        <p class="description">人気の「えくすとりーむぐりす」シリーズに、いちごの香りがするモデルが登場した。また、グラフィックスカードではメモリ6GB版のGeForce RTX 3050搭載カードが加わっている。</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=http://dailyfeed.jp/feed/103/2024-02-09 target="_blank">
         <h1 class="hdg">2024年02月09日の記事一覧</h1>
         <div class="info">
@@ -1655,44 +2451,6 @@ class Amount {
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2402/10/news011.html target="_blank">
-        <h1 class="hdg">[ITmedia ビジネスオンライン] ローソンで「ニット」が想定以上の売れ行き　一部店舗では品切れ　20代をターゲットにした戦略とは</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>3055</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/business/articles/2402/10/cover_news011.jpg" width="100" />
-        <p class="description">ローソンの雑誌コーナーで展開している「ニット」が、想定以上のペースで売れている。1月16日に全国のローソン約1000店舗で発売したところ、一部店舗で品切れが発生。2月13日に追加納品を予定している。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/ryo034/articles/try-openapi-fetch target="_blank">
-        <h1 class="hdg">openapi-fetchでOpenAPIからコード生成してみた</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>5 min</time></span> |
-          <span>Word count: <time>1381</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--qMDkVEOt--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:openapi-fetch%25E3%2581%25A7OpenAPI%25E3%2581%258B%25E3%2582%2589%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E7%2594%259F%25E6%2588%2590%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ryo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzhkYjE2M2Q5YzQuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">フロントエンドでOpenAPI 3から型ファイルを生成したいとライブラリを探していたところopenapi-typescriptというリポジトリを見つけました。色々な方が記事で紹介していました。
-https://zenn.dev/micin/articles/openapi-typescript-with-type-puzzles
-しかし、openapi-typescriptばかりでopenapi-fetchがあまり紹介されていなかったので記事にしてみました。
-openapi-typescriptのリポジトリでは以下の二つが紹介されています。
-
-openapi-typescript
-
-
-O...</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=https://zenn.dev/show_yeah/articles/334e848bdeaf23 target="_blank">
         <h1 class="hdg">【HTMX入門】話題になったHTMXでチャットアプリ作ったよ</h1>
         <div class="info">
@@ -1716,24 +2474,6 @@ https://twitter.com/WisheeBell
 以下公式ドキュメントの内容をdeeplで和訳したものです。
 
 htmxは、属性を...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/r_knm/articles/1eb686d401047a target="_blank">
-        <h1 class="hdg">Durable Functionsの非同期HTTP APIパターンを使ってZIPファイルダウンロード機能を実装する</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>8 min</time></span> |
-          <span>Word count: <time>2496</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--JhAnkL-u--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Durable%2520Functions%25E3%2581%25AE%25E9%259D%259E%25E5%2590%258C%25E6%259C%259FHTTP%2520API%25E3%2583%2591%25E3%2582%25BF%25E3%2583%25BC%25E3%2583%25B3%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6ZIP%25E3%2583%2595%25E3%2582%25A1%25E3%2582%25A4%25E3%2583%25AB%25E3%2583%2580%25E3%2582%25A6%25E3%2583%25B3%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%2589%25E6%25A9%259F%25E8%2583%25BD%25E3%2582%2592%25E5%25AE%259F%25E8%25A3%2585%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Ryo%2520Kainuma%2528log%2520bu...%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2E5YjA1OTBhNjUuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">はじめに
-複数ファイルを１つのZIPファイルにまとめてダウンロードする機能を実装する機会があり、アーキテクチャ設計から実装までの一通りの開発を実施したのでこの記事で紹介したいと思います。
-複数ファイルをZIPにまとめる処理は、ファイル数や容量によっては時間がかかるためAzureのDurble Functionsの非同期HTTP APIパターンを使って開発しました。
-Azure Functionsを使った開発は今までも多数経験がありましたが、Durable Functionsを使うのは初めてで、やや癖があり、まだ完全に理解したわけではありませんが今後の開発にも非常に役にたつパターンをキ...</p>
       </div>
     </article>
     <article class="article">
@@ -1766,190 +2506,18 @@ page.tsxの...</p>
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2402/09/news177.html target="_blank">
-        <h1 class="hdg">[ITmedia Mobile] ソフトバンクが「Pixel 8（128GB）」「Xiaomi 13T Pro」を値下げ　MNPなら2年で実質24円に</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2911</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2402/09/cover_news177.jpg" width="100" />
-        <p class="description">ソフトバンクが2月9日、「Pixel 8（128GB）」「Xiaomi 13T Pro」を値下げした。11万4480円から9万4320円に一括価格を変更。MNPで契約して2年後に端末を返却すると、実質負担額は24円になる。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2402/09/news174.html target="_blank">
-        <h1 class="hdg">[ITmedia Mobile] povo、期間限定トッピング「50GB（365日間）」提供　乗り換えキャンペーンで実質8800円に</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2867</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2402/09/l_asa_povo500365_01.jpg" width="100" />
-        <p class="description">KDDIは、povoで2月29日まで期間限定トッピング「データ追加50GB（365日間）」を1万1800円（税込み）で提供。「他社からお乗り換えでau PAY 残高還元キャンペーン」を適用すると、実質8800円で利用できる。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2402/09/news173.html target="_blank">
-        <h1 class="hdg">[ITmedia News] ポケモンバトルに特化したAI、ポケモン社が将棋AIの会社と開発　「竜王戦」ライブ配信に活用</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2854</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/news/articles/2402/09/cover_news173.jpg" width="100" />
-        <p class="description">ポケモン社は9日、ポケモンバトルに特化したAI「Pokemon Battle Scope」（PBS）を開発したと明らかにした。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2402/09/news144.html target="_blank">
-        <h1 class="hdg">[ITmedia Mobile] ミッドレンジスマホ「OPPO A79 5G」はどこがお得？　Y!mobile、楽天モバイル、IIJmio、家電量販店などの価格を比較</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2941</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2402/09/cover_news144.jpg" width="100" />
-        <p class="description">オウガ・ジャパンは2月9日、スマートフォンAシリーズの新モデル「OPPO A79 5G」を発表。Aシリーズとして初めてモバイルFeliCaや、マイナンバーカードのスマホ電子証明書に対応するなど、低価格ながら日本市場における需要に応える製品だ。どこで買うのがお得なのかをまとめる。</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=http://codezine.jp/article/detail/19037 target="_blank">
         <h1 class="hdg">AWS、Linuxコンテナの構築、実行、公開を可能にする「Finch」にてWindowsをサポート</h1>
         <div class="info">
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-09</time></span> |
           <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>3996</time></span>
+          <span>Word count: <time>3998</time></span>
         </div>
       </a>
       <div class="overview">
         <img class="img" src="https://codezine.jp/static/images/article/19037/16332_ogp.png" width="100" />
         <p class="description">米Amazon Web Servicesは、開発者がWindowsおよびmacOS上でLinuxコンテナを構築、実行、公開できるオープンソースのコマンドラインツール「Finch」における、Windowsサポートの一般提供を2月1日（現地時間）に発表した。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2402/09/news167.html target="_blank">
-        <h1 class="hdg">[ITmedia News] Chatworkが社名変更　「kubell」（クベル）に</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2851</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/news/articles/2402/09/cover_news167.jpg" width="100" />
-        <p class="description">Chatworkが社名変更を発表した。7月1日に社名を「kubell」（クベル）に変える予定。「火に薪を『くべる』」から取った名前という。3月27日に開催する株主総会での承認をもって決定する。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2402/09/news161.html target="_blank">
-        <h1 class="hdg">[ITmedia News] 名刺管理「Sansan」不正アクセスし閲覧　容疑の不動産販売会社員の男逮捕　営業に利用目的か</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2579</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/news/articles/2402/09/cover_news161.jpg" width="100" />
-        <p class="description">法人向け名刺管理システム「Sansan」の運営会社社員になりすまし、利用者からIDとパスワードを入手してシステムに不正アクセスしたとして、警視庁サイバー犯罪対策課は不正アクセス禁止法違反の疑いで、不動産販売会社「GRANDCITY」社員、片岡和真容疑者（37）＝東京都台東区小島＝を逮捕した。容疑を否認している。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/praha/articles/d1d6462a27e37e target="_blank">
-        <h1 class="hdg">HonoでAPIのドキュメントを自動生成する</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>11 min</time></span> |
-          <span>Word count: <time>3215</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--XbWrKN0R--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Hono%25E3%2581%25A7API%25E3%2581%25AE%25E3%2583%2589%25E3%2582%25AD%25E3%2583%25A5%25E3%2583%25A1%25E3%2583%25B3%25E3%2583%2588%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:Karibash%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2VhMmQ0ZjFjZWEuanBlZw&#x3D;&#x3D;%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%2597%25E3%2583%25A9%25E3%2583%258F%25E3%2581%25AE%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2dPMW45d0ZmU3FpV21hNW9HWlAzczc4YnRIN0VBUXE5aDdaOU5VZ3c9czk2LWM&#x3D;%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">はじめに
-Honoでは@hono/zod-openapiと@hono/swagger-uiを利用することで、APIのドキュメントを自動生成することができます。
-今回は、この2つのパッケージを利用して、APIのドキュメントを自動生成する方法を紹介します。
-
- Honoとは
-Honoは軽量かつ、高速な事が特徴なWebフレームワークです。
-さらに、特定の実行環境に依存しないように設計されているため、Node.jsやDeno、Cloudflare Workersなど、様々な環境で利用することができます。
-また、Honoは様々なMiddleware[1]を提供しており、それらを組み合わせること...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/pcuser/articles/2402/09/news159.html target="_blank">
-        <h1 class="hdg">[ITmedia PC USER] Amazonのタブレット「Fire HD 10 キッズプロ」を小学校低学年の子どもに使ってもらった結果</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2938</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/pcuser/articles/2402/09/cover_news159.jpg" width="100" />
-        <p class="description">アマゾンジャパンが6歳以上の子どもが使うことを想定したタブレット「Fire HD 10 キッズプロ」を発売しました。筆者の子どもに実際に使ってみると、良い点と改善すべき点がいろいろ見えてきたので、まとめてみます。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2402/09/news086.html target="_blank">
-        <h1 class="hdg">[ITmedia ビジネスオンライン] IT職種の7割が「年収アップ」　転職前後を調査</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>3049</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/business/articles/2402/09/cover_news086.jpg" width="100" />
-        <p class="description">その他ポジション別の平均年収増加額、転職前のポジション別平均年収の変化なども調査した。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2402/09/news087.html target="_blank">
-        <h1 class="hdg">[ITmedia ビジネスオンライン] ニトリ、隙間に合わせて10センチからオーダーできる「頑丈すき間ワゴン」発売</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>3046</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/business/articles/2402/09/cover_news087.png" width="100" />
-        <p class="description">ニトリは2上旬に、幅10センチから注文できる「オーダー頑丈すき間ワゴン」を発売した。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2402/09/news165.html target="_blank">
-        <h1 class="hdg">[ITmedia Mobile] ドコモ、3月に自治体でdポイント／d払いの最大30％還元キャンペーン　東京都や埼玉県伊奈町が対象</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2864</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2402/09/l_asa_djichitai0301_01.jpg" width="100" />
-        <p class="description">NTTドコモは、3月1日から全国の自治体でdポイント／d払いキャンペーンを順次開催。東京都、埼玉県伊奈町、千葉県袖ケ浦市、鹿児島県薩摩川内市、千葉県君津市で支払い金額の最大30％分のdポイントを還元する。</p>
       </div>
     </article>
     <article class="article">
@@ -1980,28 +2548,13 @@ impor...</p>
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2402/09/news160.html target="_blank">
-        <h1 class="hdg">[ITmedia ビジネスオンライン] 近畿圏主要私大「共通テスト利用入試」志願者数ランキング、1位は？</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2856</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/business/articles/2402/09/cover_news160.jpg" width="100" />
-        <p class="description">今週は近畿圏主要私大「共通テスト利用入試」志願者数ランクをお届けする。</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=http://codezine.jp/article/detail/19039 target="_blank">
         <h1 class="hdg">Amazon Web Services、AWS GlueのETL処理に自然言語を使用可能に</h1>
         <div class="info">
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-09</time></span> |
           <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>3999</time></span>
+          <span>Word count: <time>4001</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2016,27 +2569,12 @@ impor...</p>
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-09</time></span> |
           <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>3983</time></span>
+          <span>Word count: <time>3985</time></span>
         </div>
       </a>
       <div class="overview">
         <img class="img" src="https://codezine.jp/static/images/article/19040/12597_og.jpg" width="100" />
         <p class="description">米Deno LandはJavaScript／TypeScriptランタイム「Deno」の次世代版のロードマップを近日中に公開すると2月2日に発表した。現在のところ、次世代版を「Deno 2」と称しており、Nodeやnpmとの互換性をさらに高め、旧版からの移行をスムーズにする文書を用意するとしている。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2402/09/news136.html target="_blank">
-        <h1 class="hdg">[ITmedia Mobile] Googleが国内スマホシェア3位に　2023年の携帯出荷台数は過去最少に</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2858</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2402/09/l_asa_MMsouken_01.jpg" width="100" />
-        <p class="description">MM総研は、2023年暦年（1～12月）の国内携帯電話の出荷台数を発表。2801.3万台（前年比16.9％減）と日本でスマートフォンが登場した2007年以降で初めて3000万台を下回り、過去最少となった。</p>
       </div>
     </article>
     <article class="article">
@@ -2075,7 +2613,7 @@ https://nexspo.vercel.app/
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-09</time></span> |
           <span>Reading time: <time>14 min</time></span> |
-          <span>Word count: <time>4242</time></span>
+          <span>Word count: <time>4244</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2112,7 +2650,7 @@ Encraft #1...</p>
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-09</time></span> |
           <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>4012</time></span>
+          <span>Word count: <time>4014</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2127,7 +2665,7 @@ Encraft #1...</p>
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-09</time></span> |
           <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>3979</time></span>
+          <span>Word count: <time>3981</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2142,37 +2680,12 @@ Encraft #1...</p>
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-09</time></span> |
           <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>3985</time></span>
+          <span>Word count: <time>3987</time></span>
         </div>
       </a>
       <div class="overview">
         <img class="img" src="https://codezine.jp/static/images/article/19034/19034_ogp.png" width="100" />
         <p class="description">パーソルキャリアが運営する転職サービス「doda」は、2023年1月～6月の期間に「doda」のエージェントサービスを利用して転職した個人を対象に実施した、転職前の年収と転職後の決定年収の平均値、その増加幅を算出した「IT職種の転職前後の平均年収レポート」を2月8日に発表した。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/funteractiveinc/articles/332d3af28a7f80 target="_blank">
-        <h1 class="hdg">つまずきニュースレター（2024-02-09号)</h1>
-        <div class="info">
-          <span> Zennの「Next.js」のフィード</span> |
-          <span>Date: <time>2024-02-09</time></span> |
-          <span>Reading time: <time>3 min</time></span> |
-          <span>Word count: <time>950</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--tmyWd6-m--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25A4%25E3%2581%25BE%25E3%2581%259A%25E3%2581%258D%25E3%2583%258B%25E3%2583%25A5%25E3%2583%25BC%25E3%2582%25B9%25E3%2583%25AC%25E3%2582%25BF%25E3%2583%25BC%25EF%25BC%25882024-02-09%25E5%258F%25B7%2529%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:yoshino%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2I4YmI2YjY4NDMuanBlZw&#x3D;&#x3D;%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E3%2583%2595%25E3%2582%25A1%25E3%2583%25B3%25E3%2582%25BF%25E3%2583%25A9%25E3%2582%25AF%25E3%2583%2586%25E3%2582%25A3%25E3%2583%2596%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzczYTNmZDBlMGUuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">はじめに
-こんにちは。ファンタラクティブのyoshinoです。
-ファンタラクティブのエンジニアチームはMob.*（モブアスタリスク）という取り組みを毎週行っており、それぞれのメンバーがどのような開発に取り組んでいるか・業務でつまずいたことを社内で共有しています。
-このニュースレターでは、その中でも実際の業務で起きたつまずきをピックアップし、まとめています。
-
- 【vitest + urql】urqlを使っているコンポーネントの単体テストが落ちてつまずいた！
-
-背景:
-urqlを使っているコンポーネントの単体テストが落ちる
-原因:
-クライアントをモックするために、urql client...</p>
       </div>
     </article>
     <article class="article">
@@ -2182,7 +2695,7 @@ urqlを使っているコンポーネントの単体テストが落ちる
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-09</time></span> |
           <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>4014</time></span>
+          <span>Word count: <time>4016</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2197,7 +2710,7 @@ urqlを使っているコンポーネントの単体テストが落ちる
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-09</time></span> |
           <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>3996</time></span>
+          <span>Word count: <time>3998</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2212,7 +2725,7 @@ urqlを使っているコンポーネントの単体テストが落ちる
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-09</time></span> |
           <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>3993</time></span>
+          <span>Word count: <time>3995</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2227,7 +2740,7 @@ urqlを使っているコンポーネントの単体テストが落ちる
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-09</time></span> |
           <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>3985</time></span>
+          <span>Word count: <time>3987</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2264,37 +2777,13 @@ Table Driven Test もいいんですが、Table が大きく育つとデータ�
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/fp16/articles/1edc4fd83b3909 target="_blank">
-        <h1 class="hdg">Hono on Next.jsで使いやすいStable Diffusion web UIを作る</h1>
-        <div class="info">
-          <span> Zennの「Next.js」のフィード</span> |
-          <span>Date: <time>2024-02-08</time></span> |
-          <span>Reading time: <time>3 min</time></span> |
-          <span>Word count: <time>890</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--P55e37u4--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Hono%2520on%2520Next.js%25E3%2581%25A7%25E4%25BD%25BF%25E3%2581%2584%25E3%2582%2584%25E3%2581%2599%25E3%2581%2584Stable%2520Diffusion%2520web%2520UI%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:yuichiro%2520miyamae%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2FjYzhiYWJkNGQuanBlZw&#x3D;&#x3D;%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BEFP16%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2lfV0lPWm45cE92MG13ZjJvaTh0ZzZRY0d3Q0U5Q0xfUTdzTmxwPXMyNTAtYw&#x3D;&#x3D;%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">はじめに
-はじめまして、株式会社FP16の宮前です！
-早速ですが、Stable Diffusion web UIって初見だと難しいと思いませんか？
-指定できるパラメータが多く、社内のデザイナーさん等に触ってもらうにはハードルが高いと感じていました。
-そんな時に簡単に扱えるよう、Stable Diffusionの日本語に対応したわかりやすいweb UIを作ってみました！
-
- 作ったもの
-Gogh（ゴッホ）というStableDiffusionのWebUIです。
-内部では AUTOMATIC1111/stable-diffusion-webui のAPIを利用しています。
-（webUIを...</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=http://codezine.jp/article/detail/18979 target="_blank">
         <h1 class="hdg">Kindleで50％オフ、PDF版は50％ポイント還元　2/16まで翔泳社の技術書がセールでお得！</h1>
         <div class="info">
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-08</time></span> |
           <span>Reading time: <time>14 min</time></span> |
-          <span>Word count: <time>4061</time></span>
+          <span>Word count: <time>4063</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2455,78 +2944,13 @@ https://articsapp.com/ja/app
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/k0kishima/articles/956ba3f3dc9629 target="_blank">
-        <h1 class="hdg">Next.js  App Router での i18n 対応例</h1>
-        <div class="info">
-          <span> Zennの「Next.js」のフィード</span> |
-          <span>Date: <time>2024-02-08</time></span> |
-          <span>Reading time: <time>22 min</time></span> |
-          <span>Word count: <time>6705</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--uxi7UuhL--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Next.js%2520%2520App%2520Router%2520%25E3%2581%25A7%25E3%2581%25AE%2520i18n%2520%25E5%25AF%25BE%25E5%25BF%259C%25E4%25BE%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:k0kishima%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzVlZGQxYzU0ZjcuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">概要
-色々あって参画している案件で Next.js の App Router への移行を主導する立場になりました。
-なかでも i18n 対応が結構骨が折れた印象でした。
-
-いろんな記事を見たが Server Component (以下、SC) に対応しているものが見当たらなかった
-
-Root layout にて Provider でラップするとかはあった
-
-けどそれだと Client Component (以下、CC) になるのでは（実際にハンズオンで確認まではしてないけど）
-
-
-
-
-
-Next.js の公式ドキュメントで SC の対応例は掲載されていた
-
-ただ、 スクラッチ実装なり...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/nenenemo/articles/02c79ca009deeb target="_blank">
-        <h1 class="hdg">Next.jsでS3からJSONデータを取得する方法</h1>
-        <div class="info">
-          <span> Zennの「Next.js」のフィード</span> |
-          <span>Date: <time>2024-02-08</time></span> |
-          <span>Reading time: <time>4 min</time></span> |
-          <span>Word count: <time>1062</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--pz1TIwmC--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Next.js%25E3%2581%25A7S3%25E3%2581%258B%25E3%2582%2589JSON%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2582%2592%25E5%258F%2596%25E5%25BE%2597%25E3%2581%2599%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2583%258D%25E3%2583%25A2%25E3%2581%2595%25E3%2582%2593%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FGZFp1Y3JqODQzWnc5aTdpNll5Z3dqX005LURkLWpYaHVoaFBSOWp5d3ZONXc9czk2LWM&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">はじめに
-完成イメージ
-コンソールでjsonの内容が確認できる。
-
-フロントエンドの環境は、下記の記事で作成した基本的な環境を使用しています。
-https://zenn.dev/nenenemo/articles/082ac7dcffe308
-
- S3の作成
-バケットを作成を選択、
-
-バケット名を入力し、そのほかは特に変更せず、下へスクロールしバケットを作成を選択してください。
-
-
- jsonをアップロードする
-今回使用するtest.jsonの内容は以下です。
-{
-  &quot;title&quot;: &quot;Python入門&quot;,
-  &quot;price&quot;: 2500
-}
-オブジェクトに直接jsonをアップロー...</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=http://codezine.jp/article/detail/19021 target="_blank">
         <h1 class="hdg">Microsoft、Visual Studio Code用Python／Jupyter拡張機能の2024年2月版をリリース</h1>
         <div class="info">
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-08</time></span> |
           <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>4020</time></span>
+          <span>Word count: <time>4022</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2562,7 +2986,7 @@ func hoge(fileData *multipart.FileHeader) {
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-08</time></span> |
           <span>Reading time: <time>14 min</time></span> |
-          <span>Word count: <time>4176</time></span>
+          <span>Word count: <time>4178</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2577,7 +3001,7 @@ func hoge(fileData *multipart.FileHeader) {
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-08</time></span> |
           <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>3982</time></span>
+          <span>Word count: <time>3984</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2592,7 +3016,7 @@ func hoge(fileData *multipart.FileHeader) {
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-08</time></span> |
           <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>3988</time></span>
+          <span>Word count: <time>3990</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2607,7 +3031,7 @@ func hoge(fileData *multipart.FileHeader) {
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-08</time></span> |
           <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>3986</time></span>
+          <span>Word count: <time>3988</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2622,7 +3046,7 @@ func hoge(fileData *multipart.FileHeader) {
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-08</time></span> |
           <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>3983</time></span>
+          <span>Word count: <time>3985</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2668,7 +3092,7 @@ README.mdみてください。
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-08</time></span> |
           <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>3985</time></span>
+          <span>Word count: <time>3987</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2740,64 +3164,6 @@ README.mdみてください。
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/kotopasi/articles/33f8f376b93c68 target="_blank">
-        <h1 class="hdg">[Docker] Next.jsの開発環境をDockerに構築する</h1>
-        <div class="info">
-          <span> Zennの「Next.js」のフィード</span> |
-          <span>Date: <time>2024-02-07</time></span> |
-          <span>Reading time: <time>1 min</time></span> |
-          <span>Word count: <time>442</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--cIE9pzCI--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%255BDocker%255D%2520Next.js%25E3%2581%25AE%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2582%2592Docker%25E3%2581%25AB%25E6%25A7%258B%25E7%25AF%2589%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2582%25E3%2581%25BE%25E3%2581%259F%25E3%2581%25A4%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2FmOWU0NjBmZDUuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">はじめに
-
- 動作環境
-
-Docker 24.0.7
-
-
- 目標
-
-Dockerにnode環境を作る
-
-npx create-next-appする
-サーバーを立ち上げてみる
-
-
- 手順
-
- Dockerにnode環境を作る
-Dockerfileとdocker-compose.ymlをつくる
-!
-この時点でのディレクトリ構成は以下のようにすること!
-    ├── Dockerfile
-    └── docker-compsoe.yml
-
-
-FROM node:lts-buster-slim
-WORKDIR /app
-
-CMD [&quot;npm&quot;,&quot;run&quot;,&quot;dev&quot;,&quot;-p 3000&quot;...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=http://codezine.jp/article/detail/19017 target="_blank">
-        <h1 class="hdg">Everyone.Engineer、ITエンジニア育成講座修了後に、実務経験を積みつつ収入も確保できる受託開発事業「4mill.studio」を創設</h1>
-        <div class="info">
-          <span> CodeZine:新着一覧</span> |
-          <span>Date: <time>2024-02-07</time></span> |
-          <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>3982</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://codezine.jp/static/images/article/19017/19017_og.png" width="100" />
-        <p class="description">Everyone.Engineerは、同法人が運営するITエンジニア養成スクール修了後の就労支援の一環として、企業のシステム開発の経験を積みつつ、年収400万円まで稼ぐことを目指す受託開発事業「4mill.studio（フォーミルスタジオ）」を、1月に創設した。</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=https://zenn.dev/ss49919201/articles/8aaef02f64f0e6 target="_blank">
         <h1 class="hdg">【Go 1.22】for ループの2つの仕様変更</h1>
         <div class="info">
@@ -2817,74 +3183,6 @@ https://tip.golang.org/doc/go1.22
 1.21 以前では、for ループの range 句で宣言された変数は各イテレートで値が更新されながら使いまわされていました。
 そのため、宣言された変数を goroutine で使用したり defer による遅延処理で使用するケースなどで面倒な処理が必要でした。
 具体的には、別途宣言した変数に代入するか、...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=http://dailyfeed.jp/feed/103/2024-02-06 target="_blank">
-        <h1 class="hdg">2024年02月06日の記事一覧</h1>
-        <div class="info">
-          <span> Gizmodo Japan（ギズモード・ジャパン）のデイリーフィード - DailyFeed</span> |
-          <span>Date: <time>2024-02-06</time></span> |
-          <span>Reading time: <time>1 min</time></span> |
-          <span>Word count: <time>159</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <p class="description">(全 20 件)
-1. 息を呑む美しさ。ウェッブ宇宙望遠鏡が捉えた渦巻銀河の神秘 
-2. 音楽の違法ダウンロードが急増中｡その理由とは 
-3. 街灯に群がる虫、光が好きで群がってるわけじゃなかった 
-4. 無印の圧縮袋は片面がグレー。これだけで活用範囲が広がる 
-5. どこから飲むかで味わいが変わるビアグラス 
-6. 腕に付けるお守り。呼吸を整えストレスを和らげるガーミン「Lily 2」 
-7. Apple Vision Proを着けて街を歩くとかなり目立ちます 
-8. 電気代0円で部屋を暖める最適解は「ストーブ+扇風機」だった 
-9. NIKEの対抗馬は？ ダークホースの一番手、HOKAのスピードシューズ 
-10. キッズもオトナもどうぞ。LEGO『スター・ウォーズ』25周年セットが激アツ 
-11. Alienwareのモニターを導入したら「目」が喜んだ 
-12. 初心者でも“お店の味”を実現できる猿田彦珈琲のドリッパー 
-13. アップル、年内にAI関連の大発表があるかも 
-14. こっちならお買い得…Meta QuestでもiPhone撮影の空間ビデオが視聴可能に 
-15. あれ、なんだっけ？ お使いのスマホのモデルを見分ける方法 
-16. あのサイバートラックも対象。米Teslaがまたもや大規模リコール 
-17. ゴードンミラーの「移動する家」。旅行も仕事もできて、1800万円です 
-18. 乗り換えちゃう？ Apple初の折りたたみデバイスは2026年に登場するかも 
-19. 未来の車椅子、キタ。まるで「椅子が付いたセグウェイ」だ 
-20. Apple Vision Proで見るMacの画面、Intel Macはちょい小さい</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=http://dailyfeed.jp/feed/105/2024-02-06 target="_blank">
-        <h1 class="hdg">2024年02月06日の記事一覧</h1>
-        <div class="info">
-          <span> ライフハッカー［日本版］のデイリーフィード - DailyFeed</span> |
-          <span>Date: <time>2024-02-06</time></span> |
-          <span>Reading time: <time>1 min</time></span> |
-          <span>Word count: <time>150</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <p class="description">(全 20 件)
-1. ノートPCやカメラも収納できて、スタイリッシュ！拡張可能なスリングバッグ「SEKKEI MX-sling」 
-2. 書類や本を全てデータ化！オーバーヘッドスキャナーは「デスクに常設」の価値あり【今日のライフハックツール】 
-3. ユニークで美しい竹型デザイン！一生物にできそうなメタル万年筆「TTi-110」を試してみた 
-4. ペーパーフィルターの使い捨てから卒業！ 有田焼のコーヒーフィルターを使ってみた 
-5. 相手を思いやる「悪いニュースの伝え方」。NGフレーズを避けて、気持ちに寄り添うには 
-6. AIでデスクトップの背景を作成する方法 
-7. お札も小銭もカードも出し入れ簡単！コンパクト財布「mini」を使ってみた 
-8. たっぷりのカードを使いやすく収納！ 大容量でもスマートな本革ロングウォレットを使ってみた 
-9. 窓の下側に貼るだけで、流れ落ちる結露を吸水。自然蒸発を繰り返して効果が持続するテープ【Amazonセール中】 
-10. iPhoneの「Amazon Alexa」アプリ術！EchoスピーカーがなくてもAmazon機能をフル活用できる 
-11. サイズや質感、色味が絶妙！無印良品の「ティッシュ以上、キッチンペーパー未満のコレ」が使いやすい 
-12. お湯を注いで、スイッチを押すだけ。いつでも安定の美味しいコーヒが抽出できる、HARIOの浸漬式ドリッパー【楽天セール】 
-13. 読者に「お金」事情を聞いてみた！現金派・電子マネー派？新NISAはじめた？情報収集の方法は？ 
-14. ごちゃつくルーター周り、コレでスッキリ解決。山崎実業のスタッキングもできる収納ケースが1,095円【Amazonセール】 
-15. 体感重量軽減ベルトがポイント！ビジネスからプライベートまで、あらゆるシーンで妥協なく使えるバックパックに注目！ 
-16. タスク管理をアナログでやる意味、そしてデジタルの強みとは？あらためて比較してみた 
-17. スマホに財布が取りつけられる「and W」シリーズにカードケース「+card」が登場 
-18. タスクの優先度に悩む。超基本に立ち返って「アイゼンハワー・マトリクス」で整理する方法 
-19. これを待ってました！ キズ汚れに強く、iPadに最適な新サイズに進化した「QUICKPACK11」 
-20. 【毎日書評】一人何役もこなすリーダーへ送る、現場が動くマネジメント6つのチェックポイント</p>
       </div>
     </article>
     <article class="article">
@@ -2944,26 +3242,6 @@ https://tip.golang.org/doc/go1.22
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/k_zumi_dev/articles/fd4655759ae946 target="_blank">
-        <h1 class="hdg">Next.js × Contentlayerでマークダウンのブログを作ろう</h1>
-        <div class="info">
-          <span> Zennの「Next.js」のフィード</span> |
-          <span>Date: <time>2024-02-06</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>3006</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--aUnQya3w--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Next.js%2520%25C3%2597%2520Contentlayer%25E3%2581%25A7%25E3%2583%259E%25E3%2583%25BC%25E3%2582%25AF%25E3%2583%2580%25E3%2582%25A6%25E3%2583%25B3%25E3%2581%25AE%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258D%25E3%2581%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:k_zumi_dev%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2NiMTRjZTg1MTcuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">はじめに
-Next.jsで作成したサービスサイトに、ブログ形式のお知らせページを実装したい。
-更新頻度はそこまで高くないので、microCMSなどのヘッドレスCMSは利用せず、まずはプロジェクト内で直接マークダウンを管理することを目指す。
-そこで、Next.jsにおけるマークダウンの利用方法を調べたところ、Contentlayerが適切だった。
-しかしながら、公式サイトのGetting Startedが現在の環境では動かなかったため、備忘録として導入手順とエラー対処方法を記録する。
-https://contentlayer.dev/docs/getting-started-cddd7...</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=https://zenn.dev/ukiyocreate_dev/articles/golang_gocron_v2 target="_blank">
         <h1 class="hdg">gocron v2で定期実行を走らせる</h1>
         <div class="info">
@@ -3000,60 +3278,6 @@ func task() {
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/web_life_ch/articles/73f30f3ee64051 target="_blank">
-        <h1 class="hdg">【NextJs14】NextJs14 と 便利なライブラリ【#２８Prisma Client】</h1>
-        <div class="info">
-          <span> Zennの「Next.js」のフィード</span> |
-          <span>Date: <time>2024-02-06</time></span> |
-          <span>Reading time: <time>1 min</time></span> |
-          <span>Word count: <time>374</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--gKOKsXvX--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590NextJs14%25E3%2580%2591NextJs14%2520%25E3%2581%25A8%2520%25E4%25BE%25BF%25E5%2588%25A9%25E3%2581%25AA%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25AA%25E3%2580%2590%2523%25EF%25BC%2592%25EF%25BC%2598Prisma%2520Client%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Web%2520Life%2520CH%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUl0YnZtbWNjTWFMM3dyd2x3VE5sVVZjTlhmZHEzZzF2QnJfMUJMSkJrN049czk2LWM&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">【#２８Prisma Client】
-YouTube: https://youtu.be/m9GpAOUIbYs
-https://youtu.be/m9GpAOUIbYs
-今回はスキーマの調整とPrismaClientの初期設定を行います。
-
-prisma/schema.prisma
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-generator client {
-  provider &#x3D; &quot;prisma-client-...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/ryomak/articles/sqlboiler-go target="_blank">
-        <h1 class="hdg">SQLBoilerのちょっとしたTips集</h1>
-        <div class="info">
-          <span> Zennの「Golang」のフィード</span> |
-          <span>Date: <time>2024-02-06</time></span> |
-          <span>Reading time: <time>16 min</time></span> |
-          <span>Word count: <time>4882</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--VUKPVSFN--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:SQLBoiler%25E3%2581%25AE%25E3%2581%25A1%25E3%2582%2587%25E3%2581%25A3%25E3%2581%25A8%25E3%2581%2597%25E3%2581%259FTips%25E9%259B%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ryomak%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2p5UzA5emdwQWRaWkFXTDhQWWY0ZGQ2YW5rdm1MdWFtOGJtWUVnUUE9czI1MC1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">はじめに
-https://github.com/volatiletech/sqlboiler
-SQLBoilerは、スキーマに合わせたORMを生成するツールです。
-READMEにも書かれていますが、意外と気づきづらい部分があったりするので、使い方から、ちょっとしたTips、ハマりポイントをまとめます。
-少しでも参考になれば幸いです。
-
- 前提
-
-MySQL
-SQLBoiler v4.16.1
-生成したコードはmodelパッケージに配置されているとします
-テーブルは以下を想定
-
-CREATE TABLE &#x60;teams&#x60; (
-  &#x60;id&#x60; int(11) NOT NULL AUTO_IN...</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=https://zenn.dev/yamada_quantum/articles/7b3b6cd1066ab8 target="_blank">
         <h1 class="hdg">最近流行りのRemixとCloudflareをキャッチアップするために一個アプリ作った話</h1>
         <div class="info">
@@ -3081,46 +3305,6 @@ Cloudflareは最高でした。
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/trkizaki/articles/nextjs_vercel target="_blank">
-        <h1 class="hdg">Nextjsで書いたblogがvercelでbuildできなくなったのでpnpmからyarnに移行した[solved]</h1>
-        <div class="info">
-          <span> Zennの「Next.js」のフィード</span> |
-          <span>Date: <time>2024-02-05</time></span> |
-          <span>Reading time: <time>8 min</time></span> |
-          <span>Word count: <time>2395</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--sQ2WFifH--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Nextjs%25E3%2581%25A7%25E6%259B%25B8%25E3%2581%2584%25E3%2581%259Fblog%25E3%2581%258Cvercel%25E3%2581%25A7build%25E3%2581%25A7%25E3%2581%258D%25E3%2581%25AA%25E3%2581%258F%25E3%2581%25AA%25E3%2581%25A3%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25A7pnpm%25E3%2581%258B%25E3%2582%2589yarn%25E3%2581%25AB%25E7%25A7%25BB%25E8%25A1%258C%25E3%2581%2597%25E3%2581%259F%255Bsolved%255D%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:monchi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzMwMDA5MGUwNmIuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">Nextjsで書いたblogがvercelでbuildできなくなったのでpnpmからyarnに移行した[solved]
-
-created: 2024-02-05
-updated: 2024-02-06
-
-
- まず仮説を立てる
-pnpmの新しいversion8.15.1がどうやらvercelに対応していない。pnpm-lock.yamlのlockfileVersion: &#x27;6.0&#x27;をいじったり8.14.3も試したけどError変わらず。(6th/Feb/2024時点) そこでpackage managerはyarnで管理することにした。(Package管理のVoltaがバージョン固定p...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/dannya/articles/1e3bbdfbeea796 target="_blank">
-        <h1 class="hdg">About Composition as Code</h1>
-        <div class="info">
-          <span> Zennの「Golang」のフィード</span> |
-          <span>Date: <time>2024-02-05</time></span> |
-          <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>3794</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--2CAonuXv--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_72:About%2520Composition%2520as%2520Code%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Daisuke%2520Yamamoto%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzZiNDY0NzBmMTYuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">CaC (Composition as Code) について。
-https://www.infoq.com/jp/articles/cloud-computing-post-serverless-trends/?utm_campaign&#x3D;infoq_content&amp;utm_source&#x3D;infoq&amp;utm_medium&#x3D;feed&amp;utm_term&#x3D;global
-
-Infrastructure as CodeからComposition as Codeへと移行する大きなトレンドがあり、開発者は使い慣れたプログラミング言語を使用して、より直感的なクラウドサービスの設定が...</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=https://zenn.dev/vedaman/articles/7ac9b77949e2a9 target="_blank">
         <h1 class="hdg">ExpoでのSafeAreaViewでデバイス別の余白設定</h1>
         <div class="info">
@@ -3138,32 +3322,6 @@ Infrastructure as CodeからComposition as Codeへと移行する大きなトレ
 
  インストール
 ※Expo Routerを使用している場合はインストール不要です...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/soramarjr/articles/fe0e9ac8891c32 target="_blank">
-        <h1 class="hdg">【Golang】人のビルドプロセス見て我が振り直せ</h1>
-        <div class="info">
-          <span> Zennの「Golang」のフィード</span> |
-          <span>Date: <time>2024-02-04</time></span> |
-          <span>Reading time: <time>2 min</time></span> |
-          <span>Word count: <time>534</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--AxPjVnfU--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Golang%25E3%2580%2591%25E4%25BA%25BA%25E3%2581%25AE%25E3%2583%2593%25E3%2583%25AB%25E3%2583%2589%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25BB%25E3%2582%25B9%25E8%25A6%258B%25E3%2581%25A6%25E6%2588%2591%25E3%2581%258C%25E6%258C%25AF%25E3%2582%258A%25E7%259B%25B4%25E3%2581%259B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:fujitani%2520sora%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzZjMTQ3ZWIwNWYuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">エラーメッセージそのまま貼り付けて検索したらGitIssueしか出てこなかった時、ちょっと悲しくなりますよね。藤谷です。
-golangで開発していた時のエラーと解決プロセスを残しておきます。
-
-goとpostgresql（どちらもDockerでホスト）
-ormはgormを使用
-
-
- エラー内容
-コンテナを立ち上げてgo buildを実行した際に、下記のエラーが発生しました。
-building...
-# gorm.io/driver/postgres
-/go/pkg/mod/gorm.io/driver/postgres@v1.5.5/migrator.go:411:26: m.Guess...</p>
       </div>
     </article>
     <article class="article">
@@ -3190,29 +3348,6 @@ PC再起動をしてみる
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/bluetree/articles/9d52842dff35cc target="_blank">
-        <h1 class="hdg">[Go] Defined typeとType alias</h1>
-        <div class="info">
-          <span> Zennの「Golang」のフィード</span> |
-          <span>Date: <time>2024-02-04</time></span> |
-          <span>Reading time: <time>2 min</time></span> |
-          <span>Word count: <time>614</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--Rgw7G3PE--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_66:%255BGo%255D%2520Defined%2520type%25E3%2581%25A8Type%2520alias%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:shogo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzkxNDcxMGUyYWYuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">Go には、独自の型を定義するのに Defined type (Named type) と 型エイリアス (Type alias) の 2 つの定義方法があります。
-かく言う僕は、普段 Defined type しか使わないのもあり、この 2 つの型定義方法の違いを知りませんでした。
-今回は、自分用のメモも兼ねて、この 2 つの定義法の違いを記していこうと思います。
-
- Defined type (Named type とも言うらしい)
-僕は基本的には普段この Defined type しか使っていません。
-// こんな書き方
-type DefinedType int
-特徴としては下記の...</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=https://zenn.dev/doshirote/articles/ca52975ecd7512 target="_blank">
         <h1 class="hdg">【react-native】./gradlew assembleReleaseを実行時、エラーが発生する</h1>
         <div class="info">
@@ -3232,35 +3367,6 @@ FAILURE: Build failed with an exception.
 
 * What went wrong:
 Some problems were found with the configuration of task &#x27;:app:copyReactNati...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/hitoe_kami/articles/0050-articles-go-oauth2-server target="_blank">
-        <h1 class="hdg">OAuth 2.0 の認可サーバを自作してみたった</h1>
-        <div class="info">
-          <span> Zennの「Golang」のフィード</span> |
-          <span>Date: <time>2024-02-04</time></span> |
-          <span>Reading time: <time>16 min</time></span> |
-          <span>Word count: <time>4833</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--SFLk_TCA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:OAuth%25202.0%2520%25E3%2581%25AE%25E8%25AA%258D%25E5%258F%25AF%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2590%25E3%2582%2592%25E8%2587%25AA%25E4%25BD%259C%25E3%2581%2597%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%25E3%2581%25A3%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:MiyukiP%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzYxZjQ5NDZmOGYuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">TL;DR
-
-GoでOAuth2.0(RFC6749)の認可サーバとリソースサーバを自作します
-
-
- はじめに
-どうも、アニメマスターです！
-「普通に生きていたら、ふと思い立ったかのように、認可サーバを自作したくなった青年がいます」
-「そう、私です」
-ということで、今回はOAuth 2.0の仕様を満たす認可サーバを自作しながら、アクセストークンが発行されるフローを実際に構築していきます。
-
- 概観
-
-今回構築する範囲は認可サーバ(Authorization Server)とリソースサーバ(Resource Server)とDBです。
-開発環境での疎通確認をメインとするので、これらをd...</p>
       </div>
     </article>
     <article class="article">
@@ -3296,27 +3402,6 @@ onViewableItemsChanged
 オプションをどう指定したらどうなるかは次が詳しい。
 https://zenn.dev/luvmini511/articles/b28c0383b5d28a
 また、「見た」かどうかの条件を複数持たせたい場合は viewa...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/jj/articles/gemini-api-poker target="_blank">
-        <h1 class="hdg">Gemini API でポーカーの役を判定する</h1>
-        <div class="info">
-          <span> Zennの「Golang」のフィード</span> |
-          <span>Date: <time>2024-02-03</time></span> |
-          <span>Reading time: <time>4 min</time></span> |
-          <span>Word count: <time>1160</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--ym0IdIvM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Gemini%2520API%2520%25E3%2581%25A7%25E3%2583%259D%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25BC%25E3%2581%25AE%25E5%25BD%25B9%25E3%2582%2592%25E5%2588%25A4%25E5%25AE%259A%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:JJ%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2I4MzE3NTUxODMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">Intro
-この記事は 2024/01/29 に行われた「【Go x Gemini】2024年Gemini APIを使ってみよう 2days Event」で紹介されていた Go の実装を元に Gemini が画像の認識ができることは理解したので、特定のゲームのルールを理解しているかを試してみた記事になります。
-イベントは GDG Tokyo で行われ、イベントの動画のアーカイブもあるのでイベントに関するものはそちらをご覧ください。
-https://www.youtube.com/watch?v&#x3D;3ZomyM0expM
-
- ポーカーの役を判定してみる
-今回は一般的なルールとして現在日本...</p>
       </div>
     </article>
     <article class="article">
@@ -3935,35 +4020,6 @@ https://fugumap.com
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/doshirote/articles/cd959b69768e70 target="_blank">
-        <h1 class="hdg">@react-native-community/datetimepickerの日付のレイアウト比較</h1>
-        <div class="info">
-          <span> Zennの「React Native」のフィード</span> |
-          <span>Date: <time>2024-01-23</time></span> |
-          <span>Reading time: <time>0 min</time></span> |
-          <span>Word count: <time>116</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--ZGVMsZ9j--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%2540react-native-community%252Fdatetimepicker%25E3%2581%25AE%25E6%2597%25A5%25E4%25BB%2598%25E3%2581%25AE%25E3%2583%25AC%25E3%2582%25A4%25E3%2582%25A2%25E3%2582%25A6%25E3%2583%2588%25E6%25AF%2594%25E8%25BC%2583%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E6%258A%2595%25E8%25B3%2587%25E3%2583%25AD%25E3%2582%25A6%25E3%2583%2588%25E3%2581%25AE%25E6%258A%2580%25E8%25A1%2593%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzM3ODY0NWMwOGQuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">背景
-react-nativeで日付入力を実装することがあると思います。
-その際にreact-nativeには日付型のコンポーネントがないので、外部ライブラリを使用すると思いますが、@react-native-community/datetimepickerを使用際のレイアウト比較を行なっていきます。
-
- iOS
-display&#x3D;&quot;default&quot;
-
-display&#x3D;&quot;spinner&quot;
-
-inline
-
-※defaultとは、日付をクリックして表示されるか、文字列の日付は出さずに出し続けられるかの違いです。
-※compactはdefaultと違いが目視ではわかりませんでした。
-
- ラ...</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=https://zenn.dev/yousetsu/articles/ccf20273927087 target="_blank">
         <h1 class="hdg">FlutterとFlameでスイカゲーム風のゲームを作る（サンプルソースあり）</h1>
         <div class="info">
@@ -4053,75 +4109,6 @@ https://donzuba.jp/
 フロントエンド： Cloud Run（GCP）
 バックエンド + データベース： Supabase
 画像ストレージ： Clou...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/nyaity_boo/articles/a4b70cff9de799 target="_blank">
-        <h1 class="hdg">React Componentはあくまでjs(ts) objectだと認識する</h1>
-        <div class="info">
-          <span> Zennの「React Native」のフィード</span> |
-          <span>Date: <time>2024-01-22</time></span> |
-          <span>Reading time: <time>3 min</time></span> |
-          <span>Word count: <time>910</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--YIyAoDbA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:React%2520Component%25E3%2581%25AF%25E3%2581%2582%25E3%2581%258F%25E3%2581%25BE%25E3%2581%25A7js%2528ts%2529%2520object%25E3%2581%25A0%25E3%2581%25A8%25E8%25AA%258D%25E8%25AD%2598%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:nyaity_boo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2QxZWExNDYyNzMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">概要
-タイトルに書いてあることは当たり前のことなのですが、改めてこれを認識するとリファクタリングに繋がるなぁと感じております。具体的には以下のようなことが当然可能であるということです。
-// 以下、イメージです。
-const componentsMap &#x3D; {
-  key1: SomeComponent1,
-  key2: SomeComponent2
-}
-
-// ここで変数で受け取ったcomponentを
-const SomeComponent &#x3D; componentsMap[&quot;key1&quot;]
-
-// こんなふうに呼び出せます。
-return(&lt;SomeComponent pr...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/ataka/articles/6f5b52729ba8e8 target="_blank">
-        <h1 class="hdg">ゲーム初出展をして分かった事まとめました</h1>
-        <div class="info">
-          <span> Zennの「個人開発」のフィード</span> |
-          <span>Date: <time>2024-01-22</time></span> |
-          <span>Reading time: <time>1 min</time></span> |
-          <span>Word count: <time>291</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s---z2p6549--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%25A0%25E5%2588%259D%25E5%2587%25BA%25E5%25B1%2595%25E3%2582%2592%25E3%2581%2597%25E3%2581%25A6%25E5%2588%2586%25E3%2581%258B%25E3%2581%25A3%25E3%2581%259F%25E4%25BA%258B%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2582%25E3%2581%259F%25E3%2581%258B%2520%2520%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzA2ZmU4NjA5YzUuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">こんにちは。個人開発で生活をしているあたかです。
-普段はツールアプリを作っているのですが、2024/1/20(土)〜21(日)、二日間に渡って開催されるインディーゲームの展示会、東京ゲームダンジョン4にスマホゲーム第一弾「EUREKA5」を初出展してきました。
-Unity + Firebase + Photon Fusion + Spineで作っています。
-今年iOS/Androidストアからリリース予定です。よろしくお願い致します🙇‍♂
-2人対戦の間違い探しゲーム 「EUREKA5」
-https://www.youtube.com/watch?v&#x3D;mX6BcqZSHB0
-この日のため、...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/nyaity_boo/articles/42028be793dbff target="_blank">
-        <h1 class="hdg">ReactNativeに Custom Fontを適用する</h1>
-        <div class="info">
-          <span> Zennの「React Native」のフィード</span> |
-          <span>Date: <time>2024-01-21</time></span> |
-          <span>Reading time: <time>4 min</time></span> |
-          <span>Word count: <time>1074</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--q_0uBxky--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:ReactNative%25E3%2581%25AB%2520Custom%2520Font%25E3%2582%2592%25E9%2581%25A9%25E7%2594%25A8%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:nyaity_boo%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2QxZWExNDYyNzMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">概要
-
-ReactNativeのTextにデフォルトで適用できないfontを指定する方法です。 (iPhoneのみで動作確認してます)
-ReactNative0.69以降(?正確でないかも)とそれ以前でコマンドが異なっていたりでしたので改めて整理しました。
-(Appendix) Appleの https://developer.apple.com/fonts/ からインストールできるfontを使う例についても書きます。
-
-ReactNativeでイカしたフォントの &quot;SF Pro Rounded&quot; をデザイナーから指定されたので適用しようとしたものの変わっておらず（そもそもエンジニア...</p>
       </div>
     </article>
     <article class="article">
