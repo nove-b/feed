@@ -26,235 +26,1207 @@
   <div class="site-info">
     <h3 class="hdg">Site Infomation</h3>
     <div class="contents">
-      <p>Built on: 2024-03-05T00:24:57.906Z</p>
+      <p>Built on: 2024-03-06T00:25:41.338Z</p>
       <p>Cli version: 1.15.1</p>
       <p>Use: <a href="https://github.com/osmoscraft/osmosfeed">osmosfeed</a></p>
     </div>
   </div>
   <div class="articles">
     <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/05/news055.html target="_blank">
-        <h1 class="hdg">[ITmedia ビジネスオンライン] 2025年卒業予定の学生、文系・理系いずれもトップの志望業界は？</h1>
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2403/06/news094.html target="_blank">
+        <h1 class="hdg">[ITmedia Mobile] 「iOS 17.4」配信開始　Podcastの文字起こしや新絵文字など新機能も追加</h1>
         <div class="info">
           <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
+          <span>Date: <time>2024-03-05</time></span> |
           <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>3013</time></span>
+          <span>Word count: <time>2860</time></span>
         </div>
       </a>
       <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/05/cover_news055.jpg" width="100" />
-        <p class="description">エン・ジャパンが運営する新卒学生向けスカウトサービス「iroots」は、2025年卒業予定の大学生・大学院生を対象に就職状況について調査を実施した。その結果、25卒学生の志望業界のトップは、文系・理系どちらも「メーカー」であり、理系学生の半数が希望していることが分かった。</p>
+        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2403/06/cover_news094.jpg" width="100" />
+        <p class="description">Appleは「iOS 17.4」の配信を開始した。欧州ではデジタル市場法（DMA）対策が追加される。日本語は未対応だが、Podcastの書き起こし機能や新しい絵文字などの新機能が追加され、重要な脆弱性修正も行われる。</p>
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/05/news059.html target="_blank">
-        <h1 class="hdg">[ITmedia ビジネスオンライン] 2022年度の時計市場、前年度比で122%超で推移　その要因は？</h1>
+      <a class="link js-open-overview" href=https://zenn.dev/youta_t/articles/3861d53fd299cb target="_blank">
+        <h1 class="hdg">its v0.3.0: 追加機能と破壊的変更</h1>
         <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>3016</time></span>
+          <span> Zennの「Golang」のフィード</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>2 min</time></span> |
+          <span>Word count: <time>672</time></span>
         </div>
       </a>
       <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/05/cover_news059.png" width="100" />
-        <p class="description">国内の時計市場はここ数年、右肩上がりに成長している。矢野経済研究所が発表した調査結果によると、2022年の市場規模は前年比122.1％の8714億円だった。</p>
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--pBfI7aAF--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:its%2520v0.3.0%253A%2520%25E8%25BF%25BD%25E5%258A%25A0%25E6%25A9%259F%25E8%2583%25BD%25E3%2581%25A8%25E7%25A0%25B4%25E5%25A3%258A%25E7%259A%2584%25E5%25A4%2589%25E6%259B%25B4%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:youta-t%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSzRDbldGYWV5SjFDOXVBLWJ3ZjE4UnJZdWtaUEVjSURIWTRQc0pLSWZLPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">みなさんこんにちわ、 youta-t です。
+go のマッチャライブラリ its をつくってます。
+https://github.com/youta-t/its
+機能拡張やバグフィックスなどを含む v0.3.0 をリリースしようとしつつあります。
+今日は、その v0.3.0 の変更点と、特に破壊的変更について説明します。
+
+ バグフィックス: structer &amp; mocker
+これまで structer[1] や mocker[2] では、いくつかの条件にあたる型についてマッチャやモックを生成しようとすると、うまくいきませんでした。
+
+private な型を参照する型
+
+例: ...</p>
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/05/news053.html target="_blank">
-        <h1 class="hdg">[ITmedia News] なぜ人は“録音”よりも“ライブ演奏”で感動するのか　スイスの研究者が解明　MRI内で音楽鑑賞して実験</h1>
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/06/news042.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] 優秀な若手がどんどん辞めていくが、「社内運動会」をやっても防げないワケ</h1>
         <div class="info">
           <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
+          <span>Date: <time>2024-03-05</time></span> |
           <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2893</time></span>
+          <span>Word count: <time>3025</time></span>
         </div>
       </a>
       <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/05/cover_news053.jpg" width="100" />
-        <p class="description">スイスのチューリッヒ大学に所属する研究者らは、ライブで聞く音楽は録音された音楽よりも強く感情を動かすことを示した研究報告を発表した。</p>
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/06/cover_news042.jpg" width="100" />
+        <p class="description">パナソニックが若手社員約1200人を対象に実施した「社内運動会」が話題になっている。「組織間の交流」が目的だったが、若手社員の反応はどうだったかというと……。</p>
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/enterprise/articles/2403/05/news060.html target="_blank">
-        <h1 class="hdg">[ITmedia エンタープライズ] 約9割の企業がシャドーIT対策に課題　専門家が指摘する“まずやるべきこと”</h1>
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/06/news030.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] マーケティング学習の「必読書44選」　300社超の大企業を支援したマーケターが推薦</h1>
         <div class="info">
           <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>3063</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/06/cover_news030.jpg" width="100" />
+        <p class="description">マーケティング学習は奥が深い。何をどの順番で学ぶべきか、迷子になるマーケターも多いようだ。本記事では、300社を超える大企業のマーケティングを支援してきた筆者が、マーケティング学習の「必読書44選」を紹介します。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/06/news066.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] ファミマの「服」に新アイテム　トータルコーディネート提案で昨対比1.5倍の売上目指す</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>3021</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/06/cover_news066.jpg" width="100" />
+        <p class="description">ファミリーマートは3月5日、オリジナルブランド「コンビニエンスウェア」から新商品を販売した。アイテムの拡充で、全身トータルコーディネートのバリエーションを拡大する狙いだ。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/06/news040.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] ゲームの海外展開で「文化や思想」どこまで配慮すべき？　法的にOKでも……</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>3057</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/06/cover_news040.jpg" width="100" />
+        <p class="description">時にはファンから「余計なお世話」と迷惑がられてしまう、ゲームにおけるローカライズ。ゲーム開発会社はどう向き合うべきか。後編。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/05/news037.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] 糸井重里×孫泰蔵「会議のために生まれてきたんじゃない」　若手経営者時代の葛藤</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>3103</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/05/cover_news037.jpg" width="100" />
+        <p class="description">「ほぼ日」の社長を務める糸井重里氏と孫泰蔵氏が対談。40代からの生き方や、有望なスタートアップを見分けるポイントなどを語り合った。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/06/news055.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] 増える「〇〇ハラ」、7割の会社員が肯定的　その理由は？</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>3037</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/06/cover_news055.jpg" width="100" />
+        <p class="description">時代の変化とともにハラスメントの種類が増え、職場でのコミュニケーションも慎重さが求められている。そんな中、「○○ハラ」が増加する風潮に対して、7割が「賛成」と答えたことが、キャリア支援サービスを手掛けるライボ（東京都渋谷区 ）の調査で分かった。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/05/news052.html target="_blank">
+        <h1 class="hdg">[ITmedia News] 溶けるとゲームオーバーの“氷のコントローラー”　敵に当たると加熱　東大が開発</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>2875</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/05/cover_news052.jpg" width="100" />
+        <p class="description">東京大学苗村研究室に所属する研究者らは、氷に直接触れて操作するゲームコントローラーを提案した研究報告を発表した。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/06/news039.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] ゲームのローカライズ対応　「おせっかい」とは言い切れない、これだけの理由</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>3058</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/06/cover_news039.jpg" width="100" />
+        <p class="description">「余計なお世話」「過剰反応」とファンの望まない形になるケースもしばしば存在する、ゲームのローカライズ。今後、業界はどうなるだろうか。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/enterprise/articles/2403/06/news060.html target="_blank">
+        <h1 class="hdg">[ITmedia エンタープライズ] OT領域へのアタックサーフェス拡大にどう対処する？　Tenableが新ソリューションを発表</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
           <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2702</time></span>
+          <span>Word count: <time>2721</time></span>
         </div>
       </a>
       <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/enterprise/articles/2403/05/cover_news060.jpg" width="100" />
-        <p class="description">アシュアードはシャドーITの対策実態調査結果を発表した。多くの企業がシャドーIT対策を十分に講じられておらず、対策を講じている企業でも課題が多いことが明らかになった。</p>
+        <img class="img" src="https://image.itmedia.co.jp/enterprise/articles/2403/06/cover_news060.jpg" width="100" />
+        <p class="description">Tenableは「Tenable One for OT/IoT」のリリースを発表した。このプラットフォームはIT／OT環境の資産に対する包括的な可視性を提供し、サイバー攻撃のリスクを明確に把握できるようにする。</p>
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://marketing.itmedia.co.jp/mm/articles/2403/05/news025.html target="_blank">
-        <h1 class="hdg">[ITmedia マーケティング] 「マーケティングオートメーション」　国内売れ筋TOP10（2024年3月）</h1>
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/06/news091.html target="_blank">
+        <h1 class="hdg">[ITmedia News] Microsoft、Windows 11でのAndroidアプリサポートを終了へ</h1>
         <div class="info">
           <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2847</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/06/cover_news091.jpg" width="100" />
+        <p class="description">Microsoftは、2021年にWindows 11で立ち上げたPCでAndroidアプリを実行する「Windows Subsystem for Android」（WSA）の機能を2025年3月5日に廃止すると発表した。Microsoft Storeからは既にAndroidアプリをダウンロードできなくなっている。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/06/news088.html target="_blank">
+        <h1 class="hdg">[ITmedia News] Nothingから新スマホ「Phone (2a)」登場　5万5800円</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>2864</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/06/cover_news088.jpg" width="100" />
+        <p class="description">英Nothing Technologyが、新型スマートフォン「Nothing Phone (2a)」を発表した。同社としては初の廉価モデルで、日本では先行販売としてメモリ12GB、ストレージ256GBモデルの予約受付を5万5800円でスタートした。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/enterprise/articles/2403/06/news057.html target="_blank">
+        <h1 class="hdg">[ITmedia エンタープライズ] CTOが恐れる“ランサムウェアより危ない脅威”　調査から判明</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2741</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/enterprise/articles/2403/06/cover_news057.jpg" width="100" />
+        <p class="description">コンサルティング企業STX Nextの調査結果「The Global CTO Survey 2023」によると、CTOの多くがランサムウェアより“あるサイバー脅威”を懸念していることが明らかになった。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://marketing.itmedia.co.jp/mm/articles/2403/06/news008.html target="_blank">
+        <h1 class="hdg">[ITmedia マーケティング] 顧客起点のメールマーケティング実践のための4ステップ</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
           <span>Reading time: <time>6 min</time></span> |
           <span>Word count: <time>1921</time></span>
         </div>
       </a>
       <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/mm/articles/2403/05/cover_news025.png" width="100" />
-        <p class="description">今週は、マーケティングオートメーション（MA）ツールの売れ筋TOP10を紹介します。</p>
+        <img class="img" src="https://image.itmedia.co.jp/mm/articles/2403/06/cover_news008.jpg" width="100" />
+        <p class="description">B2Bマーケティングにおけるメルマガ施策は簡単そうに見えて難しいもの。どのようなポイントを押さえればよいのでしょうか。</p>
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/05/news015.html target="_blank">
-        <h1 class="hdg">[ITmedia ビジネスオンライン] エプソン、三井化学が投資　「100億円」調達した東大発ベンチャーに聞く“タッグの作法”</h1>
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/enterprise/articles/2403/06/news025.html target="_blank">
+        <h1 class="hdg">[ITmedia エンタープライズ] “開発はAIにおまかせ”は夢物語か？　コード生成AIのメリット／デメリット</h1>
         <div class="info">
           <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>3066</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/05/cover_news015.jpg" width="100" />
-        <p class="description">2014年に東大発スタートアップとして創業し、セイコーエプソンや三井化学など大企業からの資金調達を機にさまざまな協業を行い、事業シナジーを生んでいるのがエレファンテック。事業会社とスタートアップが抱えるそれぞれの課題などを語り合った。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://mag.executive.itmedia.co.jp/executive/articles/2403/05/news086.html target="_blank">
-        <h1 class="hdg">[ITmedia エグゼクティブ] 日本の農業自動化、10年以内に実現　クボタの北尾裕一社長インタビュー</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>6 min</time></span> |
-          <span>Word count: <time>1842</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/executive/articles/2403/05/l_yf_240305sankei01.jpg" width="100" />
-        <p class="description">クボタは世界初の完全自動運転で米や麦を収穫できるコンバインを1月に発売するなど、農機の自動化で業界をリードしている。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://mag.executive.itmedia.co.jp/executive/articles/2403/05/news027.html target="_blank">
-        <h1 class="hdg">[ITmedia エグゼクティブ] 東京、炭火焼きレストラン3選</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>6 min</time></span> |
-          <span>Word count: <time>1892</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/executive/articles/2403/05/l_yf_240305timeout01.jpg" width="100" />
-        <p class="description">東京の街の“ローカルエキスパート”が、仕事の合間に一息つけるスポットやイベントを紹介します。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2402/26/news024.html target="_blank">
-        <h1 class="hdg">[ITmedia ビジネスオンライン] 「何とかして仕事の状況を変えたい」と願う人へ　具体的にはどうしたらいいのか？</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>3042</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/business/articles/2402/26/cover_news024.jpg" width="100" />
-        <p class="description">働く上で「何とかして状況を変えていきたい」と思っていても、自分自身では問題の原因や解決策が思いつかず、身動きが取れなくなってしまうことがよくあります。そんなとき、どうしたらいいのでしょうか？　「状況を捉えなおす」ためのヒントを紹介します。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/enterprise/articles/2403/05/news030.html target="_blank">
-        <h1 class="hdg">[ITmedia エンタープライズ] 「情報セキュリティ10大脅威、ここだけは読んで」“推しポイント”を独断と偏見で解説</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
+          <span>Date: <time>2024-03-05</time></span> |
           <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2701</time></span>
+          <span>Word count: <time>2810</time></span>
         </div>
       </a>
       <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/enterprise/articles/2403/05/cover_news030.jpg" width="100" />
-        <p class="description">IPAから「情報セキュリティ10大脅威 2024」に関連した解説資料が公開されました。セキュリティ担当者必須の書とはいえ、「業務が忙しくてまだ読めていない」という方もいるかもしれません。そこで今回は筆者の“推しポイント”を紹介します。</p>
+        <img class="img" src="https://image.itmedia.co.jp/enterprise/articles/2403/06/cover_news025.jpg" width="100" />
+        <p class="description">潜在的なリスクがあるにもかかわらず、開発者の4分の3以上が確立されたプロトコルではなくコード補完ツールを使用していることが明らかになった。</p>
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/05/news011.html target="_blank">
-        <h1 class="hdg">[ITmedia ビジネスオンライン] 万引は防げるか？　セルフレジの発展系「Scan&amp;Go」が伸び悩むワケ</h1>
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/06/news019.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] リテールメディアを変える「エッジAIカメラ」　サツドラが導入後に得た成果とは？</h1>
         <div class="info">
           <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
+          <span>Date: <time>2024-03-05</time></span> |
           <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>3060</time></span>
+          <span>Word count: <time>3056</time></span>
         </div>
       </a>
       <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/05/cover_news011.jpg" width="100" />
-        <p class="description">セルフレジの発展系とも言える「Scan&amp;Go」。専用のスマホアプリで決済できるものも増え、利便性が高まる一方で、普及はいま一つというのが実情だ。Scan&amp;Goが伸び悩む理由とは――。</p>
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/06/cover_news019.jpg" width="100" />
+        <p class="description">エッジAIの活用がさまざまな業界で広がっている。エッジAIを生かしたリテールDXに挑んでいる北海道のドラッグストア「サツドラ」では、どんな効果が生まれたのか――。</p>
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/05/news085.html target="_blank">
-        <h1 class="hdg">[ITmedia News] 欧州委員会、Appleに約2900億円超の制裁金　Appleは控訴へ　Spotifyは「小さな一歩」</h1>
+      <a class="link js-open-overview" href=https://marketing.itmedia.co.jp/mm/articles/2403/06/news031.html target="_blank">
+        <h1 class="hdg">[ITmedia マーケティング] ポストCookieの新手法を試すのは今が好機　広告主のための5つのステップ</h1>
         <div class="info">
           <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2835</time></span>
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>6 min</time></span> |
+          <span>Word count: <time>1945</time></span>
         </div>
       </a>
       <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/05/cover_news085.jpg" width="100" />
-        <p class="description">欧州委員会は、Appleに18億ユーロ（約2900億円）超の制裁金を科すと発表した。Spotifyからの提訴を受け、2020年からアプリ内課金システムの制限について調査していた件の結論だ。Appleは控訴すると発表した。</p>
+        <img class="img" src="https://image.itmedia.co.jp/mm/articles/2403/06/cover_news031.jpg" width="100" />
+        <p class="description">最終回となる今回は、サードパーティーCookieの廃止が広告主やパブリッシャーなどに与える影響と、Cookieレス時代に向けて今からできる対策について言及する。</p>
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/05/news061.html target="_blank">
-        <h1 class="hdg">[ITmedia ビジネスオンライン] 転職に成功した人の平均年齢は？　職種別の年齢構成も調査</h1>
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/06/news007.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] 7カ国の経営層に聞いた「ビジネス成長に必要なこと」　生き残りから“繁栄”へ移行するにはどうすべき？</h1>
         <div class="info">
           <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>3021</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/06/cover_news007.jpg" width="100" />
+        <p class="description">No content preview</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/06/news048.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] 約7割が「職場で昼寝経験あり」　起きたときには「かえって眠くなる」</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
           <span>Reading time: <time>10 min</time></span> |
           <span>Word count: <time>3011</time></span>
         </div>
       </a>
       <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/05/cover_news061.jpg" width="100" />
-        <p class="description">dodaが2023年に転職した人を対象に実施した調査結果を発表した。</p>
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/06/cover_news048.jpg" width="100" />
+        <p class="description">プラス株式会社ファニチャーが、職場での昼寝経験や1回当たりの時間、寝起きの課題などを調査した結果を発表した。</p>
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/05/news038.html target="_blank">
-        <h1 class="hdg">[ITmedia ビジネスオンライン] 2023年の国内スポーツアパレル市場は6131.1億円　好調だったカテゴリーは？</h1>
+      <a class="link js-open-overview" href=http://dailyfeed.jp/feed/103/2024-03-05 target="_blank">
+        <h1 class="hdg">2024年03月05日の記事一覧</h1>
         <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>3009</time></span>
+          <span> Gizmodo Japan（ギズモード・ジャパン）のデイリーフィード - DailyFeed</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>1 min</time></span> |
+          <span>Word count: <time>153</time></span>
         </div>
       </a>
       <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/05/l_mika2403_i_supo_01.jpg" width="100" />
-        <p class="description">矢野経済研究所が調査結果を発表した。2024年の予測も明らかにしている。</p>
+        <p class="description">(全 18 件)
+1. こういうのでいい。Nothingから6万円以下で買えるPhone (2a)発表 
+2. これが宇宙旅行の「帰り」に見える景色です 
+3. 大気圏の水蒸気を減らしたら、温暖化を抑止できるか？ 
+4. 人におすすめしたい「下着の定期便」。今なら1枚お試しできます 
+5. スタンド以外は最高。フィリップスのゲーミングモニター 
+6. 要チェック。2024年上半期に見て欲しい注目映画8選 
+7. ふくらましてマグネットで装着するLEDライト。クルマで大活躍 
+8. 「AeroPress Go」でおうちコーヒーが格段に美味しくなった 
+9. 動きがとても人間っぽい。トヨタが柔らかロボ「ぷにょ」を開発 
+10. SD＆microSDカードを20枚も収納できてハブにもなっちゃうケース 
+11. グレゴリーの「トートバッグ」、実はめちゃくちゃ優秀なんです 
+12. クールな遊び心。90年代ゲームのパッケージデザインを振り返る 
+13. 大事な日まであと何日？がすぐ分かる時計 
+14. これ買っておけば間違いない。純正Xboxコンが26％OFF 
+15. スマホを入れれば音が出るレゴ製ラジオ 
+16. AI搭載しまじろうがお子さんとおしゃべりしてくれます 
+17. イーロン・マスクはガラケーを使っていた説 
+18. F1を撮るために生まれたF1より早いドローン</p>
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/05/news056.html target="_blank">
-        <h1 class="hdg">[ITmedia ビジネスオンライン] 直近1年で利用者が多いスマホ決済は？　重視するのは「利用できる店舗・サービスの多さ」</h1>
+      <a class="link js-open-overview" href=http://dailyfeed.jp/feed/105/2024-03-05 target="_blank">
+        <h1 class="hdg">2024年03月05日の記事一覧</h1>
         <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>3014</time></span>
+          <span> ライフハッカー［日本版］のデイリーフィード - DailyFeed</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>1 min</time></span> |
+          <span>Word count: <time>152</time></span>
         </div>
       </a>
       <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/05/cover_news056.jpg" width="100" />
-        <p class="description">マイボイスコムが調査結果を発表し、スマホ決済の利用意向なども明らかになった。</p>
+        <p class="description">(全 24 件)
+1. 特許技術による革新！ 「アワラッシュ」が洗濯機とシャワーヘッドをレベルアップ 
+2. 【Amazon新生活セール】終了間際！新生活にむけて洗剤まとめ買い・掃除グッズを新調するなら今！ 
+3. かさばらないフラフープ見つけた！テレビを観ながら動いてキープが体幹に効く【これ買ってよかった】 
+4. 買い逃し厳禁！ iMacやiPhoneほか割引中のApple製品をまとめてチェック【Amazon新生活セール】 
+5. AndroidやiPhone 15のバックアップは「直挿しSSD」が大正解！#Amazon新生活セール 終了間際だから急げ 
+6. 縦置きモニター設置はメリットだらけ！ ウェブライター流デュアルモニター活用術【TinyHack】 
+7. 軽やかなペン走り、目を惹く見た目─。ビジネスシーンで活躍する「大人の一本」【今日のライフハックツール】 
+8. ザバスのプロテインをまとめ買い！初心者でも飲みやすいフレーバー8選【Amazon新生活セール】 
+9. 「楽天ふるさと納税」これがよかった！ライフハッカー編集部のおすすめ返礼品12選 #楽天スーパーSALE 
+10. 最長14日間充電いらず。初めてのスマートウォッチにちょうどいい、Xiaomiの「Band 8 Active」が驚きの2,980円【Amazon新生活セール】
+ 
+11. iPhoneの「探す」対応で高精度！Anker Eufy忘れ物防止タグで鍵やお財布が見つかるぞ【Amazon新生活セール】 
+12. 「ラップを使うたびにしまう手間」がゼロに！便利すぎてあと3つ買いたい 
+13. まるでハンドドリップ。コンパクトなデロンギのコーヒーメーカーは朝の救世主だよ【楽天スーパーセール】 
+14. 全部4000円以下で厳選！仕事がはかどるコンパクトガジェット13選【Amazon新生活セール】 
+15. 【Amazon新生活セール】グンゼの4枚組Tシャツが55%オフ。春夏向けインナーや、トレーニングウェアをお得に！ 
+16. 春の新生活応援！#楽天スーパーセール で見つけた「コスパ最強」家電12選 
+17. テレビが大幅割引！レグザ65インチの4K大型テレビが約7万円オフになっています【Amazon新生活セール】 
+18. SwitchBotで掃除や家電を自動化！ 買ってよかったデバイス4選【Amazon新生活セール】 
+19. デスクのケーブルを美しくまとめる！配線整理アイテム一式を【Amazon新生活セール】で揃えよう 
+20. 複数業務を並走させるスクール講師の働き方。カギは「オフィス環境」 と「コミュニケーション戦略」   
+21. デッドストック革救出に貢献。皮革産地から届く、軽くて柔らかな本革ショルダーバッグを使ってみた 
+22. やる気を保ちながら時間管理できる。「POSECメソッド」実践法 
+23. AirPodsの汚れに。痒いところまで届く3in1クリーニングツールが最適解！【今日のライフハックツール】 
+24. 【毎日書評】「他人に振り回されない自分」になるために実践したい4つのデイリートレーニング</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/06/news043.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] 「6時間待ち」を500円でスキップ　飲食店でも「ファストパス」が広がる納得の理由</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>3026</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/06/cover_news043.jpg" width="100" />
+        <p class="description">人気テーマパークが行列に並ばずアトラクションを利用できる優先券を提供しているのは周知のところ。最近では、こうしたサービスが飲食店にも広がってきた。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/aipics/articles/133d54a5800fc0 target="_blank">
+        <h1 class="hdg">Node.jsで環境変数を型安全に扱う</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>2 min</time></span> |
+          <span>Word count: <time>502</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--v11Vx67W--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Node.js%25E3%2581%25A7%25E7%2592%25B0%25E5%25A2%2583%25E5%25A4%2589%25E6%2595%25B0%25E3%2582%2592%25E5%259E%258B%25E5%25AE%2589%25E5%2585%25A8%25E3%2581%25AB%25E6%2589%25B1%25E3%2581%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2581%2597%25E3%2581%2590%25E3%2582%258C%25E7%2585%25AE%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzUxNTU3NTQyNzkuanBlZw&#x3D;&#x3D;%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Aipictors%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2FlN2MxNmUyMjIuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">Node.jsで process.env を用いて環境変数を設定することはあるかと思いますが、このようなコードを書くとスペルを間違えるかもやしれません。
+console.log(process.env.PROMPTON_GOOGLE_CLINET_EMAIL)
+ちなみにCLIENTをCLINETと書いています。
+更にはこのように型のエラーを回避してしまうのも悲しいですね。
+console.log(process.env.PROMPTON_GOOGLE_CLIENT_EMAIL + &quot;&quot;)
+console.log(process.env.PROMPTON_GOOGLE_CLIENT_EMA...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/06/news086.html target="_blank">
+        <h1 class="hdg">[ITmedia News] 「インスタ見れない」　Facebookなど米Metaの各サービスで障害発生　影響は世界規模か【一部復旧】</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2830</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/06/cover_news086.jpg" width="100" />
+        <p class="description">3月6日午前0時ごろから、FacebookやInstagram、Threadsなど米Metaのサービスで障害が発生している。日本だけでなく世界規模で起きているようで、Xにはさまざまな言語で障害に関する投稿が確認できる。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/shuhei308/articles/8738596d305f0e target="_blank">
+        <h1 class="hdg">React Hook Formを使ってみた</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>3 min</time></span> |
+          <span>Word count: <time>778</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--uNhsHQ5b--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:React%2520Hook%2520Form%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2597%25E3%2582%2585%25E3%2583%25BC%25E3%2581%25B8%25E3%2581%2584%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzg5OGU3YmJkZmMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">React Hook Formは何をしてくれるのか？
+useStateを書いて、状態管理をして、エラーを、、とコードを沢山かかなければいけないところ、
+たった数行でおさめてくれる便利もの。
+と言った方がよいでしょう。
+使用することでフォームのバリデーションやエラーの表示などを簡単に実装できます。
+
+ React Hook Formのコード内容
+
+ index.tsx
+import { useForm } from &#x27;react-hook-form&#x27;;
+import &#x27;./App.css&#x27;;
+
+function App() {
+  const {
+    register,
+    h...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/k_ichirof/articles/f28e5241472ca5 target="_blank">
+        <h1 class="hdg">[読書メモ]オブジェクト設計スタイルガイド 6章7.8節 with TypeScript</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>1 min</time></span> |
+          <span>Word count: <time>262</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--dj7WHouI--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%255B%25E8%25AA%25AD%25E6%259B%25B8%25E3%2583%25A1%25E3%2583%25A2%255D%25E3%2582%25AA%25E3%2583%2595%25E3%2582%2599%25E3%2582%25B7%25E3%2582%2599%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E8%25A8%25AD%25E8%25A8%2588%25E3%2582%25B9%25E3%2582%25BF%25E3%2582%25A4%25E3%2583%25AB%25E3%2582%25AB%25E3%2582%2599%25E3%2582%25A4%25E3%2583%2588%25E3%2582%2599%25206%25E7%25AB%25A07.8%25E7%25AF%2580%2520with%2520TypeScript%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:k_ichirof%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2ZiYTI0YjgyZDMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">オブジェクト設計スタイルガイドを読みながら、TypeScriptでやるならどうやるかを考えながら書きました。
+要約的に読める内容になっていると思うので、サクッと3分ぐらいで読める記事となっています。
+https://www.oreilly.co.jp/books/9784814400331/
+
+ 6.7 クエリメソッドからはコマンドメソッドは呼び出さず、他のクエリメソッドを呼び出す
+コマンドメソッドは副作用を持つため、クエリメソッドから呼び出すべきではない。
+ただ、違反しなければいけない場合もある。
+例えばユーザー登録のコントローラーのようなものは、クエリメソッドからコマンドメ...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/terrierscript/articles/2024-03-03-playwright-failed-or target="_blank">
+        <h1 class="hdg">playwrightで複数要素を同時にwaitして失敗パターンを早めに検知する</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>1 min</time></span> |
+          <span>Word count: <time>206</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--AcaOeXu7--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:playwright%25E3%2581%25A7%25E8%25A4%2587%25E6%2595%25B0%25E8%25A6%2581%25E7%25B4%25A0%25E3%2582%2592%25E5%2590%258C%25E6%2599%2582%25E3%2581%25ABwait%25E3%2581%2597%25E3%2581%25A6%25E5%25A4%25B1%25E6%2595%2597%25E3%2583%2591%25E3%2582%25BF%25E3%2583%25BC%25E3%2583%25B3%25E3%2582%2592%25E6%2597%25A9%25E3%2582%2581%25E3%2581%25AB%25E6%25A4%259C%25E7%259F%25A5%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:terrierscript%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2RhNzJjMjE0Y2QuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">例えばtoastのような要素が成功時に出現する場合、playwrightは下記のような書き方になるだろう
+const successLocator &#x3D; page.locator(&#x27;.success-toast&#x27;)
+await successLocator.waitFor()
+expect(successLocator).text(&quot;成功しました&quot;)
+ただこれだと失敗してしまった場合でも成功時の要素をタイムアウトで待つことになってしまう。
+そこで失敗時に出てくる要素がある場合は、これも同時に待機すると早めに失敗を検知できる。
+const failedLocator &#x3D; page.locat...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/05/news186.html target="_blank">
+        <h1 class="hdg">[ITmedia News] スマホにマイナカード搭載へ、本人確認もOKに　マイナンバー法改正案を閣議決定</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2815</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/05/cover_news186.jpg" width="100" />
+        <p class="description">政府は3月5日、デジタル社会形成基本法等の一部改正案を閣議決定した。ITを活用した行政手続きの利便性向上や行政運営の効率化を図るため、基本となる標準データ（ベース・レジストリ）を整備する他、マイナンバーカードのスマートフォン搭載などを推進する。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/wac/articles/0c2997f6e1aefc target="_blank">
+        <h1 class="hdg">AWS SDK for Go V2でのユニットテスト</h1>
+        <div class="info">
+          <span> Zennの「Golang」のフィード</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2598</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--7PNNixtZ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AWS%2520SDK%2520for%2520Go%2520V2%25E3%2581%25A7%25E3%2581%25AE%25E3%2583%25A6%25E3%2583%258B%25E3%2583%2583%25E3%2583%2588%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:wac%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSnQyalo1eTQtSGFFT1pnZzh6djZSQzZ3dUNJbzZKRmZTaHlFZ3lybDA4PXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">やること
+https://aws.github.io/aws-sdk-go-v2/docs/unit-testing/
+公式のドキュメントを参考にしてAWS SDK for Go V2のユニットテストを理解する
+
+ 準備
+今回使用するGoのバージョン：
+% go version
+go version go1.22.0 darwin/arm64
+プロジェクトの初期化：
+とは環境に合わせて変更。
+% go mod init github.com//&lt;repos...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/otsuyutori/articles/f9695f611ef264 target="_blank">
+        <h1 class="hdg">Fly.ioでOSのログを収集する</h1>
+        <div class="info">
+          <span> Zennの「個人開発」のフィード</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>1 min</time></span> |
+          <span>Word count: <time>175</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--v3e5B-ZM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Fly.io%25E3%2581%25A7OS%25E3%2581%25AE%25E3%2583%25AD%25E3%2582%25B0%25E3%2582%2592%25E5%258F%258E%25E9%259B%2586%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:otsuyutori%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUVkRlRwNFhoUzNESVZXRERzd3FvSWlJQzFqdy1IWFkzX2dSRjlXNHlGV0w9czk2LWM&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">初めに
+Fly.ioはHerokuやGoogle Cloud Run  のようなコンテナランナーで、安くて早くて簡単で、私のようなインフラ系の素養がない人間に個人開発プロジェクトや社内ツールの作成などで便利なのですが、
+ログの収集 に関してはこの限りでなく、やや面倒です。
+アプリケーションレベルのログであれば(比較的)簡単に収集できるのですが、OSやミドルウェアのログになるとやや工夫が必要だったのでまとめました。
+
+ Fly.ioのログ収集の実際
+Fly.ioには　flyctl というCLIツールがあり、そこで flyctl logs と入力するとコンテナ内の標準出力もしくは標準エラ...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/kyoneno/articles/87d61143dd2ba3 target="_blank">
+        <h1 class="hdg">飲み会の傾斜計算が面倒だったのでアプリ作ってみた</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>1 min</time></span> |
+          <span>Word count: <time>243</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--swDhXvrn--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E9%25A3%25B2%25E3%2581%25BF%25E4%25BC%259A%25E3%2581%25AE%25E5%2582%25BE%25E6%2596%259C%25E8%25A8%2588%25E7%25AE%2597%25E3%2581%258C%25E9%259D%25A2%25E5%2580%2592%25E3%2581%25A0%25E3%2581%25A3%25E3%2581%259F%25E3%2581%25AE%25E3%2581%25A7%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:kyoneno%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFUWEFKeUtkQmcyTlNnQUZJMHJwcnlzTGtjc1JvcjRHcnNnMHZGMUdCalI9czk2LWM&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">背景
+会社の壮行会、忘年会、新年会、参加者は部長1名、課長3名、係長4名、若手社員10名、
+そんな飲み会の幹事を任され続けて早一年。
+何度も傾斜をつけての支払い金額の計算を実施しました。
+しかし、この「傾斜」が意外と難しいのです。Excelで頑張ればできないこともないですが、ちょうどよく全員が納得できる傾斜をつけるのにはいささか時間がかかりすぎてしまいます。
+そこで、便利な飲み会傾斜計算アプリがないか調べてみましたが意外とそういったアプリは少ない。。。
+傾斜計算はできてもメンバーをまとめて登録できなかったり、傾斜の値をを逐一変更しないと金額が変更できなかったりと少しばかり使いづらいと...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/pcuser/articles/2403/05/news173.html target="_blank">
+        <h1 class="hdg">[ITmedia PC USER] 生成AIを使いこなす効果的な「プロンプト」の基本のキ　書き方のコツを日本マイクロソフトが説明</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2831</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/pcuser/articles/2403/05/cover_news173.jpg" width="100" />
+        <p class="description">日本マイクロソフトが、Copilotについて解説する記者向け説明会を実施。その中で、効果的なプロンプトを書くコツが紹介された。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/05/news177.html target="_blank">
+        <h1 class="hdg">[ITmedia News] JR東、「オフピーク定期券」で5％ポイント還元　10月には値下げも　普及目指し“割安感”アピール</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2826</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/05/cover_news177.jpg" width="100" />
+        <p class="description">JR東日本は5日、「オフピーク定期券」の普及に向け、3月25日以降に有効となるものについて購入時にJRE POINTで5％還元すると発表した。10月には値下げも実施する。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=http://codezine.jp/article/detail/19139 target="_blank">
+        <h1 class="hdg">GitHub、公式ブログにて最新の「Git 2.44」における新機能を紹介</h1>
+        <div class="info">
+          <span> CodeZine:新着一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>14 min</time></span> |
+          <span>Word count: <time>4077</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://codezine.jp/static/images/article/19139/12597_og.jpg" width="100" />
+        <p class="description">オープンソースのバージョン管理システムgitの開発チームは、最新バージョンとなる「Git 2.44」を2月23日（現地時間）にリリースした。米GitHubは、公式ブログの2月23日（現地時間）付の投稿にて、前バージョンとなる「Git 2.43」以降に導入された、新機能などについて紹介している。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=http://codezine.jp/article/detail/19140 target="_blank">
+        <h1 class="hdg">JavaScript／TypeScriptランタイム「Deno 1.41」がリリース</h1>
+        <div class="info">
+          <span> CodeZine:新着一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>14 min</time></span> |
+          <span>Word count: <time>4077</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://codezine.jp/static/images/article/19140/12694_og.jpg" width="100" />
+        <p class="description">米Deno Landは、JavaScript／TypeScriptランタイムDenoの最新バージョンとなる「Deno 1.41」を、2月22日（現地時間）にリリースした。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/05/news171.html target="_blank">
+        <h1 class="hdg">[ITmedia News] Uber Eats、ロボット配送サービスを開始　3月6日から日本橋エリアで</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2562</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/05/cover_news171.jpg" width="100" />
+        <p class="description">料理宅配サービスを展開するUber Eats Japanが、歩道を自動走行するロボットによる配送サービスを東京・日本橋エリアで6日から開始する。Uberのロボット配送サービスは米国に続き2カ国目。まずは都心部でサービスを拡大し、将来的には配達する人が不足している地域や過疎地域での展開も視野に入れている。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2403/05/news163.html target="_blank">
+        <h1 class="hdg">[ITmedia Mobile] 犬や猫の健康管理をサポートする「auわんにゃんサポート」　月額550円、獣医師への電話相談や保険も</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2825</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2403/05/l_asa_auwannyansupport_01.jpg" width="100" />
+        <p class="description">KDDIとdotDは、犬や猫の健康管理をサポートする「auわんにゃんサポート」を提供開始。月額550円（税込み）で獣医師などへの電話相談やペットフードなどを購入できる会員限定ストア、保険サービスをセットで利用できる。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=http://codezine.jp/article/detail/19143 target="_blank">
+        <h1 class="hdg">Stack OverflowとGoogle Cloud、Stack OverflowプラットフォームとGeminiを統合するパートナーシップを発表</h1>
+        <div class="info">
+          <span> CodeZine:新着一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>14 min</time></span> |
+          <span>Word count: <time>4111</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://codezine.jp/static/images/article/19143/16332_ogp.png" width="100" />
+        <p class="description">米Stack Overflowと米Google Cloudは、Stack OverflowのプラットフォームとGoogle Cloud Console、およびGemini for Google Cloudによって、開発者にAIを活用した新機能を提供する、戦略的パートナーシップを締結したことを、2月29日（現地時間）に発表した。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/05/news169.html target="_blank">
+        <h1 class="hdg">[ITmedia News] NASAがTRPGのオリジナルシナリオを無料公開　「ハッブル宇宙望遠鏡」が“異世界召喚”される話</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2826</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/05/cover_news169.jpg" width="100" />
+        <p class="description">米NASAは3月5日（現地時間）、公式WebサイトでTRPG（テーブルトーク・ロール・プレイング・ゲーム）のオリジナルシナリオを無料公開した。シナリオは全44ページで、全編英語となっている。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/05/news166.html target="_blank">
+        <h1 class="hdg">[ITmedia News] LINEヤフーに行政指導　約52万件の情報漏えいで　「改善が見られなければ、より強い措置も」と松本総務大臣</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2826</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/05/cover_news166.jpg" width="100" />
+        <p class="description">総務省は5日、2023年10月に発生したLINEヤフーへの不正アクセスによる情報漏えい事案について行政指導を行った。松本剛明総務大臣は「少なくとも1年間にわたって定期的に報告するように求める」と厳しい姿勢で臨む考えを示した。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2403/05/news167.html target="_blank">
+        <h1 class="hdg">[ITmedia Mobile] Google、3月のFeature Drop紹介──Pixel 7や初代Watchに機能追加、Tabletの新機能も</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>2893</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2403/05/cover_news167.jpg" width="100" />
+        <p class="description">Googleは、Pixel端末の新機能を紹介する「Feature Drops」の3月版を公開した。これまでPixel Watch 2でしか使えなかったいくつかの機能が初代でも利用可能になる。Pixel Tabletにも新機能が追加される。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://marketing.itmedia.co.jp/mm/articles/2403/05/news164.html target="_blank">
+        <h1 class="hdg">[ITmedia マーケティング] Apple Vision Proをいち早くマーケティングに活用したコスメブランド「E.l.f.」がやったこと</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>6 min</time></span> |
+          <span>Word count: <time>1943</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/mm/articles/2403/05/cover_news164.jpg" width="100" />
+        <p class="description">化粧品ブランドのE.l.f. Cosmeticsが、複合現実型ヘッドセット「Apple Vision Pro」のマーケティング活用に参入した。ガイド付き瞑想やインタラクティブな「ペイントバイナンバー」ゲームなどのリラックスできるアクティビティーでユーザーの癒しを促す。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/05/news160.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] ワークマンが8800円「ランドセル」発売！　防弾チョッキと同じ生地　ワークマンらしさはどこにある？</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>3018</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/05/cover_news160.jpg" width="100" />
+        <p class="description">ワークマンが軽量ランドセル「ZSG03 スチューデントデイパック」（8800円）を発売する。どういった特徴があるのか、担当者に聞いた。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/05/news142.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] メタMRゴーグル「Quest」、グーグルの新ソフト提案を拒否</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2841</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/05/cover_news142.jpg" width="100" />
+        <p class="description">No content preview</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2403/05/news153.html target="_blank">
+        <h1 class="hdg">[ITmedia Mobile] ドコモ、平日ゴルフのサブスク「GOLF me！」提供開始　全30のゴルフラウンドが保険込みで月8778円から</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2828</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2403/05/l_asa_dGOLFEme_01.jpg" width="100" />
+        <p class="description">ドコモは、ゴルフラウンド月額定額サービス「GOLF me！」を提供開始。全30のゴルフ場から平日のゴルフラウンドを何度でも利用でき、ゴルフスタイルや頻度にあわせて1年プラン、6カ月プラン、3カ月プランを用意する。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/05/news152.html target="_blank">
+        <h1 class="hdg">[ITmedia News] ホンダ、次世代EV「ゼロ」を国内初公開　市場変化で販売展開は第3の選択肢も</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>8 min</time></span> |
+          <span>Word count: <time>2549</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/05/cover_news152.jpg" width="100" />
+        <p class="description">ホンダが次世代電気自動車（EV）「Honda　0（ゼロ）シリーズ」のコンセプト車2車種を国内で初めて報道陣に披露した。セダンタイプの「SALOON（サルーン）」とミニバンの「SPACE－HUB（スペースハブ）」で、5日から10日まで東京・青山のホンダ本社ショールームで一般公開する。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/05/news151.html target="_blank">
+        <h1 class="hdg">[ITmedia News] 全国初の自治体・大学　電子図書館連携、行政資料と論文の独自資料を共有</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>8 min</time></span> |
+          <span>Word count: <time>2548</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/05/cover_news151.jpg" width="100" />
+        <p class="description">茨木市教育委員会と学校法人「追手門学院」（大阪市中央区）は、両者が持つ独自電子資料を互いの電子図書館で公開することを目的にした「独自資料の電子書籍化と情報共有のための協定」を結んだ。電子図書館の分野での官学連携は国内初になるという。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/05/news147.html target="_blank">
+        <h1 class="hdg">[ITmedia News] 「mixi年表」20周年で公開　「はじめての日記」表示　mixi歴や過去日記の振り返りも</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2835</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/05/cover_news147.jpg" width="100" />
+        <p class="description">SNS「mixi」が正式オープンから20周年を迎えたことを記念し、ユーザーが当時書いた日記などをmixiの歴史とあわせて振り返ることができる「mixi年表」が公開。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/05/news146.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] なぜチェルシーは販売終了に追い込まれたのか　消費者の“あめ離れ”が鮮明</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2823</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/05/cover_news146.jpg" width="100" />
+        <p class="description">菓子メーカー大手「明治」は、53年の歴史を持つキャンディー「チェルシー」の販売を3月末で終了し、キャンディー事業からの撤退を決めた。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/pcuser/articles/2403/05/news145.html target="_blank">
+        <h1 class="hdg">[ITmedia PC USER] エイサー、15.6型スタンダードビジネスノート「Extensa 15」にCore i7搭載の上位モデルを追加</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2808</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/pcuser/articles/2403/05/cover_news145.jpg" width="100" />
+        <p class="description">日本エイサーは、ビジネス向け15.6型スタンダードノートPC「Extensa 15」シリーズのラインアップにCore i7搭載の上位モデルを追加した。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/05/news035.html target="_blank">
+        <h1 class="hdg">[ITmedia ビジネスオンライン] 「コンテナホテル」が郊外にどんどん増えて77店舗に　稼働率80％の理由は？</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>3024</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/05/cover_news035.jpg" width="100" />
+        <p class="description">郊外のロードサイドに、コンテナを並べたビジネスホテルが続々と誕生している。2024年2月末時点で77店舗まで拡大し、稼働率は80％、リピート率は約40％にのぼるという。どんなホテルなのか。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2403/05/news141.html target="_blank">
+        <h1 class="hdg">[ITmedia Mobile] 総務省がLINEヤフーに「行政指導」　「通信の秘密」保護と「サイバーセキュリティ」確保を求める</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>2867</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2403/05/cover_news141.jpg" width="100" />
+        <p class="description">2023年11月27日に公表された情報漏えい事案を受けて、総務省がLINEヤフーに行政指導を行った。「通信の秘密」の保護と「サイバーセキュリティ」の確保を徹底するように求めているが、「LINEヤフーと韓国NAVERグループとの資本関係」が問題の抜本的原因の1つと見なしている所がポイントだ。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/pcuser/articles/2403/05/news136.html target="_blank">
+        <h1 class="hdg">[ITmedia PC USER] サードウェーブ、“GALLERIA”ブランドからクリエイター向けPCの販売を開始</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2834</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/pcuser/articles/2403/05/cover_news136.jpg" width="100" />
+        <p class="description">サードウェーブは、同社PCブランド「GALLERIA」からクリエイター向けモデルの販売を開始した。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/nekoya/articles/bdd1bb18be3b06 target="_blank">
+        <h1 class="hdg">typescript-eslintにconsistent-returnが追加されました</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>1 min</time></span> |
+          <span>Word count: <time>429</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--3esDSB_v--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:typescript-eslint%25E3%2581%25ABconsistent-return%25E3%2581%258C%25E8%25BF%25BD%25E5%258A%25A0%25E3%2581%2595%25E3%2582%258C%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:nekoya%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzk2ZmU4ZWVmN2UuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">先日リリースされたv7.1.0でtypescript-eslintに新しいルールとしてconsistent-returnが追加されました。
+https://typescript-eslint.io/rules/consistent-return
+同名のルールはESLint本体に以前から存在していて、その強化版になります。具体的にはvoidをよりうまく扱えるようになったようです。
+利用にはtype checkが必要になります。このルールに限らずtypescript-eslintを使うなら型情報を活用しない手はないと思うので、有効にして各種ルールを適用するのがおすすめです。
+https://...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2403/05/news133.html target="_blank">
+        <h1 class="hdg">[ITmedia Mobile] KDDI、au Certified（認定中古品）の「iPhone 13 mini」を販売　128GBで6万1000円</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>2891</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2403/05/cover_news133.jpg" width="100" />
+        <p class="description">KDDIは2024年3月1日、auオンラインショップで「au Certified iPhone 13 mini」の販売を開始した。一括価格は128GBが6万1000円（税込み、以下同）、256GBが6万9000円だ。auオンラインショップで案内した。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2403/05/news069.html target="_blank">
+        <h1 class="hdg">[ITmedia Mobile] 楽天ペイと楽天ポイントのキャンペーンまとめ【3月5日最新版】　最大全額・20％などの高額還元に注目</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>2883</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2403/05/cover_news069.jpg" width="100" />
+        <p class="description">3月となり、楽天ペイでもさまざまなキャンペーンが更新された。3月は楽天市場と楽天ペイアプリとの連携キャンペーンの他、「はじめてシリーズ」も継続して実施している点に注目したい。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2403/05/news118.html target="_blank">
+        <h1 class="hdg">[ITmedia Mobile] 携帯キャリアメインは「UQ mobile」「楽天モバイル」が増加中、満足度は「LINEMO」がトップ　MMDの調査から</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2828</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2403/05/l_asa_MMD_01.jpg" width="100" />
+        <p class="description">MMD研究所は、3月5日に「2024年2月MNOのシェア・満足度調査」の結果を発表。メイン利用の割合は「UQ mobile」「楽天モバイル（MNO）」が増加し、総合満足度やNPSは「LINEMO」がトップになった。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/05/news129.html target="_blank">
+        <h1 class="hdg">[ITmedia News] “楽天の株価”と連動して「楽天ポイント」が増減する「ポイント楽天株」　株式投資を疑似体験</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2825</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/05/cover_news129.jpg" width="100" />
+        <p class="description">楽天グループは、楽天の株価に連動して「楽天ポイント」が増減するサービス「ポイント楽天株」の提供を始めた。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/05/news128.html target="_blank">
+        <h1 class="hdg">[ITmedia News] 自治体の1割、標準化システムへの移行困難　デジタル庁</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2815</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/05/cover_news128.jpg" width="100" />
+        <p class="description">自治体の業務を共通化し、システムもそれに沿ったものに移行する“自治体システム標準化”について、デジタル庁が移行状況の調査結果を発表した。移行対象の1788団体・3万4592システムのうち、171団体（10％）・702システム（2％）が移行困難であることが分かった。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/05/news127.html target="_blank">
+        <h1 class="hdg">[ITmedia News] 残り時間を可視化する「ビジュアルバータイマー」、キングジムが発売　プレゼンや筋トレの時間管理に</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2559</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/05/cover_news127.jpg" width="100" />
+        <p class="description">キングジムは5日、進行状況を示す横方向の目盛りで残り時間が一目で分かる「ビジュアルバータイマー」を発表した。会議のプレゼン、学習、筋力トレーニングなどの用途を想定している。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/pcuser/articles/2403/05/news126.html target="_blank">
+        <h1 class="hdg">[ITmedia PC USER] Razer、ハイエンドゲーミングマウス「DeathAdder V3 Pro」に8Kポーリングレート対応USBドングル付属モデル</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2841</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/pcuser/articles/2403/05/cover_news126.jpg" width="100" />
+        <p class="description">Razerは、同社製ゲーミングマウス「DeathAdder V3 Pro」に高ポーリングレート対応USBドングルを付属したセットモデルを発表した。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/05/news122.html target="_blank">
+        <h1 class="hdg">[ITmedia News] バンナム、渋谷に2000人収容のコンサートホール建設へ　26年春の開業目指す　運営会社「バンダイナムコベース」も設立</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>9 min</time></span> |
+          <span>Word count: <time>2829</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/05/cover_news122.jpg" width="100" />
+        <p class="description">バンダイナムコホールディンディングスは5日、東京都渋谷区に約2000人を収容できるコンサートホールを建設すると発表した。2026年春の開業を目指す。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2403/05/news120.html target="_blank">
+        <h1 class="hdg">[ITmedia Mobile] AndroidとPixelに3月の月例更新　Pixel 7／7 Proでも「かこって検索」が可能に</h1>
+        <div class="info">
+          <span> ITmedia 総合記事一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>10 min</time></span> |
+          <span>Word count: <time>2908</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2403/05/cover_news120.jpg" width="100" />
+        <p class="description">GoogleはAndroidおよびPixelの月例更新の配信を開始した。多数の「致命的」を含む脆弱性が修正される。Pixelではいくつかの新機能の追加や、バグ修正と改善も行われる。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/est/articles/88daae363d9032 target="_blank">
+        <h1 class="hdg">ViteでリクエストURL規則以外のカスタムプロキシを設定する</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>3 min</time></span> |
+          <span>Word count: <time>947</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--C81GhVT2--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Vite%25E3%2581%25A7%25E3%2583%25AA%25E3%2582%25AF%25E3%2582%25A8%25E3%2582%25B9%25E3%2583%2588URL%25E8%25A6%258F%25E5%2589%2587%25E4%25BB%25A5%25E5%25A4%2596%25E3%2581%25AE%25E3%2582%25AB%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25A0%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25AD%25E3%2582%25B7%25E3%2582%2592%25E8%25A8%25AD%25E5%25AE%259A%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:est%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzgxZTU2ZGFiZjUuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">対象
+
+Viteにおいて特定のHTTPヘッダなど、リクエストURLの規則以外の情報でプロキシサーバを設定したい（サーバサイドにリクエストを送信したい）方
+
+
+ 概要
+Viteには開発サーバのカスタムプロキシが用意されており、vite.config.tsに以下の様な設定が可能です。
+export default defineConfig({
+  server: {
+    proxy: {
+      &#x27;/api&#x27;: {
+        target: &#x27;http://localhost:4000&#x27;,
+        changeOrigin: true,
+        rewrit...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=http://codezine.jp/article/detail/19051 target="_blank">
+        <h1 class="hdg">OpenAI APIを使って議事録作成Botを作ってみよう！</h1>
+        <div class="info">
+          <span> CodeZine:新着一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>14 min</time></span> |
+          <span>Word count: <time>4272</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://codezine.jp/static/images/article/19051/serverless_og.png" width="100" />
+        <p class="description">本連載では、AIシステム開発の始め方が分からないという方に向けて、サーバーレス技術を活用したAIシステム開発の進め方を紹介します。第3回では、OpenAIのAPIのなかからChatGPTとWhisperを利用して、会議の議事録を自動で作成してくれるSlack Botを作ります。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/eju_labs/articles/877f30d9679a88 target="_blank">
+        <h1 class="hdg">Next13以降のリダイレクト方法の整理</h1>
+        <div class="info">
+          <span> Zennの「Next.js」のフィード</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>4 min</time></span> |
+          <span>Word count: <time>1270</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--8sH4i8uX--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Next13%25E4%25BB%25A5%25E9%2599%258D%25E3%2581%25AE%25E3%2583%25AA%25E3%2583%2580%25E3%2582%25A4%25E3%2583%25AC%25E3%2582%25AF%25E3%2583%2588%25E6%2596%25B9%25E6%25B3%2595%25E3%2581%25AE%25E6%2595%25B4%25E7%2590%2586%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:hanzzo%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly96ZW5uLmRldi9pbWFnZXMvZGVmYXVsdC1wdWJsaWNhdGlvbi1hdmF0YXIucG5n%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:ejuLabs%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2E1OWY1NDcxZDguanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">この記事では、Next１３~ のapp routerをベースに記載しています。
+Next.jsで選択できるリダイレクト方法を列挙して、
+それらの特徴を見てみて、どんな使い方できるかをメモしてみました。
+結構、自分用なメモにはなっていそうですので、そちらご了承ください。
+Next.jsのリファレンスにも紹介があります。詳細はこちらから確認できます。
+https://nextjs.org/docs/pages/building-your-application/routing/redirecting
+
+ CSR（client side rendering）の場合
+
+ useRouter
+&quot;u...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=http://codezine.jp/article/detail/19144 target="_blank">
+        <h1 class="hdg">コード生成用オープンアクセスLLM「StarCoder2」、ServiceNow・Hugging Face・NVIDIAがリリース</h1>
+        <div class="info">
+          <span> CodeZine:新着一覧</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>14 min</time></span> |
+          <span>Word count: <time>4082</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://codezine.jp/static/images/article/19144/19144_ogp.png" width="100" />
+        <p class="description">ServiceNow、Hugging Face、NVIDIAは、パフォーマンス、透明性、およびコスト効率の新たな基準を設定するコード生成用のオープンアクセス大規模言語モデル ファミリーである「StarCoder2」のリリースを発表した。</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/k_ichirof/articles/9ddb7af3752a7a target="_blank">
+        <h1 class="hdg">[読書メモ]オブジェクト設計スタイルガイド 6章6節 with TypeScript</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-03-05</time></span> |
+          <span>Reading time: <time>2 min</time></span> |
+          <span>Word count: <time>556</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--bM2BfuMl--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%255B%25E8%25AA%25AD%25E6%259B%25B8%25E3%2583%25A1%25E3%2583%25A2%255D%25E3%2582%25AA%25E3%2583%2595%25E3%2582%2599%25E3%2582%25B7%25E3%2582%2599%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E8%25A8%25AD%25E8%25A8%2588%25E3%2582%25B9%25E3%2582%25BF%25E3%2582%25A4%25E3%2583%25AB%25E3%2582%25AB%25E3%2582%2599%25E3%2582%25A4%25E3%2583%2588%25E3%2582%2599%25206%25E7%25AB%25A06%25E7%25AF%2580%2520with%2520TypeScript%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:k_ichirof%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2ZiYTI0YjgyZDMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">オブジェクト設計スタイルガイドを読みながら、TypeScriptでやるならどうやるかを考えながら書きました。
+要約的に読める内容になっていると思うので、サクッと3分ぐらいで読める記事となっています。
+https://www.oreilly.co.jp/books/9784814400331/
+
+ 6.6 クエリメソッドのテストダブルにはスタブを使う
+テストダブルとは、テストを実行するために使われるオブジェクトのこと。
+interface IExchangeRate {
+  exchangeRateFor(from: string, to: string, rate: number...</p>
+      </div>
+    </article>
+    <article class="article">
+      <a class="link js-open-overview" href=https://zenn.dev/team_zenn/articles/opengraphscraper-commit target="_blank">
+        <h1 class="hdg">OSSにコミットしてサービスの課題を解決した話</h1>
+        <div class="info">
+          <span> Zennの「TypeScript」のフィード</span> |
+          <span>Date: <time>2024-03-04</time></span> |
+          <span>Reading time: <time>3 min</time></span> |
+          <span>Word count: <time>884</time></span>
+        </div>
+      </a>
+      <div class="overview">
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--SiOTUolK--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:OSS%25E3%2581%25AB%25E3%2582%25B3%25E3%2583%259F%25E3%2583%2583%25E3%2583%2588%25E3%2581%2597%25E3%2581%25A6%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2593%25E3%2582%25B9%25E3%2581%25AE%25E8%25AA%25B2%25E9%25A1%258C%25E3%2582%2592%25E8%25A7%25A3%25E6%25B1%25BA%25E3%2581%2597%25E3%2581%259F%25E8%25A9%25B1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:d%2520yoshikawa%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzYzOTk2NzhlNmIuanBlZw&#x3D;&#x3D;%2Cr_20%2Cw_90%2Cx_92%2Cy_102/g_south_west%2Ch_34%2Cl_default:og-publication-pro-mark-xcosax%2Cw_34%2Cx_217%2Cy_158/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:Zenn%2520Tech%2520Blog%2Cx_255%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzhjNWU1ODc1NjguanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png" width="100" />
+        <p class="description">はじめに
+ZennではOGPを利用したリンクカードの埋め込み表示にopenGraphScraperというパッケージを使っています。
+https://github.com/jshemas/openGraphScraper
+まさに上記のGitHubリンクカードもopenGraphScraperが使われています。
+そして先日、Zennの課題に対処するためにopenGraphScraperにプルリクエストを出したところ、マージしてもらうことができました。
+https://github.com/jshemas/openGraphScraper/pull/206
+本記事ではZennが抱えていたo...</p>
       </div>
     </article>
     <article class="article">
@@ -327,21 +1299,6 @@
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/enterprise/articles/2403/05/news081.html target="_blank">
-        <h1 class="hdg">[ITmedia エンタープライズ] Broadcom配下で「脱VMwareが止まらない」の真相</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2611</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/enterprise/articles/2403/05/cover_news081.jpg" width="100" />
-        <p class="description">VMwareがBroadcomに買収されたことで、VMwareの製品やサービスを利用する企業にさまざまな影響が出てくると考えられる。岐路に立たされる企業が目を向ける新たな戦略とは。</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=https://zenn.dev/p238049y/articles/474f94293e7064 target="_blank">
         <h1 class="hdg">【npmパッケージ】あいまい検索を簡単に実装できるFuse.jsの紹介とプチ性能評価</h1>
         <div class="info">
@@ -372,36 +1329,6 @@ fuse.jsはあいまい検索ライブラリの中で最も多くダウンロー�
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/04/news180.html target="_blank">
-        <h1 class="hdg">[ITmedia News] M2版「MacBook Air」値下げ　最大3万円安く</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2848</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/04/cover_news180.jpg" width="100" />
-        <p class="description">米Appleは3月4日、新型「MacBook Air」を発表したのにあわせ、旧モデルであるM2チップ搭載モデルの価格を改定した。なお、M2モデルのラインアップは13インチのみとなっている。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/pcuser/articles/2403/05/news080.html target="_blank">
-        <h1 class="hdg">[ITmedia PC USER] AppleがM3チップ搭載の「MacBook Air」を発売　13インチと15インチの2サイズで16万4800円から</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2858</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/pcuser/articles/2403/05/cover_news080.jpg" width="100" />
-        <p class="description">Appleが、M3チップ搭載の「MacBook Air」を突如発表した。M2チップモデルと同様に13インチと15インチの2サイズ構成で、13インチモデルについては従来モデルも継続販売される。</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=https://zenn.dev/dog/articles/core_match_2024 target="_blank">
         <h1 class="hdg">TypeScriptフレンドリーで安全な構造化束縛ができるパターンマッチライブラリ: @core/match</h1>
         <div class="info">
@@ -420,51 +1347,6 @@ unknownutilなどのtypeguardと組み合わせることで、構造化束縛も
 ほぼREADMEの和訳で恐縮ですがよろしくおねがいします。
 https://github.com/tani/ts-match
 ECMAScript には構造化束縛があります。これは、複雑な構造から必要な部分だけを抽出するための非常に便利な記法です。ただし、この構造化束縛は、パターンマッチングとして使用するには不完全です。...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2403/04/news179.html target="_blank">
-        <h1 class="hdg">[ITmedia Mobile] 欧州委員会がAppleに18億ユーロ超の「制裁金」　App Storeにおける音楽ストリーミングアプリの扱いを「悪質」と判断</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2852</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2403/04/cover_news179.jpg" width="100" />
-        <p class="description">欧州委員会（EC）が、Appleに18億ユーロを超える「制裁金」を課した。App Storeにおける独占的地位を悪用して、音楽ストリーミングアプリ開発者に課している規約がエンドユーザーの不利益につながっていることを“悪質”と判断したという。Appleも声明を発表し、本決定に対して控訴する方針を明らかにした。。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/04/news178.html target="_blank">
-        <h1 class="hdg">[ITmedia News] M1チップ搭載「MacBook Air」、販売終了</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2849</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/04/cover_news178.jpg" width="100" />
-        <p class="description">米Appleは3月4日、新型「MacBook Air」を発表したのにあわせ、M1チップを搭載したMacBook Airの販売を終了した。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/04/news176.html target="_blank">
-        <h1 class="hdg">[ITmedia News] 新型「MacBook Air」登場　M3チップ、外部出力は2画面までOKに　16万4800円から</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2852</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/04/cover_news176.jpg" width="100" />
-        <p class="description">米Appleは3月4日、新型「MacBook Air」を発表した。最新チップ「M3」を採用し、13インチと15インチから選べる。日本含め同日より予約を開始し、3月8日より出荷を開始するという。</p>
       </div>
     </article>
     <article class="article">
@@ -517,8 +1399,8 @@ Next.js において、Pages Router しかり App Router しかりディレク�
         <div class="info">
           <span> Zennの「Next.js」のフィード</span> |
           <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>3 min</time></span> |
-          <span>Word count: <time>800</time></span>
+          <span>Reading time: <time>4 min</time></span> |
+          <span>Word count: <time>1252</time></span>
         </div>
       </a>
       <div class="overview">
@@ -532,88 +1414,28 @@ export default async function Layout({ children }: { children: ReactNode }) {
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://marketing.itmedia.co.jp/mm/articles/2403/04/news175.html target="_blank">
-        <h1 class="hdg">[ITmedia マーケティング] AI同士が議論して商品開発のアイデア出し　博報堂が「マルチエージェント ブレストAI」の業務活用を開始</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>6 min</time></span> |
-          <span>Word count: <time>1878</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/mm/articles/2403/04/cover_news175.png" width="100" />
-        <p class="description">専門知識を持ったAI同士が協調して意思決定と企画生成を行う仕組みを活用。最適な結論や新規性のある企画生成、議論過程や根拠の可視化、人間との対話やフィードバックを通じた学習や改善といった特徴を持つ。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/04/news173.html target="_blank">
-        <h1 class="hdg">[ITmedia News] MBSメディアHDが闇を子会社化──社名“闇”のせいでよく分からない公式発表に　ネット大ウケ</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2817</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/04/cover_news173.jpg" width="100" />
-        <p class="description">MBSメディアホールディングス（HD）が闇の増資と子会社化を発表した──いや、毎日放送系の会社が“闇堕ち”したわけではなくて。</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=https://zenn.dev/watson_sei/articles/0f8c7d431299f1 target="_blank">
         <h1 class="hdg">gRPC触ってみた</h1>
         <div class="info">
           <span> Zennの「Golang」のフィード</span> |
           <span>Date: <time>2024-03-04</time></span> |
           <span>Reading time: <time>4 min</time></span> |
-          <span>Word count: <time>1116</time></span>
+          <span>Word count: <time>1137</time></span>
         </div>
       </a>
       <div class="overview">
         <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--W7IMo5o---/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_66:gRPC%25E8%25A7%25A6%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Watson-Sei%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2hCanNSY2NqVVRDN0ZYcl9XbUdOV1dHNVVIVG1aUE9SSFNxZ0VDPXMyNTAtYw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
         <p class="description">gRPCの学習をしたので、振り返り用に共有しておきます。
 https://grpc.io/
+ディレクトリ構成などは、以下のリポジトリを参考にしてください。
+https://github.com/Watson-Sei/test-grpc
 
  gRPCとREST APIの違いについて
 gRPCとREST APIは、システム間でデータを交換するための２つの異なる通信プロトコルです。以下に主な違いを簡潔に記載します。
 
 プロトコル
 ・　REST APIはHTTP/1.1プロトコルを使用して通信し、主にWebサービスのために設計されている。
-・　gRPCはHTTP/2を基盤とし、低遅延、高スループットの通信を実現するために設計されている。
-データフォーマット
-・　REST APIでは、主にJSONまたはXML形式のテキストデータを使用して...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2403/04/news160.html target="_blank">
-        <h1 class="hdg">[ITmedia Mobile] ドコモでんきで「ピークシフト」をするとdポイントがもらえるプログラム開始　自動節電サービスも提供</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2818</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2403/04/l_asa_ddenkieco_01.jpg" width="100" />
-        <p class="description">NTTドコモの電力サービス「ドコモでんき」で、電力のピークシフトをすると、その取り組みに応じて「dポイント」がもらえるエコプログラムが始まる。エアコンを自動で制御して節電をサポートする機能も新たに提供される。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/04/news171.html target="_blank">
-        <h1 class="hdg">[ITmedia News] メルカリ、商品が本物か鑑定してもらえるサービス登場　「ポケカ」などのトレカ、バッグなど</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2821</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/04/cover_news171.jpg" width="100" />
-        <p class="description">メルカリは3月4日、商品が本物かどうかを鑑定できる真贋鑑定サービス「あんしん鑑定」の提供を始めた。トレーディングカードやバッグ、スニーカーを対象に、鑑定サービス「FAKEBUSTERS」を提供するIVAに依頼する形でリリースする。</p>
+・　gRPCはHTTP/2を基盤とし、低遅延、高スループ...</p>
       </div>
     </article>
     <article class="article">
@@ -691,153 +1513,18 @@ NEXT_PUBL...</p>
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://marketing.itmedia.co.jp/mm/articles/2403/04/news172.html target="_blank">
-        <h1 class="hdg">[ITmedia マーケティング] デジタルサイネージ一体型自動ドアによる広告配信サービス　ナブテスコが提供</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>6 min</time></span> |
-          <span>Word count: <time>1873</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/mm/articles/2403/04/cover_news172.jpg" width="100" />
-        <p class="description">ナブテスコがデジタルサイネージ一体型自動ドアを広告メディアとして利用する新サービスを開始する。当面は大学向けに展開し、大学生向けの商品や企業認知を獲得したい広告主のニーズに応える。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/04/news168.html target="_blank">
-        <h1 class="hdg">[ITmedia News] 収益目当ての便乗投稿「インプレゾンビ」横行　地震直後にSNSで偽救助要請、大半は海外</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2551</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/04/cover_news168.jpg" width="100" />
-        <p class="description">能登半島地震の直後、交流サイト（SNS）上には被災者を装って救助要請するなど悪質な投稿が相次いだ。ほとんどが閲覧数（インプレッション）に応じた収益を狙う投稿者「インプレッションゾンビ」の仕業とみられ、大半が海外からの投稿だった。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/04/news164.html target="_blank">
-        <h1 class="hdg">[ITmedia News] 「官主導から民主導へ」ベンチャー初の衛星打ち上げ、約51分で軌道投入へ　スペースワン</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>8 min</time></span> |
-          <span>Word count: <time>2548</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/04/cover_news164.jpg" width="100" />
-        <p class="description">国内ベンチャーで初めて人工衛星の打ち上げに挑戦するスペースワン（東京都港区）は3月1日、オンラインで記者会見を開き、和歌山県串本町で今月9日に予定している小型固体燃料ロケット「カイロス」初号機の打ち上げ計画の詳細を明らかにした。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/04/news163.html target="_blank">
-        <h1 class="hdg">[ITmedia News] 3月に販売終了の「チェルシー」、フリマアプリで大量出品　Xでは一時トレンド入り</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>8 min</time></span> |
-          <span>Word count: <time>2545</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/04/cover_news163.jpg" width="100" />
-        <p class="description">菓子メーカー大手「明治」（東京都中央区）が昭和46年から販売を開始しているキャンディー「チェルシー」の販売を3月中にも終了することが分かった。フリマアプリではチェルシーの出品が相次いで確認された。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/04/news162.html target="_blank">
-        <h1 class="hdg">[ITmedia ビジネスオンライン] 「きのこの山」ワイヤレスイヤフォンで類似品、明治「まだ販売していない」</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2823</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/04/cover_news162.jpg" width="100" />
-        <p class="description">明治は今月下旬に発売を予定している人気チョコレート菓子「きのこの山」を模したワイヤレスイヤホンについて、類似品が国内外の通販サイトで販売されているとして公式ホームページで注意喚起している。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/04/news159.html target="_blank">
-        <h1 class="hdg">[ITmedia News] NewsPicksの著作権侵害問題に日本新聞協会会長が声明　「取り組みを見守る」</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2821</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/04/cover_news159.jpg" width="100" />
-        <p class="description">「NewsPicks」が、記事利用の契約をしていない報道各社の写真や見出しを長年にわたり無断で使用していた問題で、日本新聞協会の中村史郎会長が声明を出した。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2403/04/news154.html target="_blank">
-        <h1 class="hdg">[ITmedia Mobile] ギアが格安SIMブランド「アイサポモバイル」を立ち上げ　音声＋SMS対応＋データ（月間3GB）で月額980円から</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2838</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2403/04/cover_news154.jpg" width="100" />
-        <p class="description">ギアが、格安SIMブランド「アイサポモバイル」を立ち上げた。データ専用、データSMS、音声＋データSMSを、必要な通信量に合わせて5つのプランから選択できるようになっていることが特徴で、音声＋データSMSの</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/04/news157.html target="_blank">
-        <h1 class="hdg">[ITmedia News] 「きのこの山 ワイヤレスイヤホンはまだ売ってません」──明治が注意喚起　商標を無断使用した模倣品が複数の通販サイトで売られていた</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2834</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/04/cover_news157.jpg" width="100" />
-        <p class="description">明治は「きのこの山 ワイヤレスイヤホン」と称する製品が国内外のネット通販サイトで販売されているとして、誤って購入しないように注意喚起した。</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=http://codezine.jp/article/detail/19141 target="_blank">
         <h1 class="hdg">AWS、イベント発生時のコマンド実行を可能にするAWS Lambdaに.NET 8ランタイムを追加</h1>
         <div class="info">
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-03-04</time></span> |
           <span>Reading time: <time>14 min</time></span> |
-          <span>Word count: <time>4077</time></span>
+          <span>Word count: <time>4109</time></span>
         </div>
       </a>
       <div class="overview">
-        <img class="img" src="https://codezine.jp/static/common/images/czlogo4fb_ogp.png" width="100" />
+        <img class="img" src="https://codezine.jp/static/images/article/19141/16568_ogp.png" width="100" />
         <p class="description">米Amazon Web Servicesは、イベント発生時のコマンド実行を可能にするAWS Lambdaにおいて、.NET 8ランタイムの提供を開始したことを、2月22日（現地時間）に発表した。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2403/04/news146.html target="_blank">
-        <h1 class="hdg">[ITmedia Mobile] 増える携帯電話ショップの「閉店」　その理由は？</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2833</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2403/04/cover_news146.jpg" width="100" />
-        <p class="description">最近、携帯電話販売店（キャリアショップ／併売店）や家電量販店の携帯電話コーナーが縮小／閉鎖される動きが活発になっている。その背景には何があるのか、最近実際に閉店に立ち会った店舗スタッフから話を聞いてみよう。</p>
       </div>
     </article>
     <article class="article">
@@ -862,156 +1549,6 @@ import { List } from &quot;./list&quot;;
 import { NewOrgButton } from &quot;./new-org-button&quot;;
 
 export const Sideba...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/04/news153.html target="_blank">
-        <h1 class="hdg">[ITmedia ビジネスオンライン] 明治「チェルシー」が販売終了　担当者「ファンには申し訳ない」</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2822</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/04/cover_news153.jpg" width="100" />
-        <p class="description">「♪ホラ、チェルシー　もひとつ、チェルシー」のCMソングでおなじみ、明治のキャンディー「チェルシー」が3月にも販売を終了することが分かった。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/04/news067.html target="_blank">
-        <h1 class="hdg">[ITmedia ビジネスオンライン] 就活生の企業イメージに影響を与える情報源　「公式サイト」を抑えた1位は？</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>3013</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/04/cover_news067.png" width="100" />
-        <p class="description">ブランドクラウドは、就活生の企業情報収集に関する調査を実施した。その結果、就活生の企業イメージに影響を与えるものの1位は「就職サイト」（56.0%）で、2位は「検索エンジン上の予測候補ワード」（44.7%）、3位は「企業の公式Webサイト」（31.7%）だった。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/business/articles/2403/04/news085.html target="_blank">
-        <h1 class="hdg">[ITmedia ビジネスオンライン] ダイソー、在庫確認ができるアプリをリリース　国内約6万8000商品が対象</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>3016</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/business/articles/2403/04/cover_news085.png" width="100" />
-        <p class="description">100円ショップを運営する大創産業は、同社初の店舗の在庫状況が手元で確認できる「DAISOアプリ」をリリースした。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/pcuser/articles/2403/04/news144.html target="_blank">
-        <h1 class="hdg">[ITmedia PC USER] シャープが4ベイNAS（ファイルサーバ）を3月中旬に発売　スマートオフィスサービス「COCORO OFFICE」対応で容量は3種類</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2815</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/pcuser/articles/2403/04/cover_news144.jpg" width="100" />
-        <p class="description">シャープは、同社提供のスマートオフィスサービス「COCORO OFFICE」に対応したCOCORO OFFICEサーバ「BP-X2ST」シリーズを発表した。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2403/04/news138.html target="_blank">
-        <h1 class="hdg">[ITmedia Mobile] Yahoo!携帯ショップ、LINEMO契約で最大20％のPayPayポイント還元　毎月1日～第2月曜日に定期開催</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2831</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2403/04/l_asa_Yahookeitaishop20_01.jpg" width="100" />
-        <p class="description">LINEヤフーは、携帯電話販売サービス「Yahoo!携帯ショップ」で「ヤフー限定 PayPayポイント20％戻ってくるキャンペーン」を開催。LINEMOを契約後に指定期間／店舗で最大20％のPayPayポイントを還元する。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/04/news124.html target="_blank">
-        <h1 class="hdg">[ITmedia News] 「世界サーバ投げ選手権」ドイツで開催　最大40人が参加</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2830</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/04/cover_news124.jpg" width="100" />
-        <p class="description">サーバを投げたことはあるだろうか。トラブルがあった際の匙（さじ）ではなく、サーバそのものだ。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2403/04/news135.html target="_blank">
-        <h1 class="hdg">[ITmedia Mobile] auの「新生活応援SALE!」にiPhone 15やPixel 8 Pro追加　1万1000～2万2000円割引</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2879</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2403/04/l_asa_kddisinseikatu0301_01.jpg" width="100" />
-        <p class="description">KDDIは、対象機種を機種変更すると割引額を増額する「新生活応援SALE!」へ端末を追加。iPhone 15、iPhone 15 Plus、Google Pixel 8 Pro、TORQUE 5Gが最大2万2000円割引となる。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/enterprise/articles/2403/04/news112.html target="_blank">
-        <h1 class="hdg">[ITmedia エンタープライズ] 富士通がコンサル事業拡充へ　「御用聞き」脱却発言から行動変容について考える</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2721</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/enterprise/articles/2403/04/cover_news112.jpg" width="100" />
-        <p class="description">富士通がDX向けコンサルティング事業の新ブランドを立ち上げた。その狙いはどこにあるのか。キーワードは「行動変容」だ。この話は同社の事業戦略にとどまらず、多くの日本企業にとっても当てはまりそうだ。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/pcuser/articles/2403/04/news130.html target="_blank">
-        <h1 class="hdg">[ITmedia PC USER] GPD、7型液晶搭載ポータブルゲーミングPC「GPD WIN Mini」にRyzen搭載の新モデル</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2847</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/pcuser/articles/2403/04/cover_news130.jpg" width="100" />
-        <p class="description">中国GPD Technologyは、7型液晶搭載ポータブルゲーミングPC「GPD WIN Mini」の新モデルを告知した。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/pcuser/articles/2403/04/news117.html target="_blank">
-        <h1 class="hdg">[ITmedia PC USER] M.2 NVMe SSDを組み込めるGeForce RTX 4060 Ti搭載グラフィックスカード登場！</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2871</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/pcuser/articles/2403/04/cover_news117.jpg" width="100" />
-        <p class="description">ASUS JAPANから、M.2 NVMe SSDを組み込めるグラフィックスカードが登場して話題を集めている。また、AMDからは新GPU「Radeon RX 7900 GRE」が投入された。</p>
       </div>
     </article>
     <article class="article">
@@ -1045,21 +1582,6 @@ npm i --sav...</p>
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/pcuser/articles/2403/04/news118.html target="_blank">
-        <h1 class="hdg">[ITmedia PC USER] ナカバヤシ、静音スイッチを採用したスタンダード5ボタンマウス</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2783</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/pcuser/articles/2403/04/cover_news118.jpg" width="100" />
-        <p class="description">ナカバヤシは、ワイヤレス接続に対応した静音マウス計6シリーズを発表した。</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=https://zenn.dev/wac/articles/7cc49325c66c71 target="_blank">
         <h1 class="hdg">Next.jsの４つのキャッシュメカニズムについて</h1>
         <div class="info">
@@ -1086,21 +1608,6 @@ What
 Where
 Purpose
 Durat...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/04/news115.html target="_blank">
-        <h1 class="hdg">[ITmedia News] 「名簿を守れ！！」 個人情報保護委員会、アニメ「進撃の巨人」コラボポスター公開　新生活シーズン前に適切な管理呼びかけ</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>9 min</time></span> |
-          <span>Word count: <time>2826</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/04/cover_news115.jpg" width="100" />
-        <p class="description">個人情報保護委員会は4日、「STOP！名簿流出」の啓発のため、TVアニメ「進撃の巨人」とコラボレーションしたデジタルサイネージによる広告を駅や空港に掲出した。</p>
       </div>
     </article>
     <article class="article">
@@ -1148,73 +1655,13 @@ https://www.apple.c...</p>
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2403/04/news095.html target="_blank">
-        <h1 class="hdg">[ITmedia Mobile] ゲオ、中古iPhoneが最安1円になる「新生活応援キャンペーン」　3000円分の選べる電子マネープレゼントも</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2854</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2403/04/l_asa_geoiPhoneshinseikatu_01.jpg" width="100" />
-        <p class="description">ゲオは、3月31日まで「iPhone新生活応援キャンペーン」を実施。対象の中古iPhoneとUQ mobileの音声SIMを同時購入し、条件を満たすと最安1円で購入できる。一部機種では3000円分の選べる電子マネーもプレゼントする。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/mobile/articles/2403/04/news111.html target="_blank">
-        <h1 class="hdg">[ITmedia Mobile] グラス型XRデバイス出展の狙いは？　NTTコノキュー丸山社長に聞く、XRの現在と未来</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2854</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/mobile/articles/2403/04/cover_news111.jpg" width="100" />
-        <p class="description">MWC Barcelona 2024のNTTドコモのブースには、XR事業を手掛ける子会社のNTTコノキューが開発したARデバイスのプロトタイプが展示されている。発売は2024年半ばになるという。デバイス開発の意図やコノキューの今後の展開について、コノキューの丸山誠治社長に話を聞いた。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/pcuser/articles/2403/04/news110.html target="_blank">
-        <h1 class="hdg">[ITmedia PC USER] ASUS、14型ELパネル2基を備えたデュアルディスプレイノートPC「ASUS Zenbook DUO UX8406MA」など2製品</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2888</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/pcuser/articles/2403/04/cover_news110.jpg" width="100" />
-        <p class="description">ASUS JAPANは、14型ELパネル2基を備えたデュアルディスプレイノートPC「ASUS Zenbook DUO UX8406MA」を発表した。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://www.itmedia.co.jp/news/articles/2403/04/news104.html target="_blank">
-        <h1 class="hdg">[ITmedia News] Web2.0はまだまだ続く　ナナロク世代が元気だから</h1>
-        <div class="info">
-          <span> ITmedia 総合記事一覧</span> |
-          <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>2894</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://image.itmedia.co.jp/news/articles/2403/04/cover_news104.jpg" width="100" />
-        <p class="description">SNSには炎上や誹謗中傷、といったイメージがまとわりついてしまった。ここ10年ほどは諦め半分でSNSを使っていたが、この1カ月で考えが変わった。Web2.0時代からのキーマン「ナナロク世代」と再会する機会が増え、誰も諦めていないことを実感したためだ。</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=http://codezine.jp/article/detail/18937 target="_blank">
         <h1 class="hdg">Git中級者への第1歩！ レビュー品質向上の秘訣、コミットに便利なコマンドを紹介</h1>
         <div class="info">
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-03-04</time></span> |
           <span>Reading time: <time>14 min</time></span> |
-          <span>Word count: <time>4211</time></span>
+          <span>Word count: <time>4243</time></span>
         </div>
       </a>
       <div class="overview">
@@ -1229,7 +1676,7 @@ https://www.apple.c...</p>
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-03-04</time></span> |
           <span>Reading time: <time>14 min</time></span> |
-          <span>Word count: <time>4066</time></span>
+          <span>Word count: <time>4098</time></span>
         </div>
       </a>
       <div class="overview">
@@ -1264,7 +1711,7 @@ https://www.apple.c...</p>
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-03-04</time></span> |
           <span>Reading time: <time>14 min</time></span> |
-          <span>Word count: <time>4060</time></span>
+          <span>Word count: <time>4092</time></span>
         </div>
       </a>
       <div class="overview">
@@ -1278,8 +1725,8 @@ https://www.apple.c...</p>
         <div class="info">
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-03-04</time></span> |
-          <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>4039</time></span>
+          <span>Reading time: <time>14 min</time></span> |
+          <span>Word count: <time>4071</time></span>
         </div>
       </a>
       <div class="overview">
@@ -1314,7 +1761,7 @@ GoogleAppScriptで開発しようとすると、規模によってはgitを使�
           <span> Zennの「TypeScript」のフィード</span> |
           <span>Date: <time>2024-03-04</time></span> |
           <span>Reading time: <time>2 min</time></span> |
-          <span>Word count: <time>651</time></span>
+          <span>Word count: <time>661</time></span>
         </div>
       </a>
       <div class="overview">
@@ -1332,7 +1779,7 @@ export default async function Layout({ children }: { children: ReactNode }) ...<
           <span> Zennの「Next.js」のフィード</span> |
           <span>Date: <time>2024-03-04</time></span> |
           <span>Reading time: <time>2 min</time></span> |
-          <span>Word count: <time>651</time></span>
+          <span>Word count: <time>661</time></span>
         </div>
       </a>
       <div class="overview">
@@ -1483,25 +1930,6 @@ webアプリケーションの開発をしているけど、SEOってなんだ�
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/taro137/articles/5323a4bf7bf6cf target="_blank">
-        <h1 class="hdg">TypeScriptでFIFO Queueを作る</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-03-03</time></span> |
-          <span>Reading time: <time>6 min</time></span> |
-          <span>Word count: <time>1789</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--5tQSA2Rc--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:TypeScript%25E3%2581%25A7FIFO%2520Queue%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Taro%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzBlOGE5ZGM1NjEuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">JavaScript（およびそれにトランスパイルされるTypeScript）にはキューやスタックなどのデータ構造がありません。配列型としてArrayがありますが、Array.prototype.pushとArray.prototype.shiftでキューの代わりにする場合は注意すべき点があります。
-
- JS/TSのArrayは配列ではない
-配列というと、メモリ上に値が並んでいるものを思い浮かべる人が多いでしょう。実際ちょっとググればそういう説明が出てきます。しかしJS/TSの配列は実はMapに近いものとなっています。
-このことを詳しく見るために、ECMAScriptの仕様書を見てみましょ...</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=https://www.its-kenpo.or.jp/NEWS/important/20240304.html target="_blank">
         <h1 class="hdg">福島第一原発事故に係る一部負担金等（窓口負担）の免除期間の延長について</h1>
         <div class="info">
@@ -1513,62 +1941,6 @@ webアプリケーションの開発をしているけど、SEOってなんだ�
       </a>
       <div class="overview">
         <p class="description">福島第一原発事故におきまして、被災された被保険者および被扶養者の皆様方には、心よりお見舞い申し上げます。同事故により被災された方の令和6年3月1日以降の医療機関等の窓口における一部負担金（※1）の免除期間を以下の通り延長することといたしました。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/k_ichirof/articles/2480e0da7331f2 target="_blank">
-        <h1 class="hdg">[読書メモ]オブジェクト設計スタイルガイド 6章5節 with TypeScript</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-03-03</time></span> |
-          <span>Reading time: <time>2 min</time></span> |
-          <span>Word count: <time>532</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--uVw1tnPM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%255B%25E8%25AA%25AD%25E6%259B%25B8%25E3%2583%25A1%25E3%2583%25A2%255D%25E3%2582%25AA%25E3%2583%2595%25E3%2582%2599%25E3%2582%25B7%25E3%2582%2599%25E3%2582%25A7%25E3%2582%25AF%25E3%2583%2588%25E8%25A8%25AD%25E8%25A8%2588%25E3%2582%25B9%25E3%2582%25BF%25E3%2582%25A4%25E3%2583%25AB%25E3%2582%25AB%25E3%2582%2599%25E3%2582%25A4%25E3%2583%2588%25E3%2582%2599%25206%25E7%25AB%25A05%25E7%25AF%2580%2520with%2520TypeScript%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:k_ichirof%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2ZiYTI0YjgyZDMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">オブジェクト設計スタイルガイドを読みながら、TypeScriptでやるならどうやるかを考えながら書きました。
-要約的に読める内容になっていると思うので、サクッと3分ぐらいで読める記事となっています。
-https://www.oreilly.co.jp/books/9784814400331/
-
- 6.5 システム境界を超えるクエリに対する抽象を定義する
-以下の要素が揃っていることが大切。
-
-サービスクラスの代わりにサービスインターフェースを使う
-実装の詳細に入り込まない
-
-以下のように実装の詳細に入り込まないようにする。
-NG
-class FixerAPI {
-  exchang...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/y640/articles/ddf7e2e9a85fd4 target="_blank">
-        <h1 class="hdg">Hono x JSXで雑ChatGPTもどきを作る</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-03-03</time></span> |
-          <span>Reading time: <time>6 min</time></span> |
-          <span>Word count: <time>1743</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--iP-xePA1--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Hono%2520x%2520JSX%25E3%2581%25A7%25E9%259B%2591ChatGPT%25E3%2582%2582%25E3%2581%25A9%25E3%2581%258D%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:yasuaki640%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2NhYmViMTI4MGMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">もうChat GPTなしの生活は耐えられないが、たまにしか使わないのに定額料金はしんどい、、
-↓
-じゃあOpenAIのAPIを直接呼ぶアプリを自作すれば安く済ませられるのでは?
-↓
-でもそれだけのために、SPA x JSON API のような構成を作るのは面倒、、、
-↓
-Hono x JSXならフロントもバックエンドも簡単に実装して月々のGPT料金を抑えられそう！！
-ということでオレオレgptクライアントを実装したのでメモ。
-※デプロイはまだできていません。
-
- 実装
-公式の手順に従ってスキャフォールドを作成。
-※環境はcloudflare-workersを選択
-https://hono...</p>
       </div>
     </article>
     <article class="article">
@@ -1621,21 +1993,21 @@ type TweetAndMedia struct {
           <span> Zennの「個人開発」のフィード</span> |
           <span>Date: <time>2024-03-03</time></span> |
           <span>Reading time: <time>1 min</time></span> |
-          <span>Word count: <time>369</time></span>
+          <span>Word count: <time>385</time></span>
         </div>
       </a>
       <div class="overview">
         <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--Urs7DgMJ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2580%2591%25E6%25BC%25AB%25E7%2594%25BB%25E5%25A5%25BD%25E3%2581%258D%25E3%2581%258C%25E6%25BC%25AB%25E7%2594%25BB%25E3%2581%25A8%25E3%2582%25A2%25E3%2583%25AD%25E3%2583%259E%25E3%2582%2592%25E3%2581%258A%25E5%258B%25A7%25E3%2582%2581%25E3%2581%2599%25E3%2582%258B%25E8%25A8%25BA%25E6%2596%25AD%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258A%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%2520%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Shikimum%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzA5ODJiZmFlMjEuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
         <p class="description">はじめに
-はじめまして、1歳子持ちのshikimumと申します。
+はじめまして、1歳子持ちのshikimum(@abbyE424214 )と申します。
 完全異業種からエンジニアに転職するためオンラインスクールに入り学習をしていました。
-私は漫画が大好きで、漫画に勇気をもらったり慰めてもらったり、セリフを真似したりと、影響受けまくりの人生を送ってきました💪
+私は幼少期より漫画が大好きで、漫画にさまざまな影響を受けてきました💪
 もっとたくさんの人に漫画を読んでもらいたい、人生を変える1冊に出会って欲しいという思いから、その人にあった漫画をおすすめするアプリを作成しました📚
 「漫画の処方箋」
 ユーザーの疲れタイプに合わせて、あなたにあった漫画とアロマをお勧めします。
 https://www.comic-health.com/
 
-https:/...</p>
+https://github.com...</p>
       </div>
     </article>
     <article class="article">
@@ -1711,51 +2083,6 @@ Kokoneでは「集まりたい目的」を重要視してしており、
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/tsukuboshi/articles/31c95d863d8896 target="_blank">
-        <h1 class="hdg">Googleカレンダーの予定から色毎に工数をカウントし集計するGASアプリを作ってみた</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-03-03</time></span> |
-          <span>Reading time: <time>2 min</time></span> |
-          <span>Word count: <time>498</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--hN6-r4hw--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Google%25E3%2582%25AB%25E3%2583%25AC%25E3%2583%25B3%25E3%2583%2580%25E3%2583%25BC%25E3%2581%25AE%25E4%25BA%2588%25E5%25AE%259A%25E3%2581%258B%25E3%2582%2589%25E8%2589%25B2%25E6%25AF%258E%25E3%2581%25AB%25E5%25B7%25A5%25E6%2595%25B0%25E3%2582%2592%25E3%2582%25AB%25E3%2582%25A6%25E3%2583%25B3%25E3%2583%2588%25E3%2581%2597%25E9%259B%2586%25E8%25A8%2588%25E3%2581%2599%25E3%2582%258BGAS%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%25A4%25E3%2581%258F%25E3%2581%25BC%25E3%2581%2597%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2RjYTViZjg0M2QuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">タイトルの通り、カレンダーの予定から色毎に工数をカウントして集計するGASアプリを、TypeScriptを用いて作ってみたので紹介する。
-https://github.com/tsukuboshi/gas-count-schedule-time
-このGASアプリを使用すると、Googleカレンダーに記載されている予定の色を元に、以下のような形でスプレッドシートに自動で予定一覧を書き出しされ、工数合計が算出されるようになる。
-
-
- 背景
-今までも参加するプロジェクトで稼働を集計し報告するタスクが度々あったが、その際はGoogleカレンダーを目視しながら集計していた。
-しかしながら最近関わる...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/wagao/articles/110e9454b4bca4 target="_blank">
-        <h1 class="hdg">App Router で Hacker News Reader 作ってみた</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-03-03</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>3074</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--pNscxZIo--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:App%2520Router%2520%25E3%2581%25A7%2520Hacker%2520News%2520Reader%2520%25E4%25BD%259C%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:wagao%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JiYTU4NzFiN2EuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">はじめに
-今回 Next.js の App Router の勉強がてら Hacker News の Reader アプリを作ってみたので、備忘録を兼ねて解説記事を書いてみました。注意点として、私は App Router に関しては公式チュートリアルをなぞったくらいの知識なので参考程度に見ていただけると幸いです。また間違ってる箇所や改善点などあればコメントなどいただけると大変助かります!
-つくったアプリ👇
-https://next-hn-reader.vercel.app
-コードはこちら👇
-https://github.com/wagao29/hn-reader
-
- 使用技術
-今回つく...</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=https://zenn.dev/wagao/articles/110e9454b4bca4 target="_blank">
         <h1 class="hdg">App Router で Hacker News Reader 作ってみた</h1>
         <div class="info">
@@ -1776,32 +2103,6 @@ https://github.com/wagao29/hn-reader
 
  使用技術
 今回つく...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/ohimusdev46301/articles/d359989c643273 target="_blank">
-        <h1 class="hdg">【React/Next.js】コンポーネント化してコードの見通しをよくする</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-03-03</time></span> |
-          <span>Reading time: <time>15 min</time></span> |
-          <span>Word count: <time>4529</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--LxyiI1lV--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590React%252FNext.js%25E3%2580%2591%25E3%2582%25B3%25E3%2583%25B3%25E3%2583%259D%25E3%2583%25BC%25E3%2583%258D%25E3%2583%25B3%25E3%2583%2588%25E5%258C%2596%25E3%2581%2597%25E3%2581%25A6%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2581%25AE%25E8%25A6%258B%25E9%2580%259A%25E3%2581%2597%25E3%2582%2592%25E3%2582%2588%25E3%2581%258F%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:Wataru%2520Takiguchi%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzdkOTBhM2EyYTcuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">概要
-以下のような、コンポーネント化されていないベタ書きの処理をコンポーネントを用いて書き直します。
-コンポーネントについては、意味のある最小の単位に分けることを意識しています。
-
-page.tsx
-&quot;use client&quot;;
-import { useState } from &quot;react&quot;;
-import axios from &quot;axios&quot;;
-
-const RandomBookSelector &#x3D; () &#x3D;&gt; {
-  const [isLoading, setIsLoading] &#x3D; useState(false);
-  const [bookInfo, setBookIn...</p>
       </div>
     </article>
     <article class="article">
@@ -1852,50 +2153,6 @@ import { auth } from &quot;@clerk/nextjs&quot;;
 import { formatDistanceToNow } from &quot;date-fns&quot;;
 
 import { getTodosByOrgId } from &quot;@/service/to...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/takaki/articles/typescript-class-decorator target="_blank">
-        <h1 class="hdg">TypeScriptのclass decoratorを試す</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-03-03</time></span> |
-          <span>Reading time: <time>2 min</time></span> |
-          <span>Word count: <time>549</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--WO2szR1a--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:TypeScript%25E3%2581%25AEclass%2520decorator%25E3%2582%2592%25E8%25A9%25A6%25E3%2581%2599%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:takaki%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2FlNjVjNjkwMmMuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">TypeScriptであるベースクラスのサブクラス一覧を保持しておいて文字列からサブクラスインスタンスを作るようなことをしたかった。
-Rubyだと組込でそんなことができたりするがTypeScript(JavaScript)だとそんなものはなくてなんとかならないかと試行錯誤していた。
-クラスのstatic blockを使って定型文を書くという手法もあるがもうちょっとわかりやすい方法はないかと考えてdecoratorでなんとかなりそうと使ってみた。
-まだ正式にリリースされてないので参考資料も少なくて苦労した。この文法はstage3を元にしている。stage2の資料もみつかるが互換性はないので...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/nabee/articles/0dcfc36066230c target="_blank">
-        <h1 class="hdg">TypeScript で名前的型付け</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-03-02</time></span> |
-          <span>Reading time: <time>2 min</time></span> |
-          <span>Word count: <time>475</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--oIgKMRtB--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:TypeScript%2520%25E3%2581%25A7%25E5%2590%258D%25E5%2589%258D%25E7%259A%2584%25E5%259E%258B%25E4%25BB%2598%25E3%2581%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:nabee%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2JmZTg3MjEzNTkuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">名前的型付けっぽいことができると便利なときがあります。(何番煎じだよって感じですが)
-
-const findById &#x3D; (id: UserId) &#x3D;&gt; {
-    ...
-}
-
-const id: TenantId &#x3D; &#x27;hogee&#x27;;
-
-// 型エラーになってくれたらチョットうれしい
-findById(id);
-このコードを見た人の中には「UserId を期待してるところに TenantId を渡すなんてあり得ないでしょ」と思う人もいるかもしれません。
-でも出来ればそんな可能性は無くしてしまった方が良いですよね？ コンパイラができることを人間がやる必要は無いと思います。コンパイ...</p>
       </div>
     </article>
     <article class="article">
@@ -1960,7 +2217,7 @@ findById(id);
     </article>
     <article class="article">
       <a class="link js-open-overview" href=https://zenn.dev/coji/books/conform-guide target="_blank">
-        <h1 class="hdg">Conform: Web標準をもとに Remix / Nextjs app router に対応する型安全フォームバリデーションライブラリ</h1>
+        <h1 class="hdg">Conform: Web標準をもとに Remix / Next.js App Router に対応する型安全フォームバリデーションライブラリ</h1>
         <div class="info">
           <span> Zennの「Next.js」のフィード</span> |
           <span>Date: <time>2024-03-02</time></span> |
@@ -1969,7 +2226,7 @@ findById(id);
         </div>
       </a>
       <div class="overview">
-        <img class="img" src="https://static.zenn.studio/images/logo-only-dark.png" width="100" />
+        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--X_7Sd6RM--/g_center%2Ch_280%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYm9va19jb3Zlci9jMmM5ZDJmMjZhLnBuZw&#x3D;&#x3D;%2Cw_200/v1627283836/default/og-base-book_yz4z02.jpg" width="100" />
         <p class="description">Conform は、Web 標準に基づいて HTML フォームを段階的に強化し、RemixやNext.jsのようなサーバーフレームワークを完全にサポートする、型安全なフォームバリデーションライブラリです。
 
 https://conform.guide</p>
@@ -1992,30 +2249,6 @@ I wrote this while having it translated by ChatGPT. I apologize for any English 
 ↓ 日本語の記事はこちら (Click here to read the article in Japanese.)
 https://zenn.dev/a_saya_108/articles/59ddde84195432
 I&#x27;ll be writing this as a memo. This information is intended for those who have a...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/somnicattus/articles/7d35ee4eec8493 target="_blank">
-        <h1 class="hdg">TypeScript コーディングテクニック #2 【ループ処理編】</h1>
-        <div class="info">
-          <span> Zennの「TypeScript」のフィード</span> |
-          <span>Date: <time>2024-03-02</time></span> |
-          <span>Reading time: <time>10 min</time></span> |
-          <span>Word count: <time>3064</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--2n8qqaDj--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:TypeScript%2520%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2587%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%25E3%2583%2586%25E3%2582%25AF%25E3%2583%258B%25E3%2583%2583%25E3%2582%25AF%2520%25232%2520%25E3%2580%2590%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%2597%25E5%2587%25A6%25E7%2590%2586%25E7%25B7%25A8%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:somnicattus%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSlNvNXE3eXJhZTY5OHVBWGpCN05EYTVOZVRxanpMQ2hBakhaek85RmZSPXM5Ni1j%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">この記事について
-TypeScript のコーディングテクニックを紹介するシリーズの第 2 回です。
-第 1 回の記事はこちら -&gt; TypeScript コーディングテクニック #1 【条件分岐編】
-想定する読者は、TypeScript をある程度使ったうえでさらにコード品質を高めたい方です。初心者向けではないと思います。
-第 2 回は、ループ処理の書き方のテクニックです。
-
- ループ処理の比較
-以下の 6 種のループ処理について、特徴を比較しながら使いどころを検討します。
-10000 字に迫る長大な記事になってしまったので、必要に応じて特定の章だけ読むことをお勧めします。
-...</p>
       </div>
     </article>
     <article class="article">
@@ -2133,27 +2366,6 @@ https://github.com/advisories/GHSA-c59h-r6p8-q9wc
 まず、下記で詳細な解説がされているのでありがたく読む。
 https://blog.cateiru.com/entry/2023/08/11/005212
 https://medium.com/@mares.viktor/deep-div...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/makura_nageru/articles/1cfad78f324ee8 target="_blank">
-        <h1 class="hdg">Next.jsのTypeScript環境でGLSLの環境構築をする</h1>
-        <div class="info">
-          <span> Zennの「Next.js」のフィード</span> |
-          <span>Date: <time>2024-03-01</time></span> |
-          <span>Reading time: <time>3 min</time></span> |
-          <span>Word count: <time>894</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--Iya6byvd--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Next.js%25E3%2581%25AETypeScript%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25A7GLSL%25E3%2581%25AE%25E7%2592%25B0%25E5%25A2%2583%25E6%25A7%258B%25E7%25AF%2589%25E3%2582%2592%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%258A%25E8%258C%25B6%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFUWEFKd3YxRE9DeDNXSVRPQTdiZUxlb1hFVnU3b1FieC1YYU9aQXNXelA9czk2LWM&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">こんばんは、びわ湖の限界大学生兼フロントエンドエンジニアのお茶です！
-自分は趣味でThree.jsでWebGLを触るのが好きなのですが、そろそろ自前でGLSLを書いてカスタムシェーダーを書いてみたい！　となってから環境構築をする時に自分的詰まるポイントを書いていきたいと思います。
-普段Three.jsを書いている人からすると当たり前のことだと思いますが初めて環境構築する時の参考になれば幸いです！
-
- あるある
-Next.jsでReactThreeFiber(以下R3F)を導入してカスタムシェーダーを書く時、
-以下のように書いている人が何気に以下のように書いている人多いんじゃないでしょうか...</p>
       </div>
     </article>
     <article class="article">
@@ -2297,7 +2509,7 @@ UI設計、フロントエンド、ネットワーク構築担当
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-03-01</time></span> |
           <span>Reading time: <time>14 min</time></span> |
-          <span>Word count: <time>4258</time></span>
+          <span>Word count: <time>4290</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2325,8 +2537,8 @@ UI設計、フロントエンド、ネットワーク構築担当
         <div class="info">
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-03-01</time></span> |
-          <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>4043</time></span>
+          <span>Reading time: <time>14 min</time></span> |
+          <span>Word count: <time>4075</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2340,8 +2552,8 @@ UI設計、フロントエンド、ネットワーク構築担当
         <div class="info">
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-03-01</time></span> |
-          <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>4041</time></span>
+          <span>Reading time: <time>14 min</time></span> |
+          <span>Word count: <time>4073</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2750,8 +2962,8 @@ https://github.com/aiwon0035/timetable
         <div class="info">
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-29</time></span> |
-          <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>4049</time></span>
+          <span>Reading time: <time>14 min</time></span> |
+          <span>Word count: <time>4081</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2766,7 +2978,7 @@ https://github.com/aiwon0035/timetable
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-29</time></span> |
           <span>Reading time: <time>14 min</time></span> |
-          <span>Word count: <time>4066</time></span>
+          <span>Word count: <time>4098</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2780,8 +2992,8 @@ https://github.com/aiwon0035/timetable
         <div class="info">
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-29</time></span> |
-          <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>4040</time></span>
+          <span>Reading time: <time>14 min</time></span> |
+          <span>Word count: <time>4072</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2834,7 +3046,7 @@ Reanimated が visionOS ...</p>
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-29</time></span> |
           <span>Reading time: <time>14 min</time></span> |
-          <span>Word count: <time>4268</time></span>
+          <span>Word count: <time>4300</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2848,8 +3060,8 @@ Reanimated が visionOS ...</p>
         <div class="info">
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-29</time></span> |
-          <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>4034</time></span>
+          <span>Reading time: <time>14 min</time></span> |
+          <span>Word count: <time>4066</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2863,8 +3075,8 @@ Reanimated が visionOS ...</p>
         <div class="info">
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-29</time></span> |
-          <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>4038</time></span>
+          <span>Reading time: <time>14 min</time></span> |
+          <span>Word count: <time>4070</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2873,29 +3085,13 @@ Reanimated が visionOS ...</p>
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=http://codezine.jp/article/detail/19114 target="_blank">
-        <h1 class="hdg">マイクロサービスを支える組織をどう作る？ 「クラウドネイティブアプリケーション実践講座」は3月13日開催</h1>
-        <div class="info">
-          <span> CodeZine:新着一覧</span> |
-          <span>Date: <time>2024-02-29</time></span> |
-          <span>Reading time: <time>14 min</time></span> |
-          <span>Word count: <time>4069</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://codezine.jp/static/images/article/19114/18901_ogp.png" width="100" />
-        <p class="description">CodeZineは、村上大河氏、岩成祐樹氏を講師に迎え、CodeZine Academyの講座「クラウドネイティブアプリケーション実践講座～コンテナ開発からマイクロサービスまで～
-」を3月13日にオンライン開催します。</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=http://codezine.jp/article/detail/19123 target="_blank">
         <h1 class="hdg">Datadog、英語以外で初となる日本語での認定プログラム開始</h1>
         <div class="info">
           <span> CodeZine:新着一覧</span> |
           <span>Date: <time>2024-02-29</time></span> |
-          <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>4033</time></span>
+          <span>Reading time: <time>14 min</time></span> |
+          <span>Word count: <time>4065</time></span>
         </div>
       </a>
       <div class="overview">
@@ -2929,71 +3125,6 @@ Googleは、2023年11月13日以降に
 20人以上のテスターに、14日以上使ってもらうだと！！
 14日も普通にダルいんですが、一番問題なのは20人の方。
 だって日...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=http://dailyfeed.jp/feed/103/2024-02-28 target="_blank">
-        <h1 class="hdg">2024年02月28日の記事一覧</h1>
-        <div class="info">
-          <span> Gizmodo Japan（ギズモード・ジャパン）のデイリーフィード - DailyFeed</span> |
-          <span>Date: <time>2024-02-28</time></span> |
-          <span>Reading time: <time>1 min</time></span> |
-          <span>Word count: <time>158</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <p class="description">(全 18 件)
-1. ネアンデルタール人、ヨーロッパ最古の接着剤をつかっていたことが判明 
-2. 天王星と海王星に新たな衛星が見つかる 
-3. 【DJ4コマ・第32話】花粉・ハウスダストに負けないDJっの巻！うじたなおき 
-4. パタゴニアの機能的フリースが、薄手アウターを“防寒着”に変えてくれました 
-5. Geminiの白人画像生成できない問題、再ローンチに向けて修正開始 
-6. キングジムの新作ふせんでモニター下を有効活用。持ち運びから卓上メモにも 
-7. タウンユースでサラッと着たい。“本格アウトドア”な機能素材のフーディー 
-8. 防音効果もある？ ヘルメットから着想を得た枕が斬新すぎる 
-9. オーストラリアで発見された超巨大オオヒキガエル 
-10. ファミレスでおなじみのネコ型配膳ロボ、これから海外でも活躍します 
-11. 顔パスで行こうよどこまでも。熊本の路面電車で実証実験スタート 
-12. 常に情報を身にまとう快感。OPPOのスマートグラスが大進化 
-13. Androidが大幅強化。Geminiと友達感覚で会話できるようになる 
-14. 9代目でついに成熟。「Apple Watch Series 9」には買っていい理由がある 
-15. Ankerのロボット掃除機、モップ洗浄・乾燥までして実質7.5万はおかしい 
-16. AIによる“白人が出てこない生成画像”、批判を受けてグーグルが謝罪 
-17. SFファンに刺さるハミルトン×『デューン 砂の惑星 PART2』のコラボ時計 
-18. 日本でも「宇宙天気」予報がスタート。新年度にも運用開始予定</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=http://dailyfeed.jp/feed/105/2024-02-28 target="_blank">
-        <h1 class="hdg">2024年02月28日の記事一覧</h1>
-        <div class="info">
-          <span> ライフハッカー［日本版］のデイリーフィード - DailyFeed</span> |
-          <span>Date: <time>2024-02-28</time></span> |
-          <span>Reading time: <time>0 min</time></span> |
-          <span>Word count: <time>149</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <p class="description">(全 19 件)
-1. 18 Wayの究極のアウター登場！23個のポケットで手ぶらで外出できる 
-2. 【心理テスト】いつも周りに優しくできてる？あなたの「寄り添い度」はどれぐらい？ 
-3. 【4コマ漫画】おとなパンダーさん最終回「おとなになるってこういうことよ」｜4年間ありがとうございました！ 
-4. ポケットにも入る！ 携帯性重視の超コンパクト折りたたみ傘「minimo#3」まもなく支援募集終了 
-5. 高機能素材で大注目。「純チタン」製のマイボトルがわずか126gのミニサイズ、1万円以下で買える！ 
-6. OpenAIの最新動画生成AI・Soraは「脅威」なのか？その仕組みと、できること・できないこと 
-7. デキるリーダーの「仕事の任せ方」7つのポイント 
-8. 2個利用で臨場感も倍増！ スマホや柱にくっつく「MaGdget Speaker」を使ってみた 
-9. まるで工具のおせちみたい！ DIYに助かるツールが勢揃いした「JIMIBOX X3-ABI」が登場 
-10. Ankerの最新プラグ付きバッテリー。MacBookも高速充電できて過去最安の3,990円【Amazonセール】 
-11. Amazon新生活セールでKindle本が最大70％オフに！編集部厳選のキャリア・スキルアップ本10選 
-12. 110円で収納力が倍になる。フタのないボックスやカゴが重ねられるようになりました 
-13. 氷河トレッキングに無人島キャンプ…「秘境ツアー」を安全に実現する舞台裏を探った 
-14. 上位モデルの1TBが実質8,181円。バッファローの直接挿せるスティック型SSD【楽天セール】 
-15. 洗い物が減って最高。ハリオの耐熱ガラスタッパーが半額以下になっちゃった【Amazonセール】 
-16. 崩れかけたToDoリストを立て直す「ABCDEメソッド」活用術 
-17. 書き心地とデータ管理の便利さを両立できるスマート文具「DIGIPEN4.0」を使ってみた 
-18. Notionの新機能「ボタンプロパティ」活用例！ ワンクリックで工数管理ができた【今日のワークハック】 
-19. 【毎日書評】成功の達人が提唱！願望を実現させる「瞑想」のコツ</p>
       </div>
     </article>
     <article class="article">
@@ -3083,21 +3214,6 @@ if err !&#x3D; nil {
       </div>
     </article>
     <article class="article">
-      <a class="link js-open-overview" href=http://codezine.jp/article/detail/19119 target="_blank">
-        <h1 class="hdg">Netflix、eBPFプログラムのパフォーマンス最適化および監視を合理化するコマンドラインツール「bpftop」をリリース</h1>
-        <div class="info">
-          <span> CodeZine:新着一覧</span> |
-          <span>Date: <time>2024-02-28</time></span> |
-          <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>4033</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://codezine.jp/static/images/article/19119/14179_og.jpg" width="100" />
-        <p class="description">米Netflixは、eBPFプログラムのパフォーマンス最適化と監視を合理化するために設計された、コマンドラインツール「bpftop」を2月25日（現地時間）にリリースした。</p>
-      </div>
-    </article>
-    <article class="article">
       <a class="link js-open-overview" href=https://zenn.dev/castingone_dev/articles/13c4eff969a59d target="_blank">
         <h1 class="hdg">良書『Go言語 100Tips』を読んでの学び ~サンプルコードを添えて~</h1>
         <div class="info">
@@ -3184,108 +3300,6 @@ Google Cloud Identity Platform（以降Identity Platform）は、セキュリテ
 本記事では、マルチテナンシー構成におけるパスワードポリシーの設定と更新方法に焦点を当て、Go言語を用いた具体的な実装を紹介したいと思います。
 マルチテナンシー構成を適切に管理することで、異なる顧客や組織間でセキュリティポリシーを効率的に適用し、アプリケーションのセキュリティレベルを向上させることが可能です。
 この後の内容を見ていく上で、前提となる認...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=http://codezine.jp/article/detail/18857 target="_blank">
-        <h1 class="hdg">不安を抱えながらも歩んできたエンジニア人生、3回の転職で見えた成長する道とは</h1>
-        <div class="info">
-          <span> CodeZine:新着一覧</span> |
-          <span>Date: <time>2024-02-28</time></span> |
-          <span>Reading time: <time>14 min</time></span> |
-          <span>Word count: <time>4210</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://codezine.jp/static/images/article/18857/18857_ogpb.png" width="100" />
-        <p class="description">「保険業界のアップデート」を目指して2017年に設立したhokanは、保険代理店向けシステムを開発している。2021年に同社へジョインしCREチームを率いてきた小倉隆宏氏が若手エンジニアに向けて、同氏が若手時代に経験してきたこと、学んだことを若手エンジニアに向けてつまびらかに語る。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=http://codezine.jp/article/detail/19115 target="_blank">
-        <h1 class="hdg">GitHub、AI関連のオープンソース開発を支援するプログラム「GitHub Accelerator」への応募を受付中</h1>
-        <div class="info">
-          <span> CodeZine:新着一覧</span> |
-          <span>Date: <time>2024-02-28</time></span> |
-          <span>Reading time: <time>13 min</time></span> |
-          <span>Word count: <time>4047</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://codezine.jp/static/images/article/19115/16568_ogp.png" width="100" />
-        <p class="description">米GitHubは、資金の確保や製品の発売、アイデアの発明への転換といった、オープンソースへの取り組みを次のステップに進めることを支援すべく、財政的サポート、メンターシップ、ネットワーキング、トレーニングなどを提供するプログラム「GitHub Accelerator」の応募受け付けを、2月13日（現地時間）に開始した。締め切りは3月5日12時（太平洋時間）で、審査は順次行われている。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=http://codezine.jp/article/detail/19020 target="_blank">
-        <h1 class="hdg">チャットBotだけじゃない！ChatGPTを汎用自然言語処理エンジンとして利用する方法</h1>
-        <div class="info">
-          <span> CodeZine:新着一覧</span> |
-          <span>Date: <time>2024-02-28</time></span> |
-          <span>Reading time: <time>14 min</time></span> |
-          <span>Word count: <time>4258</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://codezine.jp/static/images/article/19020/chatgpt_og.png" width="100" />
-        <p class="description">進化を続ける生成AIの最前線、ChatGPT。既に多くの業界で注目される中、まだこの革命的な技術を手にしていないあなたへ。本連載では、具体的なコードを交えながら、ChatGPT APIの可能性とその活用法を徹底解説します。今回は、チャットBot以外の様々な利用目的で組み込むノウハウについて紹介します。</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/cloud_ace/articles/transaction-architecture target="_blank">
-        <h1 class="hdg">どのレイヤー（層）でトランザクションを実装すべきか</h1>
-        <div class="info">
-          <span> Zennの「Golang」のフィード</span> |
-          <span>Date: <time>2024-02-28</time></span> |
-          <span>Reading time: <time>5 min</time></span> |
-          <span>Word count: <time>1596</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--F4MPOQv2--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2581%25A9%25E3%2581%25AE%25E3%2583%25AC%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%25BC%25EF%25BC%2588%25E5%25B1%25A4%25EF%25BC%2589%25E3%2581%25A7%25E3%2583%2588%25E3%2583%25A9%25E3%2583%25B3%25E3%2582%25B6%25E3%2582%25AF%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E3%2582%2592%25E5%25AE%259F%25E8%25A3%2585%25E3%2581%2599%25E3%2581%25B9%25E3%2581%258D%25E3%2581%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2582%25AF%25E3%2583%25A9%25E3%2582%25A6%25E3%2583%2589%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B9%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzE2OGMwYmM4MTIuanBlZw&#x3D;&#x3D;%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">はじめに
-こんにちは。クラウドエース株式会社で主にアプリケーション開発を担当している水野です。
-今回は、どのレイヤー（層）でトランザクション実装すべきかについてご紹介します。
-結論から言うと、usecase 層と infrastructure 層で実装します。
-各層で実装することは以下です。実装内容は抽象化（カプセル化）させ、他の層では意識させないような構成にします。
-
-
-
-層
-実装内容
-
-
-
-
-usecase
-どの処理に対して整合性を保つかと処理をどの順番で実施するか
-
-
-infrastructure
-DB 固有のトランザクション操作（コミットやロールバック等）とトランザクションの...</p>
-      </div>
-    </article>
-    <article class="article">
-      <a class="link js-open-overview" href=https://zenn.dev/toraco/articles/858a9b2fe72508 target="_blank">
-        <h1 class="hdg">swaggoを用いてハンドラ駆動でREST APIの仕様を表現する</h1>
-        <div class="info">
-          <span> Zennの「Golang」のフィード</span> |
-          <span>Date: <time>2024-02-28</time></span> |
-          <span>Reading time: <time>8 min</time></span> |
-          <span>Word count: <time>2305</time></span>
-        </div>
-      </a>
-      <div class="overview">
-        <img class="img" src="https://res.cloudinary.com/zenn/image/upload/s--E_58PQWj--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:swaggo%25E3%2582%2592%25E7%2594%25A8%25E3%2581%2584%25E3%2581%25A6%25E3%2583%258F%25E3%2583%25B3%25E3%2583%2589%25E3%2583%25A9%25E9%25A7%2586%25E5%258B%2595%25E3%2581%25A7REST%2520API%25E3%2581%25AE%25E4%25BB%2595%25E6%25A7%2598%25E3%2582%2592%25E8%25A1%25A8%25E7%258F%25BE%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_34:%25E3%2581%259F%25E3%2582%2593%2Cx_220%2Cy_108/bo_3px_solid_rgb:d6e3ed%2Cg_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2Y5ZTBhNDI3ZjguanBlZw&#x3D;&#x3D;%2Cr_20%2Cw_90%2Cx_92%2Cy_102/co_rgb:6e7b85%2Cg_south_west%2Cl_text:notosansjp-medium.otf_30:toraco%25E6%25A0%25AA%25E5%25BC%258F%25E4%25BC%259A%25E7%25A4%25BE%25E3%2581%25AE%25E3%2583%2586%25E3%2583%2583%25E3%2582%25AF%25E3%2583%2596%25E3%2583%25AD%25E3%2582%25B0%2Cx_220%2Cy_160/bo_4px_solid_white%2Cg_south_west%2Ch_50%2Cl_fetch:aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2ctMl8tbTg0ZFlYdGNUM0w2dEc3WVFZNlFYaUI0eW40SWprSEgxPXM5Ni1j%2Cr_max%2Cw_50%2Cx_139%2Cy_84/v1627283836/default/og-base-w1200-v2.png" width="100" />
-        <p class="description">はじめに
-この度、受託開発においてGo + REST APIを採用しました。
-フロントエンドとのコミュニケーションコストを減らす + APIとしての設計書作成のためにOpenAPIを利用しようと考えたのですが、Goのコード上でそれを実現できないか？と調べたところ、swaggoというライブラリに行きつきました。
-そのため、今回はハンドラ駆動でOpenAPIを定義する手法を紹介したいと思います。
-今回書いたコードはこちらになります。
-
- OpenAPIとは？
-ChatGPTが３行で説明してくれました。
-OpenAPIは、RESTful APIの仕様を記述するための言語非依存のインターフェ...</p>
       </div>
     </article>
     <article class="article">
